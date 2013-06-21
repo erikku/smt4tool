@@ -1,0 +1,3 @@
+function registerSkill(data) {
+	// FIX
+}

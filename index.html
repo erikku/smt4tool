@@ -1,0 +1,150 @@
+<!doctype html>
+ 
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>SMT4 Test Page</title>
+  <link rel="stylesheet" href="jquery-ui-1.10.3/themes/base/jquery-ui.css" />
+  <script src="jquery-ui-1.10.3/jquery-1.9.1.js"></script>
+  <script src="jquery-ui-1.10.3/ui/jquery-ui.js"></script>
+  <script src="database/master.js"></script>
+  <script src="database/skills/master.js"></script>
+  <script src="database/skills/mahanma.js"></script>
+  <script src="database/demons/master.js"></script>
+  <script src="database/demons/seraphim/lila.js"></script>
+  <script src="database/demons/seraphim/victor.js"></script>
+  <script src="database/demons/seraphim/israphel.js"></script>
+  <script src="database/demons/seraphim/kazphiel.js"></script>
+  <script src="database/demons/seraphim/azrael.js"></script>
+  <script src="database/demons/seraphim/sraosha.js"></script>
+  <script src="database/demons/seraphim/haniel.js"></script>
+  <script src="database/demons/seraphim/uriel.js"></script>
+  <script src="database/demons/seraphim/matsema.js"></script>
+  <script src="database/demons/seraphim/raphael.js"></script>
+  <script src="database/demons/seraphim/metatron.js"></script>
+  <script src="database/demons/seraphim/gabriel.js"></script>
+  <script src="database/demons/seraphim/seraph.js"></script>
+  <script src="database/demons/seraphim/michael.js"></script>
+  <script src="database/demons/goddess/fortuna.js"></script>
+  <script src="database/demons/goddess/hathor.js"></script>
+  <script src="database/demons/goddess/parvati.js"></script>
+  <script src="database/demons/goddess/bridget.js"></script>
+  <script src="database/demons/goddess/scathach.js"></script>
+  <script src="database/demons/goddess/ishtar.js"></script>
+  <script src="database/demons/goddess/pallas_athena.js"></script>
+  <script src="database/demons/goddess/tlazolteotl.js"></script>
+  <script src="database/demons/goddess/anat.js"></script>
+  <script src="database/demons/goddess/izanami.js"></script>
+  <script src="database/demons/goddess/norn.js"></script>
+  <script src="database/demons/goddess/lakshmi.js"></script>
+  <script src="database/demons/sacred_bird/hamsa.js"></script>
+  <script src="database/demons/sacred_bird/suparna.js"></script>
+  <script src="database/demons/sacred_bird/phoenix.js"></script>
+  <script src="database/demons/sacred_bird/vidofnir.js"></script>
+  <script src="database/demons/sacred_bird/thunderbird.js"></script>
+  <script src="database/demons/sacred_bird/suzaku.js"></script>
+  <script src="database/demons/sacred_bird/yatagarasu.js"></script>
+  <script src="database/demons/sacred_bird/garuda.js"></script>
+  <script src="database/demons/divine_tree/daphne.js"></script>
+  <script src="database/demons/divine_tree/narcissus.js"></script>
+  <script src="database/demons/divine_tree/mayahuel.js"></script>
+  <script src="database/demons/divine_tree/kukunochi.js"></script>
+  <script src="database/demons/divine_tree/haoma.js"></script>
+  <script src="database/demons/divine_tree/yggdrasil.js"></script>
+  <script src="database/demons/angel/angel.js"></script>
+  <script src="database/demons/angel/archangel.js"></script>
+  <script src="database/demons/angel/principality.js"></script>
+  <script src="database/demons/angel/power.js"></script>
+  <script src="database/demons/angel/virtue.js"></script>
+  <script src="database/demons/angel/dominion.js"></script>
+  <script src="database/demons/angel/throne.js"></script>
+  <script src="database/demons/angel/cherub.js"></script>
+  <script src="database/demons/wild_bird/tangata_manu.js"></script>
+  <script src="database/demons/wild_bird/harpy.js"></script>
+  <script>
+  $(document).ready(function(){
+
+    $("#autocomplete").autocomplete({
+      source: demonNamesEN,
+      select: function(e, ui) {
+        showDemon(ui.item.value);
+      }
+    });
+    $("#autocomplete").keyup(function(e){
+      showDemon($("#autocomplete").val());
+    })
+    var demonList = "<table border=\"1\">";
+    demonList += "<th>Level</th>";
+    demonList += "<th>Tribe</th>";
+    demonList += "<th>Name</th>";
+    demonList += "<th>HP</th>";
+    demonList += "<th>MP</th>";
+    demonList += "<th>Str</th>";
+    demonList += "<th>Skill</th>";
+    demonList += "<th>Magic</th>";
+    demonList += "<th>Speed</th>";
+    demonList += "<th>Luck</th>";
+    demonList += "<th>Physical</th>";
+    demonList += "<th>Gun</th>";
+    demonList += "<th>Fire</th>";
+    demonList += "<th>Ice</th>";
+    demonList += "<th>Thunder</th>";
+    demonList += "<th>Shock</th>";
+    demonList += "<th>Banish</th>";
+    demonList += "<th>Curse</th>";
+    demonList += "<th>Skills</th>";
+
+    $.each(demonByNameEN, function(nameEN, data){
+      demonList += "<tr>";
+      demonList += "<td>" + data.level + "</td>\n";
+      demonList += "<td>" + tribeListEN[tribeListJP.indexOf(
+        data.tribe)] + "</td>\n";
+      demonList += "<td>" + data.nameEN + "</td>\n";
+      demonList += "<td>" + data.stats.hp + "</td>\n";
+      demonList += "<td>" + data.stats.mp + "</td>\n";
+      demonList += "<td>" + data.stats.strength + "</td>\n";
+      demonList += "<td>" + data.stats.skill + "</td>\n";
+      demonList += "<td>" + data.stats.magic + "</td>\n";
+      demonList += "<td>" + data.stats.speed + "</td>\n";
+      demonList += "<td>" + data.stats.luck + "</td>\n";
+      demonList += "<td>" + data.affinity.physical + "</td>";
+      demonList += "<td>" + data.affinity.gun + "</td>";
+      demonList += "<td>" + data.affinity.fire + "</td>";
+      demonList += "<td>" + data.affinity.ice + "</td>";
+      demonList += "<td>" + data.affinity.thunder + "</td>";
+      demonList += "<td>" + data.affinity.shock + "</td>";
+      demonList += "<td>" + data.affinity.banish + "</td>";
+      demonList += "<td>" + data.affinity.curse + "</td>";
+
+      var skills = [ ];
+      $.each(data.skills, function(name, level){
+        if(level > 0)
+          skills.push(name + " (" + level + ")");
+        else
+          skills.push(name);
+      });
+
+      demonList += "<td>" + skills.join(" / ") + "</td>";
+      demonList += "</tr>";
+    });
+    demonList += "</table>";
+    $("#demonList").html(demonList);
+
+  });
+  </script>
+</head>
+<body>
+
+<label for="autocomplete">Select a demon:</label>
+<input id="autocomplete">
+
+<div id="demonData">
+  <label>Name:</label><div id="demonData_name"></div>
+  <label>Tribe:</label><div id="demonData_tribe"></div>
+  <label>Level:</label><div id="demonData_level"></div>
+</div>
+<hr/>
+<div id="demonList"></div>
+
+</body>
+</html>
