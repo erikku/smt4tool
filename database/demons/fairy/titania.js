@@ -1,0 +1,32 @@
+registerDemon({
+	// This is a mapping for fusion, must stay in Japanese.
+	"tribe": "妖精",
+	"nameJP": "ティターニア",
+	"nameEN": "Titania",
+	"level": 70,
+	"stats": {
+		"hp": 376,
+		"mp": 364,
+		"strength": 66,
+		"skill": 73,
+		"magic": 95,
+		"speed": 62,
+		"luck": 87
+	},
+	"affinity": {
+		"physical": "-",
+		"gun": "weak",
+		"fire": "resist",
+		"ice": "resist",
+		"thunder": "resist",
+		"shock": "resist",
+		"banish": "-",
+		"curse": "-"
+	},
+	"skills": {
+		// This is a mapping for skill information, must stay in Japanese.
+		"マハジオダイン": 0,
+		"メディアラハン": 0,
+		"三分の魔脈": 72
+	}
+});
