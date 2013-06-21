@@ -126,6 +126,14 @@
   <script src="database/demons/godly_beast/ukano_mitama.js"></script>
   <script src="database/demons/godly_beast/anubis.js"></script>
   <script src="database/demons/godly_beast/barong.js"></script>
+  <script src="database/demons/holy_beast/heqet.js"></script>
+  <script src="database/demons/holy_beast/apis.js"></script>
+  <script src="database/demons/holy_beast/pabilsag.js"></script>
+  <script src="database/demons/holy_beast/qing_niuguai.js"></script>
+  <script src="database/demons/holy_beast/airavata.js"></script>
+  <script src="database/demons/holy_beast/byakko.js"></script>
+  <script src="database/demons/holy_beast/sleipnir.js"></script>
+  <script src="database/demons/holy_beast/sphinx.js"></script>
   <script>
   $(document).ready(function(){
 
@@ -195,10 +203,14 @@
     demonList += "</table>";
     $("#demonList").html(demonList);
 
+    $("#demonCount").text(demonNamesEN.length);
+
   });
   </script>
 </head>
 <body>
+
+<p>There are <a id="demonCount"></a> demons in the database.</p>
 
 <label for="autocomplete">Select a demon:</label>
 <input id="autocomplete">
