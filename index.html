@@ -439,6 +439,20 @@
   <script src="database/demons/undead/samurai_corpse.js"></script>
 
   <script>
+  function handleAffinity(affinity) {
+    if(affinity == "null")
+      return "<a style=\"color: #999999;\">N</a>";
+    else if(affinity == "weak")
+      return "<a style=\"color: #CC0000;\">W</a>";
+    else if(affinity == "protect")
+      return "<a style=\"color: #00CC00;\">P</a>";
+    else if(affinity == "reflect")
+      return "<a style=\"color: #0000CC;\">R</a>";
+    else if(affinity == "absorb")
+      return "<a style=\"color: #CC00CC;\">A</a>";
+    else
+      return "-";
+  }
   $(document).ready(function(){
 
     $("#autocomplete").autocomplete({
@@ -461,11 +475,11 @@
     demonList += "<th>Magic</th>";
     demonList += "<th>Speed</th>";
     demonList += "<th>Luck</th>";
-    demonList += "<th>Physical</th>";
+    demonList += "<th>Phys</th>";
     demonList += "<th>Gun</th>";
     demonList += "<th>Fire</th>";
     demonList += "<th>Ice</th>";
-    demonList += "<th>Thunder</th>";
+    demonList += "<th>Elec</th>";
     demonList += "<th>Shock</th>";
     demonList += "<th>Banish</th>";
     demonList += "<th>Curse</th>";
@@ -484,14 +498,14 @@
       demonList += "<td>" + data.stats.magic + "</td>\n";
       demonList += "<td>" + data.stats.speed + "</td>\n";
       demonList += "<td>" + data.stats.luck + "</td>\n";
-      demonList += "<td>" + data.affinity.physical + "</td>";
-      demonList += "<td>" + data.affinity.gun + "</td>";
-      demonList += "<td>" + data.affinity.fire + "</td>";
-      demonList += "<td>" + data.affinity.ice + "</td>";
-      demonList += "<td>" + data.affinity.thunder + "</td>";
-      demonList += "<td>" + data.affinity.shock + "</td>";
-      demonList += "<td>" + data.affinity.banish + "</td>";
-      demonList += "<td>" + data.affinity.curse + "</td>";
+      demonList += "<td>" + handleAffinity(data.affinity.physical) + "</td>";
+      demonList += "<td>" + handleAffinity(data.affinity.gun) + "</td>";
+      demonList += "<td>" + handleAffinity(data.affinity.fire) + "</td>";
+      demonList += "<td>" + handleAffinity(data.affinity.ice) + "</td>";
+      demonList += "<td>" + handleAffinity(data.affinity.thunder) + "</td>";
+      demonList += "<td>" + handleAffinity(data.affinity.shock) + "</td>";
+      demonList += "<td>" + handleAffinity(data.affinity.banish) + "</td>";
+      demonList += "<td>" + handleAffinity(data.affinity.curse) + "</td>";
 
       var skills = [ ];
       $.each(data.skills, function(name, level){
@@ -512,7 +526,7 @@
   });
   </script>
 </head>
-<body>
+<body style="background-color: black; color: white;">
 
 <p>There are <a id="demonCount"></a> demons in the database.</p>
 
