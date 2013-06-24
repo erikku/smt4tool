@@ -14,9 +14,9 @@ registerDemon({
 		"luck": 66
 	},
 	"affinity": {
-		"physical": "resist",
-		"gun": "resist",
-		"fire": "resist",
+		"physical": "protect",
+		"gun": "protect",
+		"fire": "protect",
 		"ice": "-",
 		"thunder": "-",
 		"shock": "-",

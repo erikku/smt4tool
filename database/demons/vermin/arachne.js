@@ -21,8 +21,7 @@ registerDemon({
 		"thunder": "-",
 		"shock": "-",
 		"banish": "-",
-		"curse": "-",
-		"bind": "resist"
+		"curse": "-"
 	},
 	"skills": {
 		// This is a mapping for skill information, must stay in Japanese.

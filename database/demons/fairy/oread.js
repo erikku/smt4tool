@@ -19,9 +19,9 @@ registerDemon({
 		"fire": "weak",
 		"ice": "-",
 		"thunder": "-",
-		"shock": "resist",
-		"banish": "resist",
-		"curse": "resist"
+		"shock": "protect",
+		"banish": "protect",
+		"curse": "protect"
 	},
 	"skills": {
 		// This is a mapping for skill information, must stay in Japanese.

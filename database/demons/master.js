@@ -1,15 +1,25 @@
-tribeListJP = ["大天使", "女神", "霊鳥", "神樹", "天使", "妖鳥", "妖魔", "天女",
-	"邪神", "凶鳥", "妖樹", "魔神", "神獣", "聖獣", "幻魔", "妖精", "魔獣", "地霊",
-	"龍王", "死神",
-	"妖獣", "邪鬼", "妖虫", "破壊神", "地母神", "龍神", "鬼神",
-	"堕天使", "妖鬼", "鬼女", "夜魔", "魔王", "邪龍", "悪霊", "外道", "幽鬼"];
-tribeListEN = ["Seraphim", "Goddess", "Sacred Bird", "Divine Tree", "Angel",
-	"Wild Bird", "Magic Spirit", "Heavenly Woman", "Evil God", "Violent Bird",
-	"Mystic Tree", "Magic God", "Godly Beast", "Holy Beast", "Illusion Demon",
-	"Fairy", "Magic Beast", "Earth Spirit", "Dragon King", "Death God",
-	"Wilder", "Jaki", "Vermin", "Fury", "Lady", "Dragon God", "Kishin",
-	"Fallen", "Brute", "Femme", "Night", "Tyrant", "Evil Dragon", "Spirit",
-	"Foul", "Haunt"];
+tribeListJP = [
+	// Law
+	"大天使", "女神", "霊鳥", "神樹", "天使", "妖鳥", "妖魔", "天女", "邪神", "凶鳥",
+	"妖樹",
+	// Neutral
+	"魔神", "神獣", "聖獣", "幻魔", "妖精", "魔獣", "地霊", "龍王", "死神", "妖獣",
+	"邪鬼", "妖虫",
+	// Chaos
+	"破壊神", "地母神", "龍神", "鬼神", "堕天使", "妖鬼", "鬼女", "夜魔", "魔王",
+	"邪龍", "悪霊", "外道", "幽鬼"];
+tribeListEN = [
+	// Law
+	"Seraphim", "Goddess", "Sacred Bird", "Divine Tree", "Angel", "Wild Bird",
+	"Magic Spirit", "Heavenly Woman", "Evil God", "Violent Bird",
+	"Mystic Tree",
+	// Neutral
+	"Magic God", "Godly Beast", "Holy Beast", "Illusion Demon", "Fairy",
+	"Magic Beast", "Earth Spirit", "Dragon King", "Death God", "Wilder",
+	"Jaki", "Vermin",
+	// Chaos
+	"Fury", "Lady", "Dragon God", "Kishin", "Fallen", "Brute", "Femme",
+	"Night", "Tyrant", "Evil Dragon", "Spirit", "Foul", "Haunt"];
 tribeLNC = ["L", "L", "L", "L", "L", "L", "L", "L", "L", "L", "L", "N", "N",
 	"N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "C", "C", "C", "C", "C",
 	"C", "C", "C", "C", "C", "C", "C", "C"];

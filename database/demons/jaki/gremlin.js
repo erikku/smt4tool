@@ -18,20 +18,15 @@ registerDemon({
 		"gun": "-",
 		"fire": "weak",
 		"ice": "-",
-		"thunder": "resist",
+		"thunder": "protect",
 		"shock": "weak",
 		"banish": "-",
-		"curse": "-",
-		"confusion": "weak"
+		"curse": "-"
 	},
 	"skills": {
 		// This is a mapping for skill information, must stay in Japanese.
 		"マハブフ": 0,
 		"成仏拳": 11,
 		"スクカジャ": 12
-	},
-	"mutate": {
-		"level": 0,
-		"target": "ライジュウ"
 	}
 });

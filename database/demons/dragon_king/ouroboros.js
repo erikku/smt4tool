@@ -14,14 +14,14 @@ registerDemon({
 		"luck": 55
 	},
 	"affinity": {
-		"physical": "resist",
+		"physical": "protect",
 		"gun": "-",
 		"fire": "-",
-		"ice": "resist",
+		"ice": "protect",
 		"thunder": "absorb",
 		"shock": "-",
-		"banish": "resist",
-		"curse": "resist"
+		"banish": "protect",
+		"curse": "protect"
 	},
 	"skills": {
 		// This is a mapping for skill information, must stay in Japanese.

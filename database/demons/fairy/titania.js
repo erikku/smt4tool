@@ -16,10 +16,10 @@ registerDemon({
 	"affinity": {
 		"physical": "-",
 		"gun": "weak",
-		"fire": "resist",
-		"ice": "resist",
-		"thunder": "resist",
-		"shock": "resist",
+		"fire": "protect",
+		"ice": "protect",
+		"thunder": "protect",
+		"shock": "protect",
 		"banish": "-",
 		"curse": "-"
 	},

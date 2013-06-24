@@ -28,6 +28,5 @@ registerDemon({
 		"ポイズンクロー": 0,
 		"アギ": 0,
 		"ポズムディ": 13
-	},
-	"notes": "Nulls poison."
+	}
 });

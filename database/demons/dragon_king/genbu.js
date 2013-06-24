@@ -27,7 +27,7 @@ registerDemon({
 		// This is a mapping for skill information, must stay in Japanese.
 		"牙折り": 0,
 		"アイスブレス": 0,
-		"ラクカジャ(": 43,
+		"ラクカジャ": 43,
 		"ブフダイン": 44,
 		"氷結ギガプレロマ": 45
 	}

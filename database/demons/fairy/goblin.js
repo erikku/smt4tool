@@ -3,10 +3,10 @@ registerDemon({
 	"tribe": "妖精",
 	"nameJP": "ゴブリン",
 	"nameEN": "Goblin",
-	"level": 19,
+	"level": 24,
 	"stats": {
 		"hp": 322,
-		"mp": 64,
+		"mp": 63,
 		"strength": 37,
 		"skill": 33,
 		"magic": 26,

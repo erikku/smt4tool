@@ -14,11 +14,11 @@ registerDemon({
 		"luck": 17
 	},
 	"affinity": {
-		"physical": "resist",
+		"physical": "protect",
 		"gun": "-",
 		"fire": "weak",
-		"ice": "resist",
-		"thunder": "resist",
+		"ice": "protect",
+		"thunder": "protect",
 		"shock": "-",
 		"banish": "-",
 		"curse": "-"

@@ -26,6 +26,6 @@ registerDemon({
 	"skills": {
 		// This is a mapping for skill information, must stay in Japanese.
 		"放電": 0,
-		"食いしばり(": 21
+		"食いしばり": 21
 	}
 });

@@ -3,32 +3,29 @@ registerDemon({
 	"tribe": "邪鬼",
 	"nameJP": "ウェンディゴ",
 	"nameEN": "Wendigo",
-	"level": 17,
+	"level": 25,
 	"stats": {
-		"hp": 256,
-		"mp": 56,
-		"strength": 28,
-		"skill": 25,
-		"magic": 20,
-		"speed": 23,
-		"luck": 19
+		"hp": 331,
+		"mp": 66,
+		"strength": 38,
+		"skill": 34,
+		"magic": 27,
+		"speed": 31,
+		"luck": 26
 	},
 	"affinity": {
 		"physical": "-",
 		"gun": "-",
-		"fire": "null",
-		"ice": "-",
+		"fire": "weak",
+		"ice": "reflect",
 		"thunder": "-",
 		"shock": "-",
-		"banish": "weak",
-		"curse": "-",
-		"poison": "weak"
+		"banish": "-",
+		"curse": "-"
 	},
 	"skills": {
 		// This is a mapping for skill information, must stay in Japanese.
-		"牙折り": 0,
-		"タルカジャ": 0,
-		"マハラギ": 18,
-		"猛勉強": 19
+		"マハブフ": 0,
+		"毒ガスブレス": 26
 	}
 });

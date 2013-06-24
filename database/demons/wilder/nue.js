@@ -27,6 +27,6 @@ registerDemon({
 		// This is a mapping for skill information, must stay in Japanese.
 		"スクラッチダンス": 0,
 		"ジオンガ": 0,
-		"放電(": 27
+		"放電": 27
 	}
 });

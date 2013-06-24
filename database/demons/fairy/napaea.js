@@ -19,7 +19,7 @@ registerDemon({
 		"fire": "-",
 		"ice": "weak",
 		"thunder": "-",
-		"shock": "resist",
+		"shock": "protect",
 		"banish": "-",
 		"curse": "-"
 	},
