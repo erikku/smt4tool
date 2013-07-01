@@ -236,12 +236,22 @@ function showDemonList(html) {
 }
 
 function showTribe(index) {
-	var demonList = demonTableHeader();
+	var demons = [ ];
 
 	$.each(demonByNameEN, function(name, data) {
 		if(tribeListJP.indexOf(data.tribe) == index) {
-			demonList += demonTableEntry(data);
+			demons.push(data);
 		}
+	});
+
+	demons.sort(function(a, b) {
+		return a.level - b.level;
+	});
+
+	var demonList = demonTableHeader();
+
+	$.each(demons, function(index, data) {
+		demonList += demonTableEntry(data);
 	});
 
 	demonList += demonTableFooter();
