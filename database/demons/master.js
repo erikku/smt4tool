@@ -169,13 +169,11 @@ function demonTableHeader() {
 	demonList += "<th><a>Name</a></th>";
 	demonList += "<th><a>HP</a></th>";
 	demonList += "<th><a>MP</a></th>";
-	/*
 	demonList += "<th><a>Str</a></th>";
 	demonList += "<th><a>Skill</a></th>";
 	demonList += "<th><a>Magic</a></th>";
 	demonList += "<th><a>Speed</a></th>";
 	demonList += "<th><a>Luck</a></th>";
-	*/
 	demonList += "<th><a>Phys</a></th>";
 	demonList += "<th><a>Gun</a></th>";
 	demonList += "<th><a>Fire</a></th>";
@@ -200,13 +198,11 @@ function demonTableEntry(data) {
 		data.nameEN + "</a></td>";
 	demonList += "<td>" + data.stats.hp + "</td>";
 	demonList += "<td>" + data.stats.mp + "</td>";
-	/*
 	demonList += "<td>" + data.stats.strength + "</td>";
 	demonList += "<td>" + data.stats.skill + "</td>";
 	demonList += "<td>" + data.stats.magic + "</td>";
 	demonList += "<td>" + data.stats.speed + "</td>";
 	demonList += "<td>" + data.stats.luck + "</td>";
-	*/
 	demonList += "<td>" + handleAffinity(
 		data.affinity.physical, false) + "</td>";
 	demonList += "<td>" + handleAffinity(

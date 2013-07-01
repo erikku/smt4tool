@@ -36,17 +36,17 @@
 		var tribeCount = 0;
 
 		$.each(tribeListEN, function(index, name){
-			if((tribeCount % 4) == 0)
+			if((tribeCount % 8) == 0)
 				tribeList += "<p>";
 
 			tribeList += "<a class=\"button_up\" onClick=\"showTribe(" +
 				index + ")\">" + name + "</a>";
 
-			if((++tribeCount % 4) == 0)
+			if((++tribeCount % 8) == 0)
 				tribeList += "<p/>";
 		});
 
-		if((tribeCount % 4) != 3)
+		if((tribeCount % 8) != 7)
 			tribeList += "<p/>";
 
 		$("#tribeList").html(tribeList);
