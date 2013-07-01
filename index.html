@@ -1,122 +1,190 @@
-<!doctype html>
- 
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <meta charset="utf-8"/>
-  <title>SMT4 Test Page</title>
-  <link rel="stylesheet" href="jquery/css/ui-darkness/jquery-ui-1.10.3.custom.css" />
-  <script src="jquery/js/jquery-1.9.1.js"></script>
-  <script src="jquery/js/jquery-ui-1.10.3.custom.js"></script>
-  <script src="database/master.js"></script>
-  <script src="database/skills/master.js"></script>
-  <script src="database/skills/mahanma.js"></script>
-  <script src="database/demons/master.js"></script>
-  <script src="database/demons/demons.js"></script>
+	<meta charset="utf-8"/>
+	<title>SMT4 Test Page</title>
+	<link rel="stylesheet"
+		href="jquery/css/ui-darkness/jquery-ui-1.10.3.custom.css"/>
+	<link rel="stylesheet" href="master.css" />
+	<script src="jquery/js/jquery-1.9.1.js"></script>
+	<script src="jquery/js/jquery-ui-1.10.3.custom.js"></script>
+	<script src="database/master.js"></script>
+	<script src="database/skills/master.js"></script>
+	<script src="database/skills/mahanma.js"></script>
+	<script src="database/demons/master.js"></script>
+	<script src="database/demons/demons.js"></script>
+	<script>
+	$(document).ready(function(){
+		// Hide these by default.
+		$("#demonList").hide();
+		$("#demonData").hide();
+		$("#tribeListBtn").hide();
 
-  <script>
-  function handleAffinity(affinity) {
-    if(affinity == "null")
-      return "<a style=\"color: #999999;\">N</a>";
-    else if(affinity == "weak")
-      return "<a style=\"color: #CC0000;\">W</a>";
-    else if(affinity == "protect")
-      return "<a style=\"color: #00CC00;\">P</a>";
-    else if(affinity == "reflect")
-      return "<a style=\"color: #0000CC;\">R</a>";
-    else if(affinity == "absorb")
-      return "<a style=\"color: #CC00CC;\">A</a>";
-    else
-      return "-";
-  }
-  $(document).ready(function(){
+		$("#demonSearch").autocomplete({
+			source: demonNamesEN,
+			select: function(e, ui) {
+				showDemon(ui.item.value);
+			}
+		});
 
-    $("#autocomplete").autocomplete({
-      source: demonNamesEN,
-      select: function(e, ui) {
-        showDemon(ui.item.value);
-      }
-    });
-    $("#autocomplete").keyup(function(e){
-      showDemon($("#autocomplete").val());
-    })
-    var demonList = "<table border=\"1\">";
-    demonList += "<th>Level</th>";
-    demonList += "<th>Tribe</th>";
-    demonList += "<th>Name</th>";
-    demonList += "<th>HP</th>";
-    demonList += "<th>MP</th>";
-    demonList += "<th>Str</th>";
-    demonList += "<th>Skill</th>";
-    demonList += "<th>Magic</th>";
-    demonList += "<th>Speed</th>";
-    demonList += "<th>Luck</th>";
-    demonList += "<th>Phys</th>";
-    demonList += "<th>Gun</th>";
-    demonList += "<th>Fire</th>";
-    demonList += "<th>Ice</th>";
-    demonList += "<th>Elec</th>";
-    demonList += "<th>Shock</th>";
-    demonList += "<th>Banish</th>";
-    demonList += "<th>Curse</th>";
-    demonList += "<th>Skills</th>";
+		$("#demonSearch").keyup(function(e){
+			showDemon($("#demonSearch").val());
+		})
 
-    $.each(demonByNameEN, function(nameEN, data){
-      demonList += "<tr>";
-      demonList += "<td>" + data.level + "</td>\n";
-      demonList += "<td>" + tribeListEN[tribeListJP.indexOf(
-        data.tribe)] + "</td>\n";
-      demonList += "<td>" + data.nameEN + "</td>\n";
-      demonList += "<td>" + data.stats.hp + "</td>\n";
-      demonList += "<td>" + data.stats.mp + "</td>\n";
-      demonList += "<td>" + data.stats.strength + "</td>\n";
-      demonList += "<td>" + data.stats.skill + "</td>\n";
-      demonList += "<td>" + data.stats.magic + "</td>\n";
-      demonList += "<td>" + data.stats.speed + "</td>\n";
-      demonList += "<td>" + data.stats.luck + "</td>\n";
-      demonList += "<td>" + handleAffinity(data.affinity.physical) + "</td>";
-      demonList += "<td>" + handleAffinity(data.affinity.gun) + "</td>";
-      demonList += "<td>" + handleAffinity(data.affinity.fire) + "</td>";
-      demonList += "<td>" + handleAffinity(data.affinity.ice) + "</td>";
-      demonList += "<td>" + handleAffinity(data.affinity.thunder) + "</td>";
-      demonList += "<td>" + handleAffinity(data.affinity.shock) + "</td>";
-      demonList += "<td>" + handleAffinity(data.affinity.banish) + "</td>";
-      demonList += "<td>" + handleAffinity(data.affinity.curse) + "</td>";
+		tribeList = "";
+		var tribeCount = 0;
 
-      var skills = [ ];
-      $.each(data.skills, function(name, level){
-        if(level > 0)
-          skills.push(name + " (" + level + ")");
-        else
-          skills.push(name);
-      });
+		$.each(tribeListEN, function(index, name){
+			if((tribeCount % 4) == 0)
+				tribeList += "<p>";
 
-      demonList += "<td>" + skills.join(" / ") + "</td>";
-      demonList += "</tr>";
-    });
-    demonList += "</table>";
-    $("#demonList").html(demonList);
+			tribeList += "<a class=\"button_up\" onClick=\"showTribe(" +
+				index + ")\">" + name + "</a>";
 
-    $("#demonCount").text(demonNamesEN.length);
+			if((++tribeCount % 4) == 0)
+				tribeList += "<p/>";
+		});
 
-  });
-  </script>
+		if((tribeCount % 4) != 3)
+			tribeList += "<p/>";
+
+		$("#tribeList").html(tribeList);
+
+	});
+	</script>
 </head>
-<body style="background-color: black; color: white;">
-
-<p>There are <a id="demonCount"></a> demons in the database.</p>
-
-<label for="autocomplete">Select a demon:</label>
-<input id="autocomplete">
-
-<div id="demonData">
-  <label>Name:</label><div id="demonData_name"></div>
-  <label>Tribe:</label><div id="demonData_tribe"></div>
-  <label>Level:</label><div id="demonData_level"></div>
-</div>
+<body>
+<div class="button_down" onClick="">Demons</div> <div class="button_up" onClick="">Skills</div>
 <hr/>
+<p>
+	<a id="tribeListBtn" class="button_up" onClick="restoreTribeList();">Tribe List</a>
+	<label class="section" for="demonSearch">Quick Search</label>
+	<input id="demonSearch">
+</p>
+<hr/>
+<div id="demonData">
+	<table><tr>
+		<td style="text-align: right;">
+			<a class="section">Name</a>
+		</td>
+		<td colspan="7">
+			<a id="demonData_name">Unknown IV</a>
+		</td>
+	<tr></tr>
+		<td style="text-align: right;">
+			<a class="section">Tribe</a>
+		</td>
+		<td colspan="7">
+			<a id="demonData_tribe">Unknown</a>
+		</td>
+	<tr></tr>
+		<td style="text-align: right">
+			<a class="section">Level</a></td><td><a id="demonData_level">∞</a>
+		</td>
+		<td style="text-align: right">
+			<a class="section">HP</a>
+		</td>
+		<td>
+			<a id="demonData_hp">9999</a>
+		</td>
+		<td style="text-align: right">
+			<a class="section">MP</a>
+		</td>
+		<td>
+			<a id="demonData_mp">9999</a>
+		</td>
+		<td style="text-align: right">
+			<a class="section">Strength</a>
+		</td>
+		<td>
+			<a id="demonData_str">999</a>
+		</td>
+	</tr><tr>
+		<td style="text-align: right">
+			<a class="section">Skill</a>
+		</td>
+		<td>
+			<a id="demonData_skill">999</a>
+		</td>
+		<td style="text-align: right">
+			<a class="section">Magic</a>
+		</td>
+		<td>
+			<a id="demonData_magic">999</a>
+		</td>
+		<td style="text-align: right">
+			<a class="section">Speed</a>
+		</td>
+		<td>
+			<a id="demonData_speed">999</a>
+		</td>
+		<td style="text-align: right">
+			<a class="section">Luck</a>
+		</td>
+		<td>
+			<a id="demonData_luck">999</a>
+		</td>
+	</tr><tr>
+		<td style="text-align: right">
+			<a class="section">Physical</a>
+		</td>
+		<td>
+			<a id="demonData_physical" style="color: #CC00CC;">Absorb</a>
+		</td>
+		<td style="text-align: right">
+			<a class="section">Gun</a>
+		</td>
+		<td>
+			<a id="demonData_gun" style="color: #CC00CC;">Absorb</a>
+		</td>
+		<td style="text-align: right">
+			<a class="section">Fire</a>
+		</td>
+		<td>
+			<a id="demonData_fire" style="color: #CC00CC;">Absorb</a>
+		</td>
+		<td style="text-align: right">
+			<a class="section">Ice</a>
+		</td>
+		<td>
+			<a id="demonData_ice" style="color: #CC00CC;">Absorb</a>
+		</td>
+	</tr><tr>
+		<td style="text-align: right">
+			<a class="section">Thunder</a>
+		</td>
+		<td>
+			<a id="demonData_thunder" style="color: #CC00CC;">Absorb</a>
+		</td>
+		<td style="text-align: right">
+			<a class="section">Shock</a>
+		</td>
+		<td>
+			<a id="demonData_shock" style="color: #CC00CC;">Absorb</a>
+		</td>
+		<td style="text-align: right">
+			<a class="section">Banish</a>
+		</td>
+		<td>
+			<a id="demonData_banish" style="color: #CC00CC;">Absorb</a>
+		</td>
+		<td style="text-align: right">
+			<a class="section">Curse</a>
+		</td>
+		<td>
+			<a id="demonData_curse" style="color: #CC00CC;">Absorb</a>
+		</td>
+	</tr></table>
+</div>
+<div id="tribeList"></div>
 <div id="demonList"></div>
-
-<p>You can help improve the project by visiting the developer page at: <a href="https://github.com/erikku/smt4tool">https://github.com/erikku/smt4tool</a></p>
+<hr/>
+<p>
+	You can help improve the project by visiting the developer page at:
+	<a href="https://github.com/erikku/smt4tool">
+		https://github.com/erikku/smt4tool</a>
+</p>
 
 </body>
 </html>

@@ -93,6 +93,36 @@ function registerDemon(data) {
 	});
 }
 
+function handleAffinity(affinity, short) {
+	if(short) {
+		if(affinity == "null")
+			return "<a style=\"color: #999999;\">N</a>";
+		else if(affinity == "weak")
+			return "<a style=\"color: #CC0000;\">W</a>";
+		else if(affinity == "protect")
+			return "<a style=\"color: #00CC00;\">P</a>";
+		else if(affinity == "reflect")
+			return "<a style=\"color: #0000CC;\">R</a>";
+		else if(affinity == "absorb")
+			return "<a style=\"color: #CC00CC;\">A</a>";
+		else
+			return "<a style=\"color: #FFFFFF;\">-</a>";
+	} else {
+		if(affinity == "null")
+			return "<a style=\"color: #999999;\">Null</a>";
+		else if(affinity == "weak")
+			return "<a style=\"color: #CC0000;\">Weak</a>";
+		else if(affinity == "protect")
+			return "<a style=\"color: #00CC00;\">Protect</a>";
+		else if(affinity == "reflect")
+			return "<a style=\"color: #0000CC;\">Reflect</a>";
+		else if(affinity == "absorb")
+			return "<a style=\"color: #CC00CC;\">Absorb</a>";
+		else
+			return "<a style=\"color: #FFFFFF;\">N/A</a>";
+	}
+}
+
 function showDemon(name) {
 	name = name.toLowerCase();
 
@@ -103,4 +133,130 @@ function showDemon(name) {
 	$("#demonData_tribe").text(tribeListEN[tribeListJP.indexOf(
 		demonByNameEN[name].tribe)]);
 	$("#demonData_level").text(demonByNameEN[name].level);
+	$("#demonData_hp").text(demonByNameEN[name].stats.hp);
+	$("#demonData_mp").text(demonByNameEN[name].stats.mp);
+	$("#demonData_str").text(demonByNameEN[name].stats.strength);
+	$("#demonData_skill").text(demonByNameEN[name].stats.skill);
+	$("#demonData_magic").text(demonByNameEN[name].stats.magic);
+	$("#demonData_speed").text(demonByNameEN[name].stats.speed);
+	$("#demonData_luck").text(demonByNameEN[name].stats.luck);
+	$("#demonData_physical").html(handleAffinity(
+		demonByNameEN[name].affinity.physical));
+	$("#demonData_gun").html(handleAffinity(
+		demonByNameEN[name].affinity.gun));
+	$("#demonData_fire").html(handleAffinity(
+		demonByNameEN[name].affinity.fire));
+	$("#demonData_ice").html(handleAffinity(
+		demonByNameEN[name].affinity.ice));
+	$("#demonData_thunder").html(handleAffinity(
+		demonByNameEN[name].affinity.thunder));
+	$("#demonData_shock").html(handleAffinity(
+		demonByNameEN[name].affinity.shock));
+	$("#demonData_banish").html(handleAffinity(
+		demonByNameEN[name].affinity.banish));
+	$("#demonData_curse").html(handleAffinity(
+		demonByNameEN[name].affinity.curse));
+	$("#tribeListBtn").show();
+	$("#demonData").show();
+	$("#tribeList").hide();
+	$("#demonList").hide();
+}
+
+function demonTableHeader() {
+	var demonList = "";
+	demonList += "<table>";
+	demonList += "<th><a>Level</a></th>";
+	demonList += "<th><a>Name</a></th>";
+	demonList += "<th><a>HP</a></th>";
+	demonList += "<th><a>MP</a></th>";
+	/*
+	demonList += "<th><a>Str</a></th>";
+	demonList += "<th><a>Skill</a></th>";
+	demonList += "<th><a>Magic</a></th>";
+	demonList += "<th><a>Speed</a></th>";
+	demonList += "<th><a>Luck</a></th>";
+	*/
+	demonList += "<th><a>Phys</a></th>";
+	demonList += "<th><a>Gun</a></th>";
+	demonList += "<th><a>Fire</a></th>";
+	demonList += "<th><a>Ice</a></th>";
+	demonList += "<th><a>Elec</a></th>";
+	demonList += "<th><a>Shock</a></th>";
+	demonList += "<th><a>Banish</a></th>";
+	demonList += "<th><a>Curse</a></th>";
+
+	return demonList;
+}
+
+function demonClicked(obj) {
+	showDemon(obj.innerText);
+}
+
+function demonTableEntry(data) {
+	var demonList = "";
+	demonList += "<tr>";
+	demonList += "<td>" + data.level + "</td>";
+	demonList += "<td><a class=\"demonLink\" onClick=\"demonClicked(this);\">" +
+		data.nameEN + "</a></td>";
+	demonList += "<td>" + data.stats.hp + "</td>";
+	demonList += "<td>" + data.stats.mp + "</td>";
+	/*
+	demonList += "<td>" + data.stats.strength + "</td>";
+	demonList += "<td>" + data.stats.skill + "</td>";
+	demonList += "<td>" + data.stats.magic + "</td>";
+	demonList += "<td>" + data.stats.speed + "</td>";
+	demonList += "<td>" + data.stats.luck + "</td>";
+	*/
+	demonList += "<td>" + handleAffinity(
+		data.affinity.physical, false) + "</td>";
+	demonList += "<td>" + handleAffinity(
+		data.affinity.gun, false) + "</td>";
+	demonList += "<td>" + handleAffinity(
+		data.affinity.fire, false) + "</td>";
+	demonList += "<td>" + handleAffinity(
+		data.affinity.ice, false) + "</td>";
+	demonList += "<td>" + handleAffinity(
+		data.affinity.thunder, false) + "</td>";
+	demonList += "<td>" + handleAffinity(
+		data.affinity.shock, false) + "</td>";
+	demonList += "<td>" + handleAffinity(
+		data.affinity.banish, false) + "</td>";
+	demonList += "<td>" + handleAffinity(
+		data.affinity.curse, false) + "</td>";
+	demonList += "</tr>";
+
+	return demonList;
+}
+
+function demonTableFooter() {
+	return "</table>";
+}
+
+function showDemonList(html) {
+	$("#demonList").html(html);
+	$("#tribeListBtn").show();
+	$("#tribeList").hide();
+	$("#demonList").show();
+}
+
+function showTribe(index) {
+	var demonList = demonTableHeader();
+
+	$.each(demonByNameEN, function(name, data) {
+		if(tribeListJP.indexOf(data.tribe) == index) {
+			demonList += demonTableEntry(data);
+		}
+	});
+
+	demonList += demonTableFooter();
+
+	showDemonList(demonList);
+}
+
+function restoreTribeList() {
+	$("#tribeListBtn").hide();
+	$("#demonData").hide();
+	$("#demonList").hide();
+	$("#tribeList").show();
+	$("#demonSearch").val("");
 }
