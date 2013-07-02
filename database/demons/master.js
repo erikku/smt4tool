@@ -151,6 +151,11 @@ function showDemon(name) {
 	$("#demonData_shock").html(handleAffinity(data.affinity.shock));
 	$("#demonData_banish").html(handleAffinity(data.affinity.banish));
 	$("#demonData_curse").html(handleAffinity(data.affinity.curse));
+	$("#demonData_bind").html(handleAffinity(data.affinity.bind));
+	$("#demonData_sleep").html(handleAffinity(data.affinity.sleep));
+	$("#demonData_cold").html(handleAffinity(data.affinity.cold));
+	$("#demonData_confusion").html(handleAffinity(data.affinity.confusion));
+	$("#demonData_poison").html(handleAffinity(data.affinity.poison));
 	$("#tribeListBtn").show();
 	$("#demonData").show();
 	$("#tribeList").hide();

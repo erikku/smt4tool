@@ -145,7 +145,11 @@ body {
 }
 
 #demonData_level, #demonData_hp, #demonData_mp, #demonData_str,
-#demonData_skill, #demonData_magic, #demonData_speed, #demonData_luck {
+#demonData_skill, #demonData_magic, #demonData_speed, #demonData_luck,
+#demonData_physical, #demonData_gun, #demonData_fire, #demonData_ice,
+#demonData_thunder, #demonData_shock, #demonData_banish, #demonData_curse,
+#demonData_bind, #demonData_sleep, #demonData_cold, #demonData_confusion,
+#demonData_poison {
 	display: inline-block;
 	width: 40px;
 }
@@ -156,7 +160,7 @@ body {
 }
 
 #demonData .section {
-	width: 50px;
+	width: 55px;
 	text-align: center;
 }
 
