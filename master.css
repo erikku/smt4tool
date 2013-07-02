@@ -168,7 +168,7 @@ body {
 	padding: 4px 16px;
 }
 
-#tribeListBtn {
+#tribeListBtn, #affinityFilterBtn, #affinityFindBtn {
 	margin-right: 10px;
 	font-size: 12px;
 	padding :4px 16px;

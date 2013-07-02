@@ -20,6 +20,7 @@
 		$("#demonList").hide();
 		$("#demonData").hide();
 		$("#tribeListBtn").hide();
+		$("#affinityFilter").hide();
 
 		$("#demonSearch").autocomplete({
 			source: demonNamesEN,
@@ -58,7 +59,10 @@
 <div class="button_down" onClick="">Demons</div> <div class="button_up" onClick="">Skills</div>
 <hr/>
 <p>
-	<a id="tribeListBtn" class="button_up" onClick="restoreTribeList();">Tribe List</a>
+	<a id="tribeListBtn" class="button_up"
+		onClick="restoreTribeList();">Tribe List</a>
+	<a id="affinityFilterBtn" class="button_up"
+		onClick="restoreAffinityFilter();">Find by Affinity</a>
 	<label class="section" for="demonSearch">Quick Search</label>
 	<input id="demonSearch">
 </p>
@@ -179,6 +183,28 @@
 </div>
 <div id="tribeList"></div>
 <div id="demonList"></div>
+<div id="affinityFilter">
+	<select name="affinitySelectA" id="affinitySelectA">
+		<option value="physical">Physical</option>
+		<option value="gun">Gun</option>
+		<option value="fire">Fire</option>
+		<option value="ice">Ice</option>
+		<option value="thunder">Thunder</option>
+		<option value="shock">Shock</option>
+		<option value="banish">Banish</option>
+		<option value="curse">Curse</option>
+	</select>
+	<select name="affinitySelectB" id="affinitySelectB">
+		<option value="-">N/A</option>
+		<option value="null">Null</option>
+		<option value="reflect">Reflect</option>
+		<option value="absorb">Absorb</option>
+		<option value="protect">Protect</option>
+		<option value="weak">Weak</option>
+	</select>
+	<a id="affinityFindBtn" class="button_up"
+		onClick="findAffinity();">Find</a>
+</div>
 <hr/>
 <p>
 	You can help improve the project by visiting the developer page at:

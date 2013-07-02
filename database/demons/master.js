@@ -230,6 +230,8 @@ function demonTableFooter() {
 
 function showDemonList(html) {
 	$("#demonList").html(html);
+	$("#affinityFilterBtn").show();
+	$("#affinityFilter").hide();
 	$("#tribeListBtn").show();
 	$("#tribeList").hide();
 	$("#demonList").show();
@@ -259,10 +261,47 @@ function showTribe(index) {
 	showDemonList(demonList);
 }
 
+function findAffinity() {
+	var a = $("#affinitySelectA").val();
+	var b = $("#affinitySelectB").val();
+	var demons = [ ];
+
+	$.each(demonByNameEN, function(name, data) {
+		if(data.affinity[a] == b) {
+			demons.push(data);
+		}
+	});
+
+	demons.sort(function(a, b) {
+		return a.level - b.level;
+	});
+
+	var demonList = demonTableHeader();
+
+	$.each(demons, function(index, data) {
+		demonList += demonTableEntry(data);
+	});
+
+	demonList += demonTableFooter();
+
+	showDemonList(demonList);
+}
+
 function restoreTribeList() {
+	$("#affinityFilterBtn").show();
+	$("#affinityFilter").hide();
 	$("#tribeListBtn").hide();
 	$("#demonData").hide();
 	$("#demonList").hide();
 	$("#tribeList").show();
 	$("#demonSearch").val("");
+}
+
+function restoreAffinityFilter() {
+	restoreTribeList();
+
+	$("#affinityFilterBtn").hide();
+	$("#affinityFilter").show();
+	$("#tribeListBtn").show();
+	$("#tribeList").hide();
 }
