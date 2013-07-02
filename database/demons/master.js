@@ -10,24 +10,24 @@ tribeListJP = [
 	"邪龍", "悪霊", "外道", "幽鬼",
 	// Special
 	"精霊", "魔人", "秘神", "フード", "狂神", "威霊", "天津神", "国津神", "英傑",
-	"屍鬼"];
+	"屍鬼", "神霊"];
 tribeListEN = [
 	// Law
 	"Herald", "Megami", "Avian", "Tree", "Divine", "Flight", "Yoma", "Nymph",
 	"Vile", "Raptor", "Wood",
 	// Neutral
-	"Deity", "Avatar", "Genma", "Fairy", "Beast", "Jirae", "Dragon King",
-	"Reaper", "Raptor", "Wilder", "Jaki", "Vermin",
+	"Deity", "Avatar", "Holy", "Genma", "Fairy", "Beast", "Jirae",
+	"Dragon King", "Reaper", "Wilder", "Jaki", "Vermin",
 	// Chaos
 	"Fury", "Lady", "Dragon God", "Kishin", "Fallen", "Brute", "Femme",
 	"Night", "Tyrant", "Evil Dragon", "Spirit", "Foul", "Haunt",
 	// Special
 	"Element", "Fiend", "Enigma", "Food", "Zealot", "Entity", "Amatsukami",
-	"Kunitsukami", "Hero", "Undead"];
+	"Kunitsukami", "Hero", "Undead", "Godly"];
 tribeLNC = ["L", "L", "L", "L", "L", "L", "L", "L", "L", "L", "L", "N", "N",
 	"N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "C", "C", "C", "C", "C",
 	"C", "C", "C", "C", "C", "C", "C", "C", "S", "S", "S", "S", "S", "S", "S",
-	"S", "S", "S"];
+	"S", "S", "S", "S"];
 
 demonNamesEN = [ ];
 demonByNameEN = { };

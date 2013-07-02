@@ -27,5 +27,8 @@ registerDemon({
 		// This is a mapping for skill information, must stay in Japanese.
 		"冥界波": 0,
 		"マハブフダイン": 0
-	}
+	},
+	"fusions": [
+		["イシュタル", "キマイラ", "ダンタリアン"]
+	]
 });
