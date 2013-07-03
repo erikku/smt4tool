@@ -199,10 +199,10 @@ function showDemon(name) {
 
 		var mutation = "<a class=\"demonLink\" " +
 					"onClick=\"demonClicked(this);\">" +
-					mutateTarget.nameEN + "</a> (" + data.mutate.level + "=>" +
-					mutateTarget.level + ")";
+					mutateTarget.nameEN + "</a> (" + data.mutate.level +
+					" => " + mutateTarget.level + ")";
 
-		$("#demonData_fusions").html(fusions);
+		$("#demonData_mutation").html(mutation);
 	} else {
 		$("#demonData_mutateSection").hide();
 	}
