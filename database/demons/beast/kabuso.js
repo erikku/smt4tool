@@ -25,7 +25,7 @@ registerDemon({
 		"bind": "-",
 		"sleep": "-",
 		"cold": "-",
-		"confusion": "-",
+		"confusion": "protect",
 		"poison": "-"
 	},
 	"skills": {
@@ -33,5 +33,9 @@ registerDemon({
 		"バインドクロー": 0,
 		"スクカジャ": 0,
 		"メディア": 21
+	},
+	"mutate": {
+		"level": 0,
+		"target": "センリ"
 	}
 });

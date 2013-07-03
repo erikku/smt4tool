@@ -191,6 +191,21 @@ function showDemon(name) {
 	} else {
 		$("#demonData_fusionSection").hide();
 	}
+
+	if(data["mutate"]) {
+		$("#demonData_mutateSection").show();
+
+		var mutateTarget = demonByNameJP[data.mutate.target];
+
+		var mutation = "<a class=\"demonLink\" " +
+					"onClick=\"demonClicked(this);\">" +
+					mutateTarget.nameEN + "</a> (" + data.mutate.level + "=>" +
+					mutateTarget.level + ")";
+
+		$("#demonData_fusions").html(fusions);
+	} else {
+		$("#demonData_mutateSection").hide();
+	}
 }
 
 function demonTableHeader() {

@@ -25,7 +25,7 @@ registerDemon({
 		"bind": "-",
 		"sleep": "-",
 		"cold": "-",
-		"confusion": "-",
+		"confusion": "protect",
 		"poison": "-"
 	},
 	"skills": {
@@ -33,5 +33,9 @@ registerDemon({
 		"トラフーリ": 0,
 		"チャクラウォーク": 0,
 		"三分の活泉": 46
+	},
+	"mutate": {
+		"level": 53,
+		"target": "ギリメカラ"
 	}
 });

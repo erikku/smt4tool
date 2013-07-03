@@ -22,10 +22,10 @@ registerDemon({
 		"shock": "-",
 		"banish": "-",
 		"curse": "-",
-		"bind": "-",
+		"bind": "null",
 		"sleep": "-",
 		"cold": "-",
-		"confusion": "-",
+		"confusion": "protect",
 		"poison": "-"
 	},
 	"skills": {

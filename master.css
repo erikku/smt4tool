@@ -172,7 +172,8 @@ body {
 	padding: 4px 16px;
 }
 
-#tribeListBtn, #affinityFilterBtn, #affinityFindBtn, #demonData_fusionLabel {
+#tribeListBtn, #affinityFilterBtn, #affinityFindBtn, #demonData_fusionLabel,
+#demonData_mutateLabel {
 	margin-right: 10px;
 	font-size: 12px;
 	padding :4px 16px;

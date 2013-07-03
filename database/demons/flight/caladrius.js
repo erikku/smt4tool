@@ -24,7 +24,7 @@ registerDemon({
 		"curse": "weak",
 		"bind": "-",
 		"sleep": "-",
-		"cold": "-",
+		"cold": "protect",
 		"confusion": "-",
 		"poison": "-"
 	},

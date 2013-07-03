@@ -22,7 +22,7 @@ registerDemon({
 		"shock": "-",
 		"banish": "null",
 		"curse": "weak",
-		"bind": "-",
+		"bind": "protect",
 		"sleep": "-",
 		"cold": "-",
 		"confusion": "-",
@@ -33,5 +33,9 @@ registerDemon({
 		"ディア": 0,
 		"パトラ": 0,
 		"ラクカジャ": 5
+	},
+	"mutate": {
+		"level": 12,
+		"target": "アークエンジェル"
 	}
 });

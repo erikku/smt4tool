@@ -26,12 +26,16 @@ registerDemon({
 		"sleep": "-",
 		"cold": "-",
 		"confusion": "-",
-		"poison": "-"
+		"poison": "weak"
 	},
 	"skills": {
 		// This is a mapping for skill information, must stay in Japanese.
 		"ジオダイン": 0,
 		"電撃プレロマ": 0,
 		"狂乱の剛爪": 50
+	},
+	"mutate": {
+		"level": 52,
+		"target": "オルトロス"
 	}
 });

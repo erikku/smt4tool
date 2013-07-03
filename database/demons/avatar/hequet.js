@@ -26,12 +26,16 @@ registerDemon({
 		"sleep": "-",
 		"cold": "-",
 		"confusion": "-",
-		"poison": "-"
+		"poison": "null"
 	},
 	"skills": {
 		// This is a mapping for skill information, must stay in Japanese.
 		"道具の知恵・癒": 0,
 		"ジオ": 0,
 		"ポズムディ": 4
+	},
+	"mutate": {
+		"level": 11,
+		"target": "ズェラロンズ"
 	}
 });

@@ -25,7 +25,7 @@ registerDemon({
 		"bind": "-",
 		"sleep": "-",
 		"cold": "-",
-		"confusion": "-",
+		"confusion": "protect",
 		"poison": "-"
 	},
 	"skills": {
