@@ -276,6 +276,7 @@ function demonTableFooter() {
 
 function showDemonList(html) {
 	$("#demonList").html(html);
+	$("#showAllDemonsBtn").show();
 	$("#affinityFilterBtn").show();
 	$("#affinityFilter").hide();
 	$("#tribeListBtn").show();
@@ -293,6 +294,9 @@ function showTribe(index) {
 	});
 
 	demons.sort(function(a, b) {
+		if(a.level == b.level)
+			return a.nameEN > b.nameEN ? 1 : -1;
+
 		return a.level - b.level;
 	});
 
@@ -319,6 +323,9 @@ function findAffinity() {
 	});
 
 	demons.sort(function(a, b) {
+		if(a.level == b.level)
+			return a.nameEN > b.nameEN ? 1 : -1;
+
 		return a.level - b.level;
 	});
 
@@ -334,6 +341,7 @@ function findAffinity() {
 }
 
 function restoreTribeList() {
+	$("#showAllDemonsBtn").show();
 	$("#affinityFilterBtn").show();
 	$("#affinityFilter").hide();
 	$("#tribeListBtn").hide();
@@ -346,8 +354,36 @@ function restoreTribeList() {
 function restoreAffinityFilter() {
 	restoreTribeList();
 
+	$("#showAllDemonsBtn").hide();
 	$("#affinityFilterBtn").hide();
 	$("#affinityFilter").show();
 	$("#tribeListBtn").show();
 	$("#tribeList").hide();
+}
+
+function showAllDemons() {
+	var demons = [ ];
+
+	$.each(demonByNameEN, function(name, data) {
+		demons.push(data);
+	});
+
+	demons.sort(function(a, b) {
+		if(a.level == b.level)
+			return a.nameEN > b.nameEN ? 1 : -1;
+
+		return a.level - b.level;
+	});
+
+	var demonList = demonTableHeader();
+
+	$.each(demons, function(index, data) {
+		demonList += demonTableEntry(data);
+	});
+
+	demonList += demonTableFooter();
+
+	showDemonList(demonList);
+
+	$("#showAllDemonsBtn").hide();
 }
