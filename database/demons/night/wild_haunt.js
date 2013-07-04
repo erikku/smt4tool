@@ -2,7 +2,7 @@ registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "夜魔",
 	"nameJP": "ワイルド・ハント",
-	"nameEN": "Wild Hunt",
+	"nameEN": "Wild Haunt",
 	"level": 53,
 	"stats": {
 		"hp": 596,
@@ -33,5 +33,9 @@ registerDemon({
 		"ブラストアロー": 0,
 		"成仏拳": 0,
 		"三分の魔脈": 56
+	},
+	"mutate": {
+		"level": 58,
+		"target": "アバドン"
 	}
 });

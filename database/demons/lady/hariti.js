@@ -23,7 +23,7 @@ registerDemon({
 		"banish": "-",
 		"curse": "protect",
 		"bind": "-",
-		"sleep": "-",
+		"sleep": "protect",
 		"cold": "-",
 		"confusion": "-",
 		"poison": "-"

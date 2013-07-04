@@ -25,7 +25,7 @@ registerDemon({
 		"bind": "-",
 		"sleep": "-",
 		"cold": "-",
-		"confusion": "-",
+		"confusion": "weak",
 		"poison": "-"
 	},
 	"skills": {
@@ -33,5 +33,9 @@ registerDemon({
 		"マハブフ": 0,
 		"成仏拳": 11,
 		"スクカジャ": 12
+	},
+	"mutate": {
+		"level": 0,
+		"target": "ライジュウ"
 	}
 });
