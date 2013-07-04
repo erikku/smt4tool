@@ -24,7 +24,7 @@ registerDemon({
 		"curse": "-",
 		"bind": "-",
 		"sleep": "-",
-		"cold": "-",
+		"cold": "protect",
 		"confusion": "-",
 		"poison": "-"
 	},
@@ -135,11 +135,11 @@ registerDemon({
 		"shock": "-",
 		"banish": "weak",
 		"curse": "protect",
-		"bind": "-",
-		"sleep": "-",
-		"cold": "-",
-		"confusion": "-",
-		"poison": "-"
+		"bind": "protect",
+		"sleep": "protect",
+		"cold": "protect",
+		"confusion": "protect",
+		"poison": "protect"
 	},
 	"skills": {
 		// This is a mapping for skill information, must stay in Japanese.
@@ -175,9 +175,9 @@ registerDemon({
 		"curse": "-",
 		"bind": "-",
 		"sleep": "-",
-		"cold": "-",
+		"cold": "null",
 		"confusion": "-",
-		"poison": "-"
+		"poison": "null"
 	},
 	"skills": {
 		// This is a mapping for skill information, must stay in Japanese.
@@ -246,7 +246,7 @@ registerDemon({
 		"shock": "-",
 		"banish": "null",
 		"curse": "weak",
-		"bind": "-",
+		"bind": "weak",
 		"sleep": "-",
 		"cold": "-",
 		"confusion": "-",
@@ -1376,7 +1376,7 @@ registerDemon({
 		"curse": "-",
 		"bind": "-",
 		"sleep": "-",
-		"cold": "-",
+		"cold": "protect",
 		"confusion": "-",
 		"poison": "-"
 	},
@@ -1414,7 +1414,7 @@ registerDemon({
 		"sleep": "-",
 		"cold": "-",
 		"confusion": "-",
-		"poison": "-"
+		"poison": "weak"
 	},
 	"skills": {
 		// This is a mapping for skill information, must stay in Japanese.
@@ -1450,7 +1450,7 @@ registerDemon({
 		"curse": "-",
 		"bind": "-",
 		"sleep": "-",
-		"cold": "-",
+		"cold": "weak",
 		"confusion": "-",
 		"poison": "-"
 	},
@@ -1604,7 +1604,7 @@ registerDemon({
 		"sleep": "-",
 		"cold": "-",
 		"confusion": "-",
-		"poison": "-"
+		"poison": "weak"
 	},
 	"skills": {
 		// This is a mapping for skill information, must stay in Japanese.
@@ -1676,7 +1676,7 @@ registerDemon({
 		"bind": "-",
 		"sleep": "-",
 		"cold": "-",
-		"confusion": "-",
+		"confusion": "weak",
 		"poison": "-"
 	},
 	"skills": {
@@ -1684,6 +1684,10 @@ registerDemon({
 		"マハブフ": 0,
 		"成仏拳": 11,
 		"スクカジャ": 12
+	},
+	"mutate": {
+		"level": 0,
+		"target": "ライジュウ"
 	}
 });
 registerDemon({
@@ -1713,7 +1717,7 @@ registerDemon({
 		"bind": "-",
 		"sleep": "-",
 		"cold": "-",
-		"confusion": "-",
+		"confusion": "weak",
 		"poison": "-"
 	},
 	"skills": {
@@ -1786,7 +1790,7 @@ registerDemon({
 		"curse": "null",
 		"bind": "-",
 		"sleep": "-",
-		"cold": "-",
+		"cold": "weak",
 		"confusion": "-",
 		"poison": "-"
 	},
@@ -1983,7 +1987,7 @@ registerDemon({
 		"banish": "-",
 		"curse": "protect",
 		"bind": "-",
-		"sleep": "-",
+		"sleep": "weak",
 		"cold": "-",
 		"confusion": "-",
 		"poison": "-"
@@ -2253,7 +2257,7 @@ registerDemon({
 		"curse": "-",
 		"bind": "-",
 		"sleep": "-",
-		"cold": "-",
+		"cold": "weak",
 		"confusion": "-",
 		"poison": "-"
 	},
@@ -2901,7 +2905,7 @@ registerDemon({
 		"sleep": "-",
 		"cold": "-",
 		"confusion": "-",
-		"poison": "-"
+		"poison": "weak"
 	},
 	"skills": {
 		// This is a mapping for skill information, must stay in Japanese.
@@ -3013,9 +3017,9 @@ registerDemon({
 		"curse": "protect",
 		"bind": "-",
 		"sleep": "-",
-		"cold": "-",
+		"cold": "null",
 		"confusion": "-",
-		"poison": "-"
+		"poison": "null"
 	},
 	"skills": {
 		// This is a mapping for skill information, must stay in Japanese.
@@ -4079,7 +4083,7 @@ registerDemon({
 		"sleep": "-",
 		"cold": "-",
 		"confusion": "-",
-		"poison": "-"
+		"poison": "weak"
 	},
 	"skills": {
 		// This is a mapping for skill information, must stay in Japanese.
@@ -4691,7 +4695,7 @@ registerDemon({
 		"banish": "-",
 		"curse": "protect",
 		"bind": "-",
-		"sleep": "-",
+		"sleep": "protect",
 		"cold": "-",
 		"confusion": "-",
 		"poison": "-"
@@ -4732,7 +4736,7 @@ registerDemon({
 		"sleep": "-",
 		"cold": "-",
 		"confusion": "-",
-		"poison": "-"
+		"poison": "null"
 	},
 	"skills": {
 		// This is a mapping for skill information, must stay in Japanese.
@@ -4892,6 +4896,10 @@ registerDemon({
 		"ジオダイン": 0,
 		"ポズムディ": 0,
 		"アクセルクロー": 48
+	},
+	"mutate": {
+		"level": 51,
+		"target": "ティアマト"
 	}
 });
 registerDemon({
@@ -4918,7 +4926,7 @@ registerDemon({
 		"shock": "weak",
 		"banish": "-",
 		"curse": "null",
-		"bind": "-",
+		"bind": "null",
 		"sleep": "-",
 		"cold": "-",
 		"confusion": "-",
@@ -4995,10 +5003,10 @@ registerDemon({
 		"banish": "-",
 		"curse": "-",
 		"bind": "-",
-		"sleep": "-",
-		"cold": "-",
+		"sleep": "weak",
+		"cold": "protect",
 		"confusion": "-",
-		"poison": "-"
+		"poison": "null"
 	},
 	"skills": {
 		// This is a mapping for skill information, must stay in Japanese.
@@ -5109,7 +5117,7 @@ registerDemon({
 		"sleep": "-",
 		"cold": "-",
 		"confusion": "-",
-		"poison": "-"
+		"poison": "weak"
 	},
 	"skills": {
 		// This is a mapping for skill information, must stay in Japanese.
@@ -6248,7 +6256,7 @@ registerDemon({
 		"banish": "-",
 		"curse": "-",
 		"bind": "-",
-		"sleep": "-",
+		"sleep": "null",
 		"cold": "-",
 		"confusion": "-",
 		"poison": "-"
@@ -6437,7 +6445,7 @@ registerDemon({
 		"banish": "-",
 		"curse": "-",
 		"bind": "-",
-		"sleep": "-",
+		"sleep": "weak",
 		"cold": "-",
 		"confusion": "-",
 		"poison": "-"
@@ -6474,7 +6482,7 @@ registerDemon({
 		"banish": "-",
 		"curse": "-",
 		"bind": "-",
-		"sleep": "-",
+		"sleep": "protect",
 		"cold": "-",
 		"confusion": "-",
 		"poison": "-"
@@ -6529,7 +6537,7 @@ registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "夜魔",
 	"nameJP": "ワイルド・ハント",
-	"nameEN": "Wild Hunt",
+	"nameEN": "Wild Haunt",
 	"level": 53,
 	"stats": {
 		"hp": 596,
@@ -6560,6 +6568,10 @@ registerDemon({
 		"ブラストアロー": 0,
 		"成仏拳": 0,
 		"三分の魔脈": 56
+	},
+	"mutate": {
+		"level": 58,
+		"target": "アバドン"
 	}
 });
 registerDemon({
@@ -6598,6 +6610,10 @@ registerDemon({
 		"スクカジャ": 0,
 		"電撃無効": 42,
 		"衝撃無効": 43
+	},
+	"mutate": {
+		"level": 44,
+		"target": "デカラビア"
 	}
 });
 registerDemon({
@@ -6625,7 +6641,7 @@ registerDemon({
 		"banish": "-",
 		"curse": "protect",
 		"bind": "-",
-		"sleep": "-",
+		"sleep": "protect",
 		"cold": "-",
 		"confusion": "-",
 		"poison": "-"
@@ -6814,7 +6830,7 @@ registerDemon({
 		"sleep": "-",
 		"cold": "-",
 		"confusion": "-",
-		"poison": "-"
+		"poison": "protect"
 	},
 	"skills": {
 		// This is a mapping for skill information, must stay in Japanese.
@@ -7001,7 +7017,7 @@ registerDemon({
 		"sleep": "-",
 		"cold": "-",
 		"confusion": "-",
-		"poison": "-"
+		"poison": "null"
 	},
 	"skills": {
 		// This is a mapping for skill information, must stay in Japanese.
@@ -7038,7 +7054,7 @@ registerDemon({
 		"sleep": "-",
 		"cold": "-",
 		"confusion": "-",
-		"poison": "-"
+		"poison": "null"
 	},
 	"skills": {
 		// This is a mapping for skill information, must stay in Japanese.
@@ -7073,9 +7089,9 @@ registerDemon({
 		"curse": "-",
 		"bind": "-",
 		"sleep": "-",
-		"cold": "-",
+		"cold": "null",
 		"confusion": "-",
-		"poison": "-"
+		"poison": "protect"
 	},
 	"skills": {
 		// This is a mapping for skill information, must stay in Japanese.
@@ -7113,7 +7129,7 @@ registerDemon({
 		"sleep": "-",
 		"cold": "-",
 		"confusion": "-",
-		"poison": "-"
+		"poison": "protect"
 	},
 	"skills": {
 		// This is a mapping for skill information, must stay in Japanese.
@@ -7259,11 +7275,11 @@ registerDemon({
 		"shock": "-",
 		"banish": "-",
 		"curse": "-",
-		"bind": "-",
-		"sleep": "-",
+		"bind": "weak",
+		"sleep": "weak",
 		"cold": "-",
 		"confusion": "-",
-		"poison": "-"
+		"poison": "weak"
 	},
 	"skills": {
 		// This is a mapping for skill information, must stay in Japanese.
@@ -7374,7 +7390,7 @@ registerDemon({
 		"bind": "-",
 		"sleep": "-",
 		"cold": "-",
-		"confusion": "-",
+		"confusion": "protect",
 		"poison": "-"
 	},
 	"skills": {
@@ -7861,7 +7877,7 @@ registerDemon({
 		"sleep": "-",
 		"cold": "-",
 		"confusion": "-",
-		"poison": "-"
+		"poison": "weak"
 	},
 	"skills": {
 		// This is a mapping for skill information, must stay in Japanese.
@@ -7894,7 +7910,7 @@ registerDemon({
 		"shock": "-",
 		"banish": "-",
 		"curse": "-",
-		"bind": "-",
+		"bind": "protect",
 		"sleep": "-",
 		"cold": "-",
 		"confusion": "-",
@@ -7935,7 +7951,7 @@ registerDemon({
 		"sleep": "-",
 		"cold": "-",
 		"confusion": "-",
-		"poison": "-"
+		"poison": "null"
 	},
 	"skills": {
 		// This is a mapping for skill information, must stay in Japanese.
@@ -8120,11 +8136,11 @@ registerDemon({
 		"shock": "-",
 		"banish": "protect",
 		"curse": "protect",
-		"bind": "-",
-		"sleep": "-",
+		"bind": "weak",
+		"sleep": "weak",
 		"cold": "-",
-		"confusion": "-",
-		"poison": "-"
+		"confusion": "weak",
+		"poison": "weak"
 	},
 	"skills": {
 		// This is a mapping for skill information, must stay in Japanese.
@@ -8196,7 +8212,7 @@ registerDemon({
 		"shock": "-",
 		"banish": "null",
 		"curse": "weak",
-		"bind": "-",
+		"bind": "weak",
 		"sleep": "-",
 		"cold": "-",
 		"confusion": "-",
@@ -8347,7 +8363,7 @@ registerDemon({
 		"shock": "-",
 		"banish": "protect",
 		"curse": "protect",
-		"bind": "-",
+		"bind": "weak",
 		"sleep": "-",
 		"cold": "-",
 		"confusion": "-",
@@ -8695,6 +8711,10 @@ registerDemon({
 		"ムド": 0,
 		"吸魔": 0,
 		"プリンパ": 26
+	},
+	"mutate": {
+		"level": 0,
+		"target": "インフェルノ"
 	}
 });
 registerDemon({
@@ -8721,7 +8741,7 @@ registerDemon({
 		"shock": "-",
 		"banish": "-",
 		"curse": "-",
-		"bind": "-",
+		"bind": "null",
 		"sleep": "-",
 		"cold": "-",
 		"confusion": "-",
@@ -8904,9 +8924,9 @@ registerDemon({
 		"shock": "-",
 		"banish": "weak",
 		"curse": "null",
-		"bind": "-",
+		"bind": "null",
 		"sleep": "-",
-		"cold": "-",
+		"cold": "null",
 		"confusion": "-",
 		"poison": "-"
 	},
@@ -9013,11 +9033,11 @@ registerDemon({
 		"shock": "-",
 		"banish": "protect",
 		"curse": "null",
-		"bind": "-",
-		"sleep": "-",
-		"cold": "-",
-		"confusion": "-",
-		"poison": "-"
+		"bind": "null",
+		"sleep": "null",
+		"cold": "null",
+		"confusion": "null",
+		"poison": "null"
 	},
 	"skills": {
 		// This is a mapping for skill information, must stay in Japanese.
@@ -9878,7 +9898,7 @@ registerDemon({
 		"shock": "-",
 		"banish": "-",
 		"curse": "-",
-		"bind": "-",
+		"bind": "protect",
 		"sleep": "-",
 		"cold": "-",
 		"confusion": "-",
@@ -9919,7 +9939,7 @@ registerDemon({
 		"sleep": "-",
 		"cold": "-",
 		"confusion": "-",
-		"poison": "-"
+		"poison": "protect"
 	},
 	"skills": {
 		// This is a mapping for skill information, must stay in Japanese.
@@ -10067,7 +10087,7 @@ registerDemon({
 		"bind": "-",
 		"sleep": "-",
 		"cold": "-",
-		"confusion": "-",
+		"confusion": "weak",
 		"poison": "-"
 	},
 	"skills": {
@@ -10105,7 +10125,7 @@ registerDemon({
 		"curse": "null",
 		"bind": "-",
 		"sleep": "-",
-		"cold": "-",
+		"cold": "protect",
 		"confusion": "-",
 		"poison": "-"
 	},
@@ -10218,7 +10238,7 @@ registerDemon({
 		"bind": "-",
 		"sleep": "-",
 		"cold": "-",
-		"confusion": "-",
+		"confusion": "protect",
 		"poison": "-"
 	},
 	"skills": {
@@ -11040,7 +11060,7 @@ registerDemon({
 		"bind": "-",
 		"sleep": "-",
 		"cold": "-",
-		"confusion": "-",
+		"confusion": "weak",
 		"poison": "-"
 	},
 	"skills": {
@@ -11114,9 +11134,9 @@ registerDemon({
 		"curse": "null",
 		"bind": "-",
 		"sleep": "-",
-		"cold": "-",
+		"cold": "protect",
 		"confusion": "-",
-		"poison": "-"
+		"poison": "protect"
 	},
 	"skills": {
 		// This is a mapping for skill information, must stay in Japanese.
@@ -11310,8 +11330,8 @@ registerDemon({
 		"bind": "-",
 		"sleep": "-",
 		"cold": "-",
-		"confusion": "-",
-		"poison": "-"
+		"confusion": "weak",
+		"poison": "protected"
 	},
 	"skills": {
 		// This is a mapping for skill information, must stay in Japanese.
@@ -11420,10 +11440,10 @@ registerDemon({
 		"shock": "-",
 		"banish": "-",
 		"curse": "-",
-		"bind": "-",
-		"sleep": "-",
+		"bind": "weak",
+		"sleep": "weak",
 		"cold": "-",
-		"confusion": "-",
+		"confusion": "weak",
 		"poison": "-"
 	},
 	"skills": {
@@ -11457,11 +11477,11 @@ registerDemon({
 		"shock": "weak",
 		"banish": "-",
 		"curse": "-",
-		"bind": "-",
-		"sleep": "-",
-		"cold": "-",
-		"confusion": "-",
-		"poison": "-"
+		"bind": "weak",
+		"sleep": "weak",
+		"cold": "weak",
+		"confusion": "weak",
+		"poison": "weak"
 	},
 	"skills": {
 		// This is a mapping for skill information, must stay in Japanese.
@@ -11536,7 +11556,7 @@ registerDemon({
 		"bind": "-",
 		"sleep": "-",
 		"cold": "-",
-		"confusion": "-",
+		"confusion": "weak",
 		"poison": "-"
 	},
 	"skills": {
@@ -11913,7 +11933,7 @@ registerDemon({
 		"shock": "weak",
 		"banish": "-",
 		"curse": "protect",
-		"bind": "-",
+		"bind": "weak",
 		"sleep": "-",
 		"cold": "-",
 		"confusion": "-",
@@ -11949,7 +11969,7 @@ registerDemon({
 		"shock": "weak",
 		"banish": "weak",
 		"curse": "null",
-		"bind": "-",
+		"bind": "weak",
 		"sleep": "-",
 		"cold": "-",
 		"confusion": "-",
@@ -11987,7 +12007,7 @@ registerDemon({
 		"shock": "-",
 		"banish": "-",
 		"curse": "null",
-		"bind": "-",
+		"bind": "weak",
 		"sleep": "-",
 		"cold": "-",
 		"confusion": "-",
@@ -12100,7 +12120,7 @@ registerDemon({
 		"curse": "protect",
 		"bind": "-",
 		"sleep": "-",
-		"cold": "-",
+		"cold": "null",
 		"confusion": "-",
 		"poison": "-"
 	},
@@ -12247,8 +12267,8 @@ registerDemon({
 		"shock": "protect",
 		"banish": "-",
 		"curse": "-",
-		"bind": "-",
-		"sleep": "-",
+		"bind": "weak",
+		"sleep": "weak",
 		"cold": "-",
 		"confusion": "-",
 		"poison": "-"
@@ -13079,7 +13099,7 @@ registerDemon({
 		"sleep": "-",
 		"cold": "-",
 		"confusion": "-",
-		"poison": "-"
+		"poison": "protect"
 	},
 	"skills": {
 		// This is a mapping for skill information, must stay in Japanese.
@@ -13151,7 +13171,7 @@ registerDemon({
 		"banish": "-",
 		"curse": "-",
 		"bind": "-",
-		"sleep": "-",
+		"sleep": "null",
 		"cold": "-",
 		"confusion": "-",
 		"poison": "-"
@@ -13304,7 +13324,7 @@ registerDemon({
 		"sleep": "-",
 		"cold": "-",
 		"confusion": "-",
-		"poison": "-"
+		"poison": "weak"
 	},
 	"skills": {
 		// This is a mapping for skill information, must stay in Japanese.
@@ -13337,11 +13357,11 @@ registerDemon({
 		"shock": "-",
 		"banish": "-",
 		"curse": "-",
-		"bind": "-",
-		"sleep": "-",
-		"cold": "-",
-		"confusion": "-",
-		"poison": "-"
+		"bind": "protect",
+		"sleep": "protect",
+		"cold": "protect",
+		"confusion": "protect",
+		"poison": "protect"
 	},
 	"skills": {
 		// This is a mapping for skill information, must stay in Japanese.
@@ -14336,6 +14356,10 @@ registerDemon({
 		"スクンダ": 0,
 		"ニードルショット": 0,
 		"道具の知恵・癒": 15
+	},
+	"mutate": {
+		"level": 17,
+		"target": "クイックシルバー"
 	}
 });
 registerDemon({
@@ -14362,7 +14386,7 @@ registerDemon({
 		"shock": "weak",
 		"banish": "weak",
 		"curse": "-",
-		"bind": "-",
+		"bind": "protect",
 		"sleep": "-",
 		"cold": "-",
 		"confusion": "-",
@@ -14436,7 +14460,7 @@ registerDemon({
 		"curse": "null",
 		"bind": "-",
 		"sleep": "-",
-		"cold": "-",
+		"cold": "protect",
 		"confusion": "-",
 		"poison": "-"
 	},
@@ -14482,6 +14506,10 @@ registerDemon({
 		"ファイアブレス": 0,
 		"一分の活泉": 0,
 		"火炎プレロマ": 33
+	},
+	"mutate": {
+		"level": 35,
+		"target": "フォービ"
 	}
 });
 registerDemon({
@@ -14548,8 +14576,8 @@ registerDemon({
 		"bind": "-",
 		"sleep": "-",
 		"cold": "-",
-		"confusion": "-",
-		"poison": "-"
+		"confusion": "protect",
+		"poison": "null"
 	},
 	"skills": {
 		// This is a mapping for skill information, must stay in Japanese.
@@ -14703,9 +14731,9 @@ registerDemon({
 		"banish": "-",
 		"curse": "-",
 		"bind": "-",
-		"sleep": "-",
+		"sleep": "weak",
 		"cold": "-",
-		"confusion": "-",
+		"confusion": "weak",
 		"poison": "-"
 	},
 	"skills": {
@@ -14865,11 +14893,11 @@ registerDemon({
 		"shock": "weak",
 		"banish": "null",
 		"curse": "null",
-		"bind": "-",
-		"sleep": "-",
-		"cold": "-",
-		"confusion": "-",
-		"poison": "-"
+		"bind": "null",
+		"sleep": "null",
+		"cold": "null",
+		"confusion": "null",
+		"poison": "null"
 	},
 	"skills": {
 		// This is a mapping for skill information, must stay in Japanese.
@@ -14909,9 +14937,9 @@ registerDemon({
 		"curse": "-",
 		"bind": "-",
 		"sleep": "-",
-		"cold": "-",
+		"cold": "protect",
 		"confusion": "-",
-		"poison": "-"
+		"poison": "protect"
 	},
 	"skills": {
 		// This is a mapping for skill information, must stay in Japanese.
@@ -14990,11 +15018,11 @@ registerDemon({
 		"shock": "protect",
 		"banish": "null",
 		"curse": "null",
-		"bind": "-",
-		"sleep": "-",
-		"cold": "-",
-		"confusion": "-",
-		"poison": "-"
+		"bind": "null",
+		"sleep": "null",
+		"cold": "null",
+		"confusion": "null",
+		"poison": "null"
 	},
 	"skills": {
 		// This is a mapping for skill information, must stay in Japanese.
@@ -15034,11 +15062,11 @@ registerDemon({
 		"shock": "weak",
 		"banish": "null",
 		"curse": "protect",
-		"bind": "-",
-		"sleep": "-",
-		"cold": "-",
-		"confusion": "-",
-		"poison": "-"
+		"bind": "protect",
+		"sleep": "protect",
+		"cold": "protect",
+		"confusion": "protect",
+		"poison": "protect"
 	},
 	"skills": {
 		// This is a mapping for skill information, must stay in Japanese.
@@ -15077,9 +15105,9 @@ registerDemon({
 		"curse": "null",
 		"bind": "-",
 		"sleep": "-",
-		"cold": "-",
+		"cold": "null",
 		"confusion": "-",
-		"poison": "-"
+		"poison": "null"
 	},
 	"skills": {
 		// This is a mapping for skill information, must stay in Japanese.
@@ -15116,11 +15144,11 @@ registerDemon({
 		"shock": "-",
 		"banish": "protect",
 		"curse": "null",
-		"bind": "-",
-		"sleep": "-",
-		"cold": "-",
-		"confusion": "-",
-		"poison": "-"
+		"bind": "null",
+		"sleep": "null",
+		"cold": "null",
+		"confusion": "null",
+		"poison": "null"
 	},
 	"skills": {
 		// This is a mapping for skill information, must stay in Japanese.
@@ -15160,7 +15188,7 @@ registerDemon({
 		"bind": "-",
 		"sleep": "-",
 		"cold": "-",
-		"confusion": "-",
+		"confusion": "null",
 		"poison": "-"
 	},
 	"skills": {
@@ -15198,11 +15226,11 @@ registerDemon({
 		"shock": "-",
 		"banish": "protect",
 		"curse": "null",
-		"bind": "-",
-		"sleep": "-",
-		"cold": "-",
-		"confusion": "-",
-		"poison": "-"
+		"bind": "protect",
+		"sleep": "protect",
+		"cold": "protect",
+		"confusion": "protect",
+		"poison": "protect"
 	},
 	"skills": {
 		// This is a mapping for skill information, must stay in Japanese.
@@ -16236,11 +16264,11 @@ registerDemon({
 		"shock": "-",
 		"banish": "null",
 		"curse": "null",
-		"bind": "-",
-		"sleep": "-",
-		"cold": "-",
-		"confusion": "-",
-		"poison": "-"
+		"bind": "null",
+		"sleep": "null",
+		"cold": "null",
+		"confusion": "null",
+		"poison": "null"
 	},
 	"skills": {
 		// This is a mapping for skill information, must stay in Japanese.
