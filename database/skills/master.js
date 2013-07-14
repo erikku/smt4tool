@@ -115,10 +115,18 @@ function showSkill(name) {
 	var demons = demonSkillMapping[data.nameJP];
 
 	demons.sort(function(a, b) {
-		if(a.level == b.level)
+		var aLvl = a.level;
+		if(a.skills[data.nameJP] > 0)
+			aLvl = a.skills[data.nameJP];
+
+		var bLvl = b.level;
+		if(b.skills[data.nameJP] > 0)
+			bLvl = b.skills[data.nameJP];
+
+		if(aLvl == bLvl)
 			return a.nameEN > b.nameEN ? 1 : -1;
 
-		return a.level - b.level;
+		return aLvl - bLvl;
 	});
 
 	var demonList = demonTableHeader();
