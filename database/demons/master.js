@@ -248,12 +248,15 @@ function showDemon(name) {
 		if(skillList.length)
 			skillList += " / ";
 
-		skillList += "<a class=\"demonLink\" onClick=\"skillClicked(this);\">"
-			+ skillByNameJP[nameJP].nameEN + "</a>";
+		if(!skillByNameJP[nameJP]) {
+			skillList += nameJP
+		} else {
+			skillList += "<a class=\"demonLink\" onClick=\"skillClicked(" +
+				"this);\">" + skillByNameJP[nameJP].nameEN + "</a>";
+		}
 
 		if(obtainLvl > 0)
 			skillList += " (" + obtainLvl + ")";
-
 	});
 
 	$("#demonData_skills").html(skillList);

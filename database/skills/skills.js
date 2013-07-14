@@ -1,4 +1,18 @@
 registerSkill({
+	"nameJP": "ウインドブレス",
+	"nameEN": "Wind Breath",
+	"attribute": "force",
+	"cost": 21,
+	"power": "low",
+	"hits": "1-4",
+	"kuli": "-",
+	"hit": "-",
+	"target": "random",
+	"strengthen": -1,
+	"effect": "-"
+});
+
+registerSkill({
 	"nameJP": "突撃",
 	"nameEN": "Assault",
 	"attribute": "physical",
