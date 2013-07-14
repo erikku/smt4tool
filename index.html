@@ -11,16 +11,24 @@
 	<script src="jquery/js/jquery-ui-1.10.3.custom.js"></script>
 	<script src="database/master.js"></script>
 	<script src="database/skills/master.js"></script>
-	<script src="database/skills/mahanma.js"></script>
+	<script src="database/skills/skills.js"></script>
 	<script src="database/demons/master.js"></script>
 	<script src="database/demons/demons.js"></script>
+	<script src="comp.js"></script>
 	<script>
 	$(document).ready(function(){
+		//fusionChartCheck();
+		//$('#reverseChartTest').text(JSON.stringify(reverseChart));
+		//$('#reverseChartTest').html(renderReverseChart());
+
 		// Hide these by default.
 		$("#demonList").hide();
 		$("#demonData").hide();
 		$("#tribeListBtn").hide();
 		$("#affinityFilter").hide();
+		$('#showAllSkillsBtn').hide();
+
+		showTab("demons");
 
 		$("#demonSearch").autocomplete({
 			source: demonNamesEN,
@@ -31,6 +39,17 @@
 
 		$("#demonSearch").keyup(function(e){
 			showDemon($("#demonSearch").val());
+		})
+
+		$("#skillSearch").autocomplete({
+			source: skillNamesEN,
+			select: function(e, ui) {
+				showSkill(ui.item.value);
+			}
+		});
+
+		$("#skillSearch").keyup(function(e){
+			showSkill($("#skillSearch").val());
 		})
 
 		tribeList = "";
@@ -51,13 +70,15 @@
 			tribeList += "<p/>";
 
 		$("#tribeList").html(tribeList);
+		showAllSkills();
 
 	});
 	</script>
 </head>
 <body>
-<div class="button_down" onClick="">Demons</div> <div class="button_up" onClick="">Skills</div>
+<div id="demonButton" class="button_down" onClick="showTab('demons');">Demons</div> <div id="skillButton" class="button_up" onClick="showTab('skills');">Skills</div> <div id="compButton" class="button_up" onClick="showTab('comp');">COMP</div>
 <hr/>
+<div id="demonTab">
 <p>
 	<a id="tribeListBtn" class="button_up"
 		onClick="restoreTribeList();">Tribe List</a>
@@ -74,17 +95,20 @@
 		<td style="text-align: right;">
 			<a class="section">Name</a>
 		</td>
-		<td colspan="7">
+		<td colspan="5">
 			<a id="demonData_name">Unknown IV</a>
 		</td>
-	<tr></tr>
+		<td style="text-align: right;" colspan="2">
+			<a id="addToCOMP" class="button_up" onClick="addToCOMP();">Add to COMP</a>
+		</td>
+	</tr><tr>
 		<td style="text-align: right;">
 			<a class="section">Tribe</a>
 		</td>
 		<td colspan="7">
 			<a id="demonData_tribe">Unknown</a>
 		</td>
-	<tr></tr>
+	</tr><tr>
 		<td style="text-align: right">
 			<a class="section">Level</a></td><td><a id="demonData_level">∞</a>
 		</td>
@@ -108,7 +132,7 @@
 		</td>
 	</tr><tr>
 		<td style="text-align: right">
-			<a class="section">Skill</a>
+			<a class="section">Dexterity</a>
 		</td>
 		<td>
 			<a id="demonData_skill">999</a>
@@ -120,7 +144,7 @@
 			<a id="demonData_magic">999</a>
 		</td>
 		<td style="text-align: right">
-			<a class="section">Speed</a>
+			<a class="section">Agility</a>
 		</td>
 		<td>
 			<a id="demonData_speed">999</a>
@@ -158,25 +182,25 @@
 		</td>
 	</tr><tr>
 		<td style="text-align: right">
-			<a class="section">Thunder</a>
+			<a class="section">Electric</a>
 		</td>
 		<td>
 			<a id="demonData_thunder" style="color: #CC00CC;">Absorb</a>
 		</td>
 		<td style="text-align: right">
-			<a class="section">Shock</a>
+			<a class="section">Force</a>
 		</td>
 		<td>
 			<a id="demonData_shock" style="color: #CC00CC;">Absorb</a>
 		</td>
 		<td style="text-align: right">
-			<a class="section">Banish</a>
+			<a class="section">Light</a>
 		</td>
 		<td>
 			<a id="demonData_banish" style="color: #CC00CC;">Absorb</a>
 		</td>
 		<td style="text-align: right">
-			<a class="section">Curse</a>
+			<a class="section">Dark</a>
 		</td>
 		<td>
 			<a id="demonData_curse" style="color: #CC00CC;">Absorb</a>
@@ -214,6 +238,10 @@
 			<a id="demonData_poison" style="color: #999999;">Null</a>
 		</td>
 	</tr></table>
+	<p id="demonData_skillsSection">
+		<a id="demonData_skillsLabel" class="button_down">Skills</a>
+		<a id="demonData_skills"></a>
+	</p>
 	<p id="demonData_fusionSection">
 		<a id="demonData_fusionLabel" class="button_down">Special Fusion</a>
 		<a id="demonData_fusions"></a>
@@ -252,6 +280,90 @@
 	<a id="affinityFindBtn" class="button_up"
 		onClick="findAffinity();">Find</a>
 </div>
+<div id="reverseChartTest"></div>
+</div><!-- demonTab -->
+<div id="skillTab">
+<p>
+	<a id="showAllSkillsBtn" class="button_up"
+		onClick="showAllDemons();">Show All</a>
+	<label class="section" for="skillSearch">Quick Search</label>
+	<input id="skillSearch">
+</p>
+<hr/>
+<div id="skillList"></div>
+<div id="skillData">
+	<table><tr>
+		<td style="text-align: right;">
+			<a class="section">Name</a>
+		</td>
+		<td colspan="7">
+			<a id="skillData_name">Epic Blast</a>
+		</td>
+	</tr><tr>
+		<td style="text-align: right;">
+			<a class="section">Cost</a>
+		</td>
+		<td colspan="7">
+			<a id="skillData_cost">666</a>
+		</td>
+	</tr><tr>
+		<td style="text-align: right;">
+			<a class="section">Power</a>
+		</td>
+		<td colspan="7">
+			<a id="skillData_cost">Very High</a>
+		</td>
+	</tr><tr>
+		<td style="text-align: right;">
+			<a class="section"># Hits</a>
+		</td>
+		<td colspan="7">
+			<a id="skillData_hits">666</a>
+		</td>
+	</tr><tr>
+		<td style="text-align: right;">
+			<a class="section">Hit %</a>
+		</td>
+		<td colspan="7">
+			<a id="skillData_hit">Always</a>
+		</td>
+	</tr><tr>
+		<td style="text-align: right;">
+			<a class="section">Target</a>
+		</td>
+		<td colspan="7">
+			<a id="skillData_target">All</a>
+		</td>
+	</tr><tr>
+		<td style="text-align: right;">
+			<a class="section">Strengthen</a>
+		</td>
+		<td colspan="7">
+			<a id="skillData_strengthen">8</a>
+		</td>
+	</tr><tr>
+		<td style="text-align: right;">
+			<a class="section">Effect</a>
+		</td>
+		<td colspan="7">
+			<a id="skillData_effect">-</a>
+		</td>
+	</tr><tr id="skillData_notesRow">
+		<td style="text-align: right;">
+			<a class="section">Notes</a>
+		</td>
+		<td colspan="7">
+			<a id="skillData_notes">-</a>
+		</td>
+	</tr></table>
+</div>
+<br/>
+<p class="section">Demons w/ Skill</p>
+<div id="demonMatchList"></div>
+</div>
+</div><!-- skillTab -->
+<div id="compTab">
+</div><!-- compTab -->
 <hr/>
 <p>
 	You can help improve the project by visiting the developer page at:
