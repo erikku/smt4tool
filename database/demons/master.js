@@ -184,7 +184,7 @@ function handleAffinity(affinity, short) {
 		else if(affinity == "protect")
 			return "<a style=\"color: #00CC00;\">Rs</a>";
 		else if(affinity == "reflect")
-			return "<a style=\"color: #0000CC;\">Rp</a>";
+			return "<a style=\"color: #3333FF;\">Rp</a>";
 		else if(affinity == "absorb")
 			return "<a style=\"color: #CC00CC;\">Dr</a>";
 		else
@@ -197,7 +197,7 @@ function handleAffinity(affinity, short) {
 		else if(affinity == "protect")
 			return "<a style=\"color: #00CC00;\">Resist</a>";
 		else if(affinity == "reflect")
-			return "<a style=\"color: #0000CC;\">Repel</a>";
+			return "<a style=\"color: #3333FF;\">Repel</a>";
 		else if(affinity == "absorb")
 			return "<a style=\"color: #CC00CC;\">Drain</a>";
 		else
