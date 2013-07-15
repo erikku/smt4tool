@@ -525,4 +525,14 @@ function showTab(name) {
 		$("#compButton").removeClass("button_down");
 		$("#compButton").addClass("button_up");
 	}
+
+	if(name == "walkthrough" || name == "walk") {
+		$("#walkTab").show();
+		$("#walkButton").removeClass("button_up");
+		$("#walkButton").addClass("button_down");
+	} else {
+		$("#walkTab").hide();
+		$("#walkButton").removeClass("button_down");
+		$("#walkButton").addClass("button_up");
+	}
 }

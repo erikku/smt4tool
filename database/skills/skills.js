@@ -97,7 +97,7 @@ registerSkill({
 });
 
 registerSkill({
-	"nameJP": "グラム・カット",
+	"nameJP": "グラムカット",
 	"nameEN": "Gram Slice",
 	"attribute": "physical",
 	"cost": 5,

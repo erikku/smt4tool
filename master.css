@@ -166,8 +166,13 @@ body {
 	width: 100px;
 }
 
-#demonData .section, #skillData .section {
+#demonData .section {
 	width: 55px;
+	text-align: center;
+}
+
+#skillData .section {
+	width: 65px;
 	text-align: center;
 }
 
