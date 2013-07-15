@@ -45,27 +45,27 @@ function htmlSkillLink(name) {
 function htmlQuest(data) {
 	var html = "<h2>" + data.name + "</h2><table class=\"quest\">";
 
-	html += "<tr><td style=\"text-align: right;\">";
+	html += "<tr><td class=\"questCat\">";
 	html += "<a class=\"section\">Stars</a>";
 	html += "</td><td>";
 	html += "<a id=\"questData_stars\">" + data.stars + "</a></td></tr>";
 
-	html += "<tr><td style=\"text-align: right;\">";
+	html += "<tr><td class=\"questCat\">";
 	html += "<a class=\"section\">Client</a>";
 	html += "</td><td>";
 	html += "<a id=\"questData_client\">" + data.client + "</a></td></tr>";
 
-	html += "<tr><td style=\"text-align: right;\">";
+	html += "<tr><td class=\"questCat\">";
 	html += "<a class=\"section\">Reward</a>";
 	html += "</td><td>";
 	html += "<a id=\"questData_reward\">" + data.reward + "</a></td></tr>";
 
-	html += "<tr><td style=\"text-align: right;\">";
+	html += "<tr><td class=\"questCat\">";
 	html += "<a class=\"section\">Task</a>";
 	html += "</td><td>";
 	html += "<a id=\"questData_task\">" + data.task + "</a></td></tr>";
 
-	html += "<tr><td style=\"text-align: right;\">";
+	html += "<tr><td class=\"questCat\">";
 	html += "<a class=\"section\">Description</a>";
 	html += "</td><td>";
 	html += "<a id=\"questData_desc\">" + data.desc + "</a></td></tr>";
