@@ -31,3 +31,13 @@ function walkthroughHeader(prev, next) {
 
 	return html;
 }
+
+function htmlDemonLink(name) {
+	return "<a style=\"demonLink\" onClick=\"demonClicked(this);\">" +
+		name + "</a>";
+}
+
+function htmlSkillLink(name) {
+	return "<a style=\"skillLink\" onClick=\"skillClicked(this);\">" +
+		name + "</a>";
+}

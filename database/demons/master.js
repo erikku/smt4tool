@@ -536,3 +536,28 @@ function showTab(name) {
 		$("#walkButton").addClass("button_up");
 	}
 }
+
+function demonQuickList(demonNames) {
+	var demons = [ ];
+
+	$.each(demonNames, function(index, name) {
+		demons.push(demonByNameEN[name.toLowerCase()]);
+	});
+
+	demons.sort(function(a, b) {
+		if(a.level == b.level)
+			return a.nameEN > b.nameEN ? 1 : -1;
+
+		return a.level - b.level;
+	});
+
+	var demonList = demonTableHeader();
+
+	$.each(demons, function(index, data) {
+		demonList += demonTableEntry(data);
+	});
+
+	demonList += demonTableFooter();
+
+	return demonList;
+}
