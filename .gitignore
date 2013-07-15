@@ -1,0 +1,17 @@
+*.apk
+*.ap_
+*.dex
+*.class
+bin/
+gen/
+local.properties
+.classpath
+.project
+.settings
+proguard/
+proguard-project.txt
+res/raw/
+*.iml
+*.ipr
+*.iws
+.idea/
