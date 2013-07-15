@@ -32,3 +32,17 @@ registerApp({
 	"req": ["app:Scout"],
 	"desc": "???"
 });
+
+registerApp({
+	"name": "Fundraise",
+	"points": 15,
+	"req": ["app:Scout Gift"],
+	"desc": "Adds a talk skill to ask a demon for Macca during battle."
+});
+
+registerApp({
+	"name": "Demon Fusion",
+	"points": 2,
+	"req": ["Final Training Exercise"],
+	"desc": "Installs the \"Cathedral of Shadows\" App that allows you to fuse demons."
+});

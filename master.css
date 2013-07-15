@@ -205,7 +205,8 @@ body {
 
 #tribeListBtn, #affinityFilterBtn, #affinityFindBtn, #demonData_fusionLabel,
 #demonData_mutateLabel, #demonData_skillsLabel, #showAllDemonsBtn,
-#showAllSkillsBtn, #showAllAppsBtn, #tocBtn, #prevBtn, #nextBtn {
+#showAllSkillsBtn, #showAllAppsBtn, #tocBtn, #prevBtn, #nextBtn,
+#compLevelBtn {
 	margin-right: 10px;
 	font-size: 12px;
 	padding :4px 16px;
@@ -239,4 +240,23 @@ body {
 
 #walkthrough {
 	width: 760px;
+}
+
+.compEntry {
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	border: 1px solid #c9c9c9;
+	display: inline-block;
+	padding: 6px 6px;
+	margin-bottom: 6px;
+	width: 650px;
+}
+
+#compLevelBtn {
+	float: right;
+}
+
+.no-close .ui-dialog-titlebar-close {
+	display: none;
 }
