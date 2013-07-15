@@ -173,7 +173,7 @@ body {
 	text-align: center;
 }
 
-#skillData .section {
+#skillData .section, table.quest a.section {
 	width: 65px;
 	text-align: center;
 }
@@ -207,4 +207,23 @@ body {
 	text-decoration: underline;
 	cursor: pointer;
 	cursor: hand;
+}
+
+#walkthrough table.quest td {
+	border-left: none;
+	border-right: none;
+}
+
+#walkthrough table.quest {
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	border: 1px solid #c9c9c9;
+	display: inline-block;
+	padding: 6px 6px;
+	width: 500px;
+}
+
+#walkthrough table.quest td {
+	vertical-align: top;
 }

@@ -17,4 +17,14 @@ $('#walkthrough').html(walkthroughHeader("intro", "find_navarre") + "<h1>Trainin
 	"<li>" + htmlSkillLink("Rakukaja") + ": " + htmlDemonLink("Angel") + " (3=>5)</li>" +
 	"<li>" + htmlSkillLink("Sukukaja") + ": " + htmlDemonLink("Tangata Manu") + " (2=>4)</li>" +
 "</ul>" +
-"<h2>Demons Seen Here</h2>" + demonQuickList(["Centaur", "Fukei", "Lham Dearg", "Mokoi", "Napaea", "Slime", "Griffon"]));
+"<h2>Demons Seen Here</h2>" + demonQuickList(["Centaur", "Fukei", "Lham Dearg", "Mokoi", "Napaea", "Slime", "Griffon"]) +
+htmlQuest({
+	"name": "Training Exercise I",
+	"stars": 1,
+	"client": "Hope",
+	"reward": "150 Macca",
+	"task": "Slay some demons.",
+	"desc": "This is the first training exercise. A Samurai must learn to " +
+		"battle with demons. Your target may be any demon you find. " +
+		"Defeat demons inside Naraku."
+}));
