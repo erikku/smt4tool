@@ -1,4 +1,6 @@
 function walkthroughPage(page, tab) {
+	$("#walkMenu").text("");
+
 	var s = document.createElement("script");
 	s.type = "text/javascript";
 	s.src = "walkthrough/" + page + ".js";
@@ -29,7 +31,9 @@ function walkthroughHeader(prev, next) {
 
 	html += "<hr/>";
 
-	return html;
+	$("#walkMenu").html(html);
+
+	return "";
 }
 
 function htmlDemonLink(name) {
