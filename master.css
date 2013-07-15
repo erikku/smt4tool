@@ -195,13 +195,13 @@ body {
 
 #tribeListBtn, #affinityFilterBtn, #affinityFindBtn, #demonData_fusionLabel,
 #demonData_mutateLabel, #demonData_skillsLabel, #showAllDemonsBtn,
-#showAllSkillsBtn {
+#showAllSkillsBtn, #tocBtn, #prevBtn, #nextBtn {
 	margin-right: 10px;
 	font-size: 12px;
 	padding :4px 16px;
 }
 
-.demonLink, .skillLink {
+.demonLink, .skillLink, #walkthrough li a {
 	text-decoration: underline;
 	cursor: pointer;
 	cursor: hand;
