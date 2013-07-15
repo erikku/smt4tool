@@ -30,7 +30,7 @@ registerDemon({
 	},
 	"skills": {
 		// This is a mapping for skill information, must stay in Japanese.
-		"グラム・カット": 0,
+		"グラムカット": 0,
 		"会心波": 3
 	}
 });

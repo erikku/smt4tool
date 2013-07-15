@@ -1,4 +1,4 @@
-$('#walkthrough').html(walkthroughHeader("intro", "find_navarre") + "<h1>Training Exercise</h1>" +
+$('#walkthrough').html(walkthroughHeader("intro", undefined) + "<h1>Training Exercise</h1>" +
 "<h2>Demons Seen Here</h2>" + demonQuickList(["Centaur", "Fukei", "Lham Dearg", "Mokoi", "Napaea", "Slime", "Griffon"]) +
 htmlQuest({
 	"name": "Training Exercise I",
@@ -10,6 +10,7 @@ htmlQuest({
 		"battle with demons. Your target may be any demon you find. " +
 		"Defeat demons inside Naraku."
 }) +
+"<p>It's not that hard to defeat your first enemy. You can pretty much attack (and that's pretty much all you can do until you get demons in your party). If you need more help, the game will explain the battle system.</p>" +
 htmlQuest({
 	"name": "Training Exercise II",
 	"stars": 1,

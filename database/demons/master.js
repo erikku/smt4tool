@@ -535,6 +535,16 @@ function showTab(name) {
 		$("#walkButton").removeClass("button_down");
 		$("#walkButton").addClass("button_up");
 	}
+
+	if(name == "apps") {
+		$("#appTab").show();
+		$("#appButton").removeClass("button_up");
+		$("#appButton").addClass("button_down");
+	} else {
+		$("#appTab").hide();
+		$("#appButton").removeClass("button_down");
+		$("#appButton").addClass("button_up");
+	}
 }
 
 function demonQuickList(demonNames) {

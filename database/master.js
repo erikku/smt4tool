@@ -37,22 +37,37 @@ function walkthroughHeader(prev, next) {
 }
 
 function htmlDemonLink(name) {
-	return "<a style=\"demonLink\" onClick=\"demonClicked(this);\">" +
+	return "<a class=\"demonLink\" onClick=\"demonClicked(this);\">" +
 		name + "</a>";
 }
 
 function htmlSkillLink(name) {
-	return "<a style=\"skillLink\" onClick=\"skillClicked(this);\">" +
+	return "<a class=\"skillLink\" onClick=\"skillClicked(this);\">" +
+		name + "</a>";
+}
+
+function htmlAppLink(name) {
+	return "<a class=\"appLink\" onClick=\"appClicked(this);\">" +
 		name + "</a>";
 }
 
 function htmlQuest(data) {
-	var html = "<h2>" + data.name + "</h2><table class=\"quest\">";
+	var html = "<h2>" + data.name + "&nbsp;&nbsp;";
 
+	for(var i = 0; i < data.stars; i++)
+		html += "★";
+
+	for(var i = data.stars; i < 8; i++)
+		html += "☆";
+
+	html += "</h2><table class=\"quest\">";
+
+	/*
 	html += "<tr><td class=\"questCat\">";
 	html += "<a class=\"section\">Stars</a>";
 	html += "</td><td>";
 	html += "<a id=\"questData_stars\">" + data.stars + "</a></td></tr>";
+	*/
 
 	html += "<tr><td class=\"questCat\">";
 	html += "<a class=\"section\">Client</a>";

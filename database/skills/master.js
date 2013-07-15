@@ -91,7 +91,8 @@ function showSkill(name) {
 	$("#skillData_hits").text(data.hits);
 	$("#skillData_hit").text(data.hit);
 	$("#skillData_target").text(data.target);
-	$("#skillData_strengthen").text(data.strengthen);
+	$("#skillData_strengthen").text(data.strengthen <= 0 ?
+		"-" : data.strengthen);
 	$("#skillData_effect").text(data.effect);
 
 	if(data.notes && data.notes.length > 1) {

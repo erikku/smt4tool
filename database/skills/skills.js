@@ -14,7 +14,7 @@ registerSkill({
 
 registerSkill({
 	"nameJP": "突撃",
-	"nameEN": "Assault",
+	"nameEN": "Lunge",
 	"attribute": "physical",
 	"cost": 5,
 	"power": "low",
@@ -182,7 +182,7 @@ registerSkill({
 
 registerSkill({
 	"nameJP": "バウンスクロー",
-	"nameEN": "Bounce Claw",
+	"nameEN": "Bouncing Claw",
 	"attribute": "physical",
 	"cost": 4,
 	"power": "low",
