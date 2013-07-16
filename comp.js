@@ -27,11 +27,12 @@ function addToCOMP() {
 	refleshCOMP();
 }
 
-function renderFusion(a, b) {
+function renderFusion(a, b, idxA, idxB) {
 	var result = calculateFusion(a, b);
 
 	if(result !== undefined) {
-		var html = "<div class=\"compCombo\">";
+		var html = "<div class=\"compCombo\" onClick=\"compFuse(" +
+			idxA + ", " + idxB + ");\">";
 
 		html += "<a class=\"section\">" + a.nameEN + "</a>";
 		html += "&nbsp;+&nbsp;";
@@ -62,7 +63,7 @@ function computeFusions() {
 	for(var a = 0; a < compList.length; a++) {
 		for(var b = 0; b < a; b++) {
 			if(count) {
-				var code = renderFusion(compList[a], compList[b]);
+				var code = renderFusion(compList[a], compList[b], a, b);
 
 				if(code.length && html.length)
 					html += "<br/>" + code;
@@ -75,7 +76,7 @@ function computeFusions() {
 
 		for(var b = a + 1; b < compList.length; b++) {
 			if(count) {
-				var code = renderFusion(compList[a], compList[b]);
+				var code = renderFusion(compList[a], compList[b], a, b);
 
 				if(code.length && html.length)
 					html += "<br/>" + code;
@@ -194,6 +195,49 @@ function calculateFusion(a, b) {
 	return result;
 }
 
+function compFuse(a, b) {
+	// Calculate the fusion.
+	var baseResult = calculateFusion(compList[a], compList[b]);
+
+	var result = {
+		// Keep track of the fusion history.
+		"parents": [compList[a], compList[b]],
+		"nameEN": baseResult.nameEN,
+		"level": baseResult.level,
+		"skills": [ ]
+	};
+
+	// Copy the initial skills
+	$.each(baseResult.skills, function(skill, obtainLvl) {
+		if(obtainLvl <= result.level)
+			result.skills.push(skillByNameJP[skill].nameEN);
+	});
+
+	// Add the skills to the result.
+	$.each(compList[a].skills, function(index, skill) {
+		if(result.skills.indexOf(skill) < 0)
+			result.skills.push(skill);
+	});
+	$.each(compList[b].skills, function(index, skill) {
+		if(result.skills.indexOf(skill) < 0)
+			result.skills.push(skill);
+	});
+
+	// Remove the original demons.
+	compList.splice(a, 1); if(a < b) b--;
+	compList.splice(b, 1);
+
+	// Add the new demon.
+	compList.push(result);
+
+	// Select the 8 skills (if we have over 8).
+	if(result.skills.length > 8) {
+		compSelectSkills(index);
+	} else {
+		refleshCOMP();
+	}
+}
+
 function refleshCOMP() {
 	// Rip the flesh off the table, skin the demons, and populate the table
 	// with the flesh. Honestly it was a spelling mistake. Let's keep it :P
@@ -221,7 +265,7 @@ function refleshCOMP() {
 
 		html += "<a class=\"section\" id=\"compLevelInfo\">" + demon.level +
 			"</a>&nbsp;&nbsp;" + htmlDemonLink(demon.nameEN) + " (" +
-			skills + ")&nbsp;&nbsp;";
+			skills + ")<br/>";
 		html += "<a class=\"button_up\" id=\"compDismissBtn\" onClick=\"" +
 			"compDismiss(" + index + ");\">Dismiss</a>";
 		html += "<a class=\"button_up\" id=\"compLevelBtn\" onClick=\"" +
@@ -251,7 +295,45 @@ function compDismiss(index) {
 }
 
 function compSelectSkills(index) {
-	alert("Select!");
+	var skillCount = compList[index].skills.length;
+	var html = "";
+
+	$.each(compList[index].skills, function(index, skill) {
+		html = "<span><input type=\"checkbox\" name=\"skill\" value=\"" +
+			index + "\">" + skill + "<br/></span>" + html;
+	});
+
+	$("#compSelectBoxes").html(html);
+
+	$("#compSelectDialog").dialog({
+		dialogClass: "no-close",
+		closeOnEscape: true,
+		resizable: false,
+		height: 300,
+		modal: true,
+		buttons: {
+			"Finish Demon": function() {
+				var count = 0
+
+				$("#compSelectForm :input").each(function() {
+					if($(this).is(":checked"))
+						count++;
+				});
+
+				if(count > 8) {
+					alert("You selected too many skills. Try again.");
+				} else {
+					$("#compSelectForm :input").each(function() {
+						if(!$(this).is(":checked"))
+							compList[index].skills.splice($(this).val(), 1);
+					});
+
+					refleshCOMP();
+		      		$(this).dialog("close");
+	      		}
+			}
+		}
+	});
 }
 
 function compSplit(index) {
@@ -259,7 +341,61 @@ function compSplit(index) {
 }
 
 function compMutate(index) {
-	// body...
+	// Mutate data.
+	var mutateData = demonByNameEN[compList[
+		index].nameEN.toLowerCase()].mutate;
+	var target = mutateData.target;
+	var targetLevel = mutateData.level;
+
+	// Calculate the fusion.
+	var baseResult = demonByNameJP[target];
+
+	// If the demon is too low of a level, fix that first.
+	if(compList[index].level < targetLevel) {
+		var baseDemon = demonByNameEN[compList[
+			index].nameEN.toLowerCase()];
+		var baseLevel = compList[index].level;
+
+		$.each(baseDemon.skills, function(skill, obtainLvl) {
+			if(obtainLvl > baseLevel && obtainLvl <= targetLevel) {
+				compList[index].skills.push(
+					skillByNameJP[skill].nameEN);
+			}
+		});
+
+		compList[index].level = targetLevel;
+	}
+
+	// Create the result demon.
+	var result = {
+		// Keep track of the fusion history.
+		"parents": [compList[index]],
+		"nameEN": baseResult.nameEN,
+		"level": baseResult.level,
+		"skills": [ ]
+	};
+
+	// Copy the initial skills
+	$.each(baseResult.skills, function(skill, obtainLvl) {
+		if(obtainLvl <= result.level)
+			result.skills.push(skillByNameJP[skill].nameEN);
+	});
+
+	// Add the skills to the result.
+	$.each(compList[index].skills, function(index, skill) {
+		if(result.skills.indexOf(skill) < 0)
+			result.skills.push(skill);
+	});
+
+	// Replace the original demon with the mutated one.
+	compList[index] = result;
+
+	// Select the 8 skills (if we have over 8).
+	if(result.skills.length > 8) {
+		compSelectSkills(index);
+	} else {
+		refleshCOMP();
+	}
 }
 
 function compLevel(index) {

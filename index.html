@@ -85,6 +85,7 @@
 		$("#tribeList").html(tribeList);
 
 		$("#compLevelDialog").hide();
+		$("#compSelectDialog").hide();
 		$("#withSkillSection").hide();
 
 		showAllSkills();
@@ -383,6 +384,10 @@
 </div>
 </div><!-- skillTab -->
 <div id="compTab">
+<div id="compSelectDialog" title="Select Demon Skills">
+	<p><span class="ui-icon ui-icon-alert" style="float: left; margin: 0 7px 20px 0;"></span>Please select up to 8 demon skills.</p>
+	<form id="compSelectForm"><div id="compSelectBoxes"></div></form>
+</div><!-- compSelectDialog -->
 <div id="compLevelDialog" title="Level Demon">
 	<p><span class="ui-icon ui-icon-alert" style="float: left; margin: 0 7px 20px 0;"></span>What level would you like to set for the demon?</p>
 	<input id="compLevelInput"/>

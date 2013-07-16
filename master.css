@@ -256,13 +256,22 @@ body {
 	width: 650px;
 }
 
+.compCombo {
+	cursor: hand;
+	cursor: pointer;
+}
+
 #compLevelBtn, #compSplitBtn, #compMutateBtn, #compDismissBtn {
-	float: right;
+	margin-top: 6px;
 }
 
 #compLevelInfo {
 	width: 17px;
 	text-align: center;
+}
+
+#compSelectBoxes {
+	display: inline-block;
 }
 
 .no-close .ui-dialog-titlebar-close {
