@@ -278,7 +278,7 @@ function showDemon(name) {
 	var elemental = "None";
 
 	if(tribeListJP.indexOf(data.tribe) >= 0 && tribeListJP.indexOf(data.tribe)
-		< elementals.length) {
+		< elementals.length && elementals[tribeListJP.indexOf(data.tribe)] != "-") {
 			elemental = htmlDemonLink(demonByNameJP[elementals[
 				tribeListJP.indexOf(data.tribe)]].nameEN);
 	}
