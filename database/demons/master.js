@@ -269,8 +269,21 @@ function showDemon(name) {
 	$("#demonList").hide();
 
 	var rank = "--------";
-	if(tribeListJP.indexOf(data.tribe) >= 0)
-		rank = elementalRanks[tribeListJP.indexOf(data.tribe)];
+
+	if(tribeListJP.indexOf(data.tribe) >= 0 && tribeListJP.indexOf(data.tribe)
+		< elementalRanks.length) {
+			rank = elementalRanks[tribeListJP.indexOf(data.tribe)];
+	}
+
+	var elemental = "None";
+
+	if(tribeListJP.indexOf(data.tribe) >= 0 && tribeListJP.indexOf(data.tribe)
+		< elementals.length) {
+			elemental = htmlDemonLink(demonByNameJP[elementals[
+				tribeListJP.indexOf(data.tribe)]].nameEN);
+	}
+
+	$("#demonData_elementResult").html(elemental);
 
 	$("#demonData_erthys").text(parseRank(rank[0]));
 	$("#demonData_aeros").text(parseRank(rank[1]));

@@ -209,7 +209,8 @@ body {
 #compLevelBtn, #compSplitBtn, #compMutateBtn, #compDismissBtn,
 #demonData_erthysLabel, #demonData_aerosLabel, #demonData_aquansLabel,
 #demonData_flaemisLabel, #demonData_gnomeLabel, #demonData_sylphLabel,
-#demonData_undineLabel, #demonData_salamanderLabel {
+#demonData_undineLabel, #demonData_salamanderLabel,
+#demonData_elementResultLabel {
 	margin-right: 10px;
 	font-size: 12px;
 	padding :4px 16px;
@@ -293,6 +294,6 @@ body {
 }
 
 #demonData_skillsSection, #demonData_fusionSection,
-#demonData_mutateSection {
+#demonData_mutateSection, #demonData_elementResultSection {
 	padding-left: 3px;
 }
