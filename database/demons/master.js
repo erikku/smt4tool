@@ -222,6 +222,15 @@ function handleAffinity(affinity, short) {
 	}
 }
 
+function parseRank(rank) {
+	if(rank == "u")
+		return "Up";
+	else if(rank == "d")
+		return "Down";
+	else
+		return "-";
+}
+
 function showDemon(name) {
 	name = name.toLowerCase();
 
@@ -258,6 +267,19 @@ function showDemon(name) {
 	$("#demonData").show();
 	$("#tribeList").hide();
 	$("#demonList").hide();
+
+	var rank = "--------";
+	if(tribeListJP.indexOf(data.tribe) >= 0)
+		rank = elementalRanks[tribeListJP.indexOf(data.tribe)];
+
+	$("#demonData_erthys").text(parseRank(rank[0]));
+	$("#demonData_aeros").text(parseRank(rank[1]));
+	$("#demonData_aquans").text(parseRank(rank[2]));
+	$("#demonData_flaemis").text(parseRank(rank[3]));
+	$("#demonData_gnome").text(parseRank(rank[4]));
+	$("#demonData_sylph").text(parseRank(rank[5]));
+	$("#demonData_undine").text(parseRank(rank[6]));
+	$("#demonData_salamander").text(parseRank(rank[7]));
 
 	var skillList = "";
 

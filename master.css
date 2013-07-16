@@ -206,10 +206,20 @@ body {
 #tribeListBtn, #affinityFilterBtn, #affinityFindBtn, #demonData_fusionLabel,
 #demonData_mutateLabel, #demonData_skillsLabel, #showAllDemonsBtn,
 #showAllSkillsBtn, #showAllAppsBtn, #tocBtn, #prevBtn, #nextBtn,
-#compLevelBtn, #compSplitBtn, #compMutateBtn, #compDismissBtn {
+#compLevelBtn, #compSplitBtn, #compMutateBtn, #compDismissBtn,
+#demonData_erthysLabel, #demonData_aerosLabel, #demonData_aquansLabel,
+#demonData_flaemisLabel, #demonData_gnomeLabel, #demonData_sylphLabel,
+#demonData_undineLabel, #demonData_salamanderLabel {
 	margin-right: 10px;
 	font-size: 12px;
 	padding :4px 16px;
+}
+
+#demonData_erthysLabel, #demonData_aerosLabel, #demonData_aquansLabel,
+#demonData_flaemisLabel, #demonData_gnomeLabel, #demonData_sylphLabel,
+#demonData_undineLabel, #demonData_salamanderLabel {
+	text-align: center;
+	width: 80px;
 }
 
 .demonLink, .skillLink, .appLink, #walkthrough li a {
@@ -276,4 +286,13 @@ body {
 
 .no-close .ui-dialog-titlebar-close {
 	display: none;
+}
+
+#demonData_elementalTable td {
+	vertical-align: middle;
+}
+
+#demonData_skillsSection, #demonData_fusionSection,
+#demonData_mutateSection {
+	padding-left: 3px;
 }
