@@ -36,6 +36,6 @@ registerDemon({
 	},
 	"mutate": {
 		"level": 66,
-		"target": "ケルプ"
+		"target": "ケルブ"
 	}
 });

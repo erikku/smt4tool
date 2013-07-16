@@ -71,6 +71,7 @@ function showAllSkills() {
 	showSkillList(skillList);
 
 	$("#showAllSkillsBtn").hide();
+	$("#withSkillSection").hide();
 }
 
 function showSkill(name) {
@@ -105,6 +106,7 @@ function showSkill(name) {
 	$("#skillList").hide();
 	$('#skillData').show();
 	$("#showAllSkillsBtn").show();
+	$("#withSkillSection").hide();
 
 	if(!demonSkillMapping[data.nameJP] ||
 		!demonSkillMapping[data.nameJP].length) {
@@ -140,4 +142,5 @@ function showSkill(name) {
 
 	$("#demonMatchList").show();
 	$("#demonMatchList").html(demonList);
+	$("#withSkillSection").show();
 }

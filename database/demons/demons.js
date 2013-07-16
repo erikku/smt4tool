@@ -540,8 +540,8 @@ registerDemon({
 	},
 	"skills": {
 		// This is a mapping for skill information, must stay in Japanese.
-		"ブフダイン ": 0,
-		"ジオダイン ": 0,
+		"ブフダイン": 0,
+		"ジオダイン": 0,
 		"狂勉強": 0,
 		"三分の魔脈": -1,
 		"覚醒": -1
@@ -6307,7 +6307,7 @@ registerDemon({
 		"招来の舞踏": 75
 	},
 	"fusions": [
-		["ブラックマリア", "ケルプ", "アスモデウス"]
+		["ブラックマリア", "ケルブ", "アスモデウス"]
 	]
 });
 registerDemon({
@@ -12628,7 +12628,7 @@ registerDemon({
 	},
 	"mutate": {
 		"level": 66,
-		"target": "ケルプ"
+		"target": "ケルブ"
 	}
 });
 registerDemon({
@@ -14197,7 +14197,7 @@ registerDemon({
 	},
 	"skills": {
 		// This is a mapping for skill information, must stay in Japanese.
-		"マハザンマ ": 0,
+		"マハザンマ": 0,
 		"トラフーリ": 0,
 		"道具の知恵・癒": 29,
 		"衝撃プレロマ": 31
@@ -15733,7 +15733,7 @@ registerDemon({
 		"天使長の号令": 99
 	},
 	"fusions": [
-		["ガブリエル", "ケルプ"]
+		["ガブリエル", "ケルブ"]
 	]
 });
 registerDemon({
@@ -16199,7 +16199,7 @@ registerDemon({
 		"メシアライザー": 93
 	},
 	"fusions": [
-		["ケルプ", "ソロネ", "ドミニオン", " ヴァーチャー"]
+		["ケルブ", "ソロネ", "ドミニオン", " ヴァーチャー"]
 	]
 });
 registerDemon({

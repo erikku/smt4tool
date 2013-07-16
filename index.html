@@ -84,8 +84,12 @@
 
 		$("#tribeList").html(tribeList);
 
+		$("#compLevelDialog").hide();
+		$("#withSkillSection").hide();
+
 		showAllSkills();
 		showAllApps();
+		refleshCOMP();
 
 		walkthroughPage("contents", false);
 	});
@@ -374,18 +378,17 @@
 	</tr></table>
 </div>
 <br/>
-<p class="section">Demons with Skill</p>
-<div id="demonMatchList"></div>
+<div id="withSkillSection"><p class="section">Demons with Skill</p>
+<div id="demonMatchList"></div></div>
 </div>
 </div><!-- skillTab -->
 <div id="compTab">
-	<body>
- 
-<div style="display: none;">
-<div id="compLevelDialog" title="Empty the recycle bin?">
-  <p><span class="ui-icon ui-icon-alert" style="float: left; margin: 0 7px 20px 0;"></span>These items will be permanently deleted and cannot be recovered. Are you sure?</p>
-</div></div>
+<div id="compLevelDialog" title="Level Demon">
+	<p><span class="ui-icon ui-icon-alert" style="float: left; margin: 0 7px 20px 0;"></span>What level would you like to set for the demon?</p>
+	<input id="compLevelInput"/>
+</div><!-- compLevelDialog -->
 <div id="compList"></div>
+<div id="compResults"></div>
 </div><!-- compTab -->
 <div id="appTab">
 <p>
@@ -438,8 +441,8 @@
 <div id="walkTab">
 <div id="walkMenu"></div>
 <div id="walkthrough"></div>
-<hr/>
 </div><!-- walkTab -->
+<hr/>
 <p>
 	Android app: <a href="https://play.google.com/store/apps/details?id=com.logicfault.smt4tool">https://play.google.com/store/apps/details?id=com.logicfault.smt4tool</a><br/>
 	Join the discussion: <a href="https://plus.google.com/communities/105744923975672018452">https://plus.google.com/communities/105744923975672018452</a><br/>

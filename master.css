@@ -206,7 +206,7 @@ body {
 #tribeListBtn, #affinityFilterBtn, #affinityFindBtn, #demonData_fusionLabel,
 #demonData_mutateLabel, #demonData_skillsLabel, #showAllDemonsBtn,
 #showAllSkillsBtn, #showAllAppsBtn, #tocBtn, #prevBtn, #nextBtn,
-#compLevelBtn {
+#compLevelBtn, #compSplitBtn, #compMutateBtn, #compDismissBtn {
 	margin-right: 10px;
 	font-size: 12px;
 	padding :4px 16px;
@@ -242,7 +242,7 @@ body {
 	width: 760px;
 }
 
-.compEntry {
+.compEntry, .compCombo {
 	-moz-border-radius: 6px;
 	-webkit-border-radius: 6px;
 	border-radius: 6px;
@@ -250,11 +250,19 @@ body {
 	display: inline-block;
 	padding: 6px 6px;
 	margin-bottom: 6px;
+}
+
+.compEntry {
 	width: 650px;
 }
 
-#compLevelBtn {
+#compLevelBtn, #compSplitBtn, #compMutateBtn, #compDismissBtn {
 	float: right;
+}
+
+#compLevelInfo {
+	width: 17px;
+	text-align: center;
 }
 
 .no-close .ui-dialog-titlebar-close {
