@@ -1,5 +1,5 @@
 $('#walkthrough').html(walkthroughHeader("intro", undefined) + "<h1>Training Exercise</h1>" +
-"<h2>Demons Seen Here</h2>" + demonQuickList(["Centaur", "Fukei", "Lham Dearg", "Mokoi", "Napaea", "Slime", "Griffon"]) +
+"<h2>Demons Seen Here</h2>" + demonQuickList(["Centaur", "Fuxi", "Lham Dearg", "Mokoi", "Napaea", "Slime", "Griffon", "Chagrin", "Myrmecoleon"]) +
 htmlQuest({
 	"name": "Training Exercise I",
 	"stars": 1,
@@ -29,7 +29,7 @@ htmlQuest({
 	"<li>" + htmlSkillLink("Agi") + ": " + htmlDemonLink("Onmoraki") + " (3), " + htmlDemonLink("Melchom") + " (5)</li>" +
 	"<li>" + htmlSkillLink("Bufu") + ": " + htmlDemonLink("Centaur") + " (1)</li>" +
 	"<li>" + htmlSkillLink("Zio") + ": " + htmlDemonLink("Mokoi") + " (2)</li>" +
-	"<li>" + htmlSkillLink("Zan") + ": " + htmlDemonLink("Fukei") + " (1), " + htmlDemonLink("Napaea") + " (2=>3)</li>" +
+	"<li>" + htmlSkillLink("Zan") + ": " + htmlDemonLink("Fuxi") + " (1), " + htmlDemonLink("Napaea") + " (2=>3)</li>" +
 	"<li>" + htmlSkillLink("Hama") + ": " + htmlDemonLink("Tam Lin") + " (13)</li>" +
 	"<li>" + htmlSkillLink("Mudo") + ": " + htmlDemonLink("Dybbuk") + " (4), " + htmlDemonLink("Strigoii") + " (6)</li>" +
 	"<li>" + htmlSkillLink("Maragi") + ": " + htmlDemonLink("Spriggan") + " (11=>13)</li>" +
