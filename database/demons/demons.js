@@ -3709,7 +3709,7 @@ registerDemon({
 registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "幻魔",
-	"nameJP": "クー・フーリン",
+	"nameJP": "クーフーリン",
 	"nameEN": "Cu Chulainn",
 	"level": 50,
 	"stats": {
@@ -15035,7 +15035,7 @@ registerDemon({
 		"ジャッジメント": 95
 	},
 	"fusions": [
-		["ベイルライダー", "ブラックライダー", "レッドライダー", "ホワイトライダー"]
+		["ペイルライダー", "ブラックライダー", "レッドライダー", "ホワイトライダー"]
 	]
 });
 registerDemon({
@@ -16199,7 +16199,7 @@ registerDemon({
 		"メシアライザー": 93
 	},
 	"fusions": [
-		["ケルブ", "ソロネ", "ドミニオン", " ヴァーチャー"]
+		["ケルブ", "ソロネ", "ドミニオン", "ヴァーチャー"]
 	]
 });
 registerDemon({
