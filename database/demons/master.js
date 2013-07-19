@@ -17,13 +17,13 @@ tribeListEN = [
 	"Vile", "Raptor", "Wood",
 	// Neutral
 	"Deity", "Avatar", "Holy", "Genma", "Fairy", "Beast", "Jirae",
-	"Dragon King", "Reaper", "Wilder", "Jaki", "Vermin",
+	"Snake", "Reaper", "Wilder", "Jaki", "Vermin",
 	// Chaos
-	"Fury", "Lady", "Dragon God", "Kishin", "Fallen", "Brute", "Femme",
-	"Night", "Tyrant", "Evil Dragon", "Spirit", "Foul", "Haunt",
+	"Fury", "Lady", "Dragon", "Kishin", "Fallen", "Brute", "Femme",
+	"Night", "Tyrant", "Drake", "Spirit", "Foul", "Ghost",
 	// Special
-	"Food", "Fiend", "Amatsukami", "Kunitsukami", "Enigma", "Undead", "Zealot",
-	"Hero", "Entity", "Element", "Godly"];
+	"Food", "Fiend", "Amatsu", "Kunitsu", "Enigma", "Undead", "Zealot",
+	"Famed", "Entity", "Element", "Godly"];
 tribeLNC = ["L", "L", "L", "L", "L", "L", "L", "L", "L", "L", "L", "N", "N",
 	"N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "C", "C", "C", "C", "C",
 	"C", "C", "C", "C", "C", "C", "C", "C", "S", "S", "S", "S", "S", "S", "S",

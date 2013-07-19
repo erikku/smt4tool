@@ -34,59 +34,81 @@ function renderFusion(a, b, idxA, idxB) {
 		var html = "<div class=\"compCombo\" onClick=\"compFuse(" +
 			idxA + ", " + idxB + ");\">";
 
-		html += "<a class=\"section\">" + a.nameEN + "</a>";
+		html += "<a class=\"section\">" + a.nameEN + " (" + a.level + ")</a>";
 		html += "&nbsp;+&nbsp;";
-		html += "<a class=\"section\">" + b.nameEN + "</a>";
+		html += "<a class=\"section\">" + b.nameEN + " (" + b.level + ")</a>";
 		html += "&nbsp;=&nbsp;";
-		html += "<a class=\"section\">" + result.nameEN + "</a>";
+		html += "<a class=\"section\">" + result.nameEN + " (" +
+			result.level + ")</a>";
 		html += "</div>";
 
-		return html;
-	} else {
-		return "";
+		// We have to be careful not to modify the base object (which is the
+		// demon data from the database!) and add the HTML to it. We must COPY
+		// the data we need from the demon data and add the HTML data to a new
+		// object instead.
+		return {
+			"nameEN": result.nameEN,
+			"level": result.level,
+			"html": html
+		}
 	}
+
+	return undefined;
 }
 
 function computeFusions() {
 	if(compList.length < 2)
 		return "";
 
-	var count = 1;
+	/*
+	 * The chart would look like this:
+	 *   0 1 2 3 4
+	 * 0 - A B C D
+	 * 1 A - E F G
+	 * 2 B E - H I
+	 * 3 C F H - J
+	 * 4 D G I J -
+	 * And we don't want repeats so after they are gone:
+	 *   0 1 2 3 4
+	 * 0 - A B C D
+	 * 1 - - E F G
+	 * 2 - - - H I
+	 * 3 - - - - J
+	 * 4 - - - - -
+	 * Thus we start each row at it's column index + 1.
+	 */
 
-	if(compList.length > 2) {
-		count = factorial(compList.length) / factorial(compList.length - 2);
+	var fuseList = [ ];
+
+	// Calculate the fusion combinations.
+	for(var a = 0; a < compList.length; a++) {
+		for(var b = a + 1; b < compList.length; b++) {
+			var result = renderFusion(compList[a], compList[b], a, b);
+
+			if(result !== undefined)
+				fuseList.push(result);
+		}
 	}
+
+	// Sort the fusions results (level then name).
+	fuseList.sort(function(a, b) {
+		if(a.level == b.level)
+			return a.nameEN > b.nameEN ? 1 : -1;
+
+		return a.level - b.level;
+	});
 
 	var html = "";
 
-	// Permute the fusion combinations.
-	for(var a = 0; a < compList.length; a++) {
-		for(var b = 0; b < a; b++) {
-			if(count) {
-				var code = renderFusion(compList[a], compList[b], a, b);
+	// Create HTML for the results.
+	$.each(fuseList, function(index, result) {
+		var code = result["html"];
 
-				if(code.length && html.length)
-					html += "<br/>" + code;
-				else
-					html += code;
-
-				count --;
-			}
-		}
-
-		for(var b = a + 1; b < compList.length; b++) {
-			if(count) {
-				var code = renderFusion(compList[a], compList[b], a, b);
-
-				if(code.length && html.length)
-					html += "<br/>" + code;
-				else
-					html += code;
-
-				count --;
-			}
-		}
-	}
+		if(code.length && html.length)
+			html += "<br/>" + code;
+		else
+			html += code;
+	});
 
 	if(html.length) {
 		html = "<p><a class=\"button_up\">Possible Fusions</a></p>" + html;
@@ -181,17 +203,26 @@ function calculateFusion(a, b) {
 			resultTribe = fusionChart[idxA][idxB];
 
 		if(resultTribe != "-") {
-			var targetLevel = (baseDemonA.level + baseDemonB.level) / 2;
-			var currentLevel = 0;
+			// var targetLevel = Math.round((baseDemonA.level + baseDemonB.level) / 2);
+			var targetLevel = (baseDemonA.level + baseDemonB.level + 1) >> 1;
+			var currentLevel = 100;
+			var lowest = { "level": 100 };
 
 			$.each(demonByNameJP, function(name, demon) {
-				if(demon.tribe == resultTribe && demon.level > currentLevel &&
-					demon.level <= targetLevel &&
-					demon.fusions === undefined) {
+				if(demon.tribe == resultTribe && demon.level < lowest.level)
+					lowest = demon;
+			});
+
+			$.each(demonByNameJP, function(name, demon) {
+				if(demon.tribe == resultTribe && demon.level < currentLevel &&
+					targetLevel < demon.level && demon.fusions === undefined) {
 						currentLevel = demon.level;
 						result = demon;
 				}
 			});
+
+			if(result == undefined)
+				result = lowest;
 		}
 	}
 

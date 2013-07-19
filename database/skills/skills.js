@@ -689,7 +689,7 @@ registerSkill({
 
 registerSkill({
 	"nameJP": "アギダイン",
-	"nameEN": "Agi-dyne",
+	"nameEN": "Agidyne",
 	"attribute": "fire",
 	"cost": 14,
 	"power": "high",
@@ -731,7 +731,7 @@ registerSkill({
 
 registerSkill({
 	"nameJP": "マハラギダイン",
-	"nameEN": "Maragi-dyne",
+	"nameEN": "Maragidyne",
 	"attribute": "fire",
 	"cost": 30,
 	"power": "high",
@@ -830,7 +830,7 @@ registerSkill({
 
 registerSkill({
 	"nameJP": "ブフダイン",
-	"nameEN": "Bufu-dyne",
+	"nameEN": "Bufudyne",
 	"attribute": "ice",
 	"cost": 14,
 	"power": "high",
@@ -872,7 +872,7 @@ registerSkill({
 
 registerSkill({
 	"nameJP": "マハブフダイン",
-	"nameEN": "Mabufu-dyne",
+	"nameEN": "Mabufudyne",
 	"attribute": "ice",
 	"cost": 30,
 	"power": "high",
@@ -1001,7 +1001,7 @@ registerSkill({
 
 registerSkill({
 	"nameJP": "ジオダイン",
-	"nameEN": "Zio-dyne",
+	"nameEN": "Ziodyne",
 	"attribute": "thunder",
 	"cost": 14,
 	"power": "high",
@@ -1043,7 +1043,7 @@ registerSkill({
 
 registerSkill({
 	"nameJP": "マハジオダイン",
-	"nameEN": "Mazio-dyne",
+	"nameEN": "Maziodyne",
 	"attribute": "thunder",
 	"cost": 30,
 	"power": "high",
@@ -1157,7 +1157,7 @@ registerSkill({
 
 registerSkill({
 	"nameJP": "ザンダイン",
-	"nameEN": "Zan-dyne",
+	"nameEN": "Zandyne",
 	"attribute": "force",
 	"cost": 14,
 	"power": "high",
@@ -1199,7 +1199,7 @@ registerSkill({
 
 registerSkill({
 	"nameJP": "マハザンダイン",
-	"nameEN": "Mazan-dyne",
+	"nameEN": "Mazandyne",
 	"attribute": "force",
 	"cost": 30,
 	"power": "high",
