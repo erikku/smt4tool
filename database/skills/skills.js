@@ -2356,7 +2356,7 @@ registerSkill({
 
 registerSkill({
 	"nameJP": "静寂の祈り",
-	"nameEN": "Deliberate",
+	"nameEN": "Silent Prayer",
 	"attribute": "support",
 	"cost": 15,
 	"power": "-",
@@ -2365,7 +2365,7 @@ registerSkill({
 	"hit": "-",
 	"target": "all enemies and allies",
 	"strengthen": -1,
-	"effect": "能力上昇及び低下の効果を消去する"
+	"effect": "Removes status buffs and debuffs."
 });
 
 registerSkill({
