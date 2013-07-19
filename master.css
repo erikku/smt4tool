@@ -297,3 +297,7 @@ body {
 #demonData_mutateSection, #demonData_elementResultSection {
 	padding-left: 3px;
 }
+
+#compSplitList {
+	display: inline-block;
+}

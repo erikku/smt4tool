@@ -9,6 +9,14 @@ function factorial(n) {
 		return f[n] = factorial(n - 1) * n;
 }
 
+function componentToCOMP(nameEN) {
+	$("#compSplitDialog").dialog("close");
+
+	currentDemon = demonByNameEN[nameEN.replace("$", "'").toLowerCase()];
+
+	addToCOMP();
+}
+
 function addToCOMP() {
 	var skills = [ ];
 
@@ -54,6 +62,67 @@ function renderFusion(a, b, idxA, idxB) {
 	}
 
 	return undefined;
+}
+
+function renderReverseFusion(result, resultIndex, a, b) {
+	var html = "<div class=\"compCombo\" onClick=\"compDismiss(" +
+		resultIndex + "); componentToCOMP('" +
+		a.nameEN.replace("'", "$") + "'); componentToCOMP('" +
+		b.nameEN.replace("'", "$") + "');\">";
+
+	var activeSkills = [ ];
+	var learnedSkills = [ ];
+	var skillList = "";
+
+	$.each(a.skills, function(nameJP, obtainLvl) {
+		if(obtainLvl > a.level) {
+			learnedSkills.push(skillByNameJP[nameJP].nameEN +
+				" (" + a.nameEN + " - " + obtainLvl + ")");
+		} else {
+			activeSkills.push(skillByNameJP[nameJP].nameEN);
+		}
+	});
+
+	$.each(b.skills, function(nameJP, obtainLvl) {
+		if(obtainLvl > b.level) {
+			learnedSkills.push(skillByNameJP[nameJP].nameEN +
+				" (" + b.nameEN + " - " + obtainLvl + ")");
+		} else if(a.skills["nameJP"] === undefined) {
+			activeSkills.push(skillByNameJP[nameJP].nameEN);
+		}
+	});
+
+	$.each(activeSkills, function(index, code) {
+		if(skillList.length)
+			skillList += " / " + code;
+		else
+			skillList += code;
+	});
+
+	var total = activeSkills.length + learnedSkills.length;
+	var isFirst = true;
+
+	if(learnedSkills.length && total > 4)
+		skillList += "<br/>";
+	else
+		isFirst = false;
+
+	$.each(learnedSkills, function(index, code) {
+		if(!isFirst)
+			skillList += " / " + code;
+		else
+			skillList += code;
+
+		isFirst = false;
+	});
+
+	html += "<a class=\"section\">" + a.nameEN + " (" + a.level + ")</a>";
+	html += "&nbsp;+&nbsp;";
+	html += "<a class=\"section\">" + b.nameEN + " (" + b.level + ")</a>";
+	html += "<br/>Skills this combination can produce:<br/>" + skillList;
+	html += "</div>";
+
+	return html;
 }
 
 function computeFusions() {
@@ -115,6 +184,27 @@ function computeFusions() {
 	}
 
 	return html;
+}
+
+function computeReverseFusions(resultIndex, targetName, components) {
+	if(components.length < 2)
+		return [ ];
+
+	var fuseList = [ ];
+
+	// Calculate the fusion combinations.
+	for(var a = 0; a < components.length; a++) {
+		for(var b = a + 1; b < components.length; b++) {
+			var result = calculateFusion(components[a], components[b]);
+
+			if(result !== undefined && result.nameEN == targetName) {
+				fuseList.push(renderReverseFusion(result, resultIndex,
+					components[a], components[b]));
+			}
+		}
+	}
+
+	return fuseList;
 }
 
 function calculateFusion(a, b) {
@@ -206,11 +296,11 @@ function calculateFusion(a, b) {
 			// var targetLevel = Math.round((baseDemonA.level + baseDemonB.level) / 2);
 			var targetLevel = (baseDemonA.level + baseDemonB.level + 1) >> 1;
 			var currentLevel = 100;
-			var lowest = { "level": 100 };
+			var highest = { "level": 0 };
 
 			$.each(demonByNameJP, function(name, demon) {
-				if(demon.tribe == resultTribe && demon.level < lowest.level)
-					lowest = demon;
+				if(demon.tribe == resultTribe && demon.level > highest.level)
+					highest = demon;
 			});
 
 			$.each(demonByNameJP, function(name, demon) {
@@ -222,7 +312,7 @@ function calculateFusion(a, b) {
 			});
 
 			if(result == undefined)
-				result = lowest;
+				result = highest;
 		}
 	}
 
@@ -266,7 +356,7 @@ function compFuse(a, b) {
 
 	// Select the 8 skills (if we have over 8).
 	if(result.skills.length > 8) {
-		compSelectSkills(index);
+		compSelectSkills(compList.length - 1);
 	} else {
 		refleshCOMP();
 	}
@@ -376,6 +466,11 @@ function compSelectSkills(index) {
 
 function compSplit(index) {
 	var baseDemon = demonByNameEN[compList[index].nameEN.toLowerCase()];
+	var resultIndex = index;
+	var limit = parseInt($("#compLevelLimit").val());
+
+	if(isNaN(limit))
+		limit = 99;
 
 	if(baseDemon.fusions && baseDemon.fusions.length) {
 		compList.splice(index, 1);
@@ -396,12 +491,59 @@ function compSplit(index) {
 			});
 		});
 	} else {
+		var results = [ ];
+
 		$.each(reverseChart[baseDemon.tribe], function(index, combo) {
-			alert(combo[0]);
+			var components = [ ];
+
+			$.each(demonByNameEN, function(nameEN, data) {
+				if(data.level <= limit) {
+					if(data.tribe == combo[0] || data.tribe == combo[1])
+						components.push(data);
+				}
+			});
+
+			results = results.concat(computeReverseFusions(resultIndex,
+				baseDemon.nameEN, components));
+		});
+
+		$.each(demonByNameEN, function(nameEN, data) {
+			var components = [ ];
+
+			if(data.level <= limit) {
+				if(data.tribe == "精霊" || data.tribe == baseDemon.tribe)
+					components.push(data);
+			}
+
+			results = results.concat(computeReverseFusions(resultIndex,
+				baseDemon.nameEN, components));
+		});
+
+		var html = "";
+
+		$.each(results, function(index, code) {
+			if(html.length)
+				html += "<br/>" + code;
+			else
+				html += code;
+		});
+
+		$("#compSplitList").html(html);
+
+		$("#compSplitDialog").dialog({
+			dialogClass: "no-close",
+			closeOnEscape: true,
+			resizable: false,
+			width: 700,
+			height: 380,
+			modal: true,
+			buttons: {
+				"Cancel": function() {
+		      		$(this).dialog("close");
+				}
+			}
 		});
 	}
-
-	refleshCOMP();
 }
 
 function compMutate(index) {
