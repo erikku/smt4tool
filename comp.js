@@ -175,7 +175,10 @@ function calculateFusion(a, b) {
 	} else {
 		// Normal fusion.
 		//alert("Normal fusion.");
-		var resultTribe = fusionChart[idxA][idxB];
+		var resultTribe = "-";
+
+		if(idxA < fusionChart.length && idxB < fusionChart.length)
+			resultTribe = fusionChart[idxA][idxB];
 
 		if(resultTribe != "-") {
 			var targetLevel = (baseDemonA.level + baseDemonB.level) / 2;
@@ -261,6 +264,8 @@ function refleshCOMP() {
 			skills += htmlSkillLink(skill);
 		});
 
+		var baseDemon = demonByNameEN[demon.nameEN.toLowerCase()];
+
 		html += "<div class=\"compEntry\">";
 
 		html += "<a class=\"section\" id=\"compLevelInfo\">" + demon.level +
@@ -270,10 +275,12 @@ function refleshCOMP() {
 			"compDismiss(" + index + ");\">Dismiss</a>";
 		html += "<a class=\"button_up\" id=\"compLevelBtn\" onClick=\"" +
 			"compLevel(" + index + ");\">Level</a>";
-		html += "<a class=\"button_up\" id=\"compSplitBtn\" onClick=\"" +
-			"compSplit(" + index + ");\">Split</a>";
 
-		var baseDemon = demonByNameEN[demon.nameEN.toLowerCase()];
+		if(baseDemon.fusions || (reverseChart[baseDemon.tribe] &&
+			reverseChart[baseDemon.tribe].length)) {
+				html += "<a class=\"button_up\" id=\"compSplitBtn\" " +
+					"onClick=\"compSplit(" + index + ");\">Split</a>";
+		}
 
 		if(baseDemon["mutate"]) {
 			html += "<a class=\"button_up\" id=\"compMutateBtn\" onClick=\"" +
@@ -337,7 +344,33 @@ function compSelectSkills(index) {
 }
 
 function compSplit(index) {
-	// body...
+	var baseDemon = demonByNameEN[compList[index].nameEN.toLowerCase()];
+
+	if(baseDemon.fusions && baseDemon.fusions.length) {
+		compList.splice(index, 1);
+
+		$.each(baseDemon.fusions[0], function(index, component) {
+			var componentData = demonByNameJP[component];
+			var skills = [ ];
+
+			$.each(componentData.skills, function(skill, obtainLvl) {
+				if(obtainLvl <= 0)
+					skills.push(skillByNameJP[skill].nameEN);
+			});
+
+			compList.push({
+				"nameEN": componentData.nameEN,
+				"level": componentData.level,
+				"skills": skills
+			});
+		});
+	} else {
+		$.each(reverseChart[baseDemon.tribe], function(index, combo) {
+			alert(combo[0]);
+		});
+	}
+
+	refleshCOMP();
 }
 
 function compMutate(index) {
