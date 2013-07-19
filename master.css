@@ -206,7 +206,7 @@ body {
 #tribeListBtn, #affinityFilterBtn, #affinityFindBtn, #demonData_fusionLabel,
 #demonData_mutateLabel, #demonData_skillsLabel, #showAllDemonsBtn,
 #showAllSkillsBtn, #showAllAppsBtn, #tocBtn, #prevBtn, #nextBtn,
-#compLevelBtn, #compSplitBtn, #compMutateBtn, #compDismissBtn,
+#compLevelBtn, #compSplitBtn, #compMutateBtn, #compDismissBtn, #compHistoryBtn,
 #demonData_erthysLabel, #demonData_aerosLabel, #demonData_aquansLabel,
 #demonData_flaemisLabel, #demonData_gnomeLabel, #demonData_sylphLabel,
 #demonData_undineLabel, #demonData_salamanderLabel,
@@ -272,7 +272,8 @@ body {
 	cursor: pointer;
 }
 
-#compLevelBtn, #compSplitBtn, #compMutateBtn, #compDismissBtn {
+#compLevelBtn, #compSplitBtn, #compMutateBtn, #compDismissBtn,
+#compHistoryBtn {
 	margin-top: 6px;
 }
 
@@ -298,6 +299,6 @@ body {
 	padding-left: 3px;
 }
 
-#compSplitList {
+#compSplitList, #compHistory {
 	display: inline-block;
 }

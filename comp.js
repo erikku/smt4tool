@@ -125,9 +125,103 @@ function renderReverseFusion(result, resultIndex, a, b) {
 	return html;
 }
 
+function compFindDemon(searchTerm) {
+	var idx = -1;
+
+	$.each(compList, function(index, data) {
+		if(data.nameEN == searchTerm) {
+			idx = index;
+
+			return false;
+		}
+	});
+
+	return idx;
+}
+
+function compFuseSpecial(nameEN) {
+	var data = demonByNameEN[nameEN.toLowerCase()];
+
+	var result = {
+		// Keep track of the fusion history.
+		"parents": [ ],
+		"nameEN": data.nameEN,
+		"level": data.level,
+		"skills": [ ]
+	};
+
+	// Copy the initial skills
+	$.each(data.skills, function(skill, obtainLvl) {
+		if(obtainLvl <= result.level)
+			result.skills.push(skillByNameJP[skill].nameEN);
+	});
+
+	$.each(data["fusions"][0], function(index, component) {
+		// Remove the original demon.
+		var parent = compList.splice(compFindDemon(nameEN), 1)[0];
+
+		// Add the demon as a parent.
+		result.parents.push(parent);
+
+		// Add the skills to the result.
+		$.each(parent.skills, function(index, skill) {
+			if(result.skills.indexOf(skill) < 0)
+				result.skills.push(skill);
+		});
+	});
+
+	// Add the new demon.
+	compList.push(result);
+
+	// Select the 8 skills (if we have over 8).
+	if(result.skills.length > 8) {
+		compSelectSkills(compList.length - 1);
+	} else {
+		refleshCOMP();
+	}
+}
+
 function computeFusions() {
 	if(compList.length < 2)
 		return "";
+
+	var fuseList = [ ];
+
+	// Handle all special fusions.
+	if(compList.length >= 3) {
+		$.each(demonByNameEN, function(nameEN, data) {
+			if(data["fusions"] && data["fusions"].length) {
+				var haveFusion = true;
+
+				$.each(data["fusions"][0], function(index, component) {
+					var idx = compFindDemon(demonByNameJP[component].nameEN);
+
+					if(idx < 0)
+						haveFusion = false;
+				});
+
+				if(haveFusion) {
+					var html = "<div class=\"compCombo\" onClick=\"" +
+						"compFuseSpecial('" + data.nameEN + "');\">";
+
+					$.each(data["fusions"][0], function(index, component) {
+						var a = demonByNameJP[component];
+
+						html += "<a class=\"section\">" + a.nameEN +
+							" (" + a.level + ")</a>";
+						html += "&nbsp;+&nbsp;";
+					});
+
+					html = html.substring(0, html.length - 7) + "=&nbsp;";
+					html += "<a class=\"section\">" + data.nameEN + " (" +
+						data.level + ")</a>";
+					html += "</div>";
+
+					fuseList.push({"html": html});
+				}
+			}
+		});
+	}
 
 	/*
 	 * The chart would look like this:
@@ -146,8 +240,6 @@ function computeFusions() {
 	 * 4 - - - - -
 	 * Thus we start each row at it's column index + 1.
 	 */
-
-	var fuseList = [ ];
 
 	// Calculate the fusion combinations.
 	for(var a = 0; a < compList.length; a++) {
@@ -408,6 +500,11 @@ function refleshCOMP() {
 				"compMutate(" + index + ");\">Mutate</a>";
 		}
 
+		if(demon["parents"] && demon["parents"].length) {
+			html += "<a class=\"button_up\" id=\"compHistoryBtn\" " +
+				"onClick=\"compHistory(" + index + ");\">History</a>";
+		}
+
 		html += "</div>";
 	});
 
@@ -464,6 +561,50 @@ function compSelectSkills(index) {
 	});
 }
 
+function renderHistory(child, depth) {
+	if(depth == undefined)
+		depth = "";
+
+	if(child["parents"] === undefined || child["parents"].length < 1)
+		return "";
+
+	var html = "";
+
+	$.each(child["parents"], function(index, parent) {
+		if(html.length)
+			html += "<br/>";
+
+		html += depth + parent.nameEN;
+
+		var superParent = renderHistory(parent, "&nbsp;&nbsp" + depth);
+		if(superParent.length)
+			html += "<br/>" + superParent;
+	});
+
+	return html;
+}
+
+function compHistory(index) {
+	var html = compList[index].nameEN + "<br/>" +
+		renderHistory(compList[index], "+-> ");
+
+	$("#compHistory").html(html);
+
+	$("#compHistoryDialog").dialog({
+		dialogClass: "no-close",
+		closeOnEscape: true,
+		resizable: false,
+		width: 700,
+		height: 380,
+		modal: true,
+		buttons: {
+			"Cancel": function() {
+	      		$(this).dialog("close");
+			}
+		}
+	});
+}
+
 function compSplit(index) {
 	var baseDemon = demonByNameEN[compList[index].nameEN.toLowerCase()];
 	var resultIndex = index;
@@ -472,7 +613,15 @@ function compSplit(index) {
 	if(isNaN(limit))
 		limit = 99;
 
-	if(baseDemon.fusions && baseDemon.fusions.length) {
+	if(compList[index]["parents"] && compList[index]["parents"].length) {
+		var child = compList.splice(index, 1)[0];
+
+		$.each(child["parents"], function(index, parent) {
+			compList.push(parent);
+		});
+
+		refleshCOMP();
+	} else if(baseDemon.fusions && baseDemon.fusions.length) {
 		compList.splice(index, 1);
 
 		$.each(baseDemon.fusions[0], function(index, component) {
@@ -490,6 +639,8 @@ function compSplit(index) {
 				"skills": skills
 			});
 		});
+
+		refleshCOMP();
 	} else {
 		var results = [ ];
 

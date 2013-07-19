@@ -30,6 +30,7 @@
 		$("#affinityFilter").hide();
 		$("#showAllSkillsBtn").hide();
 		$("#compSplitDialog").hide();
+		$("#compHistoryDialog").hide();
 
 		showTab("demons");
 
@@ -399,10 +400,14 @@
 </div>
 </div><!-- skillTab -->
 <div id="compTab">
+<div id="compHistoryDialog" title="Demon History">
+	<p><span class="ui-icon ui-icon-alert" style="float: left; margin: 0 7px 20px 0;"></span>Here is how the demon was fused.</p>
+	<div id="compHistory"></div>
+</div><!-- compHistory -->
 <div id="compSplitDialog" title="Select Desired Combination">
 	<p><span class="ui-icon ui-icon-alert" style="float: left; margin: 0 7px 20px 0;"></span>Please select which combination you prefer.</p>
 	<div id="compSplitList"></div>
-</div><!-- compSelectDialog -->
+</div><!-- compSplitDialog -->
 
 <div id="compSelectDialog" title="Select Demon Skills">
 	<p><span class="ui-icon ui-icon-alert" style="float: left; margin: 0 7px 20px 0;"></span>Please select up to 8 demon skills.</p>
