@@ -32,7 +32,7 @@ registerDemon({
 		// This is a mapping for skill information, must stay in Japanese.
 		"シバブー": 0,
 		"タルカジャ": 0,
-		"一分の活源": 12,
+		"一分の活泉": 12,
 		"一分の魔脈": 13
 	}
 });

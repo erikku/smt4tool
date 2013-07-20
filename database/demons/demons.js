@@ -1951,7 +1951,7 @@ registerDemon({
 	},
 	"skills": {
 		// This is a mapping for skill information, must stay in Japanese.
-		"リフリレイト": 0,
+		"リフリジレイト": 0,
 		"氷結貫通": 0,
 		"火炎貫通": 13,
 		"電撃貫通": 16,
@@ -4244,7 +4244,7 @@ registerDemon({
 		"ハマオン": 0,
 		"メギドラ": 0,
 		"捧魂の法": 78,
-		"ティノタマキア": 79
+		"ティタノマキア": 79
 	},
 	"fusions": [
 		["マカミ", "モムノフ", "キクリヒメ", "ヤタガラス"]
@@ -5421,7 +5421,7 @@ registerDemon({
 		// This is a mapping for skill information, must stay in Japanese.
 		"メディラマ": 0,
 		"道具の知恵・癒": 0,
-		"回復ギガプロレマ": 54
+		"回復ギガプレロマ": 54
 	}
 });
 registerDemon({
@@ -5535,7 +5535,7 @@ registerDemon({
 	"skills": {
 		// This is a mapping for skill information, must stay in Japanese.
 		"毒針": 0,
-		"ボズムティ": 0,
+		"ポズムディ": 0,
 		"ブラストアロー": 28
 	}
 });
@@ -7284,7 +7284,7 @@ registerDemon({
 	"skills": {
 		// This is a mapping for skill information, must stay in Japanese.
 		"チャージ": 0,
-		"メガトンブレス": 0,
+		"メガトンプレス": 0,
 		"猛反撃": 39
 	}
 });
@@ -9986,7 +9986,7 @@ registerDemon({
 		// This is a mapping for skill information, must stay in Japanese.
 		"シバブー": 0,
 		"タルカジャ": 0,
-		"一分の活源": 12,
+		"一分の活泉": 12,
 		"一分の魔脈": 13
 	}
 });
@@ -10767,7 +10767,7 @@ registerDemon({
 	"skills": {
 		// This is a mapping for skill information, must stay in Japanese.
 		"マハラギオン": 0,
-		"銃ブレロマ": 0,
+		"銃プレロマ": 0,
 		"道具の知恵・攻": 0,
 		"グランドタック": 64
 	}
@@ -10807,7 +10807,7 @@ registerDemon({
 		"ザンダイン": 0,
 		"アムリタ": 0,
 		"狂乱の剛爪": 72,
-		"衝撃ギガプロレマ": 73
+		"衝撃ギガプレロマ": 73
 	}
 });
 registerDemon({
@@ -14322,7 +14322,7 @@ registerDemon({
 		// This is a mapping for skill information, must stay in Japanese.
 		"ザン": 0,
 		"パンデミアブーム": 0,
-		"道具の知識・攻": 10
+		"道具の知恵・攻": 10
 	}
 });
 registerDemon({

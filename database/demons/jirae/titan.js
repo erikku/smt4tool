@@ -31,7 +31,7 @@ registerDemon({
 	"skills": {
 		// This is a mapping for skill information, must stay in Japanese.
 		"チャージ": 0,
-		"メガトンブレス": 0,
+		"メガトンプレス": 0,
 		"猛反撃": 39
 	}
 });
