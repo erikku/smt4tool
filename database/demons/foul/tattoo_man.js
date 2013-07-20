@@ -32,7 +32,7 @@ registerDemon({
 		// This is a mapping for skill information, must stay in Japanese.
 		"挑発": 0,
 		"絶命剣": 0,
-		"ヒートウェーブ": 26,
+		"ヒートウェイブ": 26,
 		"反撃": 28
 	}
 });

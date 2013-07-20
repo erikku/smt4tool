@@ -32,7 +32,7 @@ registerDemon({
 		// This is a mapping for skill information, must stay in Japanese.
 		"マハブフーラ": 0,
 		"マハムド": 0,
-		"ポムズディ": 29,
+		"ポズムディ": 29,
 		"ディアラマ": 31
 	}
 });
