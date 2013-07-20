@@ -16,7 +16,7 @@ function skillTableHeader() {
 }
 
 function skillClicked(obj) {
-	showSkill(obj.innerText);
+	showSkill($(obj).text());
 }
 
 function registerSkill(data) {

@@ -32,7 +32,7 @@ function appTableHeader() {
 }
 
 function appClicked(obj) {
-	showApp(obj.innerText);
+	showApp($(obj).text());
 }
 
 function registerApp(data) {
