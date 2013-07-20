@@ -76,39 +76,39 @@ function renderReverseFusion(result, resultIndex, a, b) {
 
 	$.each(a.skills, function(nameJP, obtainLvl) {
 		if(obtainLvl > a.level) {
-			if(skillByNameJP[nameJP] == undefined) {
+			/*if(skillByNameJP[nameJP] == undefined) {
 				alert("Please ask the developer to add the skill " +
 					nameJP + " on the demon " + a.nameEN);
-			} else {
+			} else {*/
 				learnedSkills.push(skillByNameJP[nameJP].nameEN +
 					" (" + a.nameEN + " - " + obtainLvl + ")");
-			}
+			//}
 		} else {
-			if(skillByNameJP[nameJP] == undefined) {
+			/*if(skillByNameJP[nameJP] == undefined) {
 				alert("Please ask the developer to add the skill " +
 					nameJP + " on the demon " + a.nameEN);
-			} else {
+			} else {*/
 				activeSkills.push(skillByNameJP[nameJP].nameEN);
-			}
+			//}
 		}
 	});
 
 	$.each(b.skills, function(nameJP, obtainLvl) {
 		if(obtainLvl > b.level) {
-			if(skillByNameJP[nameJP] == undefined) {
+			/*if(skillByNameJP[nameJP] == undefined) {
 				alert("Please ask the developer to add the skill " +
 					nameJP + " on the demon " + b.nameEN);
-			} else {
+			} else {*/
 				learnedSkills.push(skillByNameJP[nameJP].nameEN +
 					" (" + b.nameEN + " - " + obtainLvl + ")");
-			}
+			//}
 		} else if(a.skills["nameJP"] === undefined) {
-			if(skillByNameJP[nameJP] == undefined) {
+			/*if(skillByNameJP[nameJP] == undefined) {
 				alert("Please ask the developer to add the skill " +
 					nameJP + " on the demon " + b.nameEN);
-			} else {
+			} else {*/
 				activeSkills.push(skillByNameJP[nameJP].nameEN);
-			}
+			//}
 		}
 	});
 
