@@ -163,7 +163,7 @@ registerSkill({
 	"hit": "-",
 	"target": "all",
 	"strengthen": -1,
-	"effect": "-"
+	"effect": "Medium Phys attack"
 });
 
 registerSkill({
@@ -247,7 +247,7 @@ registerSkill({
 	"hit": "-",
 	"target": "single",
 	"strengthen": -1,
-	"effect": "-"
+	"effect": "1-3 medium Phys attacks"
 });
 
 registerSkill({
@@ -364,7 +364,7 @@ registerSkill({
 
 registerSkill({
 	"nameJP": "バインドクロー",
-	"nameEN": "Bind Claw",
+	"nameEN": "Binding Claw",
 	"attribute": "physical",
 	"cost": 11,
 	"power": "medium",
@@ -373,7 +373,7 @@ registerSkill({
 	"hit": "-",
 	"target": "single",
 	"strengthen": -1,
-	"effect": "bind"
+	"effect": "Medium Phys attack"
 });
 
 registerSkill({
@@ -514,7 +514,7 @@ registerSkill({
 	"hit": "-",
 	"target": "all",
 	"strengthen": -1,
-	"effect": "-"
+	"effect": "Medium Gun attack"
 });
 
 registerSkill({
@@ -825,7 +825,7 @@ registerSkill({
 	"hit": "-",
 	"target": "single",
 	"strengthen": 8,
-	"effect": "-"
+	"effect": "Medium Ice attack"
 });
 
 registerSkill({
@@ -895,7 +895,7 @@ registerSkill({
 	"hit": "-",
 	"target": "random",
 	"strengthen": -1,
-	"effect": "-"
+	"effect": "1-4 weak Ice attacks"
 });
 
 registerSkill({
@@ -996,7 +996,7 @@ registerSkill({
 	"hit": "-",
 	"target": "single",
 	"strengthen": 8,
-	"effect": "-"
+	"effect": "Medium Elec attack"
 });
 
 registerSkill({
@@ -1031,14 +1031,14 @@ registerSkill({
 	"nameJP": "マハジオンガ",
 	"nameEN": "Mazionga",
 	"attribute": "thunder",
-	"cost": 18,
+	"cost": 20,
 	"power": "medium",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
 	"target": "all",
 	"strengthen": -1,
-	"effect": "-"
+	"effect": "Medium Elec attack"
 });
 
 registerSkill({
@@ -1194,7 +1194,7 @@ registerSkill({
 	"hit": "-",
 	"target": "all",
 	"strengthen": -1,
-	"effect": "-"
+	"effect": "Medium Force attack"
 });
 
 registerSkill({
@@ -1581,7 +1581,7 @@ registerSkill({
 	"hit": "-",
 	"target": "all",
 	"strengthen": -1,
-	"effect": "-"
+	"effect": "Dark instant kill"
 });
 
 registerSkill({
@@ -1834,8 +1834,7 @@ registerSkill({
 	"hit": "-",
 	"target": "single",
 	"strengthen": 5,
-	"effect": "威力",
-	"notes": "HP吸収"
+	"effect": "Almighty attack that drains the enemy's HP."
 });
 
 registerSkill({
@@ -1885,7 +1884,7 @@ registerSkill({
 
 registerSkill({
 	"nameJP": "サバトマ",
-	"nameEN": "Sabatma",
+	"nameEN": "Sabbatma",
 	"attribute": "misc",
 	"cost": 20,
 	"power": "-",
@@ -1894,7 +1893,7 @@ registerSkill({
 	"hit": "-",
 	"target": "single ally",
 	"strengthen": -1,
-	"effect": "仲間を召還または帰還させる"
+	"effect": "Summons/returns an ally demon"
 });
 
 registerSkill({
@@ -1955,16 +1954,16 @@ registerSkill({
 
 registerSkill({
 	"nameJP": "毒ガスブレス",
-	"nameEN": "Poison Gas Breath",
+	"nameEN": "Poison Breath",
 	"attribute": "poison",
-	"cost": -1,
+	"cost": 11,
 	"power": "-",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
 	"target": "all",
 	"strengthen": -1,
-	"effect": "Chance to inflict poison"
+	"effect": "Inflicts the Poison ailment"
 });
 
 registerSkill({
@@ -1978,7 +1977,7 @@ registerSkill({
 	"hit": "-",
 	"target": "single",
 	"strengthen": -1,
-	"effect": "Chance to inflict bind"
+	"effect": "Inflicts the Bind ailment"
 });
 
 registerSkill({
@@ -1992,7 +1991,7 @@ registerSkill({
 	"hit": "-",
 	"target": "all",
 	"strengthen": -1,
-	"effect": "Chance to inflict bind"
+	"effect": "Inflicts the Bind ailment"
 });
 
 registerSkill({
@@ -2006,7 +2005,7 @@ registerSkill({
 	"hit": "-",
 	"target": "single",
 	"strengthen": -1,
-	"effect": "Chance to inflict confusion"
+	"effect": "Inflicts the Panic ailment"
 });
 
 registerSkill({
@@ -2039,7 +2038,7 @@ registerSkill({
 
 registerSkill({
 	"nameJP": "パンデミアブーム",
-	"nameEN": "Pandemia Boom",
+	"nameEN": "Pandemic Bomb",
 	"attribute": "cold",
 	"cost": 11,
 	"power": "-",
@@ -2048,7 +2047,7 @@ registerSkill({
 	"hit": "-",
 	"target": "all",
 	"strengthen": -1,
-	"effect": "Chance to inflict cold"
+	"effect": "Inflicts the Sick ailment"
 });
 
 registerSkill({
@@ -3088,16 +3087,16 @@ registerSkill({
 
 registerSkill({
 	"nameJP": "電撃ギガプレロマ",
-	"nameEN": "Electric Giga Boost",
+	"nameEN": "High Elec Pleroma",
 	"attribute": "attribute",
-	"cost": -1,
+	"cost": 0,
 	"power": "-",
 	"hits": "-",
 	"kuli": "-",
 	"hit": "-",
 	"target": "",
 	"strengthen": -1,
-	"effect": "Electric Attack +50%"
+	"effect": "Greatly strengthens Elec attacks"
 });
 
 registerSkill({
@@ -3354,7 +3353,7 @@ registerSkill({
 
 registerSkill({
 	"nameJP": "道具の知恵・攻",
-	"nameEN": "Item Knowledge - Attack",
+	"nameEN": "Attack Knowhow",
 	"attribute": "item",
 	"cost": -1,
 	"power": "-",
@@ -3363,7 +3362,7 @@ registerSkill({
 	"hit": "-",
 	"target": "",
 	"strengthen": -1,
-	"effect": "attack系アイテムが使用可能"
+	"effect": "Enables use of attack items"
 });
 
 registerSkill({
