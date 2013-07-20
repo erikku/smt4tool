@@ -397,7 +397,7 @@ function demonTableHeader() {
 }
 
 function demonClicked(obj) {
-	showDemon(obj.innerText);
+	showDemon($(obj).text());
 }
 
 function demonTableEntry(data) {
