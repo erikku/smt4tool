@@ -31,7 +31,7 @@ registerDemon({
 	"skills": {
 		// This is a mapping for skill information, must stay in Japanese.
 		"メガトンプレス": 0,
-		"物理プロレマ": 0,
+		"物理プレロマ": 0,
 		"チャージ": 27,
 		"二分の活泉": 28,
 		"物理耐性": 29

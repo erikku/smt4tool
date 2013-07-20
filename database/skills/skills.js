@@ -167,6 +167,19 @@ registerSkill({
 });
 
 registerSkill({
+	"nameJP": "冥界波",
+	"nameEN": "Hades Blast 2",
+	"cost": -1,
+	"power": "???",
+	"hits": "???",
+	"kuli": "???",
+	"hit": "???",
+	"target": "???",
+	"strengthen": -1,
+	"effect": "Fix Me"
+});
+
+registerSkill({
 	"nameJP": "冥界破",
 	"nameEN": "Hades Blast",
 	"attribute": "physical",
