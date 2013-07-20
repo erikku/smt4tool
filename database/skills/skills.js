@@ -154,7 +154,7 @@ registerSkill({
 
 registerSkill({
 	"nameJP": "ヒートウェイブ",
-	"nameEN": "Heatwave",
+	"nameEN": "Heat Wave",
 	"attribute": "physical",
 	"cost": 11,
 	"power": "low",
@@ -163,7 +163,7 @@ registerSkill({
 	"hit": "-",
 	"target": "all",
 	"strengthen": -1,
-	"effect": "-"
+	"effect": "Weak Phys attack"
 });
 
 registerSkill({
@@ -2118,7 +2118,7 @@ registerSkill({
 	"hit": "-",
 	"target": "all allies",
 	"strengthen": 3,
-	"effect": "Raises the attack power of the party"
+	"effect": "Increases attack"
 });
 
 registerSkill({
@@ -2146,7 +2146,7 @@ registerSkill({
 	"hit": "-",
 	"target": "all allies",
 	"strengthen": 3,
-	"effect": "Raises the defense of the party",
+	"effect": "Increases defense",
 	"notes": "Max(三段階)で被ダメ2/3(66%)\nタルンダMaxと重複で被ダメ4/9(44%)"
 });
 
