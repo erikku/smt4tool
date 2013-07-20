@@ -70,7 +70,7 @@ registerDemon({
 		"ダマスカスクロー": 0,
 		"ドルミナー": 0,
 		"一分の活泉": 24,
-		"道具の知識・攻": 25
+		"道具の知恵・攻": 25
 	}
 });
 registerDemon({
@@ -107,7 +107,7 @@ registerDemon({
 		// This is a mapping for skill information, must stay in Japanese.
 		"挑発": 0,
 		"絶命剣": 0,
-		"ヒートウェーブ": 26,
+		"ヒートウェイブ": 26,
 		"反撃": 28
 	}
 });
@@ -1078,7 +1078,7 @@ registerDemon({
 	"skills": {
 		// This is a mapping for skill information, must stay in Japanese.
 		"メガトンプレス": 0,
-		"物理プロレマ": 0,
+		"物理プレロマ": 0,
 		"チャージ": 27,
 		"二分の活泉": 28,
 		"物理耐性": 29
@@ -4593,7 +4593,7 @@ registerDemon({
 		// This is a mapping for skill information, must stay in Japanese.
 		"マハブフーラ": 0,
 		"マハムド": 0,
-		"ポムズディ": 29,
+		"ポズムディ": 29,
 		"ディアラマ": 31
 	}
 });
@@ -10655,7 +10655,7 @@ registerDemon({
 	"skills": {
 		// This is a mapping for skill information, must stay in Japanese.
 		"ファイアブレス": 0,
-		"火炎ギガブレロマ": 0,
+		"火炎ギガプレロマ": 0,
 		"アギダイン": 53
 	}
 });
