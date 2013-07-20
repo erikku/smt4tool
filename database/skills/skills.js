@@ -139,6 +139,20 @@ registerSkill({
 });
 
 registerSkill({
+	"nameJP": "プラズマ",
+	"nameEN": "Plasma",
+	"attribute": "physical",
+	"cost": -1,
+	"power": "???",
+	"hits": "???",
+	"kuli": "???",
+	"hit": "???",
+	"target": "???",
+	"strengthen": -1,
+	"effect": "Fix Me"
+});
+
+registerSkill({
 	"nameJP": "ヒートウェイブ",
 	"nameEN": "Heatwave",
 	"attribute": "physical",
