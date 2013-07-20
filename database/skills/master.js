@@ -20,6 +20,11 @@ function skillClicked(obj) {
 }
 
 function registerSkill(data) {
+	if(skillByNameEN[data.nameEN.toLowerCase()] !== undefined ||
+		skillByNameJP[data.nameJP] !== undefined) {
+			alert("Duplicate skill: " + data.nameEN);
+	}
+
 	skillNamesEN.push(data.nameEN);
 	skillByNameJP[data.nameJP.toLowerCase()] = data;
 	skillByNameEN[data.nameEN.toLowerCase()] = data;
