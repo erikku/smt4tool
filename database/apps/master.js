@@ -36,6 +36,10 @@ function appClicked(obj) {
 }
 
 function registerApp(data) {
+	if(appByNameEN[data.name.toLowerCase()] !== undefined) {
+			alert("Duplicate app: " + data.name);
+	}
+
 	appNamesEN.push(data.name);
 	appByNameEN[data.name.toLowerCase()] = data;
 }

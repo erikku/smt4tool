@@ -181,6 +181,11 @@ function fusionBad(result) { return result == "－"; }
 function fusionElemental(result) { return result == "精霊" }
 
 function registerDemon(data) {
+	if(demonByNameEN[data.nameEN.toLowerCase()] !== undefined ||
+		demonByNameJP[data.nameJP] !== undefined) {
+			alert("Duplicate demon: " + data.nameEN);
+	}
+
 	demonNamesEN.push(data.nameEN);
 	demonByNameJP[data.nameJP.toLowerCase()] = data;
 	demonByNameEN[data.nameEN.toLowerCase()] = data;
