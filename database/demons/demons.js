@@ -3244,7 +3244,7 @@ registerDemon({
 	},
 	"skills": {
 		// This is a mapping for skill information, must stay in Japanese.
-		"ウインドブレス": 0,
+		"ウィンドブレス": 0,
 		"ポイズンクロー": 0,
 		"二分の魔脈": 52
 	}
@@ -7244,7 +7244,7 @@ registerDemon({
 	},
 	"skills": {
 		// This is a mapping for skill information, must stay in Japanese.
-		"ウインドブレス": 0,
+		"ウィンドブレス": 0,
 		"勝利の小息吹": 0,
 		"雄叫び": 0,
 		"火炎耐性": 45,
@@ -12550,7 +12550,7 @@ registerDemon({
 	},
 	"skills": {
 		// This is a mapping for skill information, must stay in Japanese.
-		"ウインドブレス": 0,
+		"ウィンドブレス": 0,
 		"龍の反応": 0,
 		"ブフーラ": 0,
 		"ザンダイン": 42,
