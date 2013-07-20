@@ -95,6 +95,14 @@
 		refleshCOMP();
 
 		walkthroughPage("contents", false);
+
+		$.each(demonByNameEN, function(nameEN, data) {
+			$.each(data.skills, function(skillJP, obtainLvl) {
+				if(skillByNameJP[skillJP] === undefined) {
+					alert(skillJP + " on " + data.nameEN);
+				}
+			})
+		})
 	});
 	</script>
 </head>

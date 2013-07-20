@@ -32,6 +32,6 @@ registerDemon({
 		// This is a mapping for skill information, must stay in Japanese.
 		"ザン": 0,
 		"パンデミアブーム": 0,
-		"道具の知識・攻": 10
+		"道具の知恵・攻": 10
 	}
 });

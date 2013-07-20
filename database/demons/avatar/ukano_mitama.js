@@ -32,6 +32,6 @@ registerDemon({
 		// This is a mapping for skill information, must stay in Japanese.
 		"メディラマ": 0,
 		"道具の知恵・癒": 0,
-		"回復ギガプロレマ": 54
+		"回復ギガプレロマ": 54
 	}
 });

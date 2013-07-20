@@ -30,7 +30,7 @@ registerDemon({
 	},
 	"skills": {
 		// This is a mapping for skill information, must stay in Japanese.
-		"リフリレイト": 0,
+		"リフリジレイト": 0,
 		"氷結貫通": 0,
 		"火炎貫通": 13,
 		"電撃貫通": 16,

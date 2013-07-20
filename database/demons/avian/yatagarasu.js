@@ -31,7 +31,7 @@ registerDemon({
 	"skills": {
 		// This is a mapping for skill information, must stay in Japanese.
 		"マハラギオン": 0,
-		"銃ブレロマ": 0,
+		"銃プレロマ": 0,
 		"道具の知恵・攻": 0,
 		"グランドタック": 64
 	}
