@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="master.css" />
 	<script src="jquery/js/jquery-1.9.1.js"></script>
 	<script src="jquery/js/jquery-ui-1.10.3.custom.js"></script>
+	<script src="jquery/js/jquery.cookie.js"></script>
 	<script src="database/master.js"></script>
 	<script src="database/apps/master.js"></script>
 	<script src="database/apps/apps.js"></script>
@@ -19,6 +20,9 @@
 	<script src="comp.js"></script>
 	<script>
 	$(document).ready(function(){
+		// Set jquery.cookie to use JSON.
+		$.cookie.json = true;
+
 		//fusionChartCheck();
 		//$('#reverseChartTest').text(JSON.stringify(reverseChart));
 		//$('#reverseChartTest').html(renderReverseChart());
@@ -89,6 +93,13 @@
 		$("#compLevelDialog").hide();
 		$("#compSelectDialog").hide();
 		$("#withSkillSection").hide();
+
+		// Load the COMP from a cookie (expires in 5 years).
+		var compData = $.cookie("comp");
+
+		// Set the COMP data if it's valid.
+		if(compData && compData.length)
+			compList = compData;
 
 		showAllSkills();
 		showAllApps();
