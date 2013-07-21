@@ -370,11 +370,59 @@ function showDemon(name) {
 		$("#demonData_mutateSection").hide();
 	}
 
+	$("#demonReverse").html(renderReverseList(data));
+
 	showTab("demons");
 
 	$("#showAllDemonsBtn").show();
 	$("#affinityFilterBtn").show();
 	$("#tribeListBtn").show();
+}
+
+function renderReverseList(baseDemon) {
+	if(baseDemon.fusions === undefined) {
+		var results = [ ];
+
+		$.each(reverseChart[baseDemon.tribe], function(index, combo) {
+			var components = [ ];
+
+			$.each(demonByNameEN, function(nameEN, data) {
+				if(data.tribe == combo[0] || data.tribe == combo[1])
+					components.push(data);
+			});
+
+			results = results.concat(computeReverseFusions(baseDemon.nameEN,
+				components));
+		});
+
+		$.each(demonByNameEN, function(nameEN, data) {
+			var components = [ ];
+
+			if(data.tribe == "精霊" || data.tribe == baseDemon.tribe)
+				components.push(data);
+
+			results = results.concat(computeReverseFusions(baseDemon.nameEN,
+				components));
+		});
+
+		var html = "";
+
+		$.each(results, function(index, code) {
+			if(html.length)
+				html += "<br/>" + code;
+			else
+				html += code;
+		});
+
+		if(html.length) {
+			html = "<p><a class=\"button_up\">Fusion Combinations" +
+				"</a></p>" + html;
+		}
+
+		return html;
+	}
+
+	return "";
 }
 
 function demonTableHeader() {

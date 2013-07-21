@@ -9,8 +9,9 @@ function factorial(n) {
 		return f[n] = factorial(n - 1) * n;
 }
 
-function componentToCOMP(nameEN) {
-	$("#compSplitDialog").dialog("close");
+function componentToCOMP(nameEN, close) {
+	if(close === undefined || close)
+		$("#compSplitDialog").dialog("close");
 
 	currentDemon = demonByNameEN[nameEN.replace("$", "'").toLowerCase()];
 
@@ -64,11 +65,18 @@ function renderFusion(a, b, idxA, idxB) {
 	return undefined;
 }
 
-function renderReverseFusion(result, resultIndex, a, b) {
-	var html = "<div class=\"compCombo\" onClick=\"compDismiss(" +
-		resultIndex + "); componentToCOMP('" +
-		a.nameEN.replace("'", "$") + "'); componentToCOMP('" +
-		b.nameEN.replace("'", "$") + "');\">";
+function renderReverseFusion(result, a, b, resultIndex) {
+	var html = "";
+	if(resultIndex !== undefined) {
+		html = "<div class=\"compCombo\" onClick=\"compDismiss(" +
+			resultIndex + "); componentToCOMP('" +
+			a.nameEN.replace("'", "$") + "'); componentToCOMP('" +
+			b.nameEN.replace("'", "$") + "');\">";
+	} else {
+		html = "<div class=\"compCombo\" onClick=\"componentToCOMP('" +
+			a.nameEN.replace("'", "$") + "', false); componentToCOMP('" +
+			b.nameEN.replace("'", "$") + "', false);\">";
+	}
 
 	var activeSkills = [ ];
 	var learnedSkills = [ ];
@@ -298,7 +306,7 @@ function computeFusions() {
 	return html;
 }
 
-function computeReverseFusions(resultIndex, targetName, components) {
+function computeReverseFusions(targetName, components, resultIndex) {
 	if(components.length < 2)
 		return [ ];
 
@@ -310,8 +318,8 @@ function computeReverseFusions(resultIndex, targetName, components) {
 			var result = calculateFusion(components[a], components[b]);
 
 			if(result !== undefined && result.nameEN == targetName) {
-				fuseList.push(renderReverseFusion(result, resultIndex,
-					components[a], components[b]));
+				fuseList.push(renderReverseFusion(result,
+					components[a], components[b], resultIndex));
 			}
 		}
 	}
@@ -677,8 +685,8 @@ function compSplit(index) {
 				}
 			});
 
-			results = results.concat(computeReverseFusions(resultIndex,
-				baseDemon.nameEN, components));
+			results = results.concat(computeReverseFusions(baseDemon.nameEN,
+				components, resultIndex));
 		});
 
 		$.each(demonByNameEN, function(nameEN, data) {
@@ -689,8 +697,8 @@ function compSplit(index) {
 					components.push(data);
 			}
 
-			results = results.concat(computeReverseFusions(resultIndex,
-				baseDemon.nameEN, components));
+			results = results.concat(computeReverseFusions(baseDemon.nameEN,
+				components, resultIndex));
 		});
 
 		var html = "";
