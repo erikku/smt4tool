@@ -1,27 +1,27 @@
 registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
-	"tribe": "破壊神",
-	"nameJP": "ホクトセイクン",
-	"nameEN": "Hokuto Seikun",
-	"level": 64,
+	"tribe": "龍王",
+	"nameJP": "ゲンブ",
+	"nameEN": "Gui Xian",
+	"level": 42,
 	"stats": {
-		"hp": 348,
-		"mp": 337,
+		"hp": 492,
+		"mp": 98,
 		"strength": 60,
-		"skill": 67,
-		"magic": 87,
-		"speed": 57,
-		"luck": 81
+		"skill": 53,
+		"magic": 42,
+		"speed": 48,
+		"luck": 39
 	},
 	"affinity": {
 		"physical": "-",
 		"gun": "-",
-		"fire": "-",
-		"ice": "protect",
+		"fire": "weak",
+		"ice": "absorb",
 		"thunder": "-",
 		"shock": "-",
 		"banish": "null",
-		"curse": "null",
+		"curse": "-",
 		"bind": "-",
 		"sleep": "-",
 		"cold": "-",
@@ -30,9 +30,10 @@ registerDemon({
 	},
 	"skills": {
 		// This is a mapping for skill information, must stay in Japanese.
-		"絶対零度": 0,
-		"サマリカーム": 0,
-		"ブフダイン": 65,
-		"狂勉強": 66
+		"牙折り": 0,
+		"アイスブレス": 0,
+		"ラクカジャ": 43,
+		"ブフダイン": 44,
+		"氷結ギガプレロマ": 45
 	}
 });

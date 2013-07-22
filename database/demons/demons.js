@@ -2077,44 +2077,6 @@ registerDemon({
 registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "魔王",
-	"nameJP": "シェムハザ",
-	"nameEN": "Shemyaza",
-	"level": 32,
-	"stats": {
-		"hp": 172,
-		"mp": 190,
-		"strength": 30,
-		"skill": 34,
-		"magic": 44,
-		"speed": 28,
-		"luck": 41
-	},
-	"affinity": {
-		"physical": "-",
-		"gun": "-",
-		"fire": "-",
-		"ice": "-",
-		"thunder": "-",
-		"shock": "weak",
-		"banish": "-",
-		"curse": "null",
-		"bind": "-",
-		"sleep": "-",
-		"cold": "-",
-		"confusion": "-",
-		"poison": "-"
-	},
-	"skills": {
-		// This is a mapping for skill information, must stay in Japanese.
-		"マハジオンガ": 0,
-		"ブフーラ": 0,
-		"勝利の小チャクラ": 33,
-		"衝撃無効": 35
-	}
-});
-registerDemon({
-	// This is a mapping for fusion, must stay in Japanese.
-	"tribe": "魔王",
 	"nameJP": "アスタロト",
 	"nameEN": "Astaroth",
 	"level": 48,
@@ -2229,6 +2191,44 @@ registerDemon({
 		"マハブフダイン": 0,
 		"冥界波": 0,
 		"物理ギガプレロマ": 89
+	}
+});
+registerDemon({
+	// This is a mapping for fusion, must stay in Japanese.
+	"tribe": "魔王",
+	"nameJP": "シェムハザ",
+	"nameEN": "Samyaza",
+	"level": 32,
+	"stats": {
+		"hp": 172,
+		"mp": 190,
+		"strength": 30,
+		"skill": 34,
+		"magic": 44,
+		"speed": 28,
+		"luck": 41
+	},
+	"affinity": {
+		"physical": "-",
+		"gun": "-",
+		"fire": "-",
+		"ice": "-",
+		"thunder": "-",
+		"shock": "weak",
+		"banish": "-",
+		"curse": "null",
+		"bind": "-",
+		"sleep": "-",
+		"cold": "-",
+		"confusion": "-",
+		"poison": "-"
+	},
+	"skills": {
+		// This is a mapping for skill information, must stay in Japanese.
+		"マハジオンガ": 0,
+		"ブフーラ": 0,
+		"勝利の小チャクラ": 33,
+		"衝撃無効": 35
 	}
 });
 registerDemon({
@@ -4134,6 +4134,48 @@ registerDemon({
 registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "英傑",
+	"nameJP": "ミチザネ",
+	"nameEN": "Michizane",
+	"level": 84,
+	"stats": {
+		"hp": 658,
+		"mp": 296,
+		"strength": 90,
+		"skill": 90,
+		"magic": 90,
+		"speed": 90,
+		"luck": 90
+	},
+	"affinity": {
+		"physical": "-",
+		"gun": "-",
+		"fire": "-",
+		"ice": "weak",
+		"thunder": "absorb",
+		"shock": "-",
+		"banish": "null",
+		"curse": "null",
+		"bind": "-",
+		"sleep": "-",
+		"cold": "-",
+		"confusion": "-",
+		"poison": "-"
+	},
+	"skills": {
+		// This is a mapping for skill information, must stay in Japanese.
+		"真理の雷": 0,
+		"天扇弓": 0,
+		"ムドオン": 0,
+		"狂勉強": 85,
+		"コンセントレイト": 86
+	},
+	"fusions": [
+		["ブリジット", "ヒトコトヌシ", "ライジュウ"]
+	]
+});
+registerDemon({
+	// This is a mapping for fusion, must stay in Japanese.
+	"tribe": "英傑",
 	"nameJP": "ヨシツネ",
 	"nameEN": "Yoshitsune",
 	"level": 36,
@@ -4287,48 +4329,6 @@ registerDemon({
 		"捧魂の法": 62,
 		"不屈の闘志": 63
 	}
-});
-registerDemon({
-	// This is a mapping for fusion, must stay in Japanese.
-	"tribe": "英傑",
-	"nameJP": "ミチザネ",
-	"nameEN": "Sugawara",
-	"level": 84,
-	"stats": {
-		"hp": 658,
-		"mp": 296,
-		"strength": 90,
-		"skill": 90,
-		"magic": 90,
-		"speed": 90,
-		"luck": 90
-	},
-	"affinity": {
-		"physical": "-",
-		"gun": "-",
-		"fire": "-",
-		"ice": "weak",
-		"thunder": "absorb",
-		"shock": "-",
-		"banish": "null",
-		"curse": "null",
-		"bind": "-",
-		"sleep": "-",
-		"cold": "-",
-		"confusion": "-",
-		"poison": "-"
-	},
-	"skills": {
-		// This is a mapping for skill information, must stay in Japanese.
-		"真理の雷": 0,
-		"天扇弓": 0,
-		"ムドオン": 0,
-		"狂勉強": 85,
-		"コンセントレイト": 86
-	},
-	"fusions": [
-		["ブリジット", "ヒトコトヌシ", "ライジュウ"]
-	]
 });
 registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
@@ -5389,6 +5389,44 @@ registerDemon({
 });
 registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
+	"tribe": "聖獣",
+	"nameJP": "ビャッコ",
+	"nameEN": "Baihu",
+	"level": 52,
+	"stats": {
+		"hp": 586,
+		"mp": 117,
+		"strength": 72,
+		"skill": 64,
+		"magic": 50,
+		"speed": 58,
+		"luck": 47
+	},
+	"affinity": {
+		"physical": "-",
+		"gun": "-",
+		"fire": "-",
+		"ice": "-",
+		"thunder": "absorb",
+		"shock": "weak",
+		"banish": "null",
+		"curse": "-",
+		"bind": "-",
+		"sleep": "-",
+		"cold": "-",
+		"confusion": "-",
+		"poison": "-"
+	},
+	"skills": {
+		// This is a mapping for skill information, must stay in Japanese.
+		"ジオダイン": 0,
+		"電撃ギガプレロマ": 0,
+		"雄叫び": 53,
+		"狂乱の剛爪": 54
+	}
+});
+registerDemon({
+	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "神獣",
 	"nameJP": "ウカノミタマ",
 	"nameEN": "Ukano Mitama",
@@ -5805,44 +5843,6 @@ registerDemon({
 		"デカジャ": 0,
 		"パトラ": 0,
 		"ポズムディ": 25
-	}
-});
-registerDemon({
-	// This is a mapping for fusion, must stay in Japanese.
-	"tribe": "聖獣",
-	"nameJP": "ビャッコ",
-	"nameEN": "Byakko",
-	"level": 52,
-	"stats": {
-		"hp": 586,
-		"mp": 117,
-		"strength": 72,
-		"skill": 64,
-		"magic": 50,
-		"speed": 58,
-		"luck": 47
-	},
-	"affinity": {
-		"physical": "-",
-		"gun": "-",
-		"fire": "-",
-		"ice": "-",
-		"thunder": "absorb",
-		"shock": "weak",
-		"banish": "null",
-		"curse": "-",
-		"bind": "-",
-		"sleep": "-",
-		"cold": "-",
-		"confusion": "-",
-		"poison": "-"
-	},
-	"skills": {
-		// This is a mapping for skill information, must stay in Japanese.
-		"ジオダイン": 0,
-		"電撃ギガプレロマ": 0,
-		"雄叫び": 53,
-		"狂乱の剛爪": 54
 	}
 });
 registerDemon({
@@ -7889,6 +7889,45 @@ registerDemon({
 registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "龍王",
+	"nameJP": "ゲンブ",
+	"nameEN": "Gui Xian",
+	"level": 42,
+	"stats": {
+		"hp": 492,
+		"mp": 98,
+		"strength": 60,
+		"skill": 53,
+		"magic": 42,
+		"speed": 48,
+		"luck": 39
+	},
+	"affinity": {
+		"physical": "-",
+		"gun": "-",
+		"fire": "weak",
+		"ice": "absorb",
+		"thunder": "-",
+		"shock": "-",
+		"banish": "null",
+		"curse": "-",
+		"bind": "-",
+		"sleep": "-",
+		"cold": "-",
+		"confusion": "-",
+		"poison": "-"
+	},
+	"skills": {
+		// This is a mapping for skill information, must stay in Japanese.
+		"牙折り": 0,
+		"アイスブレス": 0,
+		"ラクカジャ": 43,
+		"ブフダイン": 44,
+		"氷結ギガプレロマ": 45
+	}
+});
+registerDemon({
+	// This is a mapping for fusion, must stay in Japanese.
+	"tribe": "龍王",
 	"nameJP": "ナーガ",
 	"nameEN": "Naga",
 	"level": 11,
@@ -8071,45 +8110,6 @@ registerDemon({
 		"アムリタ": 0,
 		"氷結吸収": 73,
 		"マカラカーン": 74
-	}
-});
-registerDemon({
-	// This is a mapping for fusion, must stay in Japanese.
-	"tribe": "龍王",
-	"nameJP": "ゲンブ",
-	"nameEN": "Genbu",
-	"level": 42,
-	"stats": {
-		"hp": 492,
-		"mp": 98,
-		"strength": 60,
-		"skill": 53,
-		"magic": 42,
-		"speed": 48,
-		"luck": 39
-	},
-	"affinity": {
-		"physical": "-",
-		"gun": "-",
-		"fire": "weak",
-		"ice": "absorb",
-		"thunder": "-",
-		"shock": "-",
-		"banish": "null",
-		"curse": "-",
-		"bind": "-",
-		"sleep": "-",
-		"cold": "-",
-		"confusion": "-",
-		"poison": "-"
-	},
-	"skills": {
-		// This is a mapping for skill information, must stay in Japanese.
-		"牙折り": 0,
-		"アイスブレス": 0,
-		"ラクカジャ": 43,
-		"ブフダイン": 44,
-		"氷結ギガプレロマ": 45
 	}
 });
 registerDemon({
@@ -10851,44 +10851,6 @@ registerDemon({
 registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "破壊神",
-	"nameJP": "ホクトセイクン",
-	"nameEN": "Hokuto Seikun",
-	"level": 64,
-	"stats": {
-		"hp": 348,
-		"mp": 337,
-		"strength": 60,
-		"skill": 67,
-		"magic": 87,
-		"speed": 57,
-		"luck": 81
-	},
-	"affinity": {
-		"physical": "-",
-		"gun": "-",
-		"fire": "-",
-		"ice": "protect",
-		"thunder": "-",
-		"shock": "-",
-		"banish": "null",
-		"curse": "null",
-		"bind": "-",
-		"sleep": "-",
-		"cold": "-",
-		"confusion": "-",
-		"poison": "-"
-	},
-	"skills": {
-		// This is a mapping for skill information, must stay in Japanese.
-		"絶対零度": 0,
-		"サマリカーム": 0,
-		"ブフダイン": 65,
-		"狂勉強": 66
-	}
-});
-registerDemon({
-	// This is a mapping for fusion, must stay in Japanese.
-	"tribe": "破壊神",
 	"nameJP": "カルティケーヤ",
 	"nameEN": "Kartikeya",
 	"level": 80,
@@ -10997,6 +10959,44 @@ registerDemon({
 		"冥界破": 0,
 		"殺風激": 89,
 		"混沌の海": 90
+	}
+});
+registerDemon({
+	// This is a mapping for fusion, must stay in Japanese.
+	"tribe": "破壊神",
+	"nameJP": "ホクトセイクン",
+	"nameEN": "Beiji-Weng",
+	"level": 64,
+	"stats": {
+		"hp": 348,
+		"mp": 337,
+		"strength": 60,
+		"skill": 67,
+		"magic": 87,
+		"speed": 57,
+		"luck": 81
+	},
+	"affinity": {
+		"physical": "-",
+		"gun": "-",
+		"fire": "-",
+		"ice": "protect",
+		"thunder": "-",
+		"shock": "-",
+		"banish": "null",
+		"curse": "null",
+		"bind": "-",
+		"sleep": "-",
+		"cold": "-",
+		"confusion": "-",
+		"poison": "-"
+	},
+	"skills": {
+		// This is a mapping for skill information, must stay in Japanese.
+		"絶対零度": 0,
+		"サマリカーム": 0,
+		"ブフダイン": 65,
+		"狂勉強": 66
 	}
 });
 registerDemon({
@@ -12250,6 +12250,45 @@ registerDemon({
 registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "龍神",
+	"nameJP": "セイリュウ",
+	"nameEN": "Long",
+	"level": 41,
+	"stats": {
+		"hp": 357,
+		"mp": 160,
+		"strength": 47,
+		"skill": 47,
+		"magic": 47,
+		"speed": 47,
+		"luck": 47
+	},
+	"affinity": {
+		"physical": "-",
+		"gun": "-",
+		"fire": "-",
+		"ice": "protect",
+		"thunder": "weak",
+		"shock": "reflect",
+		"banish": "null",
+		"curse": "-",
+		"bind": "-",
+		"sleep": "-",
+		"cold": "-",
+		"confusion": "-",
+		"poison": "-"
+	},
+	"skills": {
+		// This is a mapping for skill information, must stay in Japanese.
+		"ウィンドブレス": 0,
+		"龍の反応": 0,
+		"ブフーラ": 0,
+		"ザンダイン": 42,
+		"衝撃ギガプレロマ": 45
+	}
+});
+registerDemon({
+	// This is a mapping for fusion, must stay in Japanese.
+	"tribe": "龍神",
 	"nameJP": "イルルヤンカシュ",
 	"nameEN": "Illuyanka",
 	"level": 51,
@@ -12516,45 +12555,6 @@ registerDemon({
 		"静寂の祈り": 0,
 		"フォッグブレス": 0,
 		"精神異常無効": 61
-	}
-});
-registerDemon({
-	// This is a mapping for fusion, must stay in Japanese.
-	"tribe": "龍神",
-	"nameJP": "セイリュウ",
-	"nameEN": "Seiryu",
-	"level": 41,
-	"stats": {
-		"hp": 357,
-		"mp": 160,
-		"strength": 47,
-		"skill": 47,
-		"magic": 47,
-		"speed": 47,
-		"luck": 47
-	},
-	"affinity": {
-		"physical": "-",
-		"gun": "-",
-		"fire": "-",
-		"ice": "protect",
-		"thunder": "weak",
-		"shock": "reflect",
-		"banish": "null",
-		"curse": "-",
-		"bind": "-",
-		"sleep": "-",
-		"cold": "-",
-		"confusion": "-",
-		"poison": "-"
-	},
-	"skills": {
-		// This is a mapping for skill information, must stay in Japanese.
-		"ウィンドブレス": 0,
-		"龍の反応": 0,
-		"ブフーラ": 0,
-		"ザンダイン": 42,
-		"衝撃ギガプレロマ": 45
 	}
 });
 registerDemon({
@@ -16132,7 +16132,7 @@ registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "大天使",
 	"nameJP": "ライラ",
-	"nameEN": "Lila",
+	"nameEN": "Lailah",
 	"level": 35,
 	"stats": {
 		"hp": 212,

@@ -1,25 +1,25 @@
 registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
-	"tribe": "龍神",
-	"nameJP": "セイリュウ",
-	"nameEN": "Seiryu",
-	"level": 41,
+	"tribe": "大天使",
+	"nameJP": "ライラ",
+	"nameEN": "Lailah",
+	"level": 35,
 	"stats": {
-		"hp": 357,
-		"mp": 160,
-		"strength": 47,
-		"skill": 47,
-		"magic": 47,
-		"speed": 47,
+		"hp": 212,
+		"mp": 205,
+		"strength": 36,
+		"skill": 40,
+		"magic": 51,
+		"speed": 34,
 		"luck": 47
 	},
 	"affinity": {
 		"physical": "-",
 		"gun": "-",
 		"fire": "-",
-		"ice": "protect",
+		"ice": "-",
 		"thunder": "weak",
-		"shock": "reflect",
+		"shock": "-",
 		"banish": "null",
 		"curse": "-",
 		"bind": "-",
@@ -30,10 +30,8 @@ registerDemon({
 	},
 	"skills": {
 		// This is a mapping for skill information, must stay in Japanese.
-		"ウィンドブレス": 0,
-		"龍の反応": 0,
-		"ブフーラ": 0,
-		"ザンダイン": 42,
-		"衝撃ギガプレロマ": 45
+		"リカーム": 0,
+		"マハンマ": 0,
+		"ハマオン": 36
 	}
 });
