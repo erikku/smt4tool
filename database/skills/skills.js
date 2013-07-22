@@ -2820,7 +2820,7 @@ registerSkill({
 
 registerSkill({
 	"nameJP": "衝撃耐性",
-	"nameEN": "Resist Light",
+	"nameEN": "Resist Force",
 	"attribute": "affinity",
 	"cost": -1,
 	"power": "-",
@@ -2834,7 +2834,7 @@ registerSkill({
 
 registerSkill({
 	"nameJP": "衝撃無効",
-	"nameEN": "Null Light",
+	"nameEN": "Null Force",
 	"attribute": "affinity",
 	"cost": -1,
 	"power": "-",
@@ -2848,7 +2848,7 @@ registerSkill({
 
 registerSkill({
 	"nameJP": "衝撃反射",
-	"nameEN": "Repel Light",
+	"nameEN": "Repel Force",
 	"attribute": "affinity",
 	"cost": -1,
 	"power": "-",
@@ -2862,7 +2862,7 @@ registerSkill({
 
 registerSkill({
 	"nameJP": "衝撃吸収",
-	"nameEN": "Drain Light",
+	"nameEN": "Drain Force",
 	"attribute": "affinity",
 	"cost": -1,
 	"power": "-",
@@ -3114,7 +3114,7 @@ registerSkill({
 
 registerSkill({
 	"nameJP": "衝撃プレロマ",
-	"nameEN": "Force Boost",
+	"nameEN": "Force Pleroma",
 	"attribute": "attribute",
 	"cost": -1,
 	"power": "-",
@@ -3128,7 +3128,7 @@ registerSkill({
 
 registerSkill({
 	"nameJP": "衝撃ギガプレロマ",
-	"nameEN": "Force Giga Boost",
+	"nameEN": "Force High Pleroma",
 	"attribute": "attribute",
 	"cost": -1,
 	"power": "-",
@@ -3310,16 +3310,16 @@ registerSkill({
 
 registerSkill({
 	"nameJP": "龍の反応",
-	"nameEN": "Dragon's Reaction",
+	"nameEN": "Draconic Reaction",
 	"attribute": "parameter",
-	"cost": -1,
+	"cost": 0,
 	"power": "-",
 	"hits": "-",
 	"kuli": "-",
 	"hit": "-",
 	"target": "",
 	"strengthen": -1,
-	"effect": "命中・回避を上昇させる 効果／大"
+	"effect": "Greatly increases hit/evade rate"
 });
 
 registerSkill({
@@ -3520,7 +3520,7 @@ registerSkill({
 
 registerSkill({
 	"nameJP": "衝撃貫通",
-	"nameEN": "Wind Penetrate",
+	"nameEN": "Force Penetrate",
 	"attribute": "attack",
 	"cost": -1,
 	"power": "-",

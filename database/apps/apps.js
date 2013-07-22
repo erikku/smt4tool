@@ -209,6 +209,20 @@ registerApp({
 });
 
 registerApp({
+	"name": "Scout+",
+	"points": 15,
+	"req": ["app:Scout Bonus"],
+	"desc": "Demons befriended through the Scout skill will recruit other demons."
+});
+
+registerApp({
+	"name": "Expert Scout",
+	"points": 15,
+	"req": ["app:Scout+"],
+	"desc": "Greatly decreases the demon's demands when using the Scout skill."
+});
+
+registerApp({
 	"name": "Trade",
 	"points": 10,
 	"req": ["app:Scout Gift"],
