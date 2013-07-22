@@ -913,7 +913,7 @@ registerSkill({
 
 registerSkill({
 	"nameJP": "絶対零度",
-	"nameEN": "Absolute Zero",
+	"nameEN": "Glacial Blast",
 	"attribute": "ice",
 	"cost": 22,
 	"power": "medium",
@@ -922,7 +922,7 @@ registerSkill({
 	"hit": "-",
 	"target": "random",
 	"strengthen": -1,
-	"effect": "-"
+	"effect": "1-4 medium Ice attacks"
 });
 
 registerSkill({
