@@ -1,27 +1,27 @@
 registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
-	"tribe": "魔王",
-	"nameJP": "シェムハザ",
-	"nameEN": "Shemyaza",
-	"level": 32,
+	"tribe": "聖獣",
+	"nameJP": "ビャッコ",
+	"nameEN": "Baihu",
+	"level": 52,
 	"stats": {
-		"hp": 172,
-		"mp": 190,
-		"strength": 30,
-		"skill": 34,
-		"magic": 44,
-		"speed": 28,
-		"luck": 41
+		"hp": 586,
+		"mp": 117,
+		"strength": 72,
+		"skill": 64,
+		"magic": 50,
+		"speed": 58,
+		"luck": 47
 	},
 	"affinity": {
 		"physical": "-",
 		"gun": "-",
 		"fire": "-",
 		"ice": "-",
-		"thunder": "-",
+		"thunder": "absorb",
 		"shock": "weak",
-		"banish": "-",
-		"curse": "null",
+		"banish": "null",
+		"curse": "-",
 		"bind": "-",
 		"sleep": "-",
 		"cold": "-",
@@ -30,9 +30,9 @@ registerDemon({
 	},
 	"skills": {
 		// This is a mapping for skill information, must stay in Japanese.
-		"マハジオンガ": 0,
-		"ブフーラ": 0,
-		"勝利の小チャクラ": 33,
-		"衝撃無効": 35
+		"ジオダイン": 0,
+		"電撃ギガプレロマ": 0,
+		"雄叫び": 53,
+		"狂乱の剛爪": 54
 	}
 });
