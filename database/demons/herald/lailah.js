@@ -33,5 +33,11 @@ registerDemon({
 		"リカーム": 0,
 		"マハンマ": 0,
 		"ハマオン": 36
-	}
+	},
+	"notes": "Normal attack: Phys x1 hits, 1 enemy",
+	"profile": "An angel in Judeo-Christian lore that presides over " +
+	"conception.\nShe is the intermediary between pregnant women and God. " +
+	"When a woman conceives a child, the seed is given to God, who then " +
+	"decides the child's sex, appearance, and destiny. After such things " +
+	"are decided, a new soul is placed into the woman's womb."
 });

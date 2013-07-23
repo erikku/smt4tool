@@ -33,5 +33,10 @@ registerDemon({
 		"ジャベリンレイン": 0,
 		"チャージ": 0,
 		"ザンダイン": 58
-	}
+	},
+	"notes": "Normal attack: Phys x1 hits, 1 enemy",
+	"profile": "The sinful \"angel of the oath.\" His original name was " +
+	"Biga, meaning \"good person.\"\nHe attempted to coerce Michael to tell" +
+	"him the sacred name of God, but was denied. After the Fall, he was " +
+	"given the name Kazbiel, \"he who lies to God.\""
 });

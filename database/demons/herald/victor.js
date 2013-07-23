@@ -23,7 +23,7 @@ registerDemon({
 		"banish": "null",
 		"curse": "-",
 		"bind": "-",
-		"sleep": "-",
+		"sleep": "null",
 		"cold": "-",
 		"confusion": "-",
 		"poison": "-"
@@ -33,5 +33,9 @@ registerDemon({
 		"ハマオン": 0,
 		"ブラストアロー": 0,
 		"呪殺無効": 43
-	}
+	},
+	"notes": "Normal attack: Phys x1 hits, 1 enemy",
+	"profile": "The guardian angel of Saint Patrick who spoke to him in a " +
+	"dream and had him spread Christianity throughout Ireland.\nHis role is " +
+	"to speak the will of God to those who are to become leaders."
 });
