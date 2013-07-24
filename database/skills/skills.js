@@ -293,7 +293,7 @@ registerSkill({
 
 registerSkill({
 	"nameJP": "成仏拳",
-	"nameEN": "Buddah Palm",
+	"nameEN": "Dream Fist",
 	"attribute": "physical",
 	"cost": 9,
 	"power": "low",
@@ -546,7 +546,7 @@ registerSkill({
 
 registerSkill({
 	"nameJP": "夢見針",
-	"nameEN": "Dream Fist",
+	"nameEN": "Dream Needle",
 	"attribute": "gun",
 	"cost": 9,
 	"power": "low",
