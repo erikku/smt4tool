@@ -48,8 +48,22 @@ registerApp({
 });
 
 registerApp({
-	"name": "MP Recovery 1",
+	"name": "HP Recovery 2",
 	"points": 35,
+	"req": ["app:HP Recovery 1"],
+	"desc": "Regenerates your HP while walking."
+});
+
+registerApp({
+	"name": "Party HP Recovery",
+	"points": 65,
+	"req": ["app:HP Recovery 2"],
+	"desc": "Regenerates HP for the party while walking."
+});
+
+registerApp({
+	"name": "MP Recovery 1",
+	"points": 40,
 	"req": ["Unknown"],
 	"desc": "Regenerates your MP while walking."
 });
@@ -59,6 +73,13 @@ registerApp({
 	"points": 40,
 	"req": ["app:MP Recovery 1"],
 	"desc": "Regenerates your MP while walking."
+});
+
+registerApp({
+	"name": "Party MP Recovery",
+	"points": 70,
+	"req": ["app:MP Recovery 2"],
+	"desc": "Regenerates MP for the party while walking."
 });
 
 registerApp({
@@ -107,6 +128,76 @@ registerApp({
 	"name": "Expand Stock 6",
 	"points": 6,
 	"req": ["app:Expand Stock 5"],
+	"desc": "Adds 1 slot to your demon stock."
+});
+
+registerApp({
+	"name": "Expand Stock 7",
+	"points": 7,
+	"req": ["app:Expand Stock 6"],
+	"desc": "Adds 1 slot to your demon stock."
+});
+
+registerApp({
+	"name": "Expand Stock 8",
+	"points": 7,
+	"req": ["app:Expand Stock 7"],
+	"desc": "Adds 1 slot to your demon stock."
+});
+
+registerApp({
+	"name": "Expand Stock 9",
+	"points": 7,
+	"req": ["app:Expand Stock 8"],
+	"desc": "Adds 1 slot to your demon stock."
+});
+
+registerApp({
+	"name": "Expand Stock 10",
+	"points": 7,
+	"req": ["app:Expand Stock 9"],
+	"desc": "Adds 1 slot to your demon stock."
+});
+
+registerApp({
+	"name": "Expand Stock 11",
+	"points": 7,
+	"req": ["app:Expand Stock 10"],
+	"desc": "Adds 1 slot to your demon stock."
+});
+
+registerApp({
+	"name": "Expand Stock 12",
+	"points": 7,
+	"req": ["app:Expand Stock 11"],
+	"desc": "Adds 1 slot to your demon stock."
+});
+
+registerApp({
+	"name": "Expand Stock 13",
+	"points": 8,
+	"req": ["app:Expand Stock 12"],
+	"desc": "Adds 1 slot to your demon stock."
+});
+
+registerApp({
+	"name": "Expand Stock 14",
+	"points": 8,
+	"req": ["app:Expand Stock 13"],
+	"desc": "Adds 1 slot to your demon stock."
+});
+
+registerApp({
+	"name": "Expand Stock 15",
+	"points": 8,
+	"req": ["app:Expand Stock 14"],
+	"desc": "Adds 1 slot to your demon stock."
+});
+
+registerApp({
+	"name": "Expand Stock 16",
+	"points": 8,
+	"req": ["app:Expand Stock 15"],
 	"desc": "Adds 1 slot to your demon stock."
 });
 
@@ -217,9 +308,16 @@ registerApp({
 
 registerApp({
 	"name": "Expert Scout",
-	"points": 15,
+	"points": 30,
 	"req": ["app:Scout+"],
 	"desc": "Greatly decreases the demon's demands when using the Scout skill."
+});
+
+registerApp({
+	"name": "Stats Plugin",
+	"points": 30,
+	"req": ["app:Expert Scout"],
+	"desc": "Demons befriended through the Scout skill will have increased stats."
 });
 
 registerApp({
@@ -237,10 +335,73 @@ registerApp({
 });
 
 registerApp({
+	"name": "Expert Trader",
+	"points": 30,
+	"req": ["app:Trade+"],
+	"desc": "Greatly decreases the demon's demands when using the Trade skill."
+});
+
+registerApp({
 	"name": "Negotiate",
 	"points": 20,
 	"req": ["app:Scout"],
 	"desc": "Adds a talk skill to negotiate with a cease-fire with demons."
+});
+
+registerApp({
+	"name": "Negotiate+",
+	"points": 20,
+	"req": ["app:Negotiate"],
+	"desc": "Heals the party when using the Negotiation skill."
+});
+
+registerApp({
+	"name": "Expert Negotiator",
+	"points": 30,
+	"req": ["app:Negotiate+"],
+	"desc": "Greatly decreases the demon's demands when using the Negotiation skill."
+});
+
+registerApp({
+	"name": "Chitchat",
+	"points": 30,
+	"req": ["app:Negotiate"],
+	"desc": "Adds a talk skill to decrease the Press Turns a demon gets in battle."
+});
+
+registerApp({
+	"name": "Chitchat+",
+	"points": 40,
+	"req": ["app:Chitchat"],
+	"desc": "Demons lose 2 Press Turns when using the Chitchat skill."
+});
+
+registerApp({
+	"name": "Expert Chitchatter",
+	"points": 40,
+	"req": ["app:Chitchat+"],
+	"desc": "Greatly decreases the demon's demands when using the Chitchat skill."
+});
+
+registerApp({
+	"name": "Plead",
+	"points": 30,
+	"req": ["app:Negotiate"],
+	"desc": "Adds a talk skill to beg a demon to heal your party during battle."
+});
+
+registerApp({
+	"name": "Plead+",
+	"points": 40,
+	"req": ["app:Plead"],
+	"desc": "Receive a second round of healing when using the Plead skill."
+});
+
+registerApp({
+	"name": "Expert Pleader",
+	"points": 40,
+	"req": ["app:Plead+"],
+	"desc": "Greatly decreases the demon's demands when using the Plead skill."
 });
 
 registerApp({

@@ -17,6 +17,7 @@
 	<script src="database/skills/skills.js"></script>
 	<script src="database/demons/master.js"></script>
 	<script src="database/demons/demons.js"></script>
+	<!-- <script src="database/demons/reverse_cache.js"></script> -->
 	<script src="comp.js"></script>
 	<script>
 	$(document).ready(function(){
@@ -26,6 +27,7 @@
 		//fusionChartCheck();
 		//$('#reverseChartTest').text(JSON.stringify(reverseChart));
 		//$('#reverseChartTest').html(renderReverseChart());
+		//generateReverseCache();
 
 		// Hide these by default.
 		$("#demonList").hide();
@@ -94,6 +96,9 @@
 		$("#compSelectDialog").hide();
 		$("#withSkillSection").hide();
 
+		showAllSkills();
+		showAllApps();
+
 		// Load the COMP from a cookie (expires in 5 years).
 		var compData = $.cookie("comp");
 
@@ -101,9 +106,14 @@
 		if(compData && compData.length)
 			compList = compData;
 
-		showAllSkills();
-		showAllApps();
-		refleshCOMP();
+		// Try to load it.
+		try {
+			refleshCOMP();
+		} catch {
+			compList = [ ];
+
+			refleshCOMP();
+		}
 
 		walkthroughPage("contents", false);
 
