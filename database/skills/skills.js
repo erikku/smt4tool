@@ -14,7 +14,7 @@ registerSkill({
 
 registerSkill({
 	"nameJP": "鬼神楽",
-	"nameEN": "Demon Kagura",
+	"nameEN": "Oni-Kagura",
 	"attribute": "physical",
 	"cost": 9,
 	"power": "medium",
@@ -23,7 +23,7 @@ registerSkill({
 	"hit": "low",
 	"target": "single",
 	"strengthen": -1,
-	"effect": "-"
+	"effect": "Medium Phys attack."
 });
 
 registerSkill({
@@ -112,7 +112,7 @@ registerSkill({
 
 registerSkill({
 	"nameJP": "怪力乱神",
-	"nameEN": "Supernatural Things",
+	"nameEN": "Berserker God",
 	"attribute": "physical",
 	"cost": 12,
 	"power": "high",
@@ -121,7 +121,7 @@ registerSkill({
 	"hit": "-",
 	"target": "single",
 	"strengthen": -1,
-	"effect": "-"
+	"effect": "Heavy Phys attack"
 });
 
 registerSkill({
@@ -490,16 +490,16 @@ registerSkill({
 
 registerSkill({
 	"nameJP": "至高の魔弾",
-	"nameEN": "Supreme Magic Bolt",
+	"nameEN": "Riot Gun",
 	"attribute": "gun",
-	"cost": 26,
+	"cost": 30,
 	"power": "very high",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
 	"target": "single",
 	"strengthen": -1,
-	"effect": "-"
+	"effect": "Severe Gun attack"
 });
 
 registerSkill({
@@ -532,16 +532,16 @@ registerSkill({
 
 registerSkill({
 	"nameJP": "天扇弓",
-	"nameEN": "Heavenly Fan Bow",
+	"nameEN": "Heaven's Bow",
 	"attribute": "gun",
-	"cost": 24,
+	"cost": 26,
 	"power": "high",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
 	"target": "all",
 	"strengthen": -1,
-	"effect": "-"
+	"effect": "Heavy Gun attack"
 });
 
 registerSkill({
@@ -588,7 +588,7 @@ registerSkill({
 
 registerSkill({
 	"nameJP": "狂乱針",
-	"nameEN": "Confusion Needle",
+	"nameEN": "Madness Needle",
 	"attribute": "gun",
 	"cost": 11,
 	"power": "low",
@@ -597,7 +597,7 @@ registerSkill({
 	"hit": "-",
 	"target": "single",
 	"strengthen": -1,
-	"effect": "confusion"
+	"effect": "Weak Gun attack"
 });
 
 registerSkill({
@@ -697,7 +697,7 @@ registerSkill({
 	"hit": "-",
 	"target": "single",
 	"strengthen": 8,
-	"effect": "-"
+	"effect": "Medium Fire attack"
 });
 
 registerSkill({
@@ -767,7 +767,7 @@ registerSkill({
 	"hit": "-",
 	"target": "random",
 	"strengthen": -1,
-	"effect": "-"
+	"effect": "1-4 weak Fire attacks"
 });
 
 registerSkill({
@@ -1368,7 +1368,7 @@ registerSkill({
 
 registerSkill({
 	"nameJP": "天罰",
-	"nameEN": "Divine Punishment",
+	"nameEN": "Holy Wrath",
 	"attribute": "almighty",
 	"cost": 45,
 	"power": "normal",
@@ -1378,7 +1378,7 @@ registerSkill({
 	"target": "all enemies",
 	"strengthen": 8,
 	"effect": "-",
-	"notes": "カオス属性に強い"
+	"notes": "Varies with enemy's alignment"
 });
 
 registerSkill({
@@ -1496,7 +1496,7 @@ registerSkill({
 	"hit": "-",
 	"target": "single",
 	"strengthen": -1,
-	"effect": "-"
+	"effect": "Light instant kill"
 });
 
 registerSkill({
@@ -1510,7 +1510,7 @@ registerSkill({
 	"hit": "-",
 	"target": "single",
 	"strengthen": -1,
-	"effect": "-"
+	"effect": "Light instant kill"
 });
 
 registerSkill({
@@ -1712,7 +1712,7 @@ registerSkill({
 
 registerSkill({
 	"nameJP": "メシアライザー",
-	"nameEN": "Messiah Riser",
+	"nameEN": "Salvation",
 	"attribute": "heal",
 	"cost": 50,
 	"power": "full",
@@ -1824,7 +1824,7 @@ registerSkill({
 
 registerSkill({
 	"nameJP": "招来の舞踏",
-	"nameEN": "Salvation",
+	"nameEN": "Invitation",
 	"attribute": "heal",
 	"cost": 45,
 	"power": "-",
@@ -2974,9 +2974,9 @@ registerSkill({
 
 registerSkill({
 	"nameJP": "物理プレロマ",
-	"nameEN": "Physical Boost",
+	"nameEN": "Phys Pleroma",
 	"attribute": "attribute",
-	"cost": -1,
+	"cost": 0,
 	"power": "-",
 	"hits": "-",
 	"kuli": "-",
@@ -2988,9 +2988,9 @@ registerSkill({
 
 registerSkill({
 	"nameJP": "物理ギガプレロマ",
-	"nameEN": "Physical Giga Boost",
+	"nameEN": "Phys High Pleroma",
 	"attribute": "attribute",
-	"cost": -1,
+	"cost": 0,
 	"power": "-",
 	"hits": "-",
 	"kuli": "-",
@@ -3002,9 +3002,9 @@ registerSkill({
 
 registerSkill({
 	"nameJP": "銃プレロマ",
-	"nameEN": "Gun Boost",
+	"nameEN": "Gun Pleroma",
 	"attribute": "attribute",
-	"cost": -1,
+	"cost": 0,
 	"power": "-",
 	"hits": "-",
 	"kuli": "-",
@@ -3016,9 +3016,9 @@ registerSkill({
 
 registerSkill({
 	"nameJP": "銃ギガプレロマ",
-	"nameEN": "Gun Giga Boost",
+	"nameEN": "Gun High Pleroma",
 	"attribute": "attribute",
-	"cost": -1,
+	"cost": 0,
 	"power": "-",
 	"hits": "-",
 	"kuli": "-",
@@ -3030,9 +3030,9 @@ registerSkill({
 
 registerSkill({
 	"nameJP": "火炎プレロマ",
-	"nameEN": "Fire Boost",
+	"nameEN": "Fire Pleroma",
 	"attribute": "attribute",
-	"cost": -1,
+	"cost": 0,
 	"power": "-",
 	"hits": "-",
 	"kuli": "-",
@@ -3044,9 +3044,9 @@ registerSkill({
 
 registerSkill({
 	"nameJP": "火炎ギガプレロマ",
-	"nameEN": "Fire Giga Boost",
+	"nameEN": "Fire High Pleroma",
 	"attribute": "attribute",
-	"cost": -1,
+	"cost": 0,
 	"power": "-",
 	"hits": "-",
 	"kuli": "-",
@@ -3058,9 +3058,9 @@ registerSkill({
 
 registerSkill({
 	"nameJP": "氷結プレロマ",
-	"nameEN": "Ice Boost",
+	"nameEN": "Ice Pleroma",
 	"attribute": "attribute",
-	"cost": -1,
+	"cost": 0,
 	"power": "-",
 	"hits": "-",
 	"kuli": "-",
@@ -3072,9 +3072,9 @@ registerSkill({
 
 registerSkill({
 	"nameJP": "氷結ギガプレロマ",
-	"nameEN": "Ice Giga Boost",
+	"nameEN": "Ice High Pleroma",
 	"attribute": "attribute",
-	"cost": -1,
+	"cost": 0,
 	"power": "-",
 	"hits": "-",
 	"kuli": "-",
@@ -3086,9 +3086,9 @@ registerSkill({
 
 registerSkill({
 	"nameJP": "電撃プレロマ",
-	"nameEN": "Electric Boost",
+	"nameEN": "Elec Pleroma",
 	"attribute": "attribute",
-	"cost": -1,
+	"cost": 0,
 	"power": "-",
 	"hits": "-",
 	"kuli": "-",
@@ -3198,16 +3198,16 @@ registerSkill({
 
 registerSkill({
 	"nameJP": "三分の活泉",
-	"nameEN": "Fountain of Life III",
+	"nameEN": "Life Surge",
 	"attribute": "parameter",
-	"cost": -1,
+	"cost": 0,
 	"power": "-",
 	"hits": "-",
 	"kuli": "-",
 	"hit": "-",
 	"target": "",
 	"strengthen": -1,
-	"effect": "HP +30%"
+	"effect": "Greatly increases maximum HP (HP +30%)"
 });
 
 registerSkill({
@@ -3268,7 +3268,7 @@ registerSkill({
 
 registerSkill({
 	"nameJP": "韋駄天の覚え",
-	"nameEN": "Great Runner's Sense",
+	"nameEN": "Haste Lesson",
 	"attribute": "parameter",
 	"cost": -1,
 	"power": "-",
@@ -3277,7 +3277,7 @@ registerSkill({
 	"hit": "-",
 	"target": "",
 	"strengthen": -1,
-	"effect": "速を20アップさせる"
+	"effect": "Increases Agility by 20"
 });
 
 registerSkill({
@@ -3296,16 +3296,16 @@ registerSkill({
 
 registerSkill({
 	"nameJP": "獣の反応",
-	"nameEN": "Beast's Reaction",
+	"nameEN": "Beastly Reaction",
 	"attribute": "parameter",
-	"cost": -1,
+	"cost": 0,
 	"power": "-",
 	"hits": "-",
 	"kuli": "-",
 	"hit": "-",
 	"target": "",
 	"strengthen": -1,
-	"effect": "命中・回避を上昇させる"
+	"effect": "Increases hit/evade rate"
 });
 
 registerSkill({
@@ -3604,16 +3604,16 @@ registerSkill({
 
 registerSkill({
 	"nameJP": "勝利のチャクラ",
-	"nameEN": "Victory Chakra",
+	"nameEN": "Mana Aid",
 	"attribute": "recovery",
-	"cost": -1,
+	"cost": 0,
 	"power": "-",
 	"hits": "-",
 	"kuli": "-",
 	"hit": "-",
 	"target": "",
 	"strengthen": -1,
-	"effect": "戦闘終了時、selfのMPが3％recoveryする"
+	"effect": "Recover some MP after battle"
 });
 
 registerSkill({
@@ -3632,7 +3632,7 @@ registerSkill({
 
 registerSkill({
 	"nameJP": "生命の泉",
-	"nameEN": "Fountain of Life",
+	"nameEN": "Sprint of Life",
 	"attribute": "recovery",
 	"cost": -1,
 	"power": "-",
@@ -3641,7 +3641,7 @@ registerSkill({
 	"hit": "-",
 	"target": "",
 	"strengthen": -1,
-	"effect": "Summoned demon gains 3%HP while walking a certain distance."
+	"effect": "Recover some HP (3%) after walking a certain distance. Inactive when in the stock."
 });
 
 registerSkill({

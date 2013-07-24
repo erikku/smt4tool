@@ -379,8 +379,30 @@ function showDemon(name) {
 	$("#tribeListBtn").show();
 }
 
+function generateReverseCache() {
+	/*
+	var out = "";
+
+	$.each(demonByNameJP, function(nameJP, data) {
+		out += JSON.stringify(renderReverseList(data));
+	});
+
+	$('#reverseChartTest').text(out);
+	*/
+
+	var cache = { };
+
+	$.each(demonByNameJP, function(nameJP, data) {
+		cache[nameJP] = renderReverseList(data);
+	});
+
+	$('#reverseChartTest').text(JSON.stringify(cache));
+}
+
 function renderReverseList(baseDemon) {
-	if(baseDemon.fusions === undefined) {
+	if(baseDemon.fusions === undefined &&
+		reverseChart[baseDemon.tribe] !== undefined) {
+
 		var results = [ ];
 
 		$.each(reverseChart[baseDemon.tribe], function(index, combo) {
