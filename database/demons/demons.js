@@ -2106,7 +2106,7 @@ registerDemon({
 	},
 	"skills": {
 		// This is a mapping for skill information, must stay in Japanese.
-		"冥界波": 0,
+		"冥界破": 0,
 		"マハブフダイン": 0
 	},
 	"fusions": [
@@ -2189,7 +2189,7 @@ registerDemon({
 	"skills": {
 		// This is a mapping for skill information, must stay in Japanese.
 		"マハブフダイン": 0,
-		"冥界波": 0,
+		"冥界破": 0,
 		"物理ギガプレロマ": 89
 	}
 });
@@ -2948,7 +2948,7 @@ registerDemon({
 	"skills": {
 		// This is a mapping for skill information, must stay in Japanese.
 		"雄叫び": 0,
-		"冥界波": 0,
+		"冥界破": 0,
 		"メギドラ": 65,
 		"ラスタキャンディ": 66
 	}
@@ -13110,7 +13110,7 @@ registerDemon({
 		"シバブー": 0,
 		"テトラカーン": 0,
 		"ラクカジャ": 57,
-		"冥界波": 58
+		"冥界破": 58
 	}
 });
 registerDemon({
@@ -14947,8 +14947,7 @@ registerDemon({
 	},
 	"skills": {
 		// This is a mapping for skill information, must stay in Japanese.
-		"プラズマ": 0,
-		"放電": 0,
+		"プラズマ放電": 0,
 		"フォッグブレス": 29,
 		"メギドプラズマー": 31
 	},
