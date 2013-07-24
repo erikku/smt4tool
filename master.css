@@ -302,3 +302,7 @@ body {
 #compSplitList, #compHistory {
 	display: inline-block;
 }
+
+img.map {
+	padding: 8px;
+}
