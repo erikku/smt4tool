@@ -1686,7 +1686,7 @@ registerDemon({
 		"スクカジャ": 12
 	},
 	"mutate": {
-		"level": 0,
+		"level": 14,
 		"target": "ライジュウ"
 	}
 });
@@ -15817,7 +15817,12 @@ registerDemon({
 		"ジャベリンレイン": 0,
 		"チャージ": 0,
 		"ザンダイン": 58
-	}
+	},
+	"notes": "Normal attack: Phys x1 hits, 1 enemy",
+	"profile": "The sinful \"angel of the oath.\" His original name was " +
+	"Biga, meaning \"good person.\"\nHe attempted to coerce Michael to tell" +
+	"him the sacred name of God, but was denied. After the Fall, he was " +
+	"given the name Kazbiel, \"he who lies to God.\""
 });
 registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
@@ -15895,7 +15900,11 @@ registerDemon({
 		"天罰": 0,
 		"チャクラウォーク": 0,
 		"ディアラハン": 68
-	}
+	},
+	"notes": "Normal attack: Phys x1 hits, 1 enemy",
+	"profile": "In Zoroastrian lore, Sraosha's duty is to listen to " +
+	"humanity's cry for Ahura Mazda.\nAlso known to descend after sunset " +
+	"to vanquish evil. Its name literally means \"observance.\""
 });
 registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
@@ -15933,7 +15942,15 @@ registerDemon({
 		"ディアラマ": 0,
 		"プリンパ": 0,
 		"ハマオン": 72
-	}
+	},
+	"notes": "Normal attack: Phys x1 hits, 1 enemy",
+	"profile": "He is the angel of beauty, also known as Hanael. His name" +
+	"means \"grade of God.\"He is generally associated with the planet " +
+	"Venus and performs a similar role as the goddess Ishtar.\nHe gives " +
+	"rise to feelings of love amoungst people and has the role of tying " +
+	"together young men and women. He is also thought to be the symbol of " +
+	"lasting friendship and lust. When he appears, it is said to be in the " +
+	"form of a beautiful man or woman."
 });
 registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
@@ -16011,7 +16028,12 @@ registerDemon({
 		"ハマオン": 0,
 		"パニックボイス": 0,
 		"ディアラハン": 46
-	}
+	},
+	"notes": "Normal attack: Phys x1 hits, 1 enemy",
+	"profile": "The Islamic angel of music. It is said that he will sound " +
+	"the trumpet during the Last Judgement.\nHe has four wings and is said " +
+	"to tower into the heavens. Thrice daily and nightly, he sheds enormous " +
+	"tears while watching humans tormented in Hell."
 });
 registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
@@ -16079,7 +16101,7 @@ registerDemon({
 		"banish": "null",
 		"curse": "-",
 		"bind": "-",
-		"sleep": "-",
+		"sleep": "null",
 		"cold": "-",
 		"confusion": "-",
 		"poison": "-"
@@ -16089,7 +16111,11 @@ registerDemon({
 		"ハマオン": 0,
 		"ブラストアロー": 0,
 		"呪殺無効": 43
-	}
+	},
+	"notes": "Normal attack: Phys x1 hits, 1 enemy",
+	"profile": "The guardian angel of Saint Patrick who spoke to him in a " +
+	"dream and had him spread Christianity throughout Ireland.\nHis role is " +
+	"to speak the will of God to those who are to become leaders."
 });
 registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
@@ -16126,7 +16152,12 @@ registerDemon({
 		"アギダイン": 0,
 		"サマリカーム": 0,
 		"マハムドオン": 63
-	}
+	},
+	"notes": "Normal attack: Phys x1 hits, 1 enemy",
+	"profile": "The Islamic angel of death, said to have four faces and " +
+	"four wings.\nAzrael has a book in which he inscribes and erases the " +
+	"names of those who are born and die. His body is covered in eyes. " +
+	"When one blinks, someone in the world dies."
 });
 registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
@@ -16163,7 +16194,13 @@ registerDemon({
 		"リカーム": 0,
 		"マハンマ": 0,
 		"ハマオン": 36
-	}
+	},
+	"notes": "Normal attack: Phys x1 hits, 1 enemy",
+	"profile": "An angel in Judeo-Christian lore that presides over " +
+	"conception.\nShe is the intermediary between pregnant women and God. " +
+	"When a woman conceives a child, the seed is given to God, who then " +
+	"decides the child's sex, appearance, and destiny. After such things " +
+	"are decided, a new soul is placed into the woman's womb."
 });
 registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
@@ -16242,7 +16279,12 @@ registerDemon({
 		"メギドラオン": 0,
 		"タルカジャ": 84,
 		"審判の光": 85
-	}
+	},
+	"notes": "Normal attack: Phys x1 hits, 1 enemy",
+	"profile": "The greatest and most mysterious of the angels.\nHe has " +
+	"many names, such as the Voice of God and Angel of Contracts. In " +
+	"contrast to his duty to maintain the world, he is said to have a " +
+	"merciless side toward humanity."
 });
 registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
