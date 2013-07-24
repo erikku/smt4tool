@@ -373,9 +373,16 @@ function calculateFusion(a, b) {
 
 		if(rank == "u") {
 			var currentLevel = 100;
+			var lowest = undefined;
 
 			// Up
 			$.each(demonByNameJP, function(name, demon) {
+				// Find the lowest level demon in the tribe.
+				if(demon.tribe == targetTribe && (lowest === undefined ||
+					demon.level < lowest.level)) {
+					lowest = demon;
+				}
+
 				if(demon.tribe == targetTribe && demon.level < currentLevel &&
 					demon.level > mainDemon.level &&
 					demon.fusions === undefined) {
@@ -384,8 +391,10 @@ function calculateFusion(a, b) {
 				}
 			});
 
+			// If this is the highest level demon in the tribe, result is the
+			// lowest level demon in the tribe.
 			if(result === undefined)
-				result = mainDemon;
+				result = lowest;
 		} else if(rank == "d") {
 			var currentLevel = 0;
 
@@ -399,8 +408,7 @@ function calculateFusion(a, b) {
 				}
 			});
 
-			if(result === undefined)
-				result = mainDemon;
+			// If this is the lowest level demon in the tribe, no fusion.
 		} else {
 			// No fusion!
 		}
