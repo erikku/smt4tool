@@ -34,5 +34,10 @@ registerDemon({
 		"ハマオン": 0,
 		"パニックボイス": 0,
 		"ディアラハン": 46
-	}
+	},
+	"notes": "Normal attack: Phys x1 hits, 1 enemy",
+	"profile": "The Islamic angel of music. It is said that he will sound " +
+	"the trumpet during the Last Judgement.\nHe has four wings and is said " +
+	"to tower into the heavens. Thrice daily and nightly, he sheds enormous " +
+	"tears while watching humans tormented in Hell."
 });

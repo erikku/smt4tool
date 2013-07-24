@@ -93,3 +93,7 @@ function htmlQuest(data) {
 
 	return html;
 }
+
+function htmlMap(name) {
+	return "<img class=\"map\" src=\"walkthrough/" + name + ".png\"/>";
+}

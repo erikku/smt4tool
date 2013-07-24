@@ -33,5 +33,10 @@ registerDemon({
 		"アギダイン": 0,
 		"サマリカーム": 0,
 		"マハムドオン": 63
-	}
+	},
+	"notes": "Normal attack: Phys x1 hits, 1 enemy",
+	"profile": "The Islamic angel of death, said to have four faces and " +
+	"four wings.\nAzrael has a book in which he inscribes and erases the " +
+	"names of those who are born and die. His body is covered in eyes. " +
+	"When one blinks, someone in the world dies."
 });

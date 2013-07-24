@@ -33,5 +33,9 @@ registerDemon({
 		"天罰": 0,
 		"チャクラウォーク": 0,
 		"ディアラハン": 68
-	}
+	},
+	"notes": "Normal attack: Phys x1 hits, 1 enemy",
+	"profile": "In Zoroastrian lore, Sraosha's duty is to listen to " +
+	"humanity's cry for Ahura Mazda.\nAlso known to descend after sunset " +
+	"to vanquish evil. Its name literally means \"observance.\""
 });

@@ -35,7 +35,7 @@ registerDemon({
 		"スクカジャ": 12
 	},
 	"mutate": {
-		"level": 0,
+		"level": 14,
 		"target": "ライジュウ"
 	}
 });

@@ -34,5 +34,10 @@ registerDemon({
 		"メギドラオン": 0,
 		"タルカジャ": 84,
 		"審判の光": 85
-	}
+	},
+	"notes": "Normal attack: Phys x1 hits, 1 enemy",
+	"profile": "The greatest and most mysterious of the angels.\nHe has " +
+	"many names, such as the Voice of God and Angel of Contracts. In " +
+	"contrast to his duty to maintain the world, he is said to have a " +
+	"merciless side toward humanity."
 });
