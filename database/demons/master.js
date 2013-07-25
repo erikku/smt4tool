@@ -475,10 +475,16 @@ function demonClicked(obj) {
 	showDemon($(obj).text());
 }
 
-function demonTableEntry(data) {
+function demonTableEntry(data, targetLevel) {
 	var demonList = "";
 	demonList += "<tr>";
-	demonList += "<td>" + data.level + "</td>";
+
+	if(targetLevel !== undefined && targetLevel > data.level) {
+		demonList += "<td>" + data.level + "=>" + targetLevel + "</td>";
+	} else {
+		demonList += "<td>" + data.level + "</td>";
+	}
+
 	demonList += "<td><a class=\"demonLink\" onClick=\"demonClicked(this);\">" +
 		data.nameEN + "</a></td>";
 	demonList += "<td>" + data.stats.hp + "</td>";

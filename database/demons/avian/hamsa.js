@@ -32,6 +32,6 @@ registerDemon({
 		// This is a mapping for skill information, must stay in Japanese.
 		"ジオ": 0,
 		"道具の知恵・攻": 0,
-		"ディア": -1
+		"ディア": 4
 	}
 });

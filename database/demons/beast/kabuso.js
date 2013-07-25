@@ -35,7 +35,7 @@ registerDemon({
 		"メディア": 21
 	},
 	"mutate": {
-		"level": 0,
+		"level": 23,
 		"target": "センリ"
 	}
 });

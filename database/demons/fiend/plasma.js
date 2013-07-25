@@ -30,8 +30,7 @@ registerDemon({
 	},
 	"skills": {
 		// This is a mapping for skill information, must stay in Japanese.
-		"プラズマ": 0,
-		"放電": 0,
+		"プラズマ放電": 0,
 		"フォッグブレス": 29,
 		"メギドプラズマー": 31
 	},

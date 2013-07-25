@@ -1,1883 +1,1840 @@
 registerSkill({
 	"nameJP": "突撃",
 	"nameEN": "Lunge",
-	"attribute": "physical",
-	"cost": 5,
-	"power": "low",
+	"attribute": "Physical",
+	"cost": 6,
+	"power": "Weak",
 	"hits": "1",
-	"kuli": "high",
-	"hit": "low",
-	"target": "single",
-	"strengthen": -1,
-	"effect": "-"
+	"kuli": "High",
+	"hit": "Low",
+	"target": "Enemy",
+	"strengthen": 8,
+	"effect": "Weak Phys attack. High critical rate/low hit rate. Taget: 1 enemy"
 });
 
 registerSkill({
 	"nameJP": "鬼神楽",
 	"nameEN": "Oni-Kagura",
-	"attribute": "physical",
+	"attribute": "Physical",
 	"cost": 9,
-	"power": "medium",
+	"power": "Medium",
 	"hits": "1",
-	"kuli": "high",
-	"hit": "low",
-	"target": "single",
-	"strengthen": -1,
-	"effect": "Medium Phys attack."
+	"kuli": "High",
+	"hit": "Low",
+	"target": "Enemy",
+	"strengthen": 8,
+	"effect": "Medium Phys attack. High critical rate/low hit rate. Target: 1 enemy"
 });
 
 registerSkill({
 	"nameJP": "モータルジハード",
 	"nameEN": "Mortal Jihad",
-	"attribute": "physical",
+	"attribute": "Physical",
 	"cost": 13,
-	"power": "high",
+	"power": "Heavy",
 	"hits": "1",
-	"kuli": "high",
-	"hit": "low",
-	"target": "single",
-	"strengthen": -1,
-	"effect": "-"
+	"kuli": "High",
+	"hit": "Low",
+	"target": "Enemy",
+	"strengthen": 8,
+	"effect": "Heavy Phys attack. High critical rate/low hit rate. Target: 1 enemy"
 });
 
 registerSkill({
 	"nameJP": "会心波",
 	"nameEN": "Critical Wave",
-	"attribute": "physical",
+	"attribute": "Physical",
 	"cost": 10,
-	"power": "low",
+	"power": "Weal",
 	"hits": "1",
-	"kuli": "high",
-	"hit": "low",
-	"target": "all",
+	"kuli": "High",
+	"hit": "Low",
+	"target": "All enemies",
 	"strengthen": 8,
-	"effect": "-"
+	"effect": "Weak Phys attack. High critical rate/low hit rate. Target: All enemies"
 });
 
 registerSkill({
 	"nameJP": "メガトンプレス",
 	"nameEN": "Megaton Press",
-	"attribute": "physical",
+	"attribute": "Physical",
 	"cost": 17,
-	"power": "medium",
+	"power": "Medium",
 	"hits": "1",
-	"kuli": "high",
-	"hit": "low",
-	"target": "all",
-	"strengthen": -1,
-	"effect": "-"
+	"kuli": "High",
+	"hit": "Low",
+	"target": "All enemies",
+	"strengthen": 8,
+	"effect": "Weak Phys attack. High critical rate/low hit rate. Target: All enemies"
 });
 
 registerSkill({
 	"nameJP": "ティタノマキア",
 	"nameEN": "Titanomachia",
-	"attribute": "physical",
+	"attribute": "Physical",
 	"cost": 30,
-	"power": "high",
+	"power": "Heavy",
 	"hits": "1",
-	"kuli": "high",
-	"hit": "low",
-	"target": "all",
+	"kuli": "High",
+	"hit": "Low",
+	"target": "All enemies",
 	"strengthen": 8,
-	"effect": "-"
+	"effect": "Heavy Phys attack. High critical rate/low hit rate. Target: All enemies"
 });
 
 registerSkill({
 	"nameJP": "グラムカット",
 	"nameEN": "Gram Slice",
-	"attribute": "physical",
+	"attribute": "Physical",
 	"cost": 5,
-	"power": "low",
+	"power": "Weak",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "single",
-	"strengthen": -1,
-	"effect": "-"
+	"target": "Enemy",
+	"strengthen": 8,
+	"effect": "Weak Phys attack. Target: 1 enemy"
 });
 
 registerSkill({
 	"nameJP": "絶命剣",
-	"nameEN": "Death Sword",
-	"attribute": "physical",
+	"nameEN": "Fatal Sword",
+	"attribute": "Physical",
 	"cost": 8,
-	"power": "medium",
+	"power": "Medium",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "single",
-	"strengthen": -1,
-	"effect": "-"
+	"target": "Enemy",
+	"strengthen": 8,
+	"effect": "Medium Phys attack. Target: 1 enemy"
 });
 
 registerSkill({
 	"nameJP": "怪力乱神",
 	"nameEN": "Berserker God",
-	"attribute": "physical",
+	"attribute": "Physical",
 	"cost": 12,
-	"power": "high",
+	"power": "Heavy",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "single",
-	"strengthen": -1,
-	"effect": "Heavy Phys attack"
-});
-
-registerSkill({
-	"nameJP": "プラズマ",
-	"nameEN": "Plasma",
-	"attribute": "physical",
-	"cost": -1,
-	"power": "???",
-	"hits": "???",
-	"kuli": "???",
-	"hit": "???",
-	"target": "???",
-	"strengthen": -1,
-	"effect": "Fix Me"
+	"target": "Enemy",
+	"strengthen": 8,
+	"effect": "Heavy Phys attack. Target: 1 enemy"
 });
 
 registerSkill({
 	"nameJP": "ヒートウェイブ",
 	"nameEN": "Heat Wave",
-	"attribute": "physical",
+	"attribute": "Physical",
 	"cost": 11,
-	"power": "low",
+	"power": "Weak",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "all",
-	"strengthen": -1,
-	"effect": "Weak Phys attack"
+	"target": "All enemies",
+	"strengthen": 8,
+	"effect": "Weak PWeak Phys attack. Target: All enemies"
 });
 
 registerSkill({
 	"nameJP": "ジャベリンレイン",
 	"nameEN": "Javelin Rain",
-	"attribute": "physical",
+	"attribute": "Physical",
 	"cost": 21,
-	"power": "medium",
+	"power": "Medium",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "all",
-	"strengthen": -1,
-	"effect": "Medium Phys attack"
-});
-
-registerSkill({
-	"nameJP": "冥界波",
-	"nameEN": "Hades Blast 2",
-	"cost": -1,
-	"power": "???",
-	"hits": "???",
-	"kuli": "???",
-	"hit": "???",
-	"target": "???",
-	"strengthen": -1,
-	"effect": "Fix Me"
+	"target": "All enemies",
+	"strengthen": 8,
+	"effect": "Medium Phys attack. Target: All enemies"
 });
 
 registerSkill({
 	"nameJP": "冥界破",
 	"nameEN": "Hades Blast",
-	"attribute": "physical",
+	"attribute": "Physical",
 	"cost": 32,
-	"power": "high",
+	"power": "Heavy",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "all",
+	"target": "All enemies",
 	"strengthen": 8,
-	"effect": "-"
+	"effect": "Heavy Phys attack. Target: All enemies"
 });
 
 registerSkill({
 	"nameJP": "バウンスクロー",
 	"nameEN": "Bouncing Claw",
-	"attribute": "physical",
+	"attribute": "Physical",
 	"cost": 4,
-	"power": "low",
+	"power": "Weak",
 	"hits": "1-3",
 	"kuli": "-",
 	"hit": "-",
-	"target": "single",
-	"strengthen": -1,
-	"effect": "-"
+	"target": "Enemy",
+	"strengthen": 8,
+	"effect": "1-3 weak Phys attacks. Target: 1 enemy"
 });
 
 registerSkill({
 	"nameJP": "ダマスカスクロー",
 	"nameEN": "Damascus Claw",
-	"attribute": "physical",
+	"attribute": "Physical",
 	"cost": 7,
-	"power": "medium",
-	"hits": "1",
+	"power": "Medium",
+	"hits": "1-3",
 	"kuli": "-",
 	"hit": "-",
-	"target": "single",
-	"strengthen": -1,
-	"effect": "-"
+	"target": "Enemy",
+	"strengthen": 8,
+	"effect": "1-3 medium Phys attacks. Target: 1 enemy"
 });
 
 registerSkill({
 	"nameJP": "虚空爪激",
-	"nameEN": "Space Claw",
-	"attribute": "physical",
+	"nameEN": "Nihil Claw",
+	"attribute": "Physical",
 	"cost": 11,
-	"power": "high",
-	"hits": "1",
+	"power": "Heavy",
+	"hits": "1-3",
 	"kuli": "-",
 	"hit": "-",
-	"target": "single",
-	"strengthen": -1,
-	"effect": "-"
+	"target": "Enemy",
+	"strengthen": 8,
+	"effect": "1-3 heavy Phys attacks. Target: 1 enemy"
 });
 
 registerSkill({
 	"nameJP": "スクラッチダンス",
 	"nameEN": "Scratch Dance",
-	"attribute": "physical",
+	"attribute": "Physical",
 	"cost": 9,
-	"power": "low",
+	"power": "Weak",
 	"hits": "1-3",
 	"kuli": "-",
 	"hit": "-",
-	"target": "multiple",
-	"strengthen": -1,
-	"effect": "-"
+	"target": "Multi-enemies",
+	"strengthen": 8,
+	"effect": "1-3 weak Phys attacks. Target: Multi-enemies"
 });
 
 registerSkill({
 	"nameJP": "アクセルクロー",
 	"nameEN": "Axel Claw",
-	"attribute": "physical",
+	"attribute": "Physical",
 	"cost": 15,
-	"power": "low",
+	"power": "Medium",
 	"hits": "1-3",
 	"kuli": "-",
 	"hit": "-",
-	"target": "single",
-	"strengthen": -1,
-	"effect": "1-3 medium Phys attacks"
+	"target": "Enemy",
+	"strengthen": 8,
+	"effect": "1-3 medium Phys attacks. Target: Multi-enemies"
 });
 
 registerSkill({
 	"nameJP": "狂乱の剛爪",
-	"nameEN": "Frenzy Claw",
-	"attribute": "physical",
+	"nameEN": "Madness Nails",
+	"attribute": "Physical",
 	"cost": 26,
-	"power": "high",
+	"power": "Heavy",
 	"hits": "1-3",
 	"kuli": "-",
 	"hit": "-",
-	"target": "multiple",
-	"strengthen": -1,
-	"effect": "-"
+	"target": "Multi-enemies",
+	"strengthen": 8,
+	"effect": "1-3 heavy Phys attacks. Target: Multi-enemies"
 });
 
 registerSkill({
 	"nameJP": "牙折り",
 	"nameEN": "Fang Breaker",
-	"attribute": "physical",
+	"attribute": "Physical",
 	"cost": 12,
-	"power": "low",
+	"power": "Weak",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "single",
+	"target": "Enemy",
 	"strengthen": 8,
-	"effect": "attack decline (1)"
+	"effect": "Weak Phys attack. Decreases attack. Target: 1 enemy"
 });
 
 registerSkill({
 	"nameJP": "成仏拳",
 	"nameEN": "Dream Fist",
-	"attribute": "physical",
+	"attribute": "Physical",
 	"cost": 9,
-	"power": "low",
+	"power": "Weak",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "single",
-	"strengthen": -1,
-	"effect": "sleep"
+	"target": "Enemy",
+	"strengthen": 8,
+	"effect": "Weak Phys attack. Inflicts Sleep. Target: 1 enemy"
 });
 
 registerSkill({
 	"nameJP": "紫煙乱打",
-	"nameEN": "Purple Smoke Hit",
-	"attribute": "physical",
+	"nameEN": "Purple Smoke",
+	"attribute": "Physical",
 	"cost": 14,
-	"power": "medium",
+	"power": "Medium",
 	"hits": "1-3",
 	"kuli": "-",
 	"hit": "-",
-	"target": "multiple",
-	"strengthen": -1,
-	"effect": "confusion"
+	"target": "Multi-enemies",
+	"strengthen": 8,
+	"effect": "1-3 medium Phys attacks. Inflicts Panic. Target: Multi-enemies"
 });
 
+/*
 registerSkill({
 	"nameJP": "キャロルヒット",
-	"nameEN": "Critical Hit",
+	"nameEN": "Carrol Hit",
 	"attribute": "physical",
 	"cost": 15,
 	"power": "low",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "single",
+	"target": "Enemy",
 	"strengthen": -1,
 	"effect": "lost child"
 });
+*/
 
 registerSkill({
 	"nameJP": "テタノスカット",
 	"nameEN": "Tetanus Cut",
-	"attribute": "physical",
+	"attribute": "Physical",
 	"cost": 11,
-	"power": "medium",
+	"power": "Medium",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "single",
-	"strengthen": -1,
-	"effect": "cold"
+	"target": "Enemy",
+	"strengthen": 8,
+	"effect": "Medium Phys attack. Inflicts Sick. Target: 1 enemy"
 });
 
 registerSkill({
 	"nameJP": "ベノンザッパー",
-	"nameEN": "Venom Zapper",
-	"attribute": "physical",
+	"nameEN": "Blight",
+	"attribute": "Physical",
 	"cost": 14,
-	"power": "low",
+	"power": "Weak",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "all",
+	"target": "All enemies",
 	"strengthen": 8,
-	"effect": "poison"
+	"effect": "Weak Phys attack. Inflicts Poison. Target: All enemies"
 });
 
 registerSkill({
 	"nameJP": "奥義一閃",
 	"nameEN": "Secret Slash",
-	"attribute": "physical",
+	"attribute": "Physical",
 	"cost": 30,
-	"power": "medium",
+	"power": "Medium",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "all",
+	"target": "All enemies",
 	"strengthen": 8,
-	"effect": "instant death"
+	"effect": "-"
 });
 
 registerSkill({
 	"nameJP": "バインドクロー",
 	"nameEN": "Binding Claw",
-	"attribute": "physical",
+	"attribute": "Physical",
 	"cost": 11,
-	"power": "medium",
+	"power": "Medium",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "single",
-	"strengthen": -1,
-	"effect": "Medium Phys attack"
+	"target": "Enemy",
+	"strengthen": 8,
+	"effect": "Medium Phys attack. Inflicts Bind. Target: 1 enemy"
 });
 
 registerSkill({
 	"nameJP": "ポイズンクロー",
 	"nameEN": "Poison Claw",
-	"attribute": "physical",
+	"attribute": "Physical",
 	"cost": 9,
-	"power": "medium",
+	"power": "Medium",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "single",
-	"strengthen": -1,
-	"effect": "poison"
+	"target": "Enemy",
+	"strengthen": 8,
+	"effect": "Medium Phys attack. Inflicts Poison. Target: 1 enemy"
 });
 
 registerSkill({
 	"nameJP": "てっけんせいさい",
 	"nameEN": "Iron Fist Smash",
-	"attribute": "physical",
+	"attribute": "Physical",
 	"cost": 8,
-	"power": "medium",
+	"power": "Medium",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "single",
-	"strengthen": -1,
+	"target": "Enemy",
+	"strengthen": 8,
 	"effect": "-"
 });
 
 registerSkill({
 	"nameJP": "閂投げ",
 	"nameEN": "Bar Toss",
-	"attribute": "physical",
+	"attribute": "Physical",
 	"cost": 35,
-	"power": "low",
+	"power": "Weak",
 	"hits": "1-15",
 	"kuli": "-",
 	"hit": "-",
-	"target": "multiple",
-	"strengthen": -1,
-	"effect": "-",
-	"notes": "主人公継承不可\n悪魔合体ライトでのみ継承可"
+	"target": "Multi-enemies",
+	"strengthen": 8,
+	"effect": "-"
 });
 
 registerSkill({
 	"nameJP": "烙印の一撃",
 	"nameEN": "Stigma Attack",
-	"attribute": "physical",
+	"attribute": "Physical",
 	"cost": 20,
-	"power": "high",
+	"power": "Heavy",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "single",
-	"strengthen": -1,
-	"effect": "stigma"
+	"target": "Enemy",
+	"strengthen": 8,
+	"effect": "-"
 });
 
 registerSkill({
 	"nameJP": "ニードルショット",
 	"nameEN": "Needle Shot",
-	"attribute": "gun",
+	"attribute": "Gun",
 	"cost": 4,
-	"power": "low",
+	"power": "Weak",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "single",
-	"strengthen": -1,
-	"effect": "-"
+	"target": "Enemy",
+	"strengthen": 8,
+	"effect": "Weak Gun attack. Target: 1 enemy"
 });
 
 registerSkill({
 	"nameJP": "タスラムショット",
-	"nameEN": "Teslam Shot",
-	"attribute": "gun",
+	"nameEN": "Tathlum Shot",
+	"attribute": "Gun",
 	"cost": 7,
-	"power": "medium",
+	"power": "Medium",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "single",
-	"strengthen": -1,
-	"effect": "-"
+	"target": "Enemy",
+	"strengthen": 8,
+	"effect": "Medium Gun attack. Target: 1 enemy"
 });
 
 registerSkill({
 	"nameJP": "グランドタック",
 	"nameEN": "Grand Tack",
-	"attribute": "gun",
+	"attribute": "Gun",
 	"cost": 11,
-	"power": "high",
+	"power": "Heavy",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "single",
-	"strengthen": -1,
-	"effect": "-"
+	"target": "Enemy",
+	"strengthen": 8,
+	"effect": "Heavy Gun attack. Target: 1 enemy"
 });
 
 registerSkill({
 	"nameJP": "至高の魔弾",
 	"nameEN": "Riot Gun",
-	"attribute": "gun",
+	"attribute": "Gun",
 	"cost": 30,
-	"power": "very high",
+	"power": "Severe",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "single",
-	"strengthen": -1,
-	"effect": "Severe Gun attack"
+	"target": "Enemy",
+	"strengthen": 8,
+	"effect": "Severe Gun attack. Target: 1 enemy"
 });
 
 registerSkill({
 	"nameJP": "ラピッドニードル",
 	"nameEN": "Rapid Needle",
-	"attribute": "gun",
+	"attribute": "Gun",
 	"cost": 9,
-	"power": "low",
+	"power": "Weak",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "all",
-	"strengthen": -1,
-	"effect": "-"
+	"target": "All enemies",
+	"strengthen": 8,
+	"effect": "Weak Gun attack. Target: All enemies"
 });
 
 registerSkill({
 	"nameJP": "ブラストアロー",
 	"nameEN": "Blast Arrow",
-	"attribute": "gun",
+	"attribute": "Gun",
 	"cost": 16,
-	"power": "medium",
+	"power": "Medium",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "all",
-	"strengthen": -1,
-	"effect": "Medium Gun attack"
+	"target": "All enemies",
+	"strengthen": 8,
+	"effect": "Medium Gun attack. Target: All enemies"
 });
 
 registerSkill({
 	"nameJP": "天扇弓",
 	"nameEN": "Heaven's Bow",
-	"attribute": "gun",
+	"attribute": "Gun",
 	"cost": 26,
-	"power": "high",
+	"power": "Heavy",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "all",
-	"strengthen": -1,
-	"effect": "Heavy Gun attack"
+	"target": "All enemies",
+	"strengthen": 8,
+	"effect": "Heavy Gun attack. Target: All enemies"
 });
 
 registerSkill({
 	"nameJP": "夢見針",
 	"nameEN": "Dream Needle",
-	"attribute": "gun",
+	"attribute": "Gun",
 	"cost": 9,
-	"power": "low",
+	"power": "Weak",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "single",
-	"strengthen": -1,
-	"effect": "sleep"
+	"target": "Enemy",
+	"strengthen": 8,
+	"effect": "Weak Gun attack. Inflicts Sleep. Target: 1 enemy"
 });
 
 registerSkill({
 	"nameJP": "毒針",
-	"nameEN": "Poison Needle",
-	"attribute": "gun",
+	"nameEN": "Toxic Sting",
+	"attribute": "Gun",
 	"cost": 9,
-	"power": "low",
+	"power": "Weak",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "single",
-	"strengthen": -1,
-	"effect": "poison"
+	"target": "Enemy",
+	"strengthen": 8,
+	"effect": "Weak Gun attack. Inflicts Poison. Target: 1 enemy"
 });
 
 registerSkill({
 	"nameJP": "麻痺針",
-	"nameEN": "Paralysis Needle",
-	"attribute": "gun",
+	"nameEN": "Stun Needle",
+	"attribute": "Gun",
 	"cost": 11,
-	"power": "low",
+	"power": "Weak",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "single",
-	"strengthen": -1,
-	"effect": "bind"
+	"target": "Enemy",
+	"strengthen": 8,
+	"effect": "Weak Gun attack. Inflicts Bind. Target: 1 enemy"
 });
 
 registerSkill({
 	"nameJP": "狂乱針",
 	"nameEN": "Madness Needle",
-	"attribute": "gun",
+	"attribute": "Gun",
 	"cost": 11,
-	"power": "low",
+	"power": "Weak",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "single",
-	"strengthen": -1,
-	"effect": "Weak Gun attack"
+	"target": "Enemy",
+	"strengthen": 8,
+	"effect": "Weak Gun attack. Inflicts Panic. Target: 1 enemy"
 });
 
 registerSkill({
 	"nameJP": "百麻痺針",
-	"nameEN": "Hundred Paralysis Needles",
-	"attribute": "gun",
+	"nameEN": "Stun Needles",
+	"attribute": "Gun",
 	"cost": 14,
-	"power": "medium",
+	"power": "Medium",
 	"hits": "1-3",
 	"kuli": "-",
 	"hit": "-",
-	"target": "multiple",
-	"strengthen": -1,
-	"effect": "bind"
+	"target": "Multi-enemies",
+	"strengthen": 8,
+	"effect": "1-3 medium Gun attacks. Inflicts Bind. Target: Multi-enemies"
 });
 
 registerSkill({
 	"nameJP": "刹那五月雨撃ち",
-	"nameEN": "Setsuna Satsuki Ame Uchi",
-	"attribute": "gun",
+	"nameEN": "Myriad Arrows",
+	"attribute": "Gun",
 	"cost": 30,
-	"power": "low",
+	"power": "Weak",
 	"hits": "2-4",
 	"kuli": "-",
 	"hit": "-",
-	"target": "multiple",
-	"strengthen": -1,
-	"effect": "-"
+	"target": "Multi-enemies",
+	"strengthen": 8,
+	"effect": "2-4 weak Gun attacks. Target: Multi-enemies"
 });
 
 registerSkill({
 	"nameJP": "狂星乱舞",
 	"nameEN": "Crazed Star Dance",
-	"attribute": "gun",
+	"attribute": "Gun",
 	"cost": 36,
-	"power": "high",
+	"power": "Heavy",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "all",
-	"strengthen": -1,
-	"effect": "confusion"
+	"target": "All enemies",
+	"strengthen": 8,
+	"effect": "-"
 });
 
 registerSkill({
 	"nameJP": "うちまくり",
-	"nameEN": "Roll up",
-	"attribute": "almighty",
+	"nameEN": "Roll Up",
+	"attribute": "Almighty",
 	"cost": 40,
-	"power": "low",
+	"power": "Weak",
 	"hits": "1-5",
 	"kuli": "-",
 	"hit": "-",
-	"target": "multiple",
-	"strengthen": -1,
-	"effect": "-",
-	"notes": "悪魔合体ライトでのみ継承可"
+	"target": "Multi-enemies",
+	"strengthen": 8,
+	"effect": "-"
 });
 
 registerSkill({
 	"nameJP": "ナラク落とし",
 	"nameEN": "Naraku Drop",
-	"attribute": "almighty",
+	"attribute": "Almighty",
 	"cost": 50,
-	"power": "666",
+	"power": "Always 666",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "single",
-	"strengthen": -1,
-	"effect": "-",
-	"notes": "DLC「high天使の羽を折れ2」\n悪魔合体ライトのみ継承可"
+	"target": "Enemy",
+	"strengthen": 8,
+	"effect": "-"
 });
 
 registerSkill({
 	"nameJP": "アギ",
 	"nameEN": "Agi",
-	"attribute": "fire",
+	"attribute": "Fire",
 	"cost": 5,
-	"power": "low",
+	"power": "Weak",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "single",
+	"target": "Enemy",
 	"strengthen": 8,
-	"effect": "-"
+	"effect": "Weak Fire attack. Target: 1 enemy"
 });
 
 registerSkill({
 	"nameJP": "アギラオ",
 	"nameEN": "Agilao",
-	"attribute": "fire",
+	"attribute": "Fire",
 	"cost": 8,
-	"power": "medium",
+	"power": "Medium",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "single",
+	"target": "Enemy",
 	"strengthen": 8,
-	"effect": "Medium Fire attack"
+	"effect": "Medium Fire attack. Target: 1 enemy"
 });
 
 registerSkill({
 	"nameJP": "アギダイン",
 	"nameEN": "Agidyne",
-	"attribute": "fire",
+	"attribute": "Fire",
 	"cost": 14,
-	"power": "high",
+	"power": "Heavy",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "single",
+	"target": "Enemy",
 	"strengthen": 8,
-	"effect": "-"
+	"effect": "Heavy Fire attack. Target: 1 enemy"
 });
 
 registerSkill({
 	"nameJP": "マハラギ",
 	"nameEN": "Maragi",
-	"attribute": "fire",
+	"attribute": "Fire",
 	"cost": 11,
-	"power": "low",
+	"power": "Weak",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "all",
-	"strengthen": -1,
-	"effect": "-"
+	"target": "All enemies",
+	"strengthen": 8,
+	"effect": "Weak Fire attack. Target: All enemies"
 });
 
 registerSkill({
 	"nameJP": "マハラギオン",
 	"nameEN": "Maragion",
-	"attribute": "fire",
-	"cost": 18,
-	"power": "medium",
+	"attribute": "Fire",
+	"cost": 20,
+	"power": "Medium",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "all",
-	"strengthen": -1,
-	"effect": "-"
+	"target": "All enemies",
+	"strengthen": 8,
+	"effect": "Medium Fire attack. Target: All enemies"
 });
 
 registerSkill({
 	"nameJP": "マハラギダイン",
 	"nameEN": "Maragidyne",
-	"attribute": "fire",
-	"cost": 30,
-	"power": "high",
+	"attribute": "Fire",
+	"cost": 32,
+	"power": "Heavy",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "all",
-	"strengthen": -1,
-	"effect": "-"
+	"target": "All enemies",
+	"strengthen": 8,
+	"effect": "Heavy Fire attack. Target: All enemies"
 });
 
 registerSkill({
 	"nameJP": "ファイアブレス",
 	"nameEN": "Fire Breath",
-	"attribute": "fire",
+	"attribute": "Fire",
 	"cost": 21,
-	"power": "low",
+	"power": "Weak",
 	"hits": "1-4",
 	"kuli": "-",
 	"hit": "-",
-	"target": "random",
-	"strengthen": -1,
-	"effect": "1-4 weak Fire attacks"
+	"target": "Multi-enemies",
+	"strengthen": 8,
+	"effect": "1-4 weak Fire attacks. Target: Multi-enemies"
 });
 
 registerSkill({
 	"nameJP": "トリスアギオン",
 	"nameEN": "Trisagion",
-	"attribute": "fire",
+	"attribute": "Fire",
 	"cost": 22,
-	"power": "very high",
+	"power": "Severe",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "single",
+	"target": "Enemy",
 	"strengthen": 8,
-	"effect": "-"
+	"effect": "Severe Fire attack. Target: 1 enemy"
 });
 
 registerSkill({
 	"nameJP": "ラグナロク",
 	"nameEN": "Ragnarok",
-	"attribute": "fire",
+	"attribute": "Fire",
 	"cost": 35,
-	"power": "medium",
+	"power": "Medium",
 	"hits": "1-4",
 	"kuli": "-",
 	"hit": "-",
-	"target": "random",
-	"strengthen": -1,
-	"effect": "-"
+	"target": "Multi-enemies",
+	"strengthen": 8,
+	"effect": "1-4 medium Fire attacks. Target: Multi-enemies"
 });
 
 registerSkill({
 	"nameJP": "神の業火",
 	"nameEN": "God's Fire",
-	"attribute": "fire",
+	"attribute": "Fire",
 	"cost": 50,
-	"power": "high",
+	"power": "Heavy",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "all",
-	"strengthen": -1,
-	"effect": "penetrate",
-	"notes": "DLC 悪魔合体ライトのみ継承可"
+	"target": "All enemies",
+	"strengthen": 8,
+	"effect": "-"
 });
 
 registerSkill({
 	"nameJP": "ブフ",
 	"nameEN": "Bufu",
-	"attribute": "ice",
+	"attribute": "Ice",
 	"cost": 5,
-	"power": "low",
+	"power": "Weak",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "single",
+	"target": "Enemy",
 	"strengthen": 8,
-	"effect": "-"
+	"effect": "Weak Ice attack. Target: 1 enemy"
 });
 
 registerSkill({
 	"nameJP": "ブフーラ",
 	"nameEN": "Bufula",
-	"attribute": "ice",
+	"attribute": "Ice",
 	"cost": 8,
-	"power": "medium",
+	"power": "Medium",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "single",
+	"target": "Enemy",
 	"strengthen": 8,
-	"effect": "Medium Ice attack"
+	"effect": "Medium Ice attack. Target: 1 enemy"
 });
 
 registerSkill({
 	"nameJP": "ブフダイン",
 	"nameEN": "Bufudyne",
-	"attribute": "ice",
+	"attribute": "Ice",
 	"cost": 14,
-	"power": "high",
+	"power": "Heavy",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "single",
+	"target": "Enemy",
 	"strengthen": 8,
-	"effect": "-"
+	"effect": "Heavy Ice attack. Target: 1 enemy"
 });
 
 registerSkill({
 	"nameJP": "マハブフ",
 	"nameEN": "Mabufu",
-	"attribute": "ice",
+	"attribute": "Ice",
 	"cost": 11,
-	"power": "low",
+	"power": "Weak",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "all",
-	"strengthen": -1,
-	"effect": "-"
+	"target": "All enemies",
+	"strengthen": 8,
+	"effect": "Weak Ice attack. Target: All enemies"
 });
 
 registerSkill({
 	"nameJP": "マハブフーラ",
 	"nameEN": "Mabufula",
-	"attribute": "ice",
+	"attribute": "Ice",
 	"cost": 20,
-	"power": "medium",
+	"power": "Medium",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "all",
+	"target": "All enemies",
 	"strengthen": -1,
-	"effect": "-"
+	"effect": "Medium Ice attack. Target: All enemies"
 });
 
 registerSkill({
 	"nameJP": "マハブフダイン",
 	"nameEN": "Mabufudyne",
-	"attribute": "ice",
-	"cost": 30,
-	"power": "high",
+	"attribute": "Ice",
+	"cost": 32,
+	"power": "Heavy",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "all",
+	"target": "All enemies",
 	"strengthen": 8,
-	"effect": "-"
+	"effect": "Heavy Ice attack. Target: All enemies"
 });
 
 registerSkill({
 	"nameJP": "アイスブレス",
 	"nameEN": "Ice Breath",
-	"attribute": "ice",
+	"attribute": "Ice",
 	"cost": 21,
-	"power": "low",
+	"power": "Weak",
 	"hits": "1-4",
 	"kuli": "-",
 	"hit": "-",
-	"target": "random",
-	"strengthen": -1,
-	"effect": "1-4 weak Ice attacks"
+	"target": "Multi-enemies",
+	"strengthen": 8,
+	"effect": "1-4 weak Ice attacks. Target: Multi-enemies"
 });
 
 registerSkill({
 	"nameJP": "絶対零度",
 	"nameEN": "Glacial Blast",
-	"attribute": "ice",
+	"attribute": "Ice",
 	"cost": 22,
-	"power": "medium",
+	"power": "Medium",
 	"hits": "1-4",
 	"kuli": "-",
 	"hit": "-",
-	"target": "random",
+	"target": "Multi-enemies",
 	"strengthen": -1,
-	"effect": "1-4 medium Ice attacks"
+	"effect": "1-4 medium Ice attacks. Target: Multi-enemies"
 });
 
 registerSkill({
 	"nameJP": "大冷界",
 	"nameEN": "Epic World of Dooming Cold",
-	"attribute": "ice",
+	"attribute": "Ice",
 	"cost": 50,
-	"power": "high",
+	"power": "Heavy",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "all",
-	"strengthen": -1,
-	"effect": "instant death"
+	"target": "All enemies",
+	"strengthen": 8,
+	"effect": "-"
 });
 
 registerSkill({
 	"nameJP": "といき",
 	"nameEN": "Freeze Breath",
-	"attribute": "ice",
+	"attribute": "Ice",
 	"cost": 24,
-	"power": "medium",
+	"power": "Medium",
 	"hits": "1-5",
 	"kuli": "-",
 	"hit": "-",
-	"target": "random",
+	"target": "Multi-enemies",
 	"strengthen": -1,
 	"effect": "-",
-	"notes": "主人公取得不可・悪魔合体ライト継承可"
+	"notes": "-"
 });
 
 registerSkill({
 	"nameJP": "神の雹撃",
 	"nameEN": "God's Blizzard",
-	"attribute": "ice",
+	"attribute": "Ice",
 	"cost": 50,
-	"power": "high",
+	"power": "Heavy",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "all",
-	"strengthen": -1,
-	"effect": "penetrate",
-	"notes": "DLC 悪魔合体ライトのみ継承可"
+	"target": "All enemies",
+	"strengthen": 8,
+	"effect": "-"
 });
 
 registerSkill({
 	"nameJP": "リフリジレイト",
 	"nameEN": "Refrigerate",
-	"attribute": "ice",
+	"attribute": "Ice",
 	"cost": 26,
-	"power": "low",
+	"power": "Weak",
 	"hits": "1-8",
 	"kuli": "-",
 	"hit": "-",
-	"target": "random",
+	"target": "Multi-enemies",
 	"strengthen": 8,
-	"effect": "-",
-	"notes": "DLC"
+	"effect": "-"
 });
 
 registerSkill({
 	"nameJP": "ジオ",
 	"nameEN": "Zio",
-	"attribute": "thunder",
+	"attribute": "Electric",
 	"cost": 5,
-	"power": "low",
+	"power": "Weak",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "single",
+	"target": "Enemy",
 	"strengthen": 8,
-	"effect": "-"
+	"effect": "Weak Elec attack. Target: 1 enemy"
 });
 
 registerSkill({
 	"nameJP": "ジオンガ",
 	"nameEN": "Zionga",
-	"attribute": "thunder",
+	"attribute": "Electric",
 	"cost": 8,
-	"power": "medium",
+	"power": "Medium",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "single",
+	"target": "Enemy",
 	"strengthen": 8,
-	"effect": "Medium Elec attack"
+	"effect": "Medium Elec attack. Target: 1 enemy"
 });
 
 registerSkill({
 	"nameJP": "ジオダイン",
 	"nameEN": "Ziodyne",
-	"attribute": "thunder",
+	"attribute": "Electric",
 	"cost": 14,
-	"power": "high",
+	"power": "Heavy",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "single",
+	"target": "Enemy",
 	"strengthen": 8,
-	"effect": "-"
+	"effect": "Heavy Elec attack. Target: 1 enemy"
 });
 
 registerSkill({
 	"nameJP": "マハジオ",
 	"nameEN": "Mazio",
-	"attribute": "thunder",
+	"attribute": "Electric",
 	"cost": 11,
-	"power": "low",
+	"power": "Weak",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "all",
-	"strengthen": -1,
-	"effect": "-"
+	"target": "All enemies",
+	"strengthen": 8,
+	"effect": "Weak Elec attack. Target: All enemies"
 });
 
 registerSkill({
 	"nameJP": "マハジオンガ",
 	"nameEN": "Mazionga",
-	"attribute": "thunder",
+	"attribute": "Electric",
 	"cost": 20,
-	"power": "medium",
+	"power": "Medium",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "all",
-	"strengthen": -1,
-	"effect": "Medium Elec attack"
+	"target": "All enemies",
+	"strengthen": 8,
+	"effect": "Medium Elec attack. Target: All enemies"
 });
 
 registerSkill({
 	"nameJP": "マハジオダイン",
 	"nameEN": "Maziodyne",
-	"attribute": "thunder",
-	"cost": 30,
-	"power": "high",
+	"attribute": "Electric",
+	"cost": 32,
+	"power": "Heavy",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "all",
-	"strengthen": -1,
-	"effect": "-"
+	"target": "All enemies",
+	"strengthen": 8,
+	"effect": "Heavy Elec attack. Target: All enemies"
 });
 
 registerSkill({
 	"nameJP": "放電",
-	"nameEN": "Discharge",
-	"attribute": "thunder",
+	"nameEN": "Shock",
+	"attribute": "Electric",
 	"cost": 21,
-	"power": "low",
+	"power": "Weak",
 	"hits": "1-4",
 	"kuli": "-",
 	"hit": "-",
-	"target": "random",
+	"target": "Multi-enemies",
 	"strengthen": 8,
-	"effect": "-"
+	"effect": "1-4 weak Elec attacks. Target: Multi-enemies"
 });
 
 registerSkill({
 	"nameJP": "真理の雷",
-	"nameEN": "Lightning of Truth",
-	"attribute": "thunder",
+	"nameEN": "Thunder Reign",
+	"attribute": "Electric",
 	"cost": 22,
-	"power": "very high",
+	"power": "Severe",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "all",
+	"target": "All enemies",
 	"strengthen": 8,
-	"effect": "-"
+	"effect": "Severe Elec attack. Target: All enemies"
 });
 
 registerSkill({
 	"nameJP": "魅惑の雷撃",
 	"nameEN": "Charm Lightning",
-	"attribute": "thunder",
+	"attribute": "Electric",
 	"cost": 45,
-	"power": "high",
+	"power": "Heavy",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "all",
-	"strengthen": -1,
-	"effect": "confusion"
+	"target": "All enemies",
+	"strengthen": 8,
+	"effect": "-"
 });
 
 registerSkill({
 	"nameJP": "神の雷光",
 	"nameEN": "God's Lightning",
-	"attribute": "thunder",
+	"attribute": "Electric",
 	"cost": 50,
-	"power": "high",
+	"power": "Heavy",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "all",
-	"strengthen": -1,
-	"effect": "penetrate",
-	"notes": "DLC 主人公に継承できない"
+	"target": "All enemies",
+	"strengthen": 8,
+	"effect": "-"
 });
 
 registerSkill({
 	"nameJP": "プラズマ放電",
 	"nameEN": "Plasma Discharge",
-	"attribute": "thunder",
+	"attribute": "Electric",
 	"cost": 22,
-	"power": "low",
+	"power": "Weak",
 	"hits": "1-8",
 	"kuli": "-",
 	"hit": "-",
-	"target": "random",
-	"strengthen": -1,
-	"effect": "-",
-	"notes": "DLC"
+	"target": "Multi-enemies",
+	"strengthen": 8,
+	"effect": "1-8 weak Elec attacks. Target: Multi-enemies"
 });
 
 registerSkill({
 	"nameJP": "ザン",
 	"nameEN": "Zan",
-	"attribute": "force",
+	"attribute": "Force",
 	"cost": 5,
-	"power": "low",
+	"power": "Weak",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "single",
+	"target": "Enemy",
 	"strengthen": 8,
-	"effect": "-"
+	"effect": "Weak Force attack. Target: 1 enemy"
 });
 
 registerSkill({
 	"nameJP": "ザンマ",
 	"nameEN": "Zanma",
-	"attribute": "force",
+	"attribute": "Force",
 	"cost": 8,
-	"power": "medium",
+	"power": "Medium",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "single",
+	"target": "Enemy",
 	"strengthen": 8,
-	"effect": "-"
+	"effect": "Medium Force attack. Target: 1 enemy"
 });
 
 registerSkill({
 	"nameJP": "ザンダイン",
 	"nameEN": "Zandyne",
-	"attribute": "force",
+	"attribute": "Force",
 	"cost": 14,
-	"power": "high",
+	"power": "Heavy",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "single",
+	"target": "Enemy",
 	"strengthen": 8,
-	"effect": "-"
+	"effect": "Heavy Force attack. Target: 1 enemy"
 });
 
 registerSkill({
 	"nameJP": "マハザン",
 	"nameEN": "Mazan",
-	"attribute": "force",
+	"attribute": "Force",
 	"cost": 11,
-	"power": "low",
+	"power": "Weak",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "all",
+	"target": "All enemies",
 	"strengthen": 8,
-	"effect": "-"
+	"effect": "Weak Force attack. Target: All enemies"
 });
 
 registerSkill({
 	"nameJP": "マハザンマ",
 	"nameEN": "Mazanma",
-	"attribute": "force",
+	"attribute": "Force",
 	"cost": 20,
-	"power": "medium",
+	"power": "Medium",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "all",
-	"strengthen": -1,
-	"effect": "Medium Force attack"
+	"target": "All enemies",
+	"strengthen": 8,
+	"effect": "Medium Force attack. Target: All enemies"
 });
 
 registerSkill({
 	"nameJP": "マハザンダイン",
 	"nameEN": "Mazandyne",
-	"attribute": "force",
-	"cost": 30,
-	"power": "high",
+	"attribute": "Force",
+	"cost": 32,
+	"power": "Heavy",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "all",
+	"target": "All enemies",
 	"strengthen": 8,
-	"effect": "-"
+	"effect": "Heavy Elec attack. Target: All enemies"
 });
 
 registerSkill({
 	"nameJP": "ウィンドブレス",
 	"nameEN": "Wind Breath",
-	"attribute": "force",
+	"attribute": "Force",
 	"cost": 21,
-	"power": "low",
+	"power": "Weak",
 	"hits": "1-4",
 	"kuli": "-",
 	"hit": "-",
-	"target": "random",
-	"strengthen": -1,
-	"effect": "-"
+	"target": "Multi-enemies",
+	"strengthen": 8,
+	"effect": "1-4 weak Force attacks. Target: Multi-enemies"
 });
 
 registerSkill({
 	"nameJP": "殺風激",
-	"nameEN": "Killing Wind",
-	"attribute": "force",
+	"nameEN": "Deadly Wind",
+	"attribute": "Force",
 	"cost": 22,
-	"power": "very high",
+	"power": "Severe",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "single",
+	"target": "Enemy",
 	"strengthen": 8,
-	"effect": "-"
+	"effect": "Severe Force attack. Target: Multi-enemies"
 });
 
 registerSkill({
 	"nameJP": "妖花烈風",
 	"nameEN": "Demon Flower Blast",
-	"attribute": "force",
+	"attribute": "Force",
 	"cost": 35,
-	"power": "medium",
+	"power": "Medium",
 	"hits": "1-4",
 	"kuli": "-",
 	"hit": "-",
-	"target": "random",
-	"strengthen": -1,
-	"effect": "-"
+	"target": "Multi-enemies",
+	"strengthen": 8,
+	"effect": "Medium Force attack. Target: Multi-enemies"
 });
 
 registerSkill({
 	"nameJP": "神の竜巻",
 	"nameEN": "God's Tornado",
-	"attribute": "force",
+	"attribute": "Force",
 	"cost": 50,
-	"power": "high",
+	"power": "Heavy",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "all",
-	"strengthen": -1,
-	"effect": "penetrate",
-	"notes": "DLC 悪魔合体ライトのみ継承可"
+	"target": "All enemies",
+	"strengthen": 8,
+	"effect": "-"
 });
 
 registerSkill({
 	"nameJP": "メギド",
 	"nameEN": "Megido",
-	"attribute": "almighty",
+	"attribute": "Almighty",
 	"cost": 25,
-	"power": "low",
+	"power": "Weak",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "all",
-	"strengthen": -1,
-	"effect": "-"
+	"target": "All enemies",
+	"strengthen": 8,
+	"effect": "Weak Almighty attack. Target: All enemies"
 });
 
 registerSkill({
 	"nameJP": "メギドラ",
 	"nameEN": "Megidola",
-	"attribute": "almighty",
+	"attribute": "Almighty",
 	"cost": 40,
-	"power": "medium",
+	"power": "Medium",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "all",
-	"strengthen": -1,
-	"effect": "-"
+	"target": "All enemies",
+	"strengthen": 8,
+	"effect": "Medium Almighty attack. Target: All enemies"
 });
 
 registerSkill({
 	"nameJP": "メギドラオン",
 	"nameEN": "Megidolaon",
-	"attribute": "almighty",
+	"attribute": "Almighty",
 	"cost": 60,
-	"power": "high",
+	"power": "Heavy",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "all",
+	"target": "All enemies",
 	"strengthen": 8,
-	"effect": "-"
+	"effect": "Heavy Almighty attack. Target: All enemies"
 });
 
 registerSkill({
 	"nameJP": "大いなるロゴス",
 	"nameEN": "Great Logos",
-	"attribute": "almighty",
+	"attribute": "Almighty",
 	"cost": 70,
-	"power": "very high",
+	"power": "Severe",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "all",
-	"strengthen": -1,
-	"effect": "-"
+	"target": "All enemies",
+	"strengthen": 8,
+	"effect": "Severe Almighty attack. Target: All enemies"
 });
 
 registerSkill({
 	"nameJP": "アンティクトン",
-	"nameEN": "Antikuton",
+	"nameEN": "Antichthon",
 	"attribute": "almighty",
 	"cost": 80,
-	"power": "very high",
+	"power": "Severe",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "all",
-	"strengthen": -1,
-	"effect": "full capacity reduction (1)",
-	"notes": "軍勢に複数ヒットしない"
+	"target": "All enemies",
+	"strengthen": 8,
+	"effect": "Severe Almighty attack. Target: All enemies. Effect: Stats down"
 });
 
 registerSkill({
 	"nameJP": "バビロンの杯",
 	"nameEN": "Cup of Babylon",
-	"attribute": "almighty",
+	"attribute": "Almighty",
 	"cost": 65,
-	"power": "medium",
+	"power": "Medium",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "all",
-	"strengthen": -1,
-	"effect": "confusion"
+	"target": "All enemies",
+	"strengthen": 8,
+	"effect": "Medium Almighty skill. Target: All enemies"
 });
 
 registerSkill({
 	"nameJP": "天罰",
 	"nameEN": "Holy Wrath",
-	"attribute": "almighty",
+	"attribute": "Almighty",
 	"cost": 45,
-	"power": "normal",
+	"power": "Varies",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "all enemies",
+	"target": "All enemies",
 	"strengthen": 8,
 	"effect": "-",
-	"notes": "Varies with enemy's alignment"
+	"notes": "Almighty attack. Target: All enemies. Effect: Varies with enemy's alignment."
 });
 
 registerSkill({
 	"nameJP": "ジャッジメント",
-	"nameEN": "Judgment",
-	"attribute": "almighty",
+	"nameEN": "Judgement",
+	"attribute": "Almighty",
 	"cost": 45,
-	"power": "normal",
+	"power": "Varies",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "all enemies",
+	"target": "All enemies",
 	"strengthen": 8,
 	"effect": "-",
-	"notes": "ニュートラル属性に強い"
+	"notes": "Almighty attack. Target: All enemies. Effect: Varies with enemy's alignment."
 });
 
 registerSkill({
 	"nameJP": "混沌の海",
 	"nameEN": "Sea of Chaos",
-	"attribute": "almighty",
+	"attribute": "Almighty",
 	"cost": 45,
-	"power": "normal",
+	"power": "Varies",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "all enemies",
-	"strengthen": -1,
-	"effect": "-",
-	"notes": "ロウ属性に強い"
+	"target": "All enemies",
+	"strengthen": 8,
+	"effect": "Almighty attack. Target: All enemies. Effect: Varies with enemy's alignment."
 });
 
 registerSkill({
 	"nameJP": "悪化",
-	"nameEN": "Deterioration",
-	"attribute": "almighty",
-	"cost": 6,
-	"power": "low",
+	"nameEN": "Death's Door",
+	"attribute": "Almighty",
+	"cost": 10,
+	"power": "Weak",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "all enemies",
-	"strengthen": -1,
-	"effect": "1 HP when cold"
+	"target": "All enemies",
+	"strengthen": 8,
+	"effect": "Weak Almighty attack that reduces HP to 1 if target is sick. Target: All enemies"
 });
 
 registerSkill({
 	"nameJP": "メギドプラズマー",
-	"nameEN": "Megido Plasma",
-	"attribute": "almighty",
+	"nameEN": "Megidoplasma",
+	"attribute": "Almighty",
 	"cost": 41,
-	"power": "high",
+	"power": "Heavy",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "all",
-	"strengthen": -1,
-	"effect": "-",
-	"notes": "DLC"
+	"target": "All enemies",
+	"strengthen": 8,
+	"effect": "Heavy Almighty attack. Target: All enemies"
 });
 
 registerSkill({
 	"nameJP": "ダムネイション",
 	"nameEN": "Damnation",
-	"attribute": "almighty",
+	"attribute": "Almighty",
 	"cost": 65,
-	"power": "high",
+	"power": "Heavy",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "all",
-	"strengthen": -1,
-	"effect": "poison",
-	"notes": "DLC 悪魔合体ライトでのみ継承可"
+	"target": "All enemies",
+	"strengthen": 8,
+	"effect": "-"
 });
 
 registerSkill({
 	"nameJP": "輝ける烙印",
 	"nameEN": "Shining Seal",
-	"attribute": "almighty",
+	"attribute": "Almighty",
 	"cost": 75,
-	"power": "high",
+	"power": "Heavy",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "all",
-	"strengthen": -1,
-	"effect": "stigma",
-	"notes": "DLC"
+	"target": "All enemies",
+	"strengthen": 8,
+	"effect": "-"
 });
 
 registerSkill({
 	"nameJP": "地母の晩餐",
 	"nameEN": "Mother Earth's Feast",
-	"attribute": "almighty",
+	"attribute": "Almighty",
 	"cost": 62,
-	"power": "high",
+	"power": "Heavy",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "all",
-	"strengthen": -1,
-	"effect": "-",
-	"notes": "DLC"
+	"target": "All enemies",
+	"strengthen": 8,
+	"effect": "DLC skill (not out yet)"
 });
 
 registerSkill({
 	"nameJP": "ハマ",
 	"nameEN": "Hama",
-	"attribute": "expel",
+	"attribute": "Light",
 	"cost": 6,
-	"power": "normal",
+	"power": "Special",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "single",
-	"strengthen": -1,
-	"effect": "Light instant kill"
+	"target": "Enemy",
+	"strengthen": 5,
+	"effect": "Light instant kill. Target: 1 enemy"
 });
 
 registerSkill({
 	"nameJP": "ハマオン",
 	"nameEN": "Hamaon",
-	"attribute": "expel",
+	"attribute": "Light",
 	"cost": 10,
-	"power": "high",
+	"power": "Special",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "single",
-	"strengthen": -1,
-	"effect": "Light instant kill"
+	"target": "Enemy",
+	"strengthen": 5,
+	"effect": "Light instant kill. Target: 1 enemy; High success"
 });
 
 registerSkill({
 	"nameJP": "マハンマ",
 	"nameEN": "Mahama",
-	"attribute": "expel",
+	"attribute": "Light",
 	"cost": 18,
-	"power": "normal",
+	"power": "Special",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "all",
-	"strengthen": -1,
-	"effect": "-"
+	"target": "All enemies",
+	"strengthen": 5,
+	"effect": "Light instant kill. Target: All enemies"
 });
 
 registerSkill({
 	"nameJP": "マハンマオン",
 	"nameEN": "Mahamaon",
-	"attribute": "expel",
+	"attribute": "Light",
 	"cost": 30,
-	"power": "high",
+	"power": "Special",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "all",
+	"target": "All enemies",
 	"strengthen": 5,
-	"effect": "-"
+	"effect": "Light instant kill. Target: All enemies; High success"
 });
 
 registerSkill({
 	"nameJP": "審判の光",
-	"nameEN": "Light of Judgment",
-	"attribute": "expel",
+	"nameEN": "Judgement Light",
+	"attribute": "Light",
 	"cost": 45,
-	"power": "very high",
+	"power": "Special",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "all",
+	"target": "All enemies",
 	"strengthen": 5,
-	"effect": "-"
+	"effect": "Light instant kill. Target: All enemies; Very high success"
 });
 
 registerSkill({
 	"nameJP": "ムド",
 	"nameEN": "Mudo",
-	"attribute": "curse",
+	"attribute": "Dark",
 	"cost": 6,
-	"power": "normal",
+	"power": "Special",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "single",
-	"strengthen": -1,
-	"effect": "-"
+	"target": "Enemy",
+	"strengthen": 5,
+	"effect": "Dark instant kill. Target: 1 enemy"
 });
 
 registerSkill({
 	"nameJP": "ムドオン",
 	"nameEN": "Mudoon",
-	"attribute": "curse",
+	"attribute": "Dark",
 	"cost": 10,
-	"power": "high",
+	"power": "Special",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "single",
-	"strengthen": -1,
-	"effect": "-"
+	"target": "Enemy",
+	"strengthen": 5,
+	"effect": "Dark instant kill. Target: 1 enemy; High success"
 });
 
 registerSkill({
 	"nameJP": "マハムド",
 	"nameEN": "Mamudo",
-	"attribute": "curse",
+	"attribute": "Dark",
 	"cost": 18,
-	"power": "normal",
+	"power": "Special",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "all",
-	"strengthen": -1,
-	"effect": "Dark instant kill"
+	"target": "All enemies",
+	"strengthen": 5,
+	"effect": "Dark instant kill. Target: All enemies"
 });
 
 registerSkill({
 	"nameJP": "マハムドオン",
 	"nameEN": "Mamudoon",
-	"attribute": "curse",
+	"attribute": "Dark",
 	"cost": 30,
-	"power": "high",
+	"power": "Special",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "all",
+	"target": "All enemies",
 	"strengthen": 5,
-	"effect": "-"
+	"effect": "Dark instant kill. Target: All enemies; High success"
 });
 
 registerSkill({
 	"nameJP": "死んでくれる？",
-	"nameEN": "Die for Me?",
+	"nameEN": "Die for Me!",
 	"attribute": "curse",
 	"cost": 45,
-	"power": "very high",
+	"power": "Special",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "all",
+	"target": "All enemies",
 	"strengthen": 5,
-	"effect": "-",
-	"notes": "悪魔合体ライトでのみ継承可"
+	"effect": "Dark instant kill. Target: All enemies; Very high success"
 });
 
 registerSkill({
 	"nameJP": "ディア",
 	"nameEN": "Dia",
-	"attribute": "heal",
+	"attribute": "Recovery",
 	"cost": 5,
-	"power": "low",
+	"power": "Weak",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "single",
-	"strengthen": -1,
-	"effect": "Low HP recovery"
+	"target": "Ally",
+	"strengthen": 3,
+	"effect": "Heals HP. Target: 1 ally"
 });
 
 registerSkill({
 	"nameJP": "ディアラマ",
 	"nameEN": "Diarama",
-	"attribute": "heal",
+	"attribute": "Recovery",
 	"cost": 9,
-	"power": "medium",
+	"power": "Medium",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "single",
-	"strengthen": -1,
-	"effect": "Medium HP recovery"
+	"target": "Ally",
+	"strengthen": 3,
+	"effect": "Greatly heals HP. Target: 1 ally"
 });
 
 registerSkill({
 	"nameJP": "ディアラハン",
 	"nameEN": "Diarahan",
-	"attribute": "heal",
-	"cost": 15,
-	"power": "full",
+	"attribute": "Recovery",
+	"cost": 16,
+	"power": "Heavy",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "single",
-	"strengthen": -1,
-	"effect": "Full HP recovery"
+	"target": "Ally",
+	"strengthen": 3,
+	"effect": "Fully heals HP. Target: 1 ally"
 });
 
 registerSkill({
 	"nameJP": "メディア",
 	"nameEN": "Media",
-	"attribute": "heal",
+	"attribute": "Recovery",
 	"cost": 12,
-	"power": "low",
+	"power": "Weal",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "all",
-	"strengthen": 8,
-	"effect": "Low HP recovery"
+	"target": "All allies",
+	"strengthen": 3,
+	"effect": "Heals HP. Target: All allies"
 });
 
 registerSkill({
 	"nameJP": "メディラマ",
 	"nameEN": "Mediarama",
-	"attribute": "heal",
+	"attribute": "Recovery",
 	"cost": 22,
-	"power": "medium",
+	"power": "Medium",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "all",
-	"strengthen": -1,
-	"effect": "Medium HP recovery"
+	"target": "All allies",
+	"strengthen": 3,
+	"effect": "Greatly heals HP. Target: All allies"
 });
 
 registerSkill({
 	"nameJP": "メディアラハン",
 	"nameEN": "Mediarahan",
-	"attribute": "heal",
+	"attribute": "Recovery",
 	"cost": 40,
-	"power": "full",
+	"power": "Heavy",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "all",
+	"target": "All allies",
 	"strengthen": 3,
-	"effect": "Full HP recovery"
+	"effect": "Fully heals HP. Target: All allies"
 });
 
 registerSkill({
 	"nameJP": "メシアライザー",
 	"nameEN": "Salvation",
-	"attribute": "heal",
+	"attribute": "Recovery",
 	"cost": 50,
-	"power": "full",
+	"power": "Severe",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "all",
+	"target": "All allies",
 	"strengthen": 3,
-	"effect": "Full HP recovery / All ailment recovery (not death)"
+	"effect": "Fully heals HP and removes ailments. Target: All allies"
 });
 
 registerSkill({
 	"nameJP": "パトラ",
 	"nameEN": "Patra",
-	"attribute": "heal",
+	"attribute": "Recovery",
 	"cost": 5,
 	"power": "-",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "single",
-	"strengthen": -1,
-	"effect": "Sleep, confusion, bind recovery"
+	"target": "Ally",
+	"strengthen": 3,
+	"effect": "Removes Sleep/Panic/Bind ailments. Target: 1 ally"
 });
 
 registerSkill({
 	"nameJP": "メパトラ",
-	"nameEN": "Mepatra",
-	"attribute": "heal",
+	"nameEN": "Me Patra",
+	"attribute": "Recovery",
 	"cost": 15,
 	"power": "-",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "all",
-	"strengthen": -1,
-	"effect": "Sleep, confusion, bind recovery"
+	"target": "All allies",
+	"strengthen": 3,
+	"effect": "Removes Sleep/Panic/Bind ailments. Target: All allies"
 });
 
 registerSkill({
 	"nameJP": "ポズムディ",
 	"nameEN": "Posumudi",
-	"attribute": "heal",
+	"attribute": "Recovery",
 	"cost": 5,
 	"power": "-",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "single",
-	"strengthen": -1,
-	"effect": "Poison, cold recovery"
+	"target": "Ally",
+	"strengthen": 3,
+	"effect": "Removes Poison/Sick ailments. Target: 1 ally"
 });
 
 registerSkill({
 	"nameJP": "アムリタ",
 	"nameEN": "Amrita",
-	"attribute": "heal",
+	"attribute": "Recovery",
 	"cost": 20,
 	"power": "-",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "single",
-	"strengthen": -1,
-	"effect": "All ailment recovert"
+	"target": "Ally",
+	"strengthen": 3,
+	"effect": "Removes all ailments. Target: 1 ally"
 });
 
 registerSkill({
 	"nameJP": "リカーム",
 	"nameEN": "Recarm",
-	"attribute": "heal",
+	"attribute": "Recovery",
 	"cost": 20,
 	"power": "-",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "single",
+	"target": "Ally",
 	"strengthen": 3,
-	"effect": "Revive with 50% HP"
+	"effect": "Revive from KO with half HP. Target: 1 ally"
 });
 
 registerSkill({
 	"nameJP": "サマリカーム",
 	"nameEN": "Samarecarm",
 	"attribute": "heal",
-	"cost": 35,
+	"cost": 40,
 	"power": "-",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "single",
-	"strengthen": -1,
-	"effect": "Revive with full HP"
+	"target": "Enemy",
+	"strengthen": 3,
+	"effect": "Revive from KO with full HP. Target: 1 ally"
 });
 
 registerSkill({
 	"nameJP": "リカームドラ",
-	"nameEN": "Recarmdora",
-	"attribute": "heal",
+	"nameEN": "Recarmdra",
+	"attribute": "Recovery",
 	"cost": 2,
 	"power": "-",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "all allies",
+	"target": "All allies",
 	"strengthen": -1,
-	"effect": "Revive a demon with full HP by sacrificing self"
+	"effect": "Revives and heals allies in exchange for all HP. Target: All allies"
 });
 
 registerSkill({
 	"nameJP": "招来の舞踏",
 	"nameEN": "Invitation",
-	"attribute": "heal",
+	"attribute": "Special",
 	"cost": 45,
 	"power": "-",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "single ally",
+	"target": "Ally",
 	"strengthen": -1,
-	"effect": "Revived and summons a demon."
+	"effect": "Summons/returns an ally demon and revives from KO. Target: 1 ally"
 });
 
 registerSkill({
 	"nameJP": "吸血",
 	"nameEN": "Life Drain",
-	"attribute": "almighty",
+	"attribute": "Almighty",
 	"cost": 5,
 	"power": "-",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "single",
+	"target": "Enemy",
 	"strengthen": 5,
-	"effect": "Almighty attack that drains the enemy's HP."
+	"effect": "Almighty attack that drains the enemy's HP. Target: 1 enemy"
 });
 
 registerSkill({
 	"nameJP": "吸魔",
-	"nameEN": "Drain Magic",
-	"attribute": "almighty",
+	"nameEN": "Spirit Drain",
+	"attribute": "Almighty",
 	"cost": 5,
 	"power": "-",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "single",
+	"target": "Enemy",
 	"strengthen": 5,
-	"effect": "威力",
-	"notes": "MP吸収"
+	"effect": "Almighty attack that drains the enemy's MP. Target: 1 enemy"
 });
 
 registerSkill({
 	"nameJP": "エナジードレイン",
 	"nameEN": "Energy Drain",
-	"attribute": "almighty",
+	"attribute": "Almighty",
 	"cost": 10,
 	"power": "-",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "single",
+	"target": "Enemy",
 	"strengthen": 5,
-	"effect": "威力",
-	"notes": "HP/MP吸収"
+	"effect": "Almighty attack that drains the enemy's HP/MP. Target: 1 enemy"
 });
 
 registerSkill({
@@ -1889,1393 +1846,1379 @@ registerSkill({
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "all",
+	"target": "All enemies",
 	"strengthen": -1,
-	"effect": "威力小",
-	"notes": "DLC「大天使の羽を折れ1」\n悪魔合体ライトのみ継承可"
+	"effect": "-"
 });
 
 registerSkill({
 	"nameJP": "サバトマ",
 	"nameEN": "Sabbatma",
-	"attribute": "misc",
+	"attribute": "Special",
 	"cost": 20,
 	"power": "-",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "single ally",
+	"target": "Ally",
 	"strengthen": -1,
-	"effect": "Summons/returns an ally demon"
+	"effect": "Summons/returns an ally demon. Target: 1 ally"
 });
 
 registerSkill({
 	"nameJP": "バッドカンパニー",
 	"nameEN": "Bad Company",
-	"attribute": "misc",
+	"attribute": "Special",
 	"cost": 15,
 	"power": "-",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "all allies",
+	"target": "All allies",
 	"strengthen": -1,
-	"effect": "レベルの高い仲魔をストックから召喚し直す 戦闘中のみ"
+	"effect": "Resummons your highest level demons from the stock. Target: All allies"
 });
 
 registerSkill({
 	"nameJP": "ドルミナー",
 	"nameEN": "Dormina",
-	"attribute": "sleep",
+	"attribute": "Curse",
 	"cost": 4,
 	"power": "-",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "single",
-	"strengthen": -1,
-	"effect": "Chance to inflict sleep"
+	"target": "Enemy",
+	"strengthen": 5,
+	"effect": "Inflicts the Sleep ailment. Target: 1 enemy"
 });
 
 registerSkill({
 	"nameJP": "子守唄",
 	"nameEN": "Lullaby",
-	"attribute": "sleep",
-	"cost": 9,
+	"attribute": "Curse",
+	"cost": 11,
 	"power": "-",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "all",
-	"strengthen": -1,
-	"effect": "Chance to inflict sleep"
+	"target": "All enemies",
+	"strengthen": 5,
+	"effect": "Inflicts the Sleep ailment. Target: All enemies"
 });
 
 registerSkill({
 	"nameJP": "ポイズマ",
 	"nameEN": "Poisma",
-	"attribute": "poison",
+	"attribute": "Curse",
 	"cost": 4,
 	"power": "-",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "single",
-	"strengthen": -1,
-	"effect": "Chance to inflict poison"
+	"target": "Enemy",
+	"strengthen": 5,
+	"effect": "Inflicts the Poison ailment. Target: 1 enemy"
 });
 
 registerSkill({
 	"nameJP": "毒ガスブレス",
 	"nameEN": "Poison Breath",
-	"attribute": "poison",
+	"attribute": "Curse",
 	"cost": 11,
 	"power": "-",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "all",
-	"strengthen": -1,
-	"effect": "Inflicts the Poison ailment"
+	"target": "All enemies",
+	"strengthen": 5,
+	"effect": "Inflicts the Poison ailment. Target: All enemies"
 });
 
 registerSkill({
 	"nameJP": "シバブー",
 	"nameEN": "Shibaboo",
-	"attribute": "bind",
+	"attribute": "Curse",
 	"cost": 5,
 	"power": "-",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "single",
-	"strengthen": -1,
-	"effect": "Inflicts the Bind ailment"
+	"target": "Enemy",
+	"strengthen": 5,
+	"effect": "Inflicts the Bind ailment. Target: 1 enemy"
 });
 
 registerSkill({
 	"nameJP": "バインドボイス",
 	"nameEN": "Bind Voice",
-	"attribute": "bind",
+	"attribute": "Curse",
 	"cost": 15,
 	"power": "-",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "all",
-	"strengthen": -1,
-	"effect": "Inflicts the Bind ailment"
+	"target": "All enemies",
+	"strengthen": 5,
+	"effect": "Inflicts the Bind ailment. Target: All enemies"
 });
 
 registerSkill({
 	"nameJP": "プリンパ",
 	"nameEN": "Pulinpa",
-	"attribute": "confusion",
+	"attribute": "Curse",
 	"cost": 5,
 	"power": "-",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "single",
-	"strengthen": -1,
-	"effect": "Inflicts the Panic ailment"
+	"target": "Enemy",
+	"strengthen": 5,
+	"effect": "Inflicts the Panic ailment. Target: 1 enemy"
 });
 
 registerSkill({
 	"nameJP": "パニックボイス",
 	"nameEN": "Panic Voice",
-	"attribute": "confusion",
-	"cost": -1,
+	"attribute": "Curse",
+	"cost": 15,
 	"power": "-",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "all",
-	"strengthen": -1,
-	"effect": "Chance to inflict confusion"
+	"target": "All enemies",
+	"strengthen": 5,
+	"effect": "Inflicts the Panic ailment. Target: All enemies"
 });
 
 registerSkill({
 	"nameJP": "咳き込み",
 	"nameEN": "Coughing Fit",
-	"attribute": "cold",
+	"attribute": "Curse",
 	"cost": -1,
 	"power": "-",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "single",
+	"target": "Enemy",
 	"strengthen": -1,
-	"effect": "Chance to inflict cold"
+	"effect": "Inflicts the Cold ailment. Target: 1 enemy"
 });
 
 registerSkill({
 	"nameJP": "パンデミアブーム",
 	"nameEN": "Pandemic Bomb",
-	"attribute": "cold",
+	"attribute": "Curse",
 	"cost": 11,
 	"power": "-",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "all",
-	"strengthen": -1,
-	"effect": "Inflicts the Sick ailment"
+	"target": "All enemies",
+	"strengthen": 5,
+	"effect": "Inflicts the Sick ailment. Target: All enemies"
 });
 
 registerSkill({
 	"nameJP": "忌念の戦慄",
-	"nameEN": "Death Shiver",
-	"attribute": "all status",
+	"nameEN": "Shivering Taboo",
+	"attribute": "Curse",
 	"cost": 40,
 	"power": "-",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "all",
-	"strengthen": -1,
-	"effect": "Inflict all status ailments",
-	"notes": "悪魔合体ライトでのみ継承可\n状態異常の無効affinityが一つでもあればブロック\nなければほぼ全てにかかる\n耐性の無いBOSS戦はmiss扱いになる"
+	"target": "All enemies",
+	"strengthen": 5,
+	"effect": "Inflicts several ailments. Target: All enemies"
 });
 
 registerSkill({
 	"nameJP": "受難告知",
 	"nameEN": "Announcement of Suffering",
-	"attribute": "all status",
+	"attribute": "Curse",
 	"cost": 45,
 	"power": "-",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "all",
+	"target": "All enemies",
 	"strengthen": -1,
-	"effect": "「烙印」を含む不特定の状態異常を付加する",
-	"notes": "DLC 悪魔合体ライトでのみ継承可"
+	"effect": "-"
 });
 
 registerSkill({
 	"nameJP": "タルカジャ",
 	"nameEN": "Tarukaja",
-	"attribute": "support",
+	"attribute": "Support",
 	"cost": 15,
 	"power": "-",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "all allies",
+	"target": "All allies",
 	"strengthen": 3,
-	"effect": "Increases attack"
+	"effect": "Increases attack. Target: All allies"
 });
 
 registerSkill({
 	"nameJP": "スクカジャ",
 	"nameEN": "Sukukaja",
-	"attribute": "support",
+	"attribute": "Support",
 	"cost": 15,
 	"power": "-",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "all allies",
+	"target": "All allies",
 	"strengthen": 3,
-	"effect": "Raises the hit and evasion of the party"
+	"effect": "Increases hit/evade rate. Target: All allies"
 });
 
 registerSkill({
 	"nameJP": "ラクカジャ",
 	"nameEN": "Rakukaja",
-	"attribute": "support",
+	"attribute": "Support",
 	"cost": 15,
 	"power": "-",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "all allies",
+	"target": "All allies",
 	"strengthen": 3,
-	"effect": "Increases defense",
-	"notes": "Max(三段階)で被ダメ2/3(66%)\nタルンダMaxと重複で被ダメ4/9(44%)"
+	"effect": "Increases defense. Target: All allies"
 });
 
 registerSkill({
 	"nameJP": "ラスタキャンディ",
 	"nameEN": "Luster Candy",
-	"attribute": "support",
+	"attribute": "Support",
 	"cost": 50,
 	"power": "-",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "all allies",
+	"target": "All allies",
 	"strengthen": 3,
-	"effect": "Raises the attack power, defense, hit, and evasion of the party."
+	"effect": "Increases attack/defense/hit/evade rate. Target: All allies"
 });
 
 registerSkill({
 	"nameJP": "パニックマジック",
-	"nameEN": "Panic Magic",
-	"attribute": "support",
+	"nameEN": "Panic Caster",
+	"attribute": "Support",
 	"cost": 10,
 	"power": "-",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "self",
+	"target": "Self",
 	"strengthen": 3,
-	"effect": "一定ターンの間、魔法威力を上昇させる\n付与/混乱",
-	"notes": "タルカジャ 二段階相当上昇、\n3ターン持続\n混乱は耐性で防げない\nタルカジャと併用可"
+	"effect": "Increases effect of magic for a few turns. Target: Self; Inflicts Panic"
 });
 
 registerSkill({
 	"nameJP": "チャージ",
 	"nameEN": "Charge",
-	"attribute": "support",
+	"attribute": "Support",
 	"cost": 9,
 	"power": "-",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "self",
+	"target": "Self",
 	"strengthen": 3,
-	"effect": "次のターンの物理attack力を二倍以上にする",
-	"notes": "ダークエナジーと併用可"
+	"effect": "Power of next Phys/Gun attack more than doubles. Target: Self"
 });
 
 registerSkill({
 	"nameJP": "コンセントレイト",
 	"nameEN": "Concentrate",
-	"attribute": "support",
+	"attribute": "Support",
 	"cost": 11,
 	"power": "-",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "self",
+	"target": "Self",
 	"strengthen": 3,
-	"effect": "次のターンの魔法attack力を二倍以上にする",
-	"notes": "霊魔集中と併用可"
+	"effect": "Power of next magic attack more than doubles. Target: Self"
 });
 
 registerSkill({
 	"nameJP": "捧魂の法",
-	"nameEN": "Soul Offering",
-	"attribute": "support",
+	"nameEN": "Blood Ritual",
+	"attribute": "Support",
 	"cost": 25,
 	"power": "-",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "self",
+	"target": "Self",
 	"strengthen": 3,
-	"effect": "attack力・防御力・命中・回避率を上昇させる\n付与/HPが1に",
-	"notes": "一段階アップ"
+	"effect": "Increases attack/defense/hit/evade rate and reduces HP to 1. Target: Self"
 });
 
 registerSkill({
 	"nameJP": "ドーピング",
 	"nameEN": "Doping",
-	"attribute": "support",
+	"attribute": "Support",
 	"cost": 45,
 	"power": "-",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "all allies",
+	"target": "All allies",
 	"strengthen": 3,
-	"effect": "バトル中、最大HPを30%上昇させる",
-	"notes": "+値によるHP上昇率への変化はない"
+	"effect": "Increases maximum HP during battle. Target: All allies"
 });
 
 registerSkill({
 	"nameJP": "タルンダ",
 	"nameEN": "Tarunda",
-	"attribute": "support",
+	"attribute": "Support",
 	"cost": 15,
 	"power": "-",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "all enemies",
+	"target": "All enemies",
 	"strengthen": 3,
-	"effect": "attack力を一段階ダウン",
-	"notes": "Max(三段階)で被ダメ2/3(66%)\nラクカジャMaxと重複で被ダメ4/9(44%)"
+	"effect": "Decreases attack. Target: All enemies"
 });
 
 registerSkill({
 	"nameJP": "スクンダ",
 	"nameEN": "Sukunda",
-	"attribute": "support",
+	"attribute": "Support",
 	"cost": 15,
 	"power": "-",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "all enemies",
+	"target": "All enemies",
 	"strengthen": 3,
-	"effect": "命中・回避を一段階ダウン"
+	"effect": "Decreases hit/evade rate. Target: All enemies"
 });
 
 registerSkill({
 	"nameJP": "ラクンダ",
 	"nameEN": "Rakunda",
-	"attribute": "support",
+	"attribute": "Support",
 	"cost": 15,
 	"power": "-",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "all enemies",
+	"target": "All enemies",
 	"strengthen": 3,
-	"effect": "防御力を一段階ダウン"
+	"effect": "Decreases defense. Target: All enemies"
 });
 
 registerSkill({
 	"nameJP": "ランダマイザ",
-	"nameEN": "Randomize",
-	"attribute": "support",
+	"nameEN": "Debilitate",
+	"attribute": "Support",
 	"cost": 50,
 	"power": "-",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "all enemies",
+	"target": "All enemies",
 	"strengthen": 3,
-	"effect": "all enemiesのattack力・防御力・命中・回避率を一段階ダウン"
+	"effect": "Decreases attack/defense/hit/evade rate. Target: All enemies"
 });
 
 registerSkill({
 	"nameJP": "雄叫び",
 	"nameEN": "War Cry",
-	"attribute": "support",
+	"attribute": "Support",
 	"cost": 45,
 	"power": "-",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "all enemies",
-	"strengthen": -1,
-	"effect": "attack力・防御力を一段階ダウン"
+	"target": "All enemies",
+	"strengthen": 3,
+	"effect": "Decreases attack/defense. Target: All enemies"
 });
 
 registerSkill({
 	"nameJP": "フォッグブレス",
 	"nameEN": "Fog Breath",
-	"attribute": "support",
+	"attribute": "Support",
 	"cost": 45,
 	"power": "-",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "all enemies",
-	"strengthen": -1,
-	"effect": "attack力・命中・回避を一段階ダウン"
+	"target": "All enemies",
+	"strengthen": 3,
+	"effect": "Decreases attack/hit/evade rate. Target: All enemies"
 });
 
 registerSkill({
 	"nameJP": "溶解ブレス",
-	"nameEN": "Dissolving Breath",
-	"attribute": "support",
+	"nameEN": "Acid Breath",
+	"attribute": "Support",
 	"cost": 45,
 	"power": "-",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "all enemies",
-	"strengthen": -1,
-	"effect": "防御力・回避・命中を一段階ダウン"
+	"target": "All enemies",
+	"strengthen": 3,
+	"effect": "Decreases defense/hit/evade rate. Target: All enemies"
 });
 
 registerSkill({
 	"nameJP": "挑発",
-	"nameEN": "Provoke",
-	"attribute": "support",
+	"nameEN": "Taunt",
+	"attribute": "Support",
 	"cost": 20,
 	"power": "-",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "all enemies",
-	"strengthen": -1,
-	"effect": "attack力二段階アップ、防御力二段階ダウン"
+	"target": "All enemies",
+	"strengthen": 3,
+	"effect": "Increases attack, decreases defense. Target: All enemies"
 });
 
 registerSkill({
 	"nameJP": "デカジャ",
 	"nameEN": "Dekaja",
-	"attribute": "support",
+	"attribute": "Support",
 	"cost": 10,
 	"power": "-",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "all enemies",
-	"strengthen": -1,
-	"effect": "能力上昇を打ち消す"
+	"target": "All enemies",
+	"strengthen": 3,
+	"effect": "Removes status buffs. Target: All enemies"
 });
 
 registerSkill({
 	"nameJP": "デクンダ",
 	"nameEN": "Dekunda",
-	"attribute": "support",
+	"attribute": "Support",
 	"cost": 10,
 	"power": "-",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "all allies",
-	"strengthen": -1,
-	"effect": "能力低下を打ち払う"
+	"target": "All allies",
+	"strengthen": 3,
+	"effect": "Removes status debuffs. Target: All allies"
 });
 
 registerSkill({
 	"nameJP": "静寂の祈り",
 	"nameEN": "Silent Prayer",
-	"attribute": "support",
+	"attribute": "Support",
 	"cost": 15,
 	"power": "-",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "all enemies and allies",
-	"strengthen": -1,
-	"effect": "Removes status buffs and debuffs."
+	"target": "Everyone",
+	"strengthen": 3,
+	"effect": "Removes status buffs and debuffs. Target: Everyone"
 });
 
 registerSkill({
 	"nameJP": "テトラカーン",
 	"nameEN": "Tetrakarn",
-	"attribute": "support",
+	"attribute": "Support",
 	"cost": 50,
 	"power": "-",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "all allies",
-	"strengthen": -1,
-	"effect": "発動ターンに１度のみ物理attack反射"
+	"target": "All allies",
+	"strengthen": 3,
+	"effect": "Repels Phys and Gun attacks for 1 turn. Target: All allies"
 });
 
 registerSkill({
 	"nameJP": "マカラカーン",
 	"nameEN": "Makarakarn",
-	"attribute": "support",
+	"attribute": "Support",
 	"cost": 50,
 	"power": "-",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "all allies",
-	"strengthen": -1,
-	"effect": "発動ターンに１度のみ魔法attack反射\n※万能/状態異常除く"
+	"target": "All allies",
+	"strengthen": 3,
+	"effect": "Repels magic attacks (besides ailments) for 1 turn. Target: All allies"
 });
 
 registerSkill({
 	"nameJP": "テトラジャ",
 	"nameEN": "Tetraja",
-	"attribute": "support",
-	"cost": -1,
+	"attribute": "Support",
+	"cost": 15,
 	"power": "-",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "all allies",
-	"strengthen": -1,
-	"effect": "破魔呪殺即死を１回無効にする"
+	"target": "All allies",
+	"strengthen": 3,
+	"effect": "Prevents 1 Light/Dark instant kill. Target: All allies"
 });
 
 registerSkill({
 	"nameJP": "トラフーリ",
 	"nameEN": "Trafuri",
-	"attribute": "support",
+	"attribute": "Special",
 	"cost": 5,
 	"power": "-",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "all allies",
+	"target": "All allies",
 	"strengthen": -1,
-	"effect": "逃走可能なバトルから確実に逃走する"
+	"effect": "Guaranteed escape when possible. Target: All allies"
 });
 
 registerSkill({
 	"nameJP": "エストマソード",
-	"nameEN": "Estoma",
-	"attribute": "support",
+	"nameEN": "Estoma Sword",
+	"attribute": "Special",
 	"cost": 25,
 	"power": "-",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "special",
+	"target": "None",
 	"strengthen": -1,
-	"effect": "使用後エネミーシンボルをattackすることで\n低レベル悪魔との戦闘回避",
-	"notes": "フィールド上なら自動的に回避"
+	"effect": "After using this, attack an enemy on the map to banish it if it's low-level"
 });
 
 registerSkill({
 	"nameJP": "テトラコワース",
 	"nameEN": "Tetrakowas",
-	"attribute": "support",
+	"attribute": "Support",
 	"cost": 35,
 	"power": "-",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "all enemies",
+	"target": "All enemies",
 	"strengthen": -1,
-	"effect": "テトラカーンの効果を打ち消す"
+	"effect": "-"
 });
 
 registerSkill({
 	"nameJP": "マカラコワース",
 	"nameEN": "Makarakowas",
-	"attribute": "support",
+	"attribute": "Support",
 	"cost": 35,
 	"power": "-",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "all enemies",
+	"target": "All enemies",
 	"strengthen": -1,
-	"effect": "マカラカーンの効果を打ち消す"
+	"effect": "-"
 });
 
 registerSkill({
 	"nameJP": "天使長の号令",
 	"nameEN": "Archangel's Order",
-	"attribute": "support",
+	"attribute": "Support",
 	"cost": 50,
 	"power": "-",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "single enemy",
+	"target": "Enemy",
 	"strengthen": -1,
-	"effect": "ニヤリを付加する",
-	"notes": "状態異常時使用不可"
+	"effect": "-"
 });
 
 registerSkill({
 	"nameJP": "霊魔集中",
 	"nameEN": "Gather Spirit Energy",
-	"attribute": "support",
+	"attribute": "Support",
 	"cost": 25,
 	"power": "-",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "self",
+	"target": "Self",
 	"strengthen": 3,
-	"effect": "次のターンの魔法attack力を三倍にする",
-	"notes": "コンセントレイトと併用可"
+	"effect": "-"
 });
 
 registerSkill({
 	"nameJP": "ダークエナジー",
 	"nameEN": "Dark Energy",
-	"attribute": "support",
+	"attribute": "Support",
 	"cost": 25,
 	"power": "-",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "self",
+	"target": "Self",
 	"strengthen": 3,
-	"effect": "次のターンの物理attack力を三倍にする",
-	"notes": "チャージと併用可"
+	"effect": "-"
 });
 
 registerSkill({
 	"nameJP": "守護者の眼光",
 	"nameEN": "Defender's Gaze",
-	"attribute": "support",
+	"attribute": "Support",
 	"cost": 255,
 	"power": "-",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
-	"target": "all allies",
+	"target": "All allies",
 	"strengthen": -1,
-	"effect": "プレスターンアイコンを3つ増やす"
+	"effect": "-"
 });
 
 registerSkill({
 	"nameJP": "物理耐性",
-	"nameEN": "Resist Physical",
-	"attribute": "affinity",
-	"cost": -1,
+	"nameEN": "Resist Phys",
+	"attribute": "Passive",
+	"cost": 0,
 	"power": "-",
 	"hits": "-",
 	"kuli": "-",
 	"hit": "-",
-	"target": "",
+	"target": "Self",
 	"strengthen": -1,
-	"effect": "-"
+	"effect": "Increases resistance to Phys attacks. Target: Self"
 });
 
 registerSkill({
 	"nameJP": "物理無効",
-	"nameEN": "Null Physical",
-	"attribute": "affinity",
-	"cost": -1,
+	"nameEN": "Null Phys",
+	"attribute": "Passive",
+	"cost": 0,
 	"power": "-",
 	"hits": "-",
 	"kuli": "-",
 	"hit": "-",
-	"target": "",
+	"target": "Self",
 	"strengthen": -1,
-	"effect": "-"
+	"effect": "Nulls Phys attacks. Target: Self"
 });
 
 registerSkill({
 	"nameJP": "物理反射",
-	"nameEN": "Repel Physical",
-	"attribute": "affinity",
-	"cost": -1,
+	"nameEN": "Repel Phys",
+	"attribute": "Passive",
+	"cost": 0,
 	"power": "-",
 	"hits": "-",
 	"kuli": "-",
 	"hit": "-",
-	"target": "",
+	"target": "Self",
 	"strengthen": -1,
-	"effect": "-"
+	"effect": "Repels Phys attacks. Target: Self"
 });
 
 registerSkill({
 	"nameJP": "物理吸収",
-	"nameEN": "Drain Physical",
-	"attribute": "affinity",
-	"cost": -1,
+	"nameEN": "Drain Phys",
+	"attribute": "Passive",
+	"cost": 0,
 	"power": "-",
 	"hits": "-",
 	"kuli": "-",
 	"hit": "-",
-	"target": "",
+	"target": "Self",
 	"strengthen": -1,
-	"effect": "-"
+	"effect": "Drains Phys attacks. Target: Self"
 });
 
 registerSkill({
 	"nameJP": "銃耐性",
 	"nameEN": "Resist Gun",
-	"attribute": "affinity",
-	"cost": -1,
+	"attribute": "Passive",
+	"cost": 0,
 	"power": "-",
 	"hits": "-",
 	"kuli": "-",
 	"hit": "-",
-	"target": "",
+	"target": "Self",
 	"strengthen": -1,
-	"effect": "-"
+	"effect": "Increases resistance to Gun attacks. Target: Self"
 });
 
 registerSkill({
 	"nameJP": "銃無効",
 	"nameEN": "Null Gun",
-	"attribute": "affinity",
-	"cost": -1,
+	"attribute": "Passive",
+	"cost": 0,
 	"power": "-",
 	"hits": "-",
 	"kuli": "-",
 	"hit": "-",
-	"target": "",
+	"target": "Self",
 	"strengthen": -1,
-	"effect": "-"
+	"effect": "Null Gun attacks. Target: Self"
 });
 
 registerSkill({
 	"nameJP": "銃反射",
 	"nameEN": "Repel Gun",
-	"attribute": "affinity",
-	"cost": -1,
+	"attribute": "Passive",
+	"cost": 0,
 	"power": "-",
 	"hits": "-",
 	"kuli": "-",
 	"hit": "-",
-	"target": "",
+	"target": "Self",
 	"strengthen": -1,
-	"effect": "-"
+	"effect": "Repels Gun attacks. Target: Self"
 });
 
 registerSkill({
 	"nameJP": "銃吸収",
 	"nameEN": "Drain Gun",
-	"attribute": "affinity",
-	"cost": -1,
+	"attribute": "Passive",
+	"cost": 0,
 	"power": "-",
 	"hits": "-",
 	"kuli": "-",
 	"hit": "-",
-	"target": "",
+	"target": "Self",
 	"strengthen": -1,
-	"effect": "-"
+	"effect": "Drains Gun attacks. Target: Self"
 });
 
 registerSkill({
 	"nameJP": "火炎耐性",
 	"nameEN": "Resist Fire",
-	"attribute": "affinity",
-	"cost": -1,
+	"attribute": "Passive",
+	"cost": 0,
 	"power": "-",
 	"hits": "-",
 	"kuli": "-",
 	"hit": "-",
-	"target": "",
+	"target": "Self",
 	"strengthen": -1,
-	"effect": "-"
+	"effect": "Increases resistance to Fire attacks. Target: Self"
 });
 
 registerSkill({
 	"nameJP": "火炎無効",
 	"nameEN": "Null Fire",
-	"attribute": "affinity",
-	"cost": -1,
+	"attribute": "Passive",
+	"cost": 0,
 	"power": "-",
 	"hits": "-",
 	"kuli": "-",
 	"hit": "-",
-	"target": "",
+	"target": "Self",
 	"strengthen": -1,
-	"effect": "-"
+	"effect": "Nulls Fire attacks. Target: Self"
 });
 
 registerSkill({
 	"nameJP": "火炎反射",
 	"nameEN": "Repel Fire",
-	"attribute": "affinity",
-	"cost": -1,
+	"attribute": "Passive",
+	"cost": 0,
 	"power": "-",
 	"hits": "-",
 	"kuli": "-",
 	"hit": "-",
-	"target": "",
+	"target": "Self",
 	"strengthen": -1,
-	"effect": "-"
+	"effect": "Repels Fire attacks. Target: Self"
 });
 
 registerSkill({
 	"nameJP": "火炎吸収",
 	"nameEN": "Drain Fire",
-	"attribute": "affinity",
-	"cost": -1,
+	"attribute": "Passive",
+	"cost": 0,
 	"power": "-",
 	"hits": "-",
 	"kuli": "-",
 	"hit": "-",
-	"target": "",
+	"target": "Self",
 	"strengthen": -1,
-	"effect": "-"
+	"effect": "Drains Fire attacks. Target: Self"
 });
 
 registerSkill({
 	"nameJP": "氷結耐性",
 	"nameEN": "Resist Ice",
-	"attribute": "affinity",
-	"cost": -1,
+	"attribute": "Passive",
+	"cost": 0,
 	"power": "-",
 	"hits": "-",
 	"kuli": "-",
 	"hit": "-",
-	"target": "",
+	"target": "Self",
 	"strengthen": -1,
-	"effect": "-"
+	"effect": "Increases resistance to Ice attacks. Target: Self"
 });
 
 registerSkill({
 	"nameJP": "氷結無効",
 	"nameEN": "Null Ice",
-	"attribute": "affinity",
-	"cost": -1,
+	"attribute": "Passive",
+	"cost": 0,
 	"power": "-",
 	"hits": "-",
 	"kuli": "-",
 	"hit": "-",
-	"target": "",
+	"target": "Self",
 	"strengthen": -1,
-	"effect": "-"
+	"effect": "Nulls Ice attacks. Target: Self"
 });
 
 registerSkill({
 	"nameJP": "氷結反射",
 	"nameEN": "Repel Ice",
-	"attribute": "affinity",
-	"cost": -1,
+	"attribute": "Passive",
+	"cost": 0,
 	"power": "-",
 	"hits": "-",
 	"kuli": "-",
 	"hit": "-",
-	"target": "",
+	"target": "Self",
 	"strengthen": -1,
-	"effect": "-"
+	"effect": "Repels Ice attacks. Target: Self"
 });
 
 registerSkill({
 	"nameJP": "氷結吸収",
 	"nameEN": "Drain Ice",
-	"attribute": "affinity",
-	"cost": -1,
+	"attribute": "Passive",
+	"cost": 0,
 	"power": "-",
 	"hits": "-",
 	"kuli": "-",
 	"hit": "-",
-	"target": "",
+	"target": "Self",
 	"strengthen": -1,
-	"effect": "-"
+	"effect": "Drains Ice attacks. Target: Self"
 });
 
 registerSkill({
 	"nameJP": "電撃耐性",
-	"nameEN": "Resist Electric",
-	"attribute": "affinity",
-	"cost": -1,
+	"nameEN": "Resist Elec",
+	"attribute": "Passive",
+	"cost": 0,
 	"power": "-",
 	"hits": "-",
 	"kuli": "-",
 	"hit": "-",
-	"target": "",
+	"target": "Self",
 	"strengthen": -1,
-	"effect": "-"
+	"effect": "Increases resistance to Elec attacks. Target: Self"
 });
 
 registerSkill({
 	"nameJP": "電撃無効",
-	"nameEN": "Null Electric",
-	"attribute": "affinity",
-	"cost": -1,
+	"nameEN": "Null Elec",
+	"attribute": "Passive",
+	"cost": 0,
 	"power": "-",
 	"hits": "-",
 	"kuli": "-",
 	"hit": "-",
-	"target": "",
+	"target": "Self",
 	"strengthen": -1,
-	"effect": "-"
+	"effect": "Nulls Elec attacks. Target: Self"
 });
 
 registerSkill({
 	"nameJP": "電撃反射",
 	"nameEN": "Repel Electric",
-	"attribute": "affinity",
-	"cost": -1,
+	"attribute": "Passive",
+	"cost": 0,
 	"power": "-",
 	"hits": "-",
 	"kuli": "-",
 	"hit": "-",
-	"target": "",
+	"target": "Self",
 	"strengthen": -1,
-	"effect": "-"
+	"effect": "Repels Elec attacks. Target: Self"
 });
 
 registerSkill({
 	"nameJP": "電撃吸収",
 	"nameEN": "Drain Electric",
-	"attribute": "affinity",
-	"cost": -1,
+	"attribute": "Passive",
+	"cost": 0,
 	"power": "-",
 	"hits": "-",
 	"kuli": "-",
 	"hit": "-",
-	"target": "",
+	"target": "Self",
 	"strengthen": -1,
-	"effect": "-"
+	"effect": "Drains Elec attacks. Target: Self"
 });
 
 registerSkill({
 	"nameJP": "衝撃耐性",
 	"nameEN": "Resist Force",
-	"attribute": "affinity",
-	"cost": -1,
+	"attribute": "Passive",
+	"cost": 0,
 	"power": "-",
 	"hits": "-",
 	"kuli": "-",
 	"hit": "-",
-	"target": "",
+	"target": "Self",
 	"strengthen": -1,
-	"effect": "-"
+	"effect": "Increases resistance to Force attacks. Target: Self"
 });
 
 registerSkill({
 	"nameJP": "衝撃無効",
 	"nameEN": "Null Force",
-	"attribute": "affinity",
-	"cost": -1,
+	"attribute": "Passive",
+	"cost": 0,
 	"power": "-",
 	"hits": "-",
 	"kuli": "-",
 	"hit": "-",
-	"target": "",
+	"target": "Self",
 	"strengthen": -1,
-	"effect": "-"
+	"effect": "Nulls Force attacks. Target: Self"
 });
 
 registerSkill({
 	"nameJP": "衝撃反射",
 	"nameEN": "Repel Force",
-	"attribute": "affinity",
-	"cost": -1,
+	"attribute": "Passive",
+	"cost": 0,
 	"power": "-",
 	"hits": "-",
 	"kuli": "-",
 	"hit": "-",
-	"target": "",
+	"target": "Self",
 	"strengthen": -1,
-	"effect": "-"
+	"effect": "Repels Force attacks. Target: Self"
 });
 
 registerSkill({
 	"nameJP": "衝撃吸収",
 	"nameEN": "Drain Force",
-	"attribute": "affinity",
-	"cost": -1,
+	"attribute": "Passive",
+	"cost": 0,
 	"power": "-",
 	"hits": "-",
 	"kuli": "-",
 	"hit": "-",
-	"target": "",
+	"target": "Self",
 	"strengthen": -1,
-	"effect": "-"
+	"effect": "Drains Force attacks. Target: Self"
 });
 
 registerSkill({
 	"nameJP": "破魔耐性",
-	"nameEN": "Resist Banish",
-	"attribute": "affinity",
-	"cost": -1,
+	"nameEN": "Resist Light",
+	"attribute": "Passive",
+	"cost": 0,
 	"power": "-",
 	"hits": "-",
 	"kuli": "-",
 	"hit": "-",
-	"target": "",
+	"target": "Self",
 	"strengthen": -1,
-	"effect": "-"
+	"effect": "Increases resistance to Light attacks. Target: Self"
 });
 
 registerSkill({
 	"nameJP": "破魔無効",
-	"nameEN": "Null Banish",
-	"attribute": "affinity",
-	"cost": -1,
+	"nameEN": "Null Light",
+	"attribute": "Passive",
+	"cost": 0,
 	"power": "-",
 	"hits": "-",
 	"kuli": "-",
 	"hit": "-",
-	"target": "",
+	"target": "Self",
 	"strengthen": -1,
-	"effect": "-"
+	"effect": "Nulls Light attacks. Target: Self"
 });
 
 registerSkill({
 	"nameJP": "呪殺耐性",
-	"nameEN": "Resist Curse",
-	"attribute": "affinity",
-	"cost": -1,
+	"nameEN": "Resist Dark",
+	"attribute": "Passive",
+	"cost": 0,
 	"power": "-",
 	"hits": "-",
 	"kuli": "-",
 	"hit": "-",
-	"target": "",
+	"target": "Self",
 	"strengthen": -1,
-	"effect": "-"
+	"effect": "Increases resistance to Dark attacks. Target: Self"
 });
 
 registerSkill({
 	"nameJP": "呪殺無効",
-	"nameEN": "Null Curse",
-	"attribute": "affinity",
-	"cost": -1,
+	"nameEN": "Null Dark",
+	"attribute": "Passive",
+	"cost": 0,
 	"power": "-",
 	"hits": "-",
 	"kuli": "-",
 	"hit": "-",
-	"target": "",
+	"target": "Self",
 	"strengthen": -1,
-	"effect": "-"
+	"effect": "Nulls Dark attacks. Target: Self"
 });
 
 registerSkill({
 	"nameJP": "精神異常無効",
-	"nameEN": "Null Insanity",
-	"attribute": "affinity",
-	"cost": -1,
+	"nameEN": "Null Mind",
+	"attribute": "Passive",
+	"cost": 0,
 	"power": "-",
 	"hits": "-",
 	"kuli": "-",
 	"hit": "-",
-	"target": "",
+	"target": "Self",
 	"strengthen": -1,
-	"effect": "Null Sleep/Confusion"
+	"effect": "Null Sleep/Panic. Target: Self"
 });
 
 registerSkill({
 	"nameJP": "身体異常無効",
-	"nameEN": "Null Abnormal Body",
-	"attribute": "affinity",
-	"cost": -1,
+	"nameEN": "Null Nerve",
+	"attribute": "Passive",
+	"cost": 0,
 	"power": "-",
 	"hits": "-",
 	"kuli": "-",
 	"hit": "-",
-	"target": "",
+	"target": "Self",
 	"strengthen": -1,
-	"effect": "Null Poison, Bind, Cold"
+	"effect": "Null Poison/Bind/Sick. Target: Self"
 });
 
 registerSkill({
 	"nameJP": "地獄のマスク",
-	"nameEN": "Mask of Hell",
-	"attribute": "affinity",
-	"cost": -1,
+	"nameEN": "Hellish Mask",
+	"attribute": "Passive",
+	"cost": 0,
 	"power": "-",
 	"hits": "-",
 	"kuli": "-",
 	"hit": "-",
-	"target": "",
+	"target": "Self",
 	"strengthen": -1,
-	"effect": "状態変化になりにくくなる"
+	"effect": "Decreases chances of suffering ailments"
 });
 
 registerSkill({
 	"nameJP": "物理プレロマ",
 	"nameEN": "Phys Pleroma",
-	"attribute": "attribute",
+	"attribute": "Passive",
 	"cost": 0,
 	"power": "-",
 	"hits": "-",
 	"kuli": "-",
 	"hit": "-",
-	"target": "",
+	"target": "Self",
 	"strengthen": -1,
-	"effect": "Physical Attack +25%"
+	"effect": "Strengthens Phys attacks (+25%). Target: Self"
 });
 
 registerSkill({
 	"nameJP": "物理ギガプレロマ",
-	"nameEN": "Phys High Pleroma",
-	"attribute": "attribute",
+	"nameEN": "High Phys Pleroma",
+	"attribute": "Passive",
 	"cost": 0,
 	"power": "-",
 	"hits": "-",
 	"kuli": "-",
 	"hit": "-",
-	"target": "",
+	"target": "Self",
 	"strengthen": -1,
-	"effect": "Physical Attack +50%"
+	"effect": "Greatly strengthens Phys attacks (+50%). Target: Self"
 });
 
 registerSkill({
 	"nameJP": "銃プレロマ",
 	"nameEN": "Gun Pleroma",
-	"attribute": "attribute",
+	"attribute": "Passive",
 	"cost": 0,
 	"power": "-",
 	"hits": "-",
 	"kuli": "-",
 	"hit": "-",
-	"target": "",
+	"target": "Self",
 	"strengthen": -1,
-	"effect": "Gun Attack +25%"
+	"effect": "Strengthens Gun attacks (+25%). Target: Self"
 });
 
 registerSkill({
 	"nameJP": "銃ギガプレロマ",
-	"nameEN": "Gun High Pleroma",
-	"attribute": "attribute",
+	"nameEN": "High Gun Pleroma",
+	"attribute": "Passive",
 	"cost": 0,
 	"power": "-",
 	"hits": "-",
 	"kuli": "-",
 	"hit": "-",
-	"target": "",
+	"target": "Self",
 	"strengthen": -1,
-	"effect": "Gun Attack +50%"
+	"effect": "Greatly strengthens Gun attacks (+50%). Target: Self"
 });
 
 registerSkill({
 	"nameJP": "火炎プレロマ",
 	"nameEN": "Fire Pleroma",
-	"attribute": "attribute",
+	"attribute": "Passive",
 	"cost": 0,
 	"power": "-",
 	"hits": "-",
 	"kuli": "-",
 	"hit": "-",
-	"target": "",
+	"target": "Self",
 	"strengthen": -1,
-	"effect": "Fire Attack +25%"
+	"effect": "Strengthens Fire attacks (+25%). Target: Self"
 });
 
 registerSkill({
 	"nameJP": "火炎ギガプレロマ",
-	"nameEN": "Fire High Pleroma",
-	"attribute": "attribute",
+	"nameEN": "High Fire Pleroma",
+	"attribute": "Passive",
 	"cost": 0,
 	"power": "-",
 	"hits": "-",
 	"kuli": "-",
 	"hit": "-",
-	"target": "",
+	"target": "Self",
 	"strengthen": -1,
-	"effect": "Fire Attack +50%"
+	"effect": "Greatly strengthens Fire attacks (+50%). Target: Self"
 });
 
 registerSkill({
 	"nameJP": "氷結プレロマ",
 	"nameEN": "Ice Pleroma",
-	"attribute": "attribute",
+	"attribute": "Passive",
 	"cost": 0,
 	"power": "-",
 	"hits": "-",
 	"kuli": "-",
 	"hit": "-",
-	"target": "",
+	"target": "Self",
 	"strengthen": -1,
-	"effect": "Ice Attack +25%"
+	"effect": "Strengthens Ice attacks (+25%). Target: Self"
 });
 
 registerSkill({
 	"nameJP": "氷結ギガプレロマ",
-	"nameEN": "Ice High Pleroma",
-	"attribute": "attribute",
+	"nameEN": "High Ice Pleroma",
+	"attribute": "Passive",
 	"cost": 0,
 	"power": "-",
 	"hits": "-",
 	"kuli": "-",
 	"hit": "-",
-	"target": "",
+	"target": "Self",
 	"strengthen": -1,
-	"effect": "Ice Attack +50%"
+	"effect": "Greatly strengthens Ice attacks (+50%). Target: Self"
 });
 
 registerSkill({
 	"nameJP": "電撃プレロマ",
 	"nameEN": "Elec Pleroma",
-	"attribute": "attribute",
+	"attribute": "Passive",
 	"cost": 0,
 	"power": "-",
 	"hits": "-",
 	"kuli": "-",
 	"hit": "-",
-	"target": "",
+	"target": "Self",
 	"strengthen": -1,
-	"effect": "Electric Attack +25%"
+	"effect": "Strengthens Elec attacks (+25%). Target: Self"
 });
 
 registerSkill({
 	"nameJP": "電撃ギガプレロマ",
 	"nameEN": "High Elec Pleroma",
-	"attribute": "attribute",
+	"attribute": "Passive",
 	"cost": 0,
 	"power": "-",
 	"hits": "-",
 	"kuli": "-",
 	"hit": "-",
-	"target": "",
+	"target": "Self",
 	"strengthen": -1,
-	"effect": "Greatly strengthens Elec attacks"
+	"effect": "Greatly strengthens Elec attacks (+50%). Target: Self"
 });
 
 registerSkill({
 	"nameJP": "衝撃プレロマ",
 	"nameEN": "Force Pleroma",
-	"attribute": "attribute",
-	"cost": -1,
-	"power": "-",
-	"hits": "-",
-	"kuli": "-",
-	"hit": "-",
-	"target": "",
-	"strengthen": -1,
-	"effect": "Force Attack +25%"
-});
-
-registerSkill({
-	"nameJP": "衝撃ギガプレロマ",
-	"nameEN": "Force High Pleroma",
-	"attribute": "attribute",
-	"cost": -1,
-	"power": "-",
-	"hits": "-",
-	"kuli": "-",
-	"hit": "-",
-	"target": "",
-	"strengthen": -1,
-	"effect": "Force Attack +50%"
-});
-
-registerSkill({
-	"nameJP": "回復プレロマ",
-	"nameEN": "Recovery Boost",
-	"attribute": "attribute",
-	"cost": -1,
-	"power": "-",
-	"hits": "-",
-	"kuli": "-",
-	"hit": "-",
-	"target": "",
-	"strengthen": -1,
-	"effect": "Recovery +25%"
-});
-
-registerSkill({
-	"nameJP": "回復ギガプレロマ",
-	"nameEN": "Recovery Giga Boost",
-	"attribute": "attribute",
-	"cost": -1,
-	"power": "-",
-	"hits": "-",
-	"kuli": "-",
-	"hit": "-",
-	"target": "",
-	"strengthen": -1,
-	"effect": "Recovery +50%"
-});
-
-registerSkill({
-	"nameJP": "一分の活泉",
-	"nameEN": "Fountain of Life I",
-	"attribute": "parameter",
-	"cost": -1,
-	"power": "-",
-	"hits": "-",
-	"kuli": "-",
-	"hit": "-",
-	"target": "",
-	"strengthen": -1,
-	"effect": "HP +10%"
-});
-
-registerSkill({
-	"nameJP": "二分の活泉",
-	"nameEN": "Fountain of Life II",
-	"attribute": "parameter",
-	"cost": -1,
-	"power": "-",
-	"hits": "-",
-	"kuli": "-",
-	"hit": "-",
-	"target": "",
-	"strengthen": -1,
-	"effect": "HP +20%"
-});
-
-registerSkill({
-	"nameJP": "三分の活泉",
-	"nameEN": "Life Surge",
-	"attribute": "parameter",
+	"attribute": "Passive",
 	"cost": 0,
 	"power": "-",
 	"hits": "-",
 	"kuli": "-",
 	"hit": "-",
-	"target": "",
+	"target": "Self",
 	"strengthen": -1,
-	"effect": "Greatly increases maximum HP (HP +30%)"
+	"effect": "Strengthens Force attacks (+25%). Target: Self"
+});
+
+registerSkill({
+	"nameJP": "衝撃ギガプレロマ",
+	"nameEN": "High Force Pleroma",
+	"attribute": "Passive",
+	"cost": 0,
+	"power": "-",
+	"hits": "-",
+	"kuli": "-",
+	"hit": "-",
+	"target": "Self",
+	"strengthen": -1,
+	"effect": "Greatly strengthens Force attacks (+50%). Target: Self"
+});
+
+registerSkill({
+	"nameJP": "回復プレロマ",
+	"nameEN": "Heal Pleroma",
+	"attribute": "Passive",
+	"cost": 0,
+	"power": "-",
+	"hits": "-",
+	"kuli": "-",
+	"hit": "-",
+	"target": "Self",
+	"strengthen": -1,
+	"effect": "Strengthens healing magic (+25%). Target: Self"
+});
+
+registerSkill({
+	"nameJP": "回復ギガプレロマ",
+	"nameEN": "High Heal Pleroma",
+	"attribute": "Passive",
+	"cost": 0,
+	"power": "-",
+	"hits": "-",
+	"kuli": "-",
+	"hit": "-",
+	"target": "Self",
+	"strengthen": -1,
+	"effect": "Greatly strengthens healing magic (+50%). Target: Self"
+});
+
+registerSkill({
+	"nameJP": "一分の活泉",
+	"nameEN": "Life Bonus",
+	"attribute": "Passive",
+	"cost": 0,
+	"power": "-",
+	"hits": "-",
+	"kuli": "-",
+	"hit": "-",
+	"target": "Self",
+	"strengthen": -1,
+	"effect": "Slightly increases maximum HP (+10%). Target: Self"
+});
+
+registerSkill({
+	"nameJP": "二分の活泉",
+	"nameEN": "Life Gain",
+	"attribute": "Passive",
+	"cost": 0,
+	"power": "-",
+	"hits": "-",
+	"kuli": "-",
+	"hit": "-",
+	"target": "Self",
+	"strengthen": -1,
+	"effect": "Increases maximum HP (+20%). Target: Self"
+});
+
+registerSkill({
+	"nameJP": "三分の活泉",
+	"nameEN": "Life Surge",
+	"attribute": "Passive",
+	"cost": 0,
+	"power": "-",
+	"hits": "-",
+	"kuli": "-",
+	"hit": "-",
+	"target": "Self",
+	"strengthen": -1,
+	"effect": "Greatly increases maximum HP (+30%). Target: Self"
 });
 
 registerSkill({
 	"nameJP": "一分の魔脈",
-	"nameEN": "Magic Spirit I",
-	"attribute": "parameter",
-	"cost": -1,
+	"nameEN": "Mana Bonus",
+	"attribute": "Passive",
+	"cost": 0,
 	"power": "-",
 	"hits": "-",
 	"kuli": "-",
 	"hit": "-",
-	"target": "",
+	"target": "Self",
 	"strengthen": -1,
-	"effect": "MP +10%"
+	"effect": "Slightly increases maximum MP (+10%). Target: Self"
 });
 
 registerSkill({
 	"nameJP": "二分の魔脈",
-	"nameEN": "Magic Spirit II",
-	"attribute": "parameter",
-	"cost": -1,
+	"nameEN": "Mana Gain",
+	"attribute": "Passive",
+	"cost": 0,
 	"power": "-",
 	"hits": "-",
 	"kuli": "-",
 	"hit": "-",
-	"target": "",
+	"target": "Self",
 	"strengthen": -1,
-	"effect": "MP +20%"
+	"effect": "Increases maximum MP (+20%). Target: Self"
 });
 
 registerSkill({
 	"nameJP": "三分の魔脈",
-	"nameEN": "Magic Spirit III",
-	"attribute": "parameter",
-	"cost": -1,
+	"nameEN": "Mana Surge",
+	"attribute": "Passive",
+	"cost": 0,
 	"power": "-",
 	"hits": "-",
 	"kuli": "-",
 	"hit": "-",
-	"target": "",
+	"target": "Self",
 	"strengthen": -1,
-	"effect": "MP +30%"
+	"effect": "Greatly increases maximum MP (+30%). Target: Self"
 });
 
 registerSkill({
 	"nameJP": "俊足の覚え",
-	"nameEN": "Light Footed",
-	"attribute": "parameter",
-	"cost": -1,
+	"nameEN": "Speed Lesson",
+	"attribute": "Passive",
+	"cost": 0,
 	"power": "-",
 	"hits": "-",
 	"kuli": "-",
 	"hit": "-",
-	"target": "",
+	"target": "Self",
 	"strengthen": -1,
-	"effect": "速を10アップさせる"
+	"effect": "Increases Agility by 10"
 });
 
 registerSkill({
 	"nameJP": "韋駄天の覚え",
 	"nameEN": "Haste Lesson",
-	"attribute": "parameter",
-	"cost": -1,
+	"attribute": "Passive",
+	"cost": 0,
 	"power": "-",
 	"hits": "-",
 	"kuli": "-",
 	"hit": "-",
-	"target": "",
+	"target": "Self",
 	"strengthen": -1,
 	"effect": "Increases Agility by 20"
 });
@@ -3283,27 +3226,27 @@ registerSkill({
 registerSkill({
 	"nameJP": "覚醒",
 	"nameEN": "Awakening",
-	"attribute": "parameter",
-	"cost": -1,
-	"power": "-",
-	"hits": "-",
-	"kuli": "-",
-	"hit": "-",
-	"target": "",
-	"strengthen": -1,
-	"effect": "全てのparameterを5上昇させる"
-});
-
-registerSkill({
-	"nameJP": "獣の反応",
-	"nameEN": "Beastly Reaction",
-	"attribute": "parameter",
+	"attribute": "Passive",
 	"cost": 0,
 	"power": "-",
 	"hits": "-",
 	"kuli": "-",
 	"hit": "-",
-	"target": "",
+	"target": "Self",
+	"strengthen": -1,
+	"effect": "Increases all stats by 5"
+});
+
+registerSkill({
+	"nameJP": "獣の反応",
+	"nameEN": "Beastly Reaction",
+	"attribute": "Passive",
+	"cost": 0,
+	"power": "-",
+	"hits": "-",
+	"kuli": "-",
+	"hit": "-",
+	"target": "Self",
 	"strengthen": -1,
 	"effect": "Increases hit/evade rate"
 });
@@ -3311,335 +3254,335 @@ registerSkill({
 registerSkill({
 	"nameJP": "龍の反応",
 	"nameEN": "Draconic Reaction",
-	"attribute": "parameter",
+	"attribute": "Passive",
 	"cost": 0,
 	"power": "-",
 	"hits": "-",
 	"kuli": "-",
 	"hit": "-",
-	"target": "",
+	"target": "Self",
 	"strengthen": -1,
 	"effect": "Greatly increases hit/evade rate"
 });
 
 registerSkill({
 	"nameJP": "猛勉強",
-	"nameEN": "Hard Studying",
-	"attribute": "parameter",
-	"cost": -1,
-	"power": "-",
-	"hits": "-",
-	"kuli": "-",
-	"hit": "-",
-	"target": "",
-	"strengthen": -1,
-	"effect": "取得経験値を多く入手する"
-});
-
-registerSkill({
-	"nameJP": "狂勉強",
-	"nameEN": "Insane Studying",
-	"attribute": "parameter",
-	"cost": -1,
-	"power": "-",
-	"hits": "-",
-	"kuli": "-",
-	"hit": "-",
-	"target": "",
-	"strengthen": -1,
-	"effect": "取得経験値を多く入手する　効果大"
-});
-
-registerSkill({
-	"nameJP": "道具の知恵・癒",
-	"nameEN": "Item Knowledge - Healing",
-	"attribute": "item",
-	"cost": -1,
-	"power": "-",
-	"hits": "-",
-	"kuli": "-",
-	"hit": "-",
-	"target": "",
-	"strengthen": -1,
-	"effect": "recovery系アイテムが使用可能"
-});
-
-registerSkill({
-	"nameJP": "道具の知恵・攻",
-	"nameEN": "Attack Knowhow",
-	"attribute": "item",
-	"cost": -1,
-	"power": "-",
-	"hits": "-",
-	"kuli": "-",
-	"hit": "-",
-	"target": "",
-	"strengthen": -1,
-	"effect": "Enables use of attack items"
-});
-
-registerSkill({
-	"nameJP": "反撃",
-	"nameEN": "Counterattack",
-	"attribute": "attack",
-	"cost": -1,
-	"power": "-",
-	"hits": "-",
-	"kuli": "-",
-	"hit": "-",
-	"target": "",
-	"strengthen": -1,
-	"effect": "物理もしくは銃属性のattackを受けたとき、\n30%の確率で反撃する"
-});
-
-registerSkill({
-	"nameJP": "猛反撃",
-	"nameEN": "Fierce Counterattack",
-	"attribute": "attack",
-	"cost": -1,
-	"power": "-",
-	"hits": "-",
-	"kuli": "-",
-	"hit": "-",
-	"target": "",
-	"strengthen": -1,
-	"effect": "物理もしくは銃属性のattackを受けたとき、\n50%の確率で威力を1.5倍にして反撃する"
-});
-
-registerSkill({
-	"nameJP": "慈愛の反撃",
-	"nameEN": "Loving Counterattack",
-	"attribute": "attack",
-	"cost": -1,
-	"power": "-",
-	"hits": "-",
-	"kuli": "-",
-	"hit": "-",
-	"target": "",
-	"strengthen": -1,
-	"effect": "味方が物理もしくは銃属性のattackを受けたとき、\n30%の確率で反撃する"
-});
-
-registerSkill({
-	"nameJP": "慈愛の猛反撃",
-	"nameEN": "Fierce Loving Counterattack",
-	"attribute": "attack",
-	"cost": -1,
-	"power": "-",
-	"hits": "-",
-	"kuli": "-",
-	"hit": "-",
-	"target": "",
-	"strengthen": -1,
-	"effect": "味方が物理もしくは銃属性のattackを受けたとき、\n50%の確率で威力を1.5倍にして反撃する"
-});
-
-registerSkill({
-	"nameJP": "コロシの愉悦",
-	"nameEN": "The Joy of Killing",
-	"attribute": "attack",
-	"cost": -1,
-	"power": "-",
-	"hits": "-",
-	"kuli": "-",
-	"hit": "-",
-	"target": "",
-	"strengthen": -1,
-	"effect": "クリティカル発生率を上昇させる"
-});
-
-registerSkill({
-	"nameJP": "物理貫通",
-	"nameEN": "Physical Penetrate",
-	"attribute": "attack",
-	"cost": -1,
-	"power": "-",
-	"hits": "-",
-	"kuli": "-",
-	"hit": "-",
-	"target": "",
-	"strengthen": -1,
-	"effect": "attack時に相手の物理吸収・無効・耐性を貫通して無効化する"
-});
-
-registerSkill({
-	"nameJP": "銃貫通",
-	"nameEN": "Gun Penetrate",
-	"attribute": "attack",
-	"cost": -1,
-	"power": "-",
-	"hits": "-",
-	"kuli": "-",
-	"hit": "-",
-	"target": "",
-	"strengthen": -1,
-	"effect": "attack時に相手の銃吸収・無効・耐性を貫通して無効化する"
-});
-
-registerSkill({
-	"nameJP": "火炎貫通",
-	"nameEN": "Fire Penetrate",
-	"attribute": "attack",
-	"cost": -1,
-	"power": "-",
-	"hits": "-",
-	"kuli": "-",
-	"hit": "-",
-	"target": "",
-	"strengthen": -1,
-	"effect": "attack時に相手の火炎吸収・無効・耐性を貫通して無効化する"
-});
-
-registerSkill({
-	"nameJP": "氷結貫通",
-	"nameEN": "Ice Penetrate",
-	"attribute": "attack",
-	"cost": -1,
-	"power": "-",
-	"hits": "-",
-	"kuli": "-",
-	"hit": "-",
-	"target": "",
-	"strengthen": -1,
-	"effect": "attack時に相手の氷結吸収・無効・耐性を貫通して無効化する"
-});
-
-registerSkill({
-	"nameJP": "電撃貫通",
-	"nameEN": "Electric Penetrate",
-	"attribute": "attack",
-	"cost": -1,
-	"power": "-",
-	"hits": "-",
-	"kuli": "-",
-	"hit": "-",
-	"target": "",
-	"strengthen": -1,
-	"effect": "attack時に相手の電撃吸収・無効・耐性を貫通して無効化する"
-});
-
-registerSkill({
-	"nameJP": "衝撃貫通",
-	"nameEN": "Force Penetrate",
-	"attribute": "attack",
-	"cost": -1,
-	"power": "-",
-	"hits": "-",
-	"kuli": "-",
-	"hit": "-",
-	"target": "",
-	"strengthen": -1,
-	"effect": "attack時に相手の衝撃吸収・無効・耐性を貫通して無効化する"
-});
-
-registerSkill({
-	"nameJP": "食いしばり",
-	"nameEN": "Grit Teeth",
-	"attribute": "recovery",
-	"cost": -1,
-	"power": "-",
-	"hits": "-",
-	"kuli": "-",
-	"hit": "-",
-	"target": "",
-	"strengthen": -1,
-	"effect": "死亡したとき、1回だけHP1で復活する"
-});
-
-registerSkill({
-	"nameJP": "不屈の闘志",
-	"nameEN": "Persistent Fighting Spirit",
-	"attribute": "recovery",
-	"cost": -1,
-	"power": "-",
-	"hits": "-",
-	"kuli": "-",
-	"hit": "-",
-	"target": "",
-	"strengthen": -1,
-	"effect": "死亡したとき、1回だけHP全recoveryで復活する"
-});
-
-registerSkill({
-	"nameJP": "勝利の小息吹",
-	"nameEN": "Small Breath of Victory",
-	"attribute": "recovery",
-	"cost": -1,
-	"power": "-",
-	"hits": "-",
-	"kuli": "-",
-	"hit": "-",
-	"target": "",
-	"strengthen": -1,
-	"effect": "戦闘終了時、selfのHPが10%recoveryする"
-});
-
-registerSkill({
-	"nameJP": "勝利の息吹",
-	"nameEN": "Breath of Victory",
-	"attribute": "recovery",
-	"cost": -1,
-	"power": "-",
-	"hits": "-",
-	"kuli": "-",
-	"hit": "-",
-	"target": "",
-	"strengthen": -1,
-	"effect": "戦闘終了時、selfのHPが30%recoveryする"
-});
-
-registerSkill({
-	"nameJP": "勝利の小チャクラ",
-	"nameEN": "Small Chakra of Victory",
-	"attribute": "recovery",
-	"cost": -1,
-	"power": "-",
-	"hits": "-",
-	"kuli": "-",
-	"hit": "-",
-	"target": "",
-	"strengthen": -1,
-	"effect": "戦闘終了時、selfのMPが1％recoveryする"
-});
-
-registerSkill({
-	"nameJP": "勝利のチャクラ",
-	"nameEN": "Mana Aid",
-	"attribute": "recovery",
+	"nameEN": "Hard Worker",
+	"attribute": "Passive",
 	"cost": 0,
 	"power": "-",
 	"hits": "-",
 	"kuli": "-",
 	"hit": "-",
-	"target": "",
+	"target": "Self",
 	"strengthen": -1,
-	"effect": "Recover some MP after battle"
+	"effect": "Obtain more EXP after battles"
+});
+
+registerSkill({
+	"nameJP": "狂勉強",
+	"nameEN": "Workaholic",
+	"attribute": "Passive",
+	"cost": 0,
+	"power": "-",
+	"hits": "-",
+	"kuli": "-",
+	"hit": "-",
+	"target": "Self",
+	"strengthen": -1,
+	"effect": "Obtaim much more EXP after battles"
+});
+
+registerSkill({
+	"nameJP": "道具の知恵・癒",
+	"nameEN": "Healing Knowhow",
+	"attribute": "Passive",
+	"cost": 0,
+	"power": "-",
+	"hits": "-",
+	"kuli": "-",
+	"hit": "-",
+	"target": "Self",
+	"strengthen": -1,
+	"effect": "Enables the use of healing/support items. Target: Self"
+});
+
+registerSkill({
+	"nameJP": "道具の知恵・攻",
+	"nameEN": "Attack Knowhow",
+	"attribute": "Passive",
+	"cost": 0,
+	"power": "-",
+	"hits": "-",
+	"kuli": "-",
+	"hit": "-",
+	"target": "Self",
+	"strengthen": -1,
+	"effect": "Enables use of attack items. Target: Self"
+});
+
+registerSkill({
+	"nameJP": "反撃",
+	"nameEN": "Counter",
+	"attribute": "Passive",
+	"cost": 0,
+	"power": "-",
+	"hits": "-",
+	"kuli": "-",
+	"hit": "-",
+	"target": "Self",
+	"strengthen": -1,
+	"effect": "Chance of countering a Phys or Gun attack"
+});
+
+registerSkill({
+	"nameJP": "猛反撃",
+	"nameEN": "Retaliate",
+	"attribute": "Passive",
+	"cost": 0,
+	"power": "-",
+	"hits": "-",
+	"kuli": "-",
+	"hit": "-",
+	"target": "Self",
+	"strengthen": -1,
+	"effect": "High chance of countering a Phys or Gun attack"
+});
+
+registerSkill({
+	"nameJP": "慈愛の反撃",
+	"nameEN": "Ally Counter",
+	"attribute": "Passive",
+	"cost": 0,
+	"power": "-",
+	"hits": "-",
+	"kuli": "-",
+	"hit": "-",
+	"target": "Self",
+	"strengthen": -1,
+	"effect": "Chance of countering a Phys or Gun attack to an ally"
+});
+
+registerSkill({
+	"nameJP": "慈愛の猛反撃",
+	"nameEN": "Ally Retaliate",
+	"attribute": "Passive",
+	"cost": 0,
+	"power": "-",
+	"hits": "-",
+	"kuli": "-",
+	"hit": "-",
+	"target": "Self",
+	"strengthen": -1,
+	"effect": "High chance of countering a Phys or Gun attack to an ally"
+});
+
+registerSkill({
+	"nameJP": "コロシの愉悦",
+	"nameEN": "Bloody Glee",
+	"attribute": "Passive",
+	"cost": 0,
+	"power": "-",
+	"hits": "-",
+	"kuli": "-",
+	"hit": "-",
+	"target": "Self",
+	"strengthen": -1,
+	"effect": "Increases critical hit rate"
+});
+
+registerSkill({
+	"nameJP": "物理貫通",
+	"nameEN": "Physical Penetrate",
+	"attribute": "Passive",
+	"cost": 0,
+	"power": "-",
+	"hits": "-",
+	"kuli": "-",
+	"hit": "-",
+	"target": "Self",
+	"strengthen": -1,
+	"effect": "-"
+});
+
+registerSkill({
+	"nameJP": "銃貫通",
+	"nameEN": "Gun Penetrate",
+	"attribute": "Passive",
+	"cost": -1,
+	"power": "-",
+	"hits": "-",
+	"kuli": "-",
+	"hit": "-",
+	"target": "Self",
+	"strengthen": -1,
+	"effect": "-"
+});
+
+registerSkill({
+	"nameJP": "火炎貫通",
+	"nameEN": "Fire Penetrate",
+	"attribute": "Passive",
+	"cost": 0,
+	"power": "-",
+	"hits": "-",
+	"kuli": "-",
+	"hit": "-",
+	"target": "Self",
+	"strengthen": -1,
+	"effect": "-"
+});
+
+registerSkill({
+	"nameJP": "氷結貫通",
+	"nameEN": "Ice Penetrate",
+	"attribute": "Passive",
+	"cost": 0,
+	"power": "-",
+	"hits": "-",
+	"kuli": "-",
+	"hit": "-",
+	"target": "Self",
+	"strengthen": -1,
+	"effect": "-"
+});
+
+registerSkill({
+	"nameJP": "電撃貫通",
+	"nameEN": "Elec Penetrate",
+	"attribute": "Passive",
+	"cost": 0,
+	"power": "-",
+	"hits": "-",
+	"kuli": "-",
+	"hit": "-",
+	"target": "Self",
+	"strengthen": -1,
+	"effect": "-"
+});
+
+registerSkill({
+	"nameJP": "衝撃貫通",
+	"nameEN": "Force Penetrate",
+	"attribute": "Passive",
+	"cost": 0,
+	"power": "-",
+	"hits": "-",
+	"kuli": "-",
+	"hit": "-",
+	"target": "Self",
+	"strengthen": -1,
+	"effect": "-"
+});
+
+registerSkill({
+	"nameJP": "食いしばり",
+	"nameEN": "Endure",
+	"attribute": "Passive",
+	"cost": 0,
+	"power": "-",
+	"hits": "-",
+	"kuli": "-",
+	"hit": "-",
+	"target": "Self",
+	"strengthen": -1,
+	"effect": "Revive from KO once per battle with 1 HP"
+});
+
+registerSkill({
+	"nameJP": "不屈の闘志",
+	"nameEN": "Enduring Soul",
+	"attribute": "Passive",
+	"cost": 0,
+	"power": "-",
+	"hits": "-",
+	"kuli": "-",
+	"hit": "-",
+	"target": "Self",
+	"strengthen": -1,
+	"effect": "Revive from KO once per battle with full HP"
+});
+
+registerSkill({
+	"nameJP": "勝利の小息吹",
+	"nameEN": "Light Life Aid",
+	"attribute": "Passive",
+	"cost": 0,
+	"power": "-",
+	"hits": "-",
+	"kuli": "-",
+	"hit": "-",
+	"target": "Self",
+	"strengthen": -1,
+	"effect": "Recover a little HP after a battle"
+});
+
+registerSkill({
+	"nameJP": "勝利の息吹",
+	"nameEN": "Life Aid",
+	"attribute": "Passive",
+	"cost": 0,
+	"power": "-",
+	"hits": "-",
+	"kuli": "-",
+	"hit": "-",
+	"target": "Self",
+	"strengthen": -1,
+	"effect": "Recover some HP after a battle"
+});
+
+registerSkill({
+	"nameJP": "勝利の小チャクラ",
+	"nameEN": "Light Mana Aid",
+	"attribute": "Passive",
+	"cost": 0,
+	"power": "-",
+	"hits": "-",
+	"kuli": "-",
+	"hit": "-",
+	"target": "Self",
+	"strengthen": -1,
+	"effect": "Recover a little MP after a natt;e"
+});
+
+registerSkill({
+	"nameJP": "勝利のチャクラ",
+	"nameEN": "Mana Aid",
+	"attribute": "Passive",
+	"cost": 0,
+	"power": "-",
+	"hits": "-",
+	"kuli": "-",
+	"hit": "-",
+	"target": "Self",
+	"strengthen": -1,
+	"effect": "Recover some MP after a battle"
 });
 
 registerSkill({
 	"nameJP": "勝利の雄叫び",
 	"nameEN": "Victory Cry",
-	"attribute": "recovery",
-	"cost": -1,
+	"attribute": "Passive",
+	"cost": 0,
 	"power": "-",
 	"hits": "-",
 	"kuli": "-",
 	"hit": "-",
-	"target": "",
+	"target": "Self",
 	"strengthen": -1,
-	"effect": "Recovers all HP and MP at end of battle."
+	"effect": "Recovers full HP/MP after a battle"
 });
 
 registerSkill({
 	"nameJP": "生命の泉",
-	"nameEN": "Sprint of Life",
-	"attribute": "recovery",
-	"cost": -1,
+	"nameEN": "Spring of Life",
+	"attribute": "Passive",
+	"cost": 0,
 	"power": "-",
 	"hits": "-",
 	"kuli": "-",
 	"hit": "-",
-	"target": "",
+	"target": "Self",
 	"strengthen": -1,
 	"effect": "Recover some HP (3%) after walking a certain distance. Inactive when in the stock."
 });
@@ -3647,14 +3590,13 @@ registerSkill({
 registerSkill({
 	"nameJP": "チャクラウォーク",
 	"nameEN": "Chakra Walk",
-	"attribute": "recovery",
-	"cost": -1,
+	"attribute": "Passive",
+	"cost": 0,
 	"power": "-",
 	"hits": "-",
 	"kuli": "-",
 	"hit": "-",
-	"target": "",
+	"target": "Self",
 	"strengthen": -1,
-	"effect": "Summoned demon gains 5MP while walking a certain distance."
+	"effect": "Recover some MP (3%) after walking a certain distance. Inactive when in the stock."
 });
-

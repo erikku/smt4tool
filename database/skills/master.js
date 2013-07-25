@@ -9,7 +9,7 @@ function skillTableHeader() {
 	skillList += "<table>";
 	skillList += "<th><a>Name</a></th>";
 	skillList += "<th><a>MP</a></th>";
-	skillList += "<th><a>Attribute</a></th>";
+	skillList += "<th><a>Type</a></th>";
 	skillList += "<th><a>Effect</a></th>";
 
 	return skillList;
@@ -96,6 +96,7 @@ function showSkill(name) {
 	$("#skillData_power").text(data.power);
 	$("#skillData_hits").text(data.hits);
 	$("#skillData_hit").text(data.hit);
+	$("#skillData_kuli").text(data.kuli);
 	$("#skillData_target").text(data.target);
 	$("#skillData_strengthen").text(data.strengthen <= 0 ?
 		"-" : data.strengthen);
@@ -139,8 +140,8 @@ function showSkill(name) {
 
 	var demonList = demonTableHeader();
 
-	$.each(demons, function(index, data) {
-		demonList += demonTableEntry(data);
+	$.each(demons, function(index, demon) {
+		demonList += demonTableEntry(demon, demon.skills[data.nameJP]);
 	});
 
 	demonList += demonTableFooter();

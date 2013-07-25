@@ -31,7 +31,7 @@ registerDemon({
 	"skills": {
 		// This is a mapping for skill information, must stay in Japanese.
 		"マハブフダイン": 0,
-		"冥界波": 0,
+		"冥界破": 0,
 		"物理ギガプレロマ": 89
 	}
 });

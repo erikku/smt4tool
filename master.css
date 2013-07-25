@@ -166,9 +166,13 @@ body {
 	white-space: nowrap;
 }
 
-#demonData_name, #demonData_tribe {
+#demonData_name, #demonData_tribe, #skillData_attribute {
+	white-space: normal;
+}
+
+#skillData_effect, #skillData_notes {
+	width: 300px;
 	display: inline-block;
-	width: 100px;
 }
 
 #demonData .section {

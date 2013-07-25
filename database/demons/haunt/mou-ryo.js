@@ -35,7 +35,7 @@ registerDemon({
 		"プリンパ": 26
 	},
 	"mutate": {
-		"level": 0,
+		"level": 28,
 		"target": "インフェルノ"
 	}
 });

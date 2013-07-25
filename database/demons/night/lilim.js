@@ -32,7 +32,7 @@ registerDemon({
 		// This is a mapping for skill information, must stay in Japanese.
 		"夢見針": 0,
 		"二分の魔脈": 0,
-		"マハザン": -1,
+		"マハザン": 34,
 		"銃無効": 36
 	}
 });
