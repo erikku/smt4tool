@@ -124,18 +124,29 @@
 				if(skillByNameJP[skillJP] === undefined) {
 					alert(skillJP + " on " + data.nameEN);
 				}
-			})
+			});
 		});
 		*/
 
+		/*
 		// This test code is used to validate the level demons get skills at.
 		$.each(demonByNameEN, function(nameEN, data) {
 			$.each(data.skills, function(skillJP, obtainLvl) {
 				if(obtainLvl != 0 && obtainLvl < data.level) {
 					alert(skillJP + " on " + data.nameEN);
 				}
-			})
+			});
 		});
+		*/
+
+		/*
+		// This test code is used to validate mutation trigger levels.
+		$.each(demonByNameEN, function(nameEN, data) {
+			if(data.mutate && data.mutate.level <= data.level) {
+				alert("Mutation for: " + data.nameEN);
+			}
+		});
+		*/
 	});
 	</script>
 </head>
