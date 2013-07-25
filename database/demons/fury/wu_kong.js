@@ -32,7 +32,7 @@ registerDemon({
 		// This is a mapping for skill information, must stay in Japanese.
 		"モータルジハード": 0,
 		"挑発": 0,
-		"電撃耐性": 58,
-		"物理無効": -1
+		"物理無効": 58,
+		"電撃耐性": 60
 	}
 });
