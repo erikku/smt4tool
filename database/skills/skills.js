@@ -338,7 +338,7 @@ registerSkill({
 
 registerSkill({
 	"nameJP": "奥義一閃",
-	"nameEN": "Secret Slash",
+	"nameEN": "Occult Flash",
 	"attribute": "Physical",
 	"cost": 30,
 	"power": "Medium",
@@ -618,7 +618,7 @@ registerSkill({
 
 registerSkill({
 	"nameJP": "うちまくり",
-	"nameEN": "Roll Up",
+	"nameEN": "Desperate Hit",
 	"attribute": "Almighty",
 	"cost": 40,
 	"power": "Weak",
@@ -898,7 +898,7 @@ registerSkill({
 
 registerSkill({
 	"nameJP": "大冷界",
-	"nameEN": "Epic World of Dooming Cold",
+	"nameEN": "Cold War",
 	"attribute": "Ice",
 	"cost": 50,
 	"power": "Heavy",
