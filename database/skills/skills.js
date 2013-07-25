@@ -898,7 +898,7 @@ registerSkill({
 
 registerSkill({
 	"nameJP": "大冷界",
-	"nameEN": "Cold War",
+	"nameEN": "Cold World",
 	"attribute": "Ice",
 	"cost": 50,
 	"power": "Heavy",
@@ -907,7 +907,7 @@ registerSkill({
 	"hit": "-",
 	"target": "All enemies",
 	"strengthen": 8,
-	"effect": "-"
+	"effect": "Heavy Ice attack. Change to kill target. Target: All enemies"
 });
 
 registerSkill({
@@ -1076,7 +1076,7 @@ registerSkill({
 	"hit": "-",
 	"target": "All enemies",
 	"strengthen": 8,
-	"effect": "-"
+	"effect": "Heavy Electric attacks. Inflicts Panic. Target: All enemies"
 });
 
 registerSkill({
@@ -1221,7 +1221,7 @@ registerSkill({
 
 registerSkill({
 	"nameJP": "妖花烈風",
-	"nameEN": "Demon Flower Blast",
+	"nameEN": "Floral Gust",
 	"attribute": "Force",
 	"cost": 35,
 	"power": "Medium",
