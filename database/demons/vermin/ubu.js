@@ -31,8 +31,8 @@ registerDemon({
 	"skills": {
 		// This is a mapping for skill information, must stay in Japanese.
 		"毒針": 0,
-		"テタノスカット": -1,
-		"麻痺針": -1
+		"テタノスカット": 0,
+		"麻痺針": 23
 	},
 	"mutate": {
 		"level": 26,
