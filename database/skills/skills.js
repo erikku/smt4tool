@@ -338,7 +338,7 @@ registerSkill({
 
 registerSkill({
 	"nameJP": "奥義一閃",
-	"nameEN": "Secret Slash",
+	"nameEN": "Occult Flash",
 	"attribute": "Physical",
 	"cost": 30,
 	"power": "Medium",
@@ -380,7 +380,7 @@ registerSkill({
 
 registerSkill({
 	"nameJP": "てっけんせいさい",
-	"nameEN": "Iron Fist Smash",
+	"nameEN": "Iron Judgement",
 	"attribute": "Physical",
 	"cost": 8,
 	"power": "Medium",
@@ -389,7 +389,7 @@ registerSkill({
 	"hit": "-",
 	"target": "Enemy",
 	"strengthen": 8,
-	"effect": "-"
+	"effect": "Medium Phys Attack. Target: 1 enemy"
 });
 
 registerSkill({
@@ -618,7 +618,7 @@ registerSkill({
 
 registerSkill({
 	"nameJP": "うちまくり",
-	"nameEN": "Roll Up",
+	"nameEN": "Desperate Hit",
 	"attribute": "Almighty",
 	"cost": 40,
 	"power": "Weak",
@@ -627,7 +627,7 @@ registerSkill({
 	"hit": "-",
 	"target": "Multi-enemies",
 	"strengthen": 8,
-	"effect": "-"
+	"effect": "1-5 weak Almighty attacks. Target: Multi-enemies"
 });
 
 registerSkill({
@@ -898,7 +898,7 @@ registerSkill({
 
 registerSkill({
 	"nameJP": "大冷界",
-	"nameEN": "Epic World of Dooming Cold",
+	"nameEN": "Cold War",
 	"attribute": "Ice",
 	"cost": 50,
 	"power": "Heavy",
@@ -912,7 +912,7 @@ registerSkill({
 
 registerSkill({
 	"nameJP": "といき",
-	"nameEN": "Freeze Breath",
+	"nameEN": "Breath",
 	"attribute": "Ice",
 	"cost": 24,
 	"power": "Medium",
@@ -922,7 +922,7 @@ registerSkill({
 	"target": "Multi-enemies",
 	"strengthen": -1,
 	"effect": "-",
-	"notes": "-"
+	"notes": "1-5 medium Ice attacks. Target: Multi-enemies"
 });
 
 registerSkill({
