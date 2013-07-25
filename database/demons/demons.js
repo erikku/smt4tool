@@ -852,7 +852,7 @@ registerDemon({
 		"メディア": 21
 	},
 	"mutate": {
-		"level": 0,
+		"level": 23,
 		"target": "センリ"
 	}
 });
@@ -3596,6 +3596,44 @@ registerDemon({
 registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "幻魔",
+	"nameJP": "ヤリーロ",
+	"nameEN": "Jarilo",
+	"level": 61,
+	"stats": {
+		"hp": 497,
+		"mp": 223,
+		"strength": 67,
+		"skill": 61,
+		"magic": 61,
+		"speed": 80,
+		"luck": 67
+	},
+	"affinity": {
+		"physical": "-",
+		"gun": "null",
+		"fire": "-",
+		"ice": "-",
+		"thunder": "-",
+		"shock": "-",
+		"banish": "-",
+		"curse": "protect",
+		"bind": "-",
+		"sleep": "-",
+		"cold": "-",
+		"confusion": "-",
+		"poison": "-"
+	},
+	"skills": {
+		// This is a mapping for skill information, must stay in Japanese.
+		"ディアラハン": 0,
+		"狂乱針": 0,
+		"トラフーリ": 62,
+		"コロシの愉悦": 63
+	}
+});
+registerDemon({
+	// This is a mapping for fusion, must stay in Japanese.
+	"tribe": "幻魔",
 	"nameJP": "トラロック",
 	"nameEN": "Tlaloc",
 	"level": 39,
@@ -3666,44 +3704,6 @@ registerDemon({
 		"物理耐性": 0,
 		"ディア": 25,
 		"チャージ": 26
-	}
-});
-registerDemon({
-	// This is a mapping for fusion, must stay in Japanese.
-	"tribe": "幻魔",
-	"nameJP": "ヤリーロ",
-	"nameEN": "Yarilo",
-	"level": 61,
-	"stats": {
-		"hp": 497,
-		"mp": 223,
-		"strength": 67,
-		"skill": 61,
-		"magic": 61,
-		"speed": 80,
-		"luck": 67
-	},
-	"affinity": {
-		"physical": "-",
-		"gun": "null",
-		"fire": "-",
-		"ice": "-",
-		"thunder": "-",
-		"shock": "-",
-		"banish": "-",
-		"curse": "protect",
-		"bind": "-",
-		"sleep": "-",
-		"cold": "-",
-		"confusion": "-",
-		"poison": "-"
-	},
-	"skills": {
-		// This is a mapping for skill information, must stay in Japanese.
-		"ディアラハン": 0,
-		"狂乱針": 0,
-		"トラフーリ": 62,
-		"コロシの愉悦": 63
 	}
 });
 registerDemon({
@@ -6491,7 +6491,7 @@ registerDemon({
 		// This is a mapping for skill information, must stay in Japanese.
 		"夢見針": 0,
 		"二分の魔脈": 0,
-		"マハザン": -1,
+		"マハザン": 34,
 		"銃無効": 36
 	}
 });
@@ -7514,43 +7514,6 @@ registerDemon({
 registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "妖魔",
-	"nameJP": "ヴォジャノーイ",
-	"nameEN": "Vodyanoy",
-	"level": 6,
-	"stats": {
-		"hp": 76,
-		"mp": 72,
-		"strength": 11,
-		"skill": 12,
-		"magic": 15,
-		"speed": 11,
-		"luck": 14
-	},
-	"affinity": {
-		"physical": "-",
-		"gun": "-",
-		"fire": "-",
-		"ice": "-",
-		"thunder": "null",
-		"shock": "weak",
-		"banish": "-",
-		"curse": "-",
-		"bind": "-",
-		"sleep": "-",
-		"cold": "-",
-		"confusion": "-",
-		"poison": "-"
-	},
-	"skills": {
-		// This is a mapping for skill information, must stay in Japanese.
-		"マハジオ": 0,
-		"バウンスクロー": 7,
-		"一分の魔脈": 9
-	}
-});
-registerDemon({
-	// This is a mapping for fusion, must stay in Japanese.
-	"tribe": "妖魔",
 	"nameJP": "アガシオン",
 	"nameEN": "Agathion",
 	"level": 12,
@@ -7661,6 +7624,43 @@ registerDemon({
 		"マハラギダイン": 0,
 		"グランドタック": 55,
 		"火炎ギガプレロマ": 56
+	}
+});
+registerDemon({
+	// This is a mapping for fusion, must stay in Japanese.
+	"tribe": "妖魔",
+	"nameJP": "ヴォジャノーイ",
+	"nameEN": "Vodyanik",
+	"level": 6,
+	"stats": {
+		"hp": 76,
+		"mp": 72,
+		"strength": 11,
+		"skill": 12,
+		"magic": 15,
+		"speed": 11,
+		"luck": 14
+	},
+	"affinity": {
+		"physical": "-",
+		"gun": "-",
+		"fire": "-",
+		"ice": "-",
+		"thunder": "null",
+		"shock": "weak",
+		"banish": "-",
+		"curse": "-",
+		"bind": "-",
+		"sleep": "-",
+		"cold": "-",
+		"confusion": "-",
+		"poison": "-"
+	},
+	"skills": {
+		// This is a mapping for skill information, must stay in Japanese.
+		"マハジオ": 0,
+		"バウンスクロー": 7,
+		"一分の魔脈": 9
 	}
 });
 registerDemon({
@@ -7845,7 +7845,7 @@ registerDemon({
 		// This is a mapping for skill information, must stay in Japanese.
 		"グラムカット": 0,
 		"スクカジャ": 0,
-		"ラピッドニードル": -1,
+		"ラピッドニードル": 26,
 		"マハンマ": 27
 	}
 });
@@ -8713,7 +8713,7 @@ registerDemon({
 		"プリンパ": 26
 	},
 	"mutate": {
-		"level": 0,
+		"level": 28,
 		"target": "インフェルノ"
 	}
 });
@@ -9944,8 +9944,8 @@ registerDemon({
 	"skills": {
 		// This is a mapping for skill information, must stay in Japanese.
 		"毒針": 0,
-		"テタノスカット": -1,
-		"麻痺針": -1
+		"テタノスカット": 0,
+		"麻痺針": 23
 	},
 	"mutate": {
 		"level": 26,
@@ -10582,7 +10582,7 @@ registerDemon({
 		// This is a mapping for skill information, must stay in Japanese.
 		"ジオ": 0,
 		"道具の知恵・攻": 0,
-		"ディア": -1
+		"ディア": 4
 	}
 });
 registerDemon({
@@ -10919,8 +10919,8 @@ registerDemon({
 		// This is a mapping for skill information, must stay in Japanese.
 		"モータルジハード": 0,
 		"挑発": 0,
-		"電撃耐性": 58,
-		"物理無効": -1
+		"物理無効": 58,
+		"電撃耐性": 60
 	}
 });
 registerDemon({
@@ -14399,7 +14399,7 @@ registerDemon({
 	"skills": {
 		// This is a mapping for skill information, must stay in Japanese.
 		"マハジオ": 0,
-		"パニックマジック": -1
+		"パニックマジック": 20
 	}
 });
 registerDemon({
