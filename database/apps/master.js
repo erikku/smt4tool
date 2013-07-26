@@ -35,15 +35,6 @@ function appClicked(obj) {
 	showApp($(obj).text());
 }
 
-function registerApp(data) {
-	if(appByNameEN[data.name.toLowerCase()] !== undefined) {
-			alert("Duplicate app: " + data.name);
-	}
-
-	appNamesEN.push(data.name);
-	appByNameEN[data.name.toLowerCase()] = data;
-}
-
 function appTableEntry(data) {
 	var appList = "";
 	appList += "<tr>";

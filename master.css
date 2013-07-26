@@ -310,3 +310,31 @@ body {
 img.map {
 	padding: 8px;
 }
+
+#tribeList .button_up {
+	margin-bottom: 10px;
+}
+
+.affinityNull {
+	color: #999999;
+}
+
+.affinityWeak {
+	color: #CC0000;
+}
+
+.affinityProtect {
+	color: #00CC00;
+}
+
+.affinityReflect {
+	color: #3333FF;
+}
+
+.affinityAbsorb {
+	color: #CC00CC;
+}
+
+.affinityNormal {
+	color: #FFFFFF;
+}

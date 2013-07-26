@@ -1,4 +1,4 @@
-Database.tribeListJP = [
+tribeListJP = [
 	// Law
 	"大天使", "女神", "霊鳥", "神樹", "天使", "妖鳥", "妖魔", "天女", "邪神", "凶鳥",
 	"妖樹",
@@ -179,23 +179,6 @@ function renderReverseChart() {
 
 function fusionBad(result) { return result == "－"; }
 function fusionElemental(result) { return result == "精霊" }
-
-function registerDemon(data) {
-	if(demonByNameEN[data.nameEN.toLowerCase()] !== undefined ||
-		demonByNameJP[data.nameJP] !== undefined) {
-			alert("Duplicate demon: " + data.nameEN);
-	}
-
-	demonNamesEN.push(data.nameEN);
-	demonByNameJP[data.nameJP.toLowerCase()] = data;
-	demonByNameEN[data.nameEN.toLowerCase()] = data;
-	$.each(data.skills, function(skill, level){
-		if(skill in demonSkillMapping)
-			demonSkillMapping[skill].push(data);
-		else
-			demonSkillMapping[skill] = [data];
-	});
-}
 
 function handleAffinity(affinity, short) {
 	if(short) {
@@ -472,7 +455,10 @@ function demonTableHeader() {
 }
 
 function demonClicked(obj) {
-	showDemon($(obj).text());
+	var name = $(obj).text();
+
+	if(Database.demonExistsEN(name))
+		Application.showTab("demon_details", { "nameEN": name });
 }
 
 function demonTableEntry(data, targetLevel) {
