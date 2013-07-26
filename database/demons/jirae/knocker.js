@@ -1,4 +1,4 @@
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "地霊",
 	"nameJP": "ノッカー",

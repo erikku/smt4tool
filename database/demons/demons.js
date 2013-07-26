@@ -1,4 +1,4 @@
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "外道",
 	"nameJP": "ジャック・リパー",
@@ -35,7 +35,7 @@ registerDemon({
 		"勝利の小息吹": 12
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "外道",
 	"nameJP": "ナイトストーカー",
@@ -73,7 +73,7 @@ registerDemon({
 		"道具の知恵・攻": 25
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "外道",
 	"nameJP": "タトゥーマン",
@@ -111,7 +111,7 @@ registerDemon({
 		"反撃": 28
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "外道",
 	"nameJP": "マッドガッサー",
@@ -149,7 +149,7 @@ registerDemon({
 		"地獄のマスク": 41
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "外道",
 	"nameJP": "スライム",
@@ -186,7 +186,7 @@ registerDemon({
 		"一分の活泉": 6
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "外道",
 	"nameJP": "フーリガン",
@@ -222,7 +222,7 @@ registerDemon({
 		"道具の知恵・攻": 17
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "秘神",
 	"nameJP": "カンバリ",
@@ -262,7 +262,7 @@ registerDemon({
 		["マメダヌキ", "モウリョウ", "ガキ"]
 	]
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "秘神",
 	"nameJP": "キンマモン",
@@ -302,7 +302,7 @@ registerDemon({
 		["サラマンダー", "ノーム", "シルフ", "ウンディーネ"]
 	]
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "秘神",
 	"nameJP": "カーマ",
@@ -343,7 +343,7 @@ registerDemon({
 		["ダイアナ", "ヤリーロ"]
 	]
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "秘神",
 	"nameJP": "アメノフトタマ",
@@ -385,7 +385,7 @@ registerDemon({
 		["ヌエ", "ミシャグジさま", "ツチグモ"]
 	]
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "秘神",
 	"nameJP": "カンギテン",
@@ -426,7 +426,7 @@ registerDemon({
 		["ガネーシャ", "パールヴァティ", "アイラーヴァタ"]
 	]
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "天津神",
 	"nameJP": "アメノウズメ",
@@ -467,7 +467,7 @@ registerDemon({
 		["ナパイア", "カブソ"]
 	]
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "天津神",
 	"nameJP": "タケミカヅチ",
@@ -508,7 +508,7 @@ registerDemon({
 		["オオクニヌシ", "ライジュウ", "モムノフ"]
 	]
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "天津神",
 	"nameJP": "オモイカネ",
@@ -550,7 +550,7 @@ registerDemon({
 		["クエビコ", "トート"]
 	]
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "天津神",
 	"nameJP": "アマテラス",
@@ -592,7 +592,7 @@ registerDemon({
 		["ヤタガラス", "アメノフトタマ", "アメノウズメ"]
 	]
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "魔獣",
 	"nameJP": "ヘアリージャック",
@@ -629,7 +629,7 @@ registerDemon({
 		"猛反撃": 33
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "魔獣",
 	"nameJP": "オルトロス",
@@ -666,7 +666,7 @@ registerDemon({
 		"火炎プレロマ": 58
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "魔獣",
 	"nameJP": "カソ",
@@ -703,7 +703,7 @@ registerDemon({
 		"スクカジャ": 14
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "魔獣",
 	"nameJP": "ストーンカ",
@@ -740,7 +740,7 @@ registerDemon({
 		"反撃": 10
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "魔獣",
 	"nameJP": "ドアマース",
@@ -777,7 +777,7 @@ registerDemon({
 		"テトラジャ": 50
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "魔獣",
 	"nameJP": "ショウジョウ",
@@ -815,7 +815,7 @@ registerDemon({
 		"勝利の息吹": 45
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "魔獣",
 	"nameJP": "カブソ",
@@ -856,7 +856,7 @@ registerDemon({
 		"target": "センリ"
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "魔獣",
 	"nameJP": "ケルベロス",
@@ -893,7 +893,7 @@ registerDemon({
 		"猛反撃": 73
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "魔獣",
 	"nameJP": "イヌガミ",
@@ -930,7 +930,7 @@ registerDemon({
 		"パニックボイス": 27
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "魔獣",
 	"nameJP": "ミノタウロス",
@@ -971,7 +971,7 @@ registerDemon({
 		["ストーンカ", "ナイトストーカー", "オリアス"]
 	]
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "魔獣",
 	"nameJP": "アーマーン",
@@ -1009,7 +1009,7 @@ registerDemon({
 		"エナジードレイン": 67
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "魔獣",
 	"nameJP": "グリフォン",
@@ -1045,7 +1045,7 @@ registerDemon({
 		"突撃": 5
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "魔獣",
 	"nameJP": "アステリオス",
@@ -1087,7 +1087,7 @@ registerDemon({
 		["モラクス", "ライジュウ", "ハルパス"]
 	]
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "魔獣",
 	"nameJP": "ネコマタ",
@@ -1125,7 +1125,7 @@ registerDemon({
 		"韋駄天の覚え": 40
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "神樹",
 	"nameJP": "イグドラジル",
@@ -1163,7 +1163,7 @@ registerDemon({
 		"銃吸収": 66
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "神樹",
 	"nameJP": "ダフネ",
@@ -1200,7 +1200,7 @@ registerDemon({
 		"物理耐性": 21
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "神樹",
 	"nameJP": "ナルキッソス",
@@ -1238,7 +1238,7 @@ registerDemon({
 		"ブフーラ": 30
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "神樹",
 	"nameJP": "ククノチ",
@@ -1275,7 +1275,7 @@ registerDemon({
 		"エナジードレイン": 45
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "神樹",
 	"nameJP": "ハオマ",
@@ -1312,7 +1312,7 @@ registerDemon({
 		"テトラジャ": 57
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "神樹",
 	"nameJP": "マヤウェル",
@@ -1350,7 +1350,7 @@ registerDemon({
 		"回復ギガプレロマ": 37
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "邪鬼",
 	"nameJP": "ウェンディゴ",
@@ -1386,7 +1386,7 @@ registerDemon({
 		"毒ガスブレス": 26
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "邪鬼",
 	"nameJP": "イッポンダタラ",
@@ -1424,7 +1424,7 @@ registerDemon({
 		"猛勉強": 19
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "邪鬼",
 	"nameJP": "ラクシャーサ",
@@ -1462,7 +1462,7 @@ registerDemon({
 		"食いしばり": 40
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "邪鬼",
 	"nameJP": "オーガ",
@@ -1498,7 +1498,7 @@ registerDemon({
 		"二分の活泉": 46
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "邪鬼",
 	"nameJP": "じゃあくフロスト",
@@ -1539,7 +1539,7 @@ registerDemon({
 		["ジャックフロスト", "ジャックランタン", "ジャック・リパー"]
 	]
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "邪鬼",
 	"nameJP": "ギリメカラ",
@@ -1576,7 +1576,7 @@ registerDemon({
 		"マハブフダイン": 60
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "邪鬼",
 	"nameJP": "ラームジェルグ",
@@ -1612,7 +1612,7 @@ registerDemon({
 		"会心波": 3
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "邪鬼",
 	"nameJP": "ヘカトンケイル",
@@ -1649,7 +1649,7 @@ registerDemon({
 		"雄叫び": 71
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "邪鬼",
 	"nameJP": "グレムリン",
@@ -1690,7 +1690,7 @@ registerDemon({
 		"target": "ライジュウ"
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "邪鬼",
 	"nameJP": "グレンデル",
@@ -1727,7 +1727,7 @@ registerDemon({
 		"三分の活泉": 53
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "魔王",
 	"nameJP": "スルト",
@@ -1764,7 +1764,7 @@ registerDemon({
 		"ラグナロク": 82
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "魔王",
 	"nameJP": "モラクス",
@@ -1801,7 +1801,7 @@ registerDemon({
 		"一分の活泉": 16
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "魔王",
 	"nameJP": "マーラ",
@@ -1841,7 +1841,7 @@ registerDemon({
 		"身体異常無効": 97
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "魔王",
 	"nameJP": "アザゼル",
@@ -1879,7 +1879,7 @@ registerDemon({
 		"ザンダイン": 71
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "魔王",
 	"nameJP": "キングフロスト",
@@ -1919,7 +1919,7 @@ registerDemon({
 		["ジャックフロスト", "フロストエース", "じゃあくフロスト"]
 	]
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "魔王",
 	"nameJP": "アエーシェマ",
@@ -1962,7 +1962,7 @@ registerDemon({
 		["アスモデウス", "ミカエル", "ミトラス"]
 	]
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "魔王",
 	"nameJP": "オーカス",
@@ -1999,7 +1999,7 @@ registerDemon({
 		"食いしばり": 30
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "魔王",
 	"nameJP": "ミトラス",
@@ -2037,7 +2037,7 @@ registerDemon({
 		"絶命剣": 23
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "魔王",
 	"nameJP": "ツィツィミトル",
@@ -2074,7 +2074,7 @@ registerDemon({
 		"電撃反射": 78
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "魔王",
 	"nameJP": "アスタロト",
@@ -2113,7 +2113,7 @@ registerDemon({
 		["イシュタル", "キマイラ", "ダンタリアン"]
 	]
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "魔王",
 	"nameJP": "ルキフグス",
@@ -2156,7 +2156,7 @@ registerDemon({
 		["ハニエル", "アルシエル", "スカディ", "ツィツィミトル"]
 	]
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "魔王",
 	"nameJP": "シユウ",
@@ -2193,7 +2193,7 @@ registerDemon({
 		"物理ギガプレロマ": 89
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "魔王",
 	"nameJP": "シェムハザ",
@@ -2231,7 +2231,7 @@ registerDemon({
 		"衝撃無効": 35
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "魔王",
 	"nameJP": "バロール",
@@ -2269,7 +2269,7 @@ registerDemon({
 		"ザンダイン": 45
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "魔王",
 	"nameJP": "ベリアル",
@@ -2307,7 +2307,7 @@ registerDemon({
 		"火炎ギガプレロマ": 55
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "魔王",
 	"nameJP": "ロキ",
@@ -2345,7 +2345,7 @@ registerDemon({
 		"デクンダ": 60
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "魔王",
 	"nameJP": "アスモデウス",
@@ -2383,7 +2383,7 @@ registerDemon({
 		"ドーピング": 53
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "魔王",
 	"nameJP": "アバドン",
@@ -2420,7 +2420,7 @@ registerDemon({
 		"氷結反射": 66
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "魔王",
 	"nameJP": "ベルゼブブ",
@@ -2463,7 +2463,7 @@ registerDemon({
 		["バアル", "ミノタウロス", "グール"]
 	]
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "死神",
 	"nameJP": "ゲーデ",
@@ -2500,7 +2500,7 @@ registerDemon({
 		"メギドラ": 64
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "死神",
 	"nameJP": "イシュタム",
@@ -2541,7 +2541,7 @@ registerDemon({
 		["ガロット", "ヴァルキリー", "ラームジェルグ"]
 	]
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "死神",
 	"nameJP": "オルクス",
@@ -2578,7 +2578,7 @@ registerDemon({
 		"テトラカーン": 52
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "死神",
 	"nameJP": "モト",
@@ -2616,7 +2616,7 @@ registerDemon({
 		"マハムドオン": 91
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "死神",
 	"nameJP": "ケルヌンノス",
@@ -2653,7 +2653,7 @@ registerDemon({
 		"電撃反射": 72
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "死神",
 	"nameJP": "ペルセポネー",
@@ -2690,7 +2690,7 @@ registerDemon({
 		"マハムドオン": 58
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "死神",
 	"nameJP": "ネルガル",
@@ -2727,7 +2727,7 @@ registerDemon({
 		"ムドオン": 83
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "死神",
 	"nameJP": "ヘル",
@@ -2764,7 +2764,7 @@ registerDemon({
 		"マハブフーラ": 45
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "鬼神",
 	"nameJP": "マリシテン",
@@ -2801,7 +2801,7 @@ registerDemon({
 		"火炎反射": 71
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "鬼神",
 	"nameJP": "ジコクテン",
@@ -2839,7 +2839,7 @@ registerDemon({
 		"食いしばり": 59
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "鬼神",
 	"nameJP": "コウモクテン",
@@ -2877,7 +2877,7 @@ registerDemon({
 		"モータルジハード": 46
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "鬼神",
 	"nameJP": "トール",
@@ -2915,7 +2915,7 @@ registerDemon({
 		"猛反撃": 78
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "鬼神",
 	"nameJP": "ビシャモンテン",
@@ -2953,7 +2953,7 @@ registerDemon({
 		"ラスタキャンディ": 66
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "鬼神",
 	"nameJP": "ゾウチョウテン",
@@ -2991,7 +2991,7 @@ registerDemon({
 		"刹那五月雨撃ち": 42
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "鬼神",
 	"nameJP": "ショウキ",
@@ -3028,7 +3028,7 @@ registerDemon({
 		"身体異常無効": 52
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "妖鳥",
 	"nameJP": "カラドリウス",
@@ -3065,7 +3065,7 @@ registerDemon({
 		"ポズムディ": 25
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "妖鳥",
 	"nameJP": "ハーピー",
@@ -3102,7 +3102,7 @@ registerDemon({
 		"麻痺針": 11
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "妖鳥",
 	"nameJP": "タクヒ",
@@ -3138,7 +3138,7 @@ registerDemon({
 		"メディア": 30
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "妖鳥",
 	"nameJP": "コカクチョウ",
@@ -3175,7 +3175,7 @@ registerDemon({
 		"子守唄": 18
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "妖鳥",
 	"nameJP": "タイホウ",
@@ -3212,7 +3212,7 @@ registerDemon({
 		"マハブフーラ": 58
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "妖鳥",
 	"nameJP": "ルフ",
@@ -3249,7 +3249,7 @@ registerDemon({
 		"二分の魔脈": 52
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "妖鳥",
 	"nameJP": "タンガタ・マヌ",
@@ -3285,7 +3285,7 @@ registerDemon({
 		"スクカジャ": 4
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "天女",
 	"nameJP": "アプサラス",
@@ -3322,7 +3322,7 @@ registerDemon({
 		"ポズムディ": 9
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "天女",
 	"nameJP": "センリ",
@@ -3363,7 +3363,7 @@ registerDemon({
 		"target": "ネコマタ"
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "天女",
 	"nameJP": "ペリ",
@@ -3401,7 +3401,7 @@ registerDemon({
 		"マハラギダイン": 61
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "天女",
 	"nameJP": "キクリヒメ",
@@ -3439,7 +3439,7 @@ registerDemon({
 		"リカーム": 38
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "天女",
 	"nameJP": "サラスヴァティ",
@@ -3476,7 +3476,7 @@ registerDemon({
 		"マハブフダイン": 50
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "幻魔",
 	"nameJP": "クラマテング",
@@ -3518,7 +3518,7 @@ registerDemon({
 		["カラステング", "コッパテング"]
 	]
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "幻魔",
 	"nameJP": "ヘイムダル",
@@ -3555,7 +3555,7 @@ registerDemon({
 		"冥界破": 74
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "幻魔",
 	"nameJP": "イクティニケ",
@@ -3593,7 +3593,7 @@ registerDemon({
 		"俊足の覚え": 21
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "幻魔",
 	"nameJP": "ヤリーロ",
@@ -3631,7 +3631,7 @@ registerDemon({
 		"コロシの愉悦": 63
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "幻魔",
 	"nameJP": "トラロック",
@@ -3668,7 +3668,7 @@ registerDemon({
 		"二分の魔脈": 41
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "幻魔",
 	"nameJP": "ナタタイシ",
@@ -3706,7 +3706,7 @@ registerDemon({
 		"チャージ": 26
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "幻魔",
 	"nameJP": "クーフーリン",
@@ -3747,7 +3747,7 @@ registerDemon({
 		["セタンタ", "ドアマース", "スカアハ"]
 	]
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "幻魔",
 	"nameJP": "フロストエース",
@@ -3787,7 +3787,7 @@ registerDemon({
 		["ジャックフロスト", "タム・リン", "パワー"]
 	]
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "幻魔",
 	"nameJP": "バルドル",
@@ -3825,7 +3825,7 @@ registerDemon({
 		"慈愛の反撃": 32
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "幻魔",
 	"nameJP": "ハヌマーン",
@@ -3862,7 +3862,7 @@ registerDemon({
 		"食いしばり": 67
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "幻魔",
 	"nameJP": "クルースニク",
@@ -3901,7 +3901,7 @@ registerDemon({
 		"天扇弓": 58
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "幻魔",
 	"nameJP": "タム・リン",
@@ -3942,7 +3942,7 @@ registerDemon({
 		["ピクシー", "スプリガン", "ケンタウロス"]
 	]
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "英傑",
 	"nameJP": "ハゲネ",
@@ -3979,7 +3979,7 @@ registerDemon({
 		"コロシの愉悦": 57
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "英傑",
 	"nameJP": "トキサダ",
@@ -4017,7 +4017,7 @@ registerDemon({
 		"銃吸収": 82
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "英傑",
 	"nameJP": "ラーマ",
@@ -4055,7 +4055,7 @@ registerDemon({
 		"火炎反射": 76
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "英傑",
 	"nameJP": "ラリョウオウ",
@@ -4093,7 +4093,7 @@ registerDemon({
 		"怪力乱神": 46
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "英傑",
 	"nameJP": "コウテイ",
@@ -4131,7 +4131,7 @@ registerDemon({
 		"勝利の雄叫び": 90
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "英傑",
 	"nameJP": "ミチザネ",
@@ -4173,7 +4173,7 @@ registerDemon({
 		["ブリジット", "ヒトコトヌシ", "ライジュウ"]
 	]
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "英傑",
 	"nameJP": "ヨシツネ",
@@ -4213,7 +4213,7 @@ registerDemon({
 		"食いしばり": 41
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "英傑",
 	"nameJP": "カンセイテイクン",
@@ -4251,7 +4251,7 @@ registerDemon({
 		"物理ギガプレロマ": 69
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "英傑",
 	"nameJP": "テンカイ",
@@ -4292,7 +4292,7 @@ registerDemon({
 		["マカミ", "モムノフ", "キクリヒメ", "ヤタガラス"]
 	]
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "英傑",
 	"nameJP": "ジークフリード",
@@ -4330,7 +4330,7 @@ registerDemon({
 		"不屈の闘志": 63
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "英傑",
 	"nameJP": "ジャンヌ・ダルク",
@@ -4368,7 +4368,7 @@ registerDemon({
 		"ラスタキャンディ": 52
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "英傑",
 	"nameJP": "ヤマトタケル",
@@ -4410,7 +4410,7 @@ registerDemon({
 		["ヤマタノオロチ", "オオミツヌ"]
 	]
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "地母神",
 	"nameJP": "ペレ",
@@ -4447,7 +4447,7 @@ registerDemon({
 		"道具の知恵・癒": 8
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "地母神",
 	"nameJP": "ズェラロンズ",
@@ -4484,7 +4484,7 @@ registerDemon({
 		"一分の魔脈": 20
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "地母神",
 	"nameJP": "イシス",
@@ -4521,7 +4521,7 @@ registerDemon({
 		"三分の魔脈": 60
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "地母神",
 	"nameJP": "スカディ",
@@ -4559,7 +4559,7 @@ registerDemon({
 		"マハムドオン": 76
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "地母神",
 	"nameJP": "セドナ",
@@ -4597,7 +4597,7 @@ registerDemon({
 		"ディアラマ": 31
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "地母神",
 	"nameJP": "ダイアナ",
@@ -4635,7 +4635,7 @@ registerDemon({
 		"刹那五月雨撃ち": 45
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "地母神",
 	"nameJP": "アシェラト",
@@ -4670,7 +4670,7 @@ registerDemon({
 		"ディアラマ": 52
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "地母神",
 	"nameJP": "ハリティー",
@@ -4708,7 +4708,7 @@ registerDemon({
 		"破魔無効": 39
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "地母神",
 	"nameJP": "セイオウボ",
@@ -4750,7 +4750,7 @@ registerDemon({
 		["トウテツ", "カイメイジュウ", "セイギュウカイ"]
 	]
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "地母神",
 	"nameJP": "ブラックマリア",
@@ -4787,7 +4787,7 @@ registerDemon({
 		"ジオダイン": 66
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "邪龍",
 	"nameJP": "ピュートーン",
@@ -4824,7 +4824,7 @@ registerDemon({
 		"ジオダイン": 82
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "邪龍",
 	"nameJP": "ヤム",
@@ -4861,7 +4861,7 @@ registerDemon({
 		"氷結ギガプレロマ": 69
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "邪龍",
 	"nameJP": "ムシュフシュ",
@@ -4902,7 +4902,7 @@ registerDemon({
 		"target": "ティアマト"
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "邪龍",
 	"nameJP": "バジリスク",
@@ -4940,7 +4940,7 @@ registerDemon({
 		"氷結無効": 33
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "邪龍",
 	"nameJP": "ヴァスキ",
@@ -4978,7 +4978,7 @@ registerDemon({
 		"龍の反応": 88
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "邪龍",
 	"nameJP": "トウビョウ",
@@ -5015,7 +5015,7 @@ registerDemon({
 		"パンデミアブーム": 17
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "邪龍",
 	"nameJP": "キングー",
@@ -5052,7 +5052,7 @@ registerDemon({
 		"放電": 40
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "邪龍",
 	"nameJP": "ニーズホッグ",
@@ -5089,7 +5089,7 @@ registerDemon({
 		"狂乱の剛爪": 65
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "邪龍",
 	"nameJP": "ハクジョウシ",
@@ -5126,7 +5126,7 @@ registerDemon({
 		"メパトラ": 25
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "邪龍",
 	"nameJP": "ファフニール",
@@ -5164,7 +5164,7 @@ registerDemon({
 		"龍の反応": 78
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "邪龍",
 	"nameJP": "ティアマト",
@@ -5201,7 +5201,7 @@ registerDemon({
 		"静寂の祈り": 56
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "邪龍",
 	"nameJP": "チョトンダ",
@@ -5238,7 +5238,7 @@ registerDemon({
 		"勝利の小チャクラ": 11
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "神獣",
 	"nameJP": "バロン",
@@ -5276,7 +5276,7 @@ registerDemon({
 		"虚空爪激": 71
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "神獣",
 	"nameJP": "アヌビス",
@@ -5313,7 +5313,7 @@ registerDemon({
 		"サマリカーム": 63
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "神獣",
 	"nameJP": "カイメイジュウ",
@@ -5350,7 +5350,7 @@ registerDemon({
 		"物理無効": 45
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "神獣",
 	"nameJP": "シーサー",
@@ -5387,7 +5387,7 @@ registerDemon({
 		"衝撃プレロマ": 16
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "聖獣",
 	"nameJP": "ビャッコ",
@@ -5425,7 +5425,7 @@ registerDemon({
 		"狂乱の剛爪": 54
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "神獣",
 	"nameJP": "ウカノミタマ",
@@ -5462,7 +5462,7 @@ registerDemon({
 		"回復ギガプレロマ": 54
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "神獣",
 	"nameJP": "キマイラ",
@@ -5503,7 +5503,7 @@ registerDemon({
 		"target": "オルトロス"
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "聖獣",
 	"nameJP": "スレイプニル",
@@ -5540,7 +5540,7 @@ registerDemon({
 		"デクンダ": 61
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "聖獣",
 	"nameJP": "パピルサグ",
@@ -5577,7 +5577,7 @@ registerDemon({
 		"ブラストアロー": 28
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "聖獣",
 	"nameJP": "スフィンクス",
@@ -5614,7 +5614,7 @@ registerDemon({
 		"グランドタック": 71
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "聖獣",
 	"nameJP": "セイギュウカイ",
@@ -5651,7 +5651,7 @@ registerDemon({
 		"静寂の祈り": 34
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "聖獣",
 	"nameJP": "アイラーヴァタ",
@@ -5692,7 +5692,7 @@ registerDemon({
 		"target": "ギリメカラ"
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "神獣",
 	"nameJP": "マカミ",
@@ -5730,7 +5730,7 @@ registerDemon({
 		"狂勉強": 35
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "聖獣",
 	"nameJP": "ヘケト",
@@ -5771,7 +5771,7 @@ registerDemon({
 		"target": "ズェラロンズ"
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "聖獣",
 	"nameJP": "アピス",
@@ -5808,7 +5808,7 @@ registerDemon({
 		"マハジオ": 20
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "神獣",
 	"nameJP": "カマプアア",
@@ -5845,7 +5845,7 @@ registerDemon({
 		"ポズムディ": 25
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "邪神",
 	"nameJP": "パチャカマク",
@@ -5882,7 +5882,7 @@ registerDemon({
 		"バインドボイス": 52
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "邪神",
 	"nameJP": "ミシャグジさま",
@@ -5921,7 +5921,7 @@ registerDemon({
 		"電撃プレロマ": 39
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "邪神",
 	"nameJP": "セト",
@@ -5959,7 +5959,7 @@ registerDemon({
 		"マハジオダイン": 87
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "邪神",
 	"nameJP": "トウテツ",
@@ -5997,7 +5997,7 @@ registerDemon({
 		"エナジードレイン": 61
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "邪神",
 	"nameJP": "アルシエル",
@@ -6034,7 +6034,7 @@ registerDemon({
 		"溶解ブレス": 67
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "邪神",
 	"nameJP": "ヤソマガツヒ",
@@ -6076,7 +6076,7 @@ registerDemon({
 		["ヨモツイクサ", "ヨモツシコメ", "アラハバキ"]
 	]
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "邪神",
 	"nameJP": "デミウルゴス",
@@ -6118,7 +6118,7 @@ registerDemon({
 		["メタトロン", "ハチマン", "サマエル"]
 	]
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "邪神",
 	"nameJP": "パレス",
@@ -6155,7 +6155,7 @@ registerDemon({
 		"デカジャ": 74
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "邪神",
 	"nameJP": "バフォメット",
@@ -6193,7 +6193,7 @@ registerDemon({
 		"電撃無効": 30
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "夜魔",
 	"nameJP": "マーヤー",
@@ -6231,7 +6231,7 @@ registerDemon({
 		"三分の魔脈": 79
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "夜魔",
 	"nameJP": "ザントマン",
@@ -6268,7 +6268,7 @@ registerDemon({
 		"パトラ": 16
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "夜魔",
 	"nameJP": "リリス",
@@ -6310,7 +6310,7 @@ registerDemon({
 		["ブラックマリア", "ケルブ", "アスモデウス"]
 	]
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "夜魔",
 	"nameJP": "キキーモラ",
@@ -6347,7 +6347,7 @@ registerDemon({
 		"回復プレロマ": 22
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "夜魔",
 	"nameJP": "クイーンメイブ",
@@ -6384,7 +6384,7 @@ registerDemon({
 		"衝撃無効": 61
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "夜魔",
 	"nameJP": "モコイ",
@@ -6420,7 +6420,7 @@ registerDemon({
 		"成仏拳": 4
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "夜魔",
 	"nameJP": "フォーモリア",
@@ -6457,7 +6457,7 @@ registerDemon({
 		"火炎耐性": 9
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "夜魔",
 	"nameJP": "リリム",
@@ -6495,7 +6495,7 @@ registerDemon({
 		"銃無効": 36
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "夜魔",
 	"nameJP": "サキュバス",
@@ -6533,7 +6533,7 @@ registerDemon({
 		"メパトラ": 49
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "夜魔",
 	"nameJP": "ワイルド・ハント",
@@ -6574,7 +6574,7 @@ registerDemon({
 		"target": "アバドン"
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "夜魔",
 	"nameJP": "キウン",
@@ -6616,7 +6616,7 @@ registerDemon({
 		"target": "デカラビア"
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "夜魔",
 	"nameJP": "インキュバス",
@@ -6652,7 +6652,7 @@ registerDemon({
 		"衝撃プレロマ": 30
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "妖獣",
 	"nameJP": "ヌエ",
@@ -6689,7 +6689,7 @@ registerDemon({
 		"放電": 27
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "妖獣",
 	"nameJP": "トウコツ",
@@ -6727,7 +6727,7 @@ registerDemon({
 		"メディラマ": 67
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "妖獣",
 	"nameJP": "カトブレパス",
@@ -6765,7 +6765,7 @@ registerDemon({
 		"二分の活泉": 54
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "妖獣",
 	"nameJP": "フォービ",
@@ -6802,7 +6802,7 @@ registerDemon({
 		"アギダイン": 41
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "妖獣",
 	"nameJP": "カブラカン",
@@ -6839,7 +6839,7 @@ registerDemon({
 		"メガトンプレス": 60
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "妖獣",
 	"nameJP": "フェンリル",
@@ -6877,7 +6877,7 @@ registerDemon({
 		"物理ギガプレロマ": 73
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "妖獣",
 	"nameJP": "チャグリン",
@@ -6914,7 +6914,7 @@ registerDemon({
 		"ラクンダ": 8
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "妖獣",
 	"nameJP": "ライジュウ",
@@ -6950,7 +6950,7 @@ registerDemon({
 		"食いしばり": 21
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "妖獣",
 	"nameJP": "マンティコア",
@@ -6987,7 +6987,7 @@ registerDemon({
 		"ポズムディ": 46
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "妖獣",
 	"nameJP": "カクエン",
@@ -7024,7 +7024,7 @@ registerDemon({
 		"ポズムディ": 13
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "妖獣",
 	"nameJP": "ピアレイ",
@@ -7063,7 +7063,7 @@ registerDemon({
 		"獣の反応": 35
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "地霊",
 	"nameJP": "カワンチャ",
@@ -7101,7 +7101,7 @@ registerDemon({
 		"マハンマ": 27
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "地霊",
 	"nameJP": "ツチグモ",
@@ -7138,7 +7138,7 @@ registerDemon({
 		"メパトラ": 31
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "地霊",
 	"nameJP": "ゴグマゴグ",
@@ -7175,7 +7175,7 @@ registerDemon({
 		"慈愛の反撃": 56
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "地霊",
 	"nameJP": "カハク",
@@ -7212,7 +7212,7 @@ registerDemon({
 		"ポズムディ": 16
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "地霊",
 	"nameJP": "クエビコ",
@@ -7251,7 +7251,7 @@ registerDemon({
 		"怪力乱神": 46
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "地霊",
 	"nameJP": "ティターン",
@@ -7288,7 +7288,7 @@ registerDemon({
 		"猛反撃": 39
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "地霊",
 	"nameJP": "トラルテクトリ",
@@ -7326,7 +7326,7 @@ registerDemon({
 		"氷結無効": 48
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "地霊",
 	"nameJP": "ノッカー",
@@ -7363,7 +7363,7 @@ registerDemon({
 		"挑発": 10
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "地霊",
 	"nameJP": "スダマ",
@@ -7400,7 +7400,7 @@ registerDemon({
 		"衝撃耐性": 21
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "地霊",
 	"nameJP": "ドワーフ",
@@ -7437,7 +7437,7 @@ registerDemon({
 		"一分の活泉": 6
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "妖魔",
 	"nameJP": "ヴァルキリー",
@@ -7475,7 +7475,7 @@ registerDemon({
 		"捧魂の法": 47
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "妖魔",
 	"nameJP": "ケンタウロス",
@@ -7511,7 +7511,7 @@ registerDemon({
 		"ニードルショット": 2
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "妖魔",
 	"nameJP": "アガシオン",
@@ -7548,7 +7548,7 @@ registerDemon({
 		"銃耐性": 14
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "妖魔",
 	"nameJP": "コッパテング",
@@ -7589,7 +7589,7 @@ registerDemon({
 		"target": "カラステング"
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "妖魔",
 	"nameJP": "シウテクトリ",
@@ -7626,7 +7626,7 @@ registerDemon({
 		"火炎ギガプレロマ": 56
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "妖魔",
 	"nameJP": "ヴォジャノーイ",
@@ -7663,7 +7663,7 @@ registerDemon({
 		"一分の魔脈": 9
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "妖魔",
 	"nameJP": "ディース",
@@ -7700,7 +7700,7 @@ registerDemon({
 		"メディラマ": 33
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "妖魔",
 	"nameJP": "ガネーシャ",
@@ -7737,7 +7737,7 @@ registerDemon({
 		"衝撃反射": 72
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "妖魔",
 	"nameJP": "マスターテリオン",
@@ -7774,7 +7774,7 @@ registerDemon({
 		"コンセントレイト": 62
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "妖魔",
 	"nameJP": "シワンナ",
@@ -7811,7 +7811,7 @@ registerDemon({
 		"生命の泉": 40
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "妖魔",
 	"nameJP": "カラステング",
@@ -7849,7 +7849,7 @@ registerDemon({
 		"マハンマ": 27
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "龍王",
 	"nameJP": "ノズチ",
@@ -7886,7 +7886,7 @@ registerDemon({
 		"ラクカジャ": 20
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "龍王",
 	"nameJP": "ゲンブ",
@@ -7925,7 +7925,7 @@ registerDemon({
 		"氷結ギガプレロマ": 45
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "龍王",
 	"nameJP": "ナーガ",
@@ -7962,7 +7962,7 @@ registerDemon({
 		"タルカジャ": 12
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "龍王",
 	"nameJP": "ヴィーヴル",
@@ -8000,7 +8000,7 @@ registerDemon({
 		"火炎無効": 29
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "龍王",
 	"nameJP": "ユルング",
@@ -8037,7 +8037,7 @@ registerDemon({
 		"デカジャ": 34
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "龍王",
 	"nameJP": "ヤマタノオロチ",
@@ -8074,7 +8074,7 @@ registerDemon({
 		"エストマソード": 62
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "龍王",
 	"nameJP": "アナンタ",
@@ -8112,7 +8112,7 @@ registerDemon({
 		"マカラカーン": 74
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "龍王",
 	"nameJP": "ウロボロス",
@@ -8150,7 +8150,7 @@ registerDemon({
 		"身体異常無効": 51
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "龍王",
 	"nameJP": "ペンドラゴン",
@@ -8188,7 +8188,7 @@ registerDemon({
 		"龍の反応": 68
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "国津神",
 	"nameJP": "クシナダヒメ",
@@ -8225,7 +8225,7 @@ registerDemon({
 		"静寂の祈り": 42
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "国津神",
 	"nameJP": "アラハバキ",
@@ -8263,7 +8263,7 @@ registerDemon({
 		"氷結吸収": 62
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "国津神",
 	"nameJP": "オオクニヌシ",
@@ -8301,7 +8301,7 @@ registerDemon({
 		"エストマソード": 38
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "国津神",
 	"nameJP": "ヒトコトヌシ",
@@ -8339,7 +8339,7 @@ registerDemon({
 		"テトラジャ": 51
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "国津神",
 	"nameJP": "タケミナカタ",
@@ -8377,7 +8377,7 @@ registerDemon({
 		"電撃プレロマ": 25
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "国津神",
 	"nameJP": "オオミツヌ",
@@ -8414,7 +8414,7 @@ registerDemon({
 		"ドーピング": 66
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "幽鬼",
 	"nameJP": "ヴェータラ",
@@ -8451,7 +8451,7 @@ registerDemon({
 		"溶解ブレス": 75
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "幽鬼",
 	"nameJP": "ガキ",
@@ -8488,7 +8488,7 @@ registerDemon({
 		"火炎耐性": 14
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "幽鬼",
 	"nameJP": "デュラハン",
@@ -8527,7 +8527,7 @@ registerDemon({
 		"コロシの愉悦": 70
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "幽鬼",
 	"nameJP": "エンク",
@@ -8564,7 +8564,7 @@ registerDemon({
 		"エナジードレイン": 41
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "幽鬼",
 	"nameJP": "ストリゴイイ",
@@ -8601,7 +8601,7 @@ registerDemon({
 		"破魔耐性": 12
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "幽鬼",
 	"nameJP": "グール",
@@ -8638,7 +8638,7 @@ registerDemon({
 		"ダマスカスクロー": 50
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "幽鬼",
 	"nameJP": "クドラク",
@@ -8676,7 +8676,7 @@ registerDemon({
 		"食いしばり": 60
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "幽鬼",
 	"nameJP": "モウリョウ",
@@ -8717,7 +8717,7 @@ registerDemon({
 		"target": "インフェルノ"
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "幽鬼",
 	"nameJP": "オバリヨン",
@@ -8754,7 +8754,7 @@ registerDemon({
 		"スクンダ": 19
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "幽鬼",
 	"nameJP": "チュレル",
@@ -8791,7 +8791,7 @@ registerDemon({
 		"ムドオン": 33
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "屍鬼",
 	"nameJP": "サムライゾンミ",
@@ -8827,7 +8827,7 @@ registerDemon({
 		"咳き込み": 0
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "屍鬼",
 	"nameJP": "パトリオット",
@@ -8864,7 +8864,7 @@ registerDemon({
 		"ブラストアロー": 45
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "屍鬼",
 	"nameJP": "サムライゾンビ",
@@ -8900,7 +8900,7 @@ registerDemon({
 		"咳き込み": 0
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "屍鬼",
 	"nameJP": "ゾンビコップ",
@@ -8936,7 +8936,7 @@ registerDemon({
 		"道具の知恵・癒": 18
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "屍鬼",
 	"nameJP": "コープス",
@@ -8972,7 +8972,7 @@ registerDemon({
 		"吸血": 0
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "屍鬼",
 	"nameJP": "サムライコープス",
@@ -9009,7 +9009,7 @@ registerDemon({
 		"咳き込み": 0
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "屍鬼",
 	"nameJP": "アリス",
@@ -9051,7 +9051,7 @@ registerDemon({
 		["ポルターガイスト", "ナジャ", "ヘアリージャック", "ハイピクシー"]
 	]
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "凶鳥",
 	"nameJP": "グルル",
@@ -9088,7 +9088,7 @@ registerDemon({
 		"虚空爪激": 45
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "凶鳥",
 	"nameJP": "チン",
@@ -9125,7 +9125,7 @@ registerDemon({
 		"フォッグブレス": 32
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "凶鳥",
 	"nameJP": "フケイ",
@@ -9161,7 +9161,7 @@ registerDemon({
 		"パトラ": 3
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "凶鳥",
 	"nameJP": "カマソッソ",
@@ -9197,7 +9197,7 @@ registerDemon({
 		"吸血": 10
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "凶鳥",
 	"nameJP": "カウ",
@@ -9235,7 +9235,7 @@ registerDemon({
 		"火炎吸収": 66
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "凶鳥",
 	"nameJP": "モー・ショボー",
@@ -9273,7 +9273,7 @@ registerDemon({
 		"銃耐性": 20
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "凶鳥",
 	"nameJP": "イツマデ",
@@ -9310,7 +9310,7 @@ registerDemon({
 		"マハザン": 24
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "凶鳥",
 	"nameJP": "フレスベルグ",
@@ -9347,7 +9347,7 @@ registerDemon({
 		"氷結反射": 72
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "凶鳥",
 	"nameJP": "アンズー",
@@ -9384,7 +9384,7 @@ registerDemon({
 		"メパトラ": 54
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "魔神",
 	"nameJP": "バアル",
@@ -9425,7 +9425,7 @@ registerDemon({
 		["アナト", "ヤム", "ティアマト"]
 	]
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "魔神",
 	"nameJP": "トート",
@@ -9462,7 +9462,7 @@ registerDemon({
 		"ドーピング": 33
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "魔神",
 	"nameJP": "オメテオトル",
@@ -9499,7 +9499,7 @@ registerDemon({
 		"ブフダイン": 61
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "魔神",
 	"nameJP": "インティ",
@@ -9537,7 +9537,7 @@ registerDemon({
 		"氷結プレロマ": 37
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "魔神",
 	"nameJP": "ハチマン",
@@ -9574,7 +9574,7 @@ registerDemon({
 		"怪力乱神": 81
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "魔神",
 	"nameJP": "ヴィシュヌ",
@@ -9611,7 +9611,7 @@ registerDemon({
 		"物理吸収": 91
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "魔神",
 	"nameJP": "オーディン",
@@ -9648,7 +9648,7 @@ registerDemon({
 		"コンセントレイト": 67
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "魔神",
 	"nameJP": "プロメテウス",
@@ -9686,7 +9686,7 @@ registerDemon({
 		"狂勉強": 45
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "魔神",
 	"nameJP": "アプスー",
@@ -9723,7 +9723,7 @@ registerDemon({
 		"マハブフダイン": 76
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "魔神",
 	"nameJP": "マハーマユリ",
@@ -9764,7 +9764,7 @@ registerDemon({
 		["ヴィーヴル", "マンティコア", "アスモデウス", "バジリスク"]
 	]
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "魔神",
 	"nameJP": "オシリス",
@@ -9801,7 +9801,7 @@ registerDemon({
 		"食いしばり": 54
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "魔神",
 	"nameJP": "ナントセイクン",
@@ -9838,7 +9838,7 @@ registerDemon({
 		"サマリカーム": 50
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "妖虫",
 	"nameJP": "ミルメコレオ",
@@ -9874,7 +9874,7 @@ registerDemon({
 		"吸血": 4
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "妖虫",
 	"nameJP": "アルケニー",
@@ -9911,7 +9911,7 @@ registerDemon({
 		"ブラストアロー": 41
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "妖虫",
 	"nameJP": "ウブ",
@@ -9952,7 +9952,7 @@ registerDemon({
 		"target": "ツチグモ"
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "妖虫",
 	"nameJP": "モスマン",
@@ -9990,7 +9990,7 @@ registerDemon({
 		"一分の魔脈": 13
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "妖虫",
 	"nameJP": "オキクムシ",
@@ -10027,7 +10027,7 @@ registerDemon({
 		"ムドオン": 31
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "フード",
 	"nameJP": "チュパカブラ",
@@ -10064,7 +10064,7 @@ registerDemon({
 		"エナジードレイン": 23
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "フード",
 	"nameJP": "イナバシロウサギ",
@@ -10103,7 +10103,7 @@ registerDemon({
 		"銃無効": 42
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "フード",
 	"nameJP": "カタキラウワ",
@@ -10141,7 +10141,7 @@ registerDemon({
 		"破魔耐性": 13
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "フード",
 	"nameJP": "オンモラキ",
@@ -10178,7 +10178,7 @@ registerDemon({
 		"衝撃耐性": 9
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "フード",
 	"nameJP": "クダ",
@@ -10215,7 +10215,7 @@ registerDemon({
 		"俊足の覚え": 30
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "フード",
 	"nameJP": "マメダヌキ",
@@ -10252,7 +10252,7 @@ registerDemon({
 		"猛勉強": 17
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "精霊",
 	"nameJP": "ウンディーネ",
@@ -10289,7 +10289,7 @@ registerDemon({
 		"二分の魔脈": 35
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "精霊",
 	"nameJP": "アーシーズ",
@@ -10326,7 +10326,7 @@ registerDemon({
 		"一分の活泉": 12
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "精霊",
 	"nameJP": "ノーム",
@@ -10363,7 +10363,7 @@ registerDemon({
 		"二分の活泉": 28
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "精霊",
 	"nameJP": "エアロス",
@@ -10400,7 +10400,7 @@ registerDemon({
 		"一分の魔脈": 16
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "精霊",
 	"nameJP": "フレイミーズ",
@@ -10437,7 +10437,7 @@ registerDemon({
 		"一分の魔脈": 24
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "精霊",
 	"nameJP": "アクアンズ",
@@ -10474,7 +10474,7 @@ registerDemon({
 		"一分の活泉": 20
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "精霊",
 	"nameJP": "シルフ",
@@ -10511,7 +10511,7 @@ registerDemon({
 		"二分の魔脈": 32
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "精霊",
 	"nameJP": "サラマンダー",
@@ -10548,7 +10548,7 @@ registerDemon({
 		"二分の活泉": 40
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "霊鳥",
 	"nameJP": "ハンサ",
@@ -10585,7 +10585,7 @@ registerDemon({
 		"ディア": 4
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "霊鳥",
 	"nameJP": "フェニックス",
@@ -10622,7 +10622,7 @@ registerDemon({
 		"火炎プレロマ": 27
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "霊鳥",
 	"nameJP": "スザク",
@@ -10659,7 +10659,7 @@ registerDemon({
 		"アギダイン": 53
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "霊鳥",
 	"nameJP": "スパルナ",
@@ -10696,7 +10696,7 @@ registerDemon({
 		"吸魔": 16
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "霊鳥",
 	"nameJP": "サンダーバード",
@@ -10734,7 +10734,7 @@ registerDemon({
 		"韋駄天の覚え": 45
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "霊鳥",
 	"nameJP": "ヤタガラス",
@@ -10772,7 +10772,7 @@ registerDemon({
 		"グランドタック": 64
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "霊鳥",
 	"nameJP": "ガルーダ",
@@ -10810,7 +10810,7 @@ registerDemon({
 		"衝撃ギガプレロマ": 73
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "霊鳥",
 	"nameJP": "ヴィゾフニル",
@@ -10848,7 +10848,7 @@ registerDemon({
 		"電撃プレロマ": 35
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "破壊神",
 	"nameJP": "カルティケーヤ",
@@ -10885,7 +10885,7 @@ registerDemon({
 		"銃反射": 81
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "破壊神",
 	"nameJP": "セイテンタイセイ",
@@ -10923,7 +10923,7 @@ registerDemon({
 		"電撃耐性": 60
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "破壊神",
 	"nameJP": "スサノオ",
@@ -10961,7 +10961,7 @@ registerDemon({
 		"混沌の海": 90
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "破壊神",
 	"nameJP": "ホクトセイクン",
@@ -10999,7 +10999,7 @@ registerDemon({
 		"狂勉強": 66
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "破壊神",
 	"nameJP": "アスラ",
@@ -11037,7 +11037,7 @@ registerDemon({
 		"物理プレロマ": 45
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "破壊神",
 	"nameJP": "アレス",
@@ -11074,7 +11074,7 @@ registerDemon({
 		"テトラカーン": 33
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "破壊神",
 	"nameJP": "マサカド",
@@ -11112,7 +11112,7 @@ registerDemon({
 		"奥義一閃": 77
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "破壊神",
 	"nameJP": "チェルノボグ",
@@ -11149,7 +11149,7 @@ registerDemon({
 		"破魔無効": 53
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "破壊神",
 	"nameJP": "シヴァ",
@@ -11190,7 +11190,7 @@ registerDemon({
 		["バロン", "ランダ"]
 	]
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "破壊神",
 	"nameJP": "トナティウ",
@@ -11228,7 +11228,7 @@ registerDemon({
 		"チャージ": 39
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "妖鬼",
 	"nameJP": "キンキ",
@@ -11268,7 +11268,7 @@ registerDemon({
 		"猛反撃": 47
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "妖鬼",
 	"nameJP": "スイキ",
@@ -11307,7 +11307,7 @@ registerDemon({
 		"三分の魔脈": 58
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "妖鬼",
 	"nameJP": "ビルヴィス",
@@ -11344,7 +11344,7 @@ registerDemon({
 		"突撃": 8
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "妖鬼",
 	"nameJP": "ヤマワロ",
@@ -11382,7 +11382,7 @@ registerDemon({
 		"道具の知恵・攻": 33
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "妖鬼",
 	"nameJP": "ヤクシャ",
@@ -11420,7 +11420,7 @@ registerDemon({
 		"銃ギガプレロマ": 72
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "妖鬼",
 	"nameJP": "オニ",
@@ -11457,7 +11457,7 @@ registerDemon({
 		"牙折り": 14
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "妖鬼",
 	"nameJP": "モムノフ",
@@ -11494,7 +11494,7 @@ registerDemon({
 		"勝利の小息吹": 26
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "妖鬼",
 	"nameJP": "フウキ",
@@ -11533,7 +11533,7 @@ registerDemon({
 		"三分の活泉": 52
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "妖鬼",
 	"nameJP": "ヨモツイクサ",
@@ -11571,7 +11571,7 @@ registerDemon({
 		"コロシの愉悦": 40
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "妖鬼",
 	"nameJP": "オンギョウキ",
@@ -11612,7 +11612,7 @@ registerDemon({
 		["スイキ", "キンキ", "フウキ"]
 	]
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "妖鬼",
 	"nameJP": "アズミ",
@@ -11648,7 +11648,7 @@ registerDemon({
 		"ポズムディ": 20
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "妖鬼",
 	"nameJP": "ベルセルク",
@@ -11685,7 +11685,7 @@ registerDemon({
 		"タルカジャ": 64
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "堕天使",
 	"nameJP": "シャックス",
@@ -11722,7 +11722,7 @@ registerDemon({
 		"グランドタック": 71
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "堕天使",
 	"nameJP": "ムールムール",
@@ -11759,7 +11759,7 @@ registerDemon({
 		"マハジオダイン": 64
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "堕天使",
 	"nameJP": "デカラビア",
@@ -11799,7 +11799,7 @@ registerDemon({
 		"道具の知恵・攻": 51
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "堕天使",
 	"nameJP": "ビフロンス",
@@ -11836,7 +11836,7 @@ registerDemon({
 		"道具の知恵・癒": 13
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "堕天使",
 	"nameJP": "サマエル",
@@ -11875,7 +11875,7 @@ registerDemon({
 		"ドーピング": 93
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "堕天使",
 	"nameJP": "ゴモリー",
@@ -11913,7 +11913,7 @@ registerDemon({
 		"メディラマ": 60
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "堕天使",
 	"nameJP": "メルコム",
@@ -11949,7 +11949,7 @@ registerDemon({
 		"ディア": 5
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "堕天使",
 	"nameJP": "ネビロス",
@@ -11987,7 +11987,7 @@ registerDemon({
 		"メギドラ": 46
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "堕天使",
 	"nameJP": "オセ",
@@ -12024,7 +12024,7 @@ registerDemon({
 		"ジャベリンレイン": 40
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "堕天使",
 	"nameJP": "ダンタリアン",
@@ -12061,7 +12061,7 @@ registerDemon({
 		"マカラカーン": 34
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "堕天使",
 	"nameJP": "ミスラ",
@@ -12098,7 +12098,7 @@ registerDemon({
 		"勝利の息吹": 54
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "堕天使",
 	"nameJP": "オリアス",
@@ -12135,7 +12135,7 @@ registerDemon({
 		"マハラギオン": 28
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "堕天使",
 	"nameJP": "ハルパス",
@@ -12172,7 +12172,7 @@ registerDemon({
 		"ラクカジャ": 20
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "堕天使",
 	"nameJP": "バルバトス",
@@ -12209,7 +12209,7 @@ registerDemon({
 		"三分の活泉": 77
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "堕天使",
 	"nameJP": "ボティス",
@@ -12247,7 +12247,7 @@ registerDemon({
 		"電撃ギガプレロマ": 85
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "龍神",
 	"nameJP": "セイリュウ",
@@ -12286,7 +12286,7 @@ registerDemon({
 		"衝撃ギガプレロマ": 45
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "龍神",
 	"nameJP": "イルルヤンカシュ",
@@ -12323,7 +12323,7 @@ registerDemon({
 		"メガトンプレス": 52
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "龍神",
 	"nameJP": "パトリムパス",
@@ -12361,7 +12361,7 @@ registerDemon({
 		"テトラジャ": 25
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "龍神",
 	"nameJP": "グクマッツ",
@@ -12399,7 +12399,7 @@ registerDemon({
 		"火炎耐性": 37
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "龍神",
 	"nameJP": "コウガサブロウ",
@@ -12441,7 +12441,7 @@ registerDemon({
 		["タケミナカタ", "ミシャグジさま"]
 	]
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "龍神",
 	"nameJP": "マカラ",
@@ -12479,7 +12479,7 @@ registerDemon({
 		"道具の知恵・攻": 15
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "龍神",
 	"nameJP": "コウリュウ",
@@ -12520,7 +12520,7 @@ registerDemon({
 		["ゲンブ", "セイリュウ", "スザク", "ビャッコ"]
 	]
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "龍神",
 	"nameJP": "ショクイン",
@@ -12557,7 +12557,7 @@ registerDemon({
 		"精神異常無効": 61
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "龍神",
 	"nameJP": "ケツアルカトル",
@@ -12594,7 +12594,7 @@ registerDemon({
 		"マハザンダイン": 71
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "天使",
 	"nameJP": "ソロネ",
@@ -12635,7 +12635,7 @@ registerDemon({
 		"target": "ケルブ"
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "天使",
 	"nameJP": "パワー",
@@ -12676,7 +12676,7 @@ registerDemon({
 		"target": "ヴァーチャー"
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "天使",
 	"nameJP": "ドミニオン",
@@ -12717,7 +12717,7 @@ registerDemon({
 		"target": "ソロネ"
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "天使",
 	"nameJP": "エンジェル",
@@ -12758,7 +12758,7 @@ registerDemon({
 		"target": "アークエンジェル"
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "天使",
 	"nameJP": "ケルブ",
@@ -12796,7 +12796,7 @@ registerDemon({
 		"銃ギガプレロマ": 73
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "天使",
 	"nameJP": "ヴァーチャー",
@@ -12837,7 +12837,7 @@ registerDemon({
 		"target": "ドミニオン"
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "天使",
 	"nameJP": "アークエンジェル",
@@ -12879,7 +12879,7 @@ registerDemon({
 		"target": "プリンシパリティ"
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "天使",
 	"nameJP": "プリンシパリティ",
@@ -12921,7 +12921,7 @@ registerDemon({
 		"target": "パワー"
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "鬼女",
 	"nameJP": "アトロポス",
@@ -12959,7 +12959,7 @@ registerDemon({
 		"ザンダイン": 51
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "鬼女",
 	"nameJP": "メデューサ",
@@ -13000,7 +13000,7 @@ registerDemon({
 		["ペレ", "バジリスク", "ヴィーヴル"]
 	]
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "鬼女",
 	"nameJP": "ダーキニー",
@@ -13037,7 +13037,7 @@ registerDemon({
 		"チャクラウォーク": 64
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "鬼女",
 	"nameJP": "ランダ",
@@ -13075,7 +13075,7 @@ registerDemon({
 		"食いしばり": 70
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "鬼女",
 	"nameJP": "ターラカ",
@@ -13113,7 +13113,7 @@ registerDemon({
 		"冥界破": 58
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "鬼女",
 	"nameJP": "ストリゲス",
@@ -13151,7 +13151,7 @@ registerDemon({
 		"マハブフ": 19
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "鬼女",
 	"nameJP": "ユキジョロウ",
@@ -13188,7 +13188,7 @@ registerDemon({
 		"マハブフーラ": 30
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "鬼女",
 	"nameJP": "ヨモツシコメ",
@@ -13225,7 +13225,7 @@ registerDemon({
 		"銃プレロマ": 25
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "鬼女",
 	"nameJP": "カーリー",
@@ -13262,7 +13262,7 @@ registerDemon({
 		"三分の活泉": 76
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "鬼女",
 	"nameJP": "クロト",
@@ -13300,7 +13300,7 @@ registerDemon({
 		"狂勉強": 39
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "鬼女",
 	"nameJP": "リャナンシー",
@@ -13337,7 +13337,7 @@ registerDemon({
 		"一分の活泉": 14
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "鬼女",
 	"nameJP": "ラケシス",
@@ -13374,7 +13374,7 @@ registerDemon({
 		"覚醒": 45
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "妖樹",
 	"nameJP": "アルラウネ",
@@ -13411,7 +13411,7 @@ registerDemon({
 		"百麻痺針": 52
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "妖樹",
 	"nameJP": "スクーグスロー",
@@ -13447,7 +13447,7 @@ registerDemon({
 		"スクラッチダンス": 30
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "妖樹",
 	"nameJP": "ザックーム",
@@ -13485,7 +13485,7 @@ registerDemon({
 		"コロシの愉悦": 46
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "妖樹",
 	"nameJP": "マンドレイク",
@@ -13522,7 +13522,7 @@ registerDemon({
 		"バインドボイス": 24
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "妖樹",
 	"nameJP": "サンショウ",
@@ -13559,7 +13559,7 @@ registerDemon({
 		"電撃耐性": 16
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "妖樹",
 	"nameJP": "アールキング",
@@ -13596,7 +13596,7 @@ registerDemon({
 		"刹那五月雨撃ち": 63
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "神霊",
 	"nameJP": "エンシェントデイ",
@@ -13637,7 +13637,7 @@ registerDemon({
 	],
 	"dlc": ["日の老いたる者"]
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "妖精",
 	"nameJP": "ナパイア",
@@ -13674,7 +13674,7 @@ registerDemon({
 		"氷結耐性": 5
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "妖精",
 	"nameJP": "スプリガン",
@@ -13711,7 +13711,7 @@ registerDemon({
 		"マハラギ": 13
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "妖精",
 	"nameJP": "ナジャ",
@@ -13748,7 +13748,7 @@ registerDemon({
 		"サマリカーム": 48
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "妖精",
 	"nameJP": "ピクシー",
@@ -13786,7 +13786,7 @@ registerDemon({
 		"マハザン": 10
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "妖精",
 	"nameJP": "ヴィヴィアン",
@@ -13824,7 +13824,7 @@ registerDemon({
 		"エストマソード": 60
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "妖精",
 	"nameJP": "セタンタ",
@@ -13861,7 +13861,7 @@ registerDemon({
 		"物理耐性": 33
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "妖精",
 	"nameJP": "ティターニア",
@@ -13898,7 +13898,7 @@ registerDemon({
 		"三分の魔脈": 72
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "妖精",
 	"nameJP": "ケルピー",
@@ -13935,7 +13935,7 @@ registerDemon({
 		"トラフーリ": 37
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "妖精",
 	"nameJP": "シルキー",
@@ -13973,7 +13973,7 @@ registerDemon({
 		"衝撃無効": 44
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "妖精",
 	"nameJP": "ローレライ",
@@ -14011,7 +14011,7 @@ registerDemon({
 		"マカラカーン": 54
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "妖精",
 	"nameJP": "デモニホ",
@@ -14051,7 +14051,7 @@ registerDemon({
 		["フロストエース", "クルースニク", "クーフーリン"]
 	]
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "妖精",
 	"nameJP": "オベロン",
@@ -14089,7 +14089,7 @@ registerDemon({
 		"電撃吸収": 66
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "妖精",
 	"nameJP": "ゴブリン",
@@ -14127,7 +14127,7 @@ registerDemon({
 		"チャージ": 26
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "妖精",
 	"nameJP": "オレアード",
@@ -14169,7 +14169,7 @@ registerDemon({
 		["ナパイア", "エアロス", "ペレ"]
 	]
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "妖精",
 	"nameJP": "ハイピクシー",
@@ -14210,7 +14210,7 @@ registerDemon({
 		["ピクシー", "アークエンジェル", "ハーピー"]
 	]
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "妖精",
 	"nameJP": "ジャックランタン",
@@ -14247,7 +14247,7 @@ registerDemon({
 		"一分の魔脈": 21
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "妖精",
 	"nameJP": "ジャックフロスト",
@@ -14288,7 +14288,7 @@ registerDemon({
 		"target": "ウェンディゴ"
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "悪霊",
 	"nameJP": "ウィッカーマン",
@@ -14325,7 +14325,7 @@ registerDemon({
 		"道具の知恵・攻": 10
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "悪霊",
 	"nameJP": "ポルターガイスト",
@@ -14366,7 +14366,7 @@ registerDemon({
 		"target": "クイックシルバー"
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "悪霊",
 	"nameJP": "クイックシルバー",
@@ -14402,7 +14402,7 @@ registerDemon({
 		"パニックマジック": 20
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "悪霊",
 	"nameJP": "ディブク",
@@ -14438,7 +14438,7 @@ registerDemon({
 		"パトラ": 0
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "悪霊",
 	"nameJP": "ピシャーチャ",
@@ -14475,7 +14475,7 @@ registerDemon({
 		"ムドオン": 39
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "悪霊",
 	"nameJP": "インフェルノ",
@@ -14516,7 +14516,7 @@ registerDemon({
 		"target": "フォービ"
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "悪霊",
 	"nameJP": "レギオン",
@@ -14553,7 +14553,7 @@ registerDemon({
 		"ウィンドブレス": 48
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "悪霊",
 	"nameJP": "マカーブル",
@@ -14591,7 +14591,7 @@ registerDemon({
 		"俊足の覚え": 27
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "悪霊",
 	"nameJP": "ガロット",
@@ -14628,7 +14628,7 @@ registerDemon({
 		"子守唄": 55
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "狂神",
 	"nameJP": "ディオニュソス",
@@ -14669,7 +14669,7 @@ registerDemon({
 		["ナーガ", "マヤウェル", "ダンタリアン"]
 	]
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "狂神",
 	"nameJP": "テスカトリポカ",
@@ -14710,7 +14710,7 @@ registerDemon({
 		["ケツアルカトル", "マヤウェル", "ツィツィミトル"]
 	]
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "狂神",
 	"nameJP": "アティス",
@@ -14752,7 +14752,7 @@ registerDemon({
 		["オシリス", "イシス", "ハニエル"]
 	]
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "狂神",
 	"nameJP": "オグン",
@@ -14793,7 +14793,7 @@ registerDemon({
 		["カマプアア", "モコイ", "イクティニケ"]
 	]
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "狂神",
 	"nameJP": "アラミサキ",
@@ -14833,7 +14833,7 @@ registerDemon({
 		["スクーグスロー", "ハクジョウシ", "ローレライ"]
 	]
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "魔人",
 	"nameJP": "ブラックライダー",
@@ -14873,7 +14873,7 @@ registerDemon({
 		["レッドライダー", "アバドン", "アルシエル"]
 	]
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "魔人",
 	"nameJP": "マザーハーロット",
@@ -14915,7 +14915,7 @@ registerDemon({
 		["トランペッター", "オルクス", "レギオン", "イシュタル"]
 	]
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "魔人",
 	"nameJP": "プラズマー",
@@ -14955,7 +14955,7 @@ registerDemon({
 		["フレイミーズ", "モスマン", "グレムリン"]
 	]
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "魔人",
 	"nameJP": "マタドール",
@@ -14997,7 +14997,7 @@ registerDemon({
 		["セイギュウカイ", "ストーンカ", "カトブレパス", "マカーブル"]
 	]
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "魔人",
 	"nameJP": "トランペッター",
@@ -15041,7 +15041,7 @@ registerDemon({
 		["ペイルライダー", "ブラックライダー", "レッドライダー", "ホワイトライダー"]
 	]
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "魔人",
 	"nameJP": "ホワイトライダー",
@@ -15082,7 +15082,7 @@ registerDemon({
 		["マタドール", "クルースニク"]
 	]
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "魔人",
 	"nameJP": "ペイルライダー",
@@ -15123,7 +15123,7 @@ registerDemon({
 		["ブラックライダー", "ギリメカラ", "クドラク"]
 	]
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "魔人",
 	"nameJP": "ケムトレイル",
@@ -15164,7 +15164,7 @@ registerDemon({
 		["マッドガッサー", "シワンナ", "モスマン"]
 	]
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "魔人",
 	"nameJP": "レッドライダー",
@@ -15205,7 +15205,7 @@ registerDemon({
 		["ホワイトライダー", "ヴィヴィアン", "インフェルノ"]
 	]
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "魔人",
 	"nameJP": "デイビット",
@@ -15246,7 +15246,7 @@ registerDemon({
 		["チャグリン", "アプサラス", "ナーガ"]
 	]
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "女神",
 	"nameJP": "アナト",
@@ -15283,7 +15283,7 @@ registerDemon({
 		"慈愛の猛反撃": 64
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "女神",
 	"nameJP": "フォルトゥナ",
@@ -15323,7 +15323,7 @@ registerDemon({
 		["ナパイア", "ドワーフ", "メルコム"]
 	]
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "女神",
 	"nameJP": "パールヴァティ",
@@ -15360,7 +15360,7 @@ registerDemon({
 		"チャクラウォーク": 26
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "女神",
 	"nameJP": "トラソルテオトル",
@@ -15397,7 +15397,7 @@ registerDemon({
 		"リカームドラ": 58
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "女神",
 	"nameJP": "ノルン",
@@ -15438,7 +15438,7 @@ registerDemon({
 		["クロト", "ラケシス", "アトロポス"]
 	]
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "女神",
 	"nameJP": "ラクシュミ",
@@ -15476,7 +15476,7 @@ registerDemon({
 		"三分の魔脈": 84
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "女神",
 	"nameJP": "イシュタル",
@@ -15513,7 +15513,7 @@ registerDemon({
 		"サマリカーム": 48
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "女神",
 	"nameJP": "イザナミ",
@@ -15550,7 +15550,7 @@ registerDemon({
 		"氷結吸収": 71
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "女神",
 	"nameJP": "パラスアテナ",
@@ -15587,7 +15587,7 @@ registerDemon({
 		"チャクラウォーク": 53
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "女神",
 	"nameJP": "スカアハ",
@@ -15624,7 +15624,7 @@ registerDemon({
 		"グランドタック": 42
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "女神",
 	"nameJP": "ブリジット",
@@ -15661,7 +15661,7 @@ registerDemon({
 		"二分の魔脈": 34
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "女神",
 	"nameJP": "ハトホル",
@@ -15699,7 +15699,7 @@ registerDemon({
 		"ラクンダ": 20
 	}
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "大天使",
 	"nameJP": "ミカエル",
@@ -15739,7 +15739,7 @@ registerDemon({
 		["ガブリエル", "ケルブ"]
 	]
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "大天使",
 	"nameJP": "マンセマット",
@@ -15781,7 +15781,7 @@ registerDemon({
 		["アスモデウス", "ムールムール", "ゴモリー", "カズフェル"]
 	]
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "大天使",
 	"nameJP": "カズフェル",
@@ -15823,7 +15823,7 @@ registerDemon({
 	"him the sacred name of God, but was denied. After the Fall, he was " +
 	"given the name Kazbiel, \"he who lies to God.\""
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "大天使",
 	"nameJP": "ウリエル",
@@ -15864,7 +15864,7 @@ registerDemon({
 		["ソロネ", "ハニエル"]
 	]
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "大天使",
 	"nameJP": "スラオシャ",
@@ -15905,7 +15905,7 @@ registerDemon({
 	"humanity's cry for Ahura Mazda.\nAlso known to descend after sunset " +
 	"to vanquish evil. Its name literally means \"observance.\""
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "大天使",
 	"nameJP": "ハニエル",
@@ -15951,7 +15951,7 @@ registerDemon({
 	"lasting friendship and lust. When he appears, it is said to be in the " +
 	"form of a beautiful man or woman."
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "大天使",
 	"nameJP": "ガブリエル",
@@ -15991,7 +15991,7 @@ registerDemon({
 		["アプスー", "ライラ", "ダイアナ"]
 	]
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "大天使",
 	"nameJP": "イスラフィール",
@@ -16034,7 +16034,7 @@ registerDemon({
 	"to tower into the heavens. Thrice daily and nightly, he sheds enormous " +
 	"tears while watching humans tormented in Hell."
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "大天使",
 	"nameJP": "ラファエル",
@@ -16075,7 +16075,7 @@ registerDemon({
 		["ウリエル", "イグドラジル"]
 	]
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "大天使",
 	"nameJP": "ヴィクター",
@@ -16116,7 +16116,7 @@ registerDemon({
 	"dream and had him spread Christianity throughout Ireland.\nHis role is " +
 	"to speak the will of God to those who are to become leaders."
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "大天使",
 	"nameJP": "アズラエル",
@@ -16158,7 +16158,7 @@ registerDemon({
 	"names of those who are born and die. His body is covered in eyes. " +
 	"When one blinks, someone in the world dies."
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "大天使",
 	"nameJP": "ライラ",
@@ -16201,7 +16201,7 @@ registerDemon({
 	"decides the child's sex, appearance, and destiny. After such things " +
 	"are decided, a new soul is placed into the woman's womb."
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "大天使",
 	"nameJP": "セラフ",
@@ -16242,7 +16242,7 @@ registerDemon({
 		["ケルブ", "ソロネ", "ドミニオン", "ヴァーチャー"]
 	]
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "大天使",
 	"nameJP": "メタトロン",
@@ -16285,7 +16285,7 @@ registerDemon({
 	"contrast to his duty to maintain the world, he is said to have a " +
 	"merciless side toward humanity."
 });
-registerDemon({
+Database.registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "威霊",
 	"nameJP": "アリラト",
