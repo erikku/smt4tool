@@ -36,5 +36,9 @@ registerDemon({
 	},
 	"fusions": [
 		["ナパイア", "ドワーフ", "メルコム"]
-	]
+	],
+	"notes": "Normal attack: Phys x1 hits, 1 enemy",
+	"profile": "The Roman goddess of luck, she turns the Wheel of Fortune.\n" +
+	"She is believed to have originally been a fertility goddess. Her Greek " +
+	"counterpart is Tyche."
 });

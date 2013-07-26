@@ -34,5 +34,10 @@ registerDemon({
 		"パトラ": 0,
 		"ポズムディ": 19,
 		"ラクンダ": 20
-	}
+	},
+	"notes": "Normal attack: Phys x1 hits. 1 enemy",
+	"profile": "The Egyptian goddess of fertility. She is also the goddess " +
+	"of love, motherhood, and joy.\n She is depicted as a cow with the disc " +
+	"of the sun between her horns, or as a horned woman holding the disc of " +
+	"the sun."
 });

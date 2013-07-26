@@ -33,5 +33,11 @@ registerDemon({
 		"マハザンマ": 0,
 		"鬼神楽": 0,
 		"グランドタック": 42
-	}
+	},
+	"notes": "Normal attack: Phys x1 hits, 1 enemy",
+	"profile": "The war goddess of Celtic lore, as well as the queen of the " +
+	"Land of Shadows. She is a skilled magician and a master warrior. She " +
+	"trains young men who come to her in the art of war. The famed Cu " +
+	"Chulainn was one of her students, and it is said that he received the " +
+	"legendary Gae Blog once he mastered her teachings."
 });

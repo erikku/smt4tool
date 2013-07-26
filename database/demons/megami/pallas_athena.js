@@ -33,5 +33,9 @@ registerDemon({
 		"マカラカーン": 0,
 		"モータルジハード": 0,
 		"チャクラウォーク": 53
-	}
+	},
+	"notes": "Normal attack: Phys x1 hits, 1 enemy",
+	"profile": "The virgin war goddess who sprung from Zeus' forehead " +
+	"fully armored after he swallowed her mother, Metis. She is the patron " +
+	"goddess of Athens and is associated with olive trees."
 });
