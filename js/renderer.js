@@ -85,5 +85,35 @@ RendererImpl.prototype.handleRank = function(rank) {
 		return "-";
 }
 
+/**
+ * Convert the requirement to HTML.
+ * @arg affinity The value to convert.
+ * @returns The equivalent HTML.
+ */
+RendererImpl.prototype.handleRequirements = function(reqList) {
+	var html = $.create("span");
+
+	// Add each requirement.
+	$.each(reqList, function(index, req) {
+		// Separate the requirements.
+		if(html.children().length)
+			html.append(", ");
+
+		// If the requirement is an app, create a link.
+		if(req.length > 4 && req.substring(0, 4) == "app:") {
+			var name = req.substring(4);
+
+			html.append($.create("a").addClass("appLink").click(function() {
+				Application.showPage("app_details", { "name": name });
+			}).text(name));
+		} else {
+			// Normal text requirement.
+			html.append(req);
+		}
+	});
+
+	return html;
+}
+
 // Singleton for the renderer.
 var Renderer = new RendererImpl();

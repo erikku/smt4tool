@@ -30,7 +30,8 @@ function ApplicationImpl() {
 	// Default pages.
 	this.mDefaultPages = {
 		"demon": { "page": "tribe_list", "data": undefined },
-		"skill": { "page": "skill_list", "data": undefined }
+		"skill": { "page": "skill_list", "data": undefined },
+		"app": { "page": "app_list", "data": undefined },
 	};
 }
 
@@ -133,7 +134,7 @@ ApplicationImpl.prototype.initialize = function() {
 
 		if(PageAppDetails.currentApp != name &&
 			Database.appExistsEN(name)) {
-				Application.showPage("app_details", { "nameEN": name });
+				Application.showPage("app_details", { "name": name });
 		}
 	});
 
@@ -230,6 +231,7 @@ ApplicationImpl.prototype.showPage = function(name, data) {
 	// quick search from duplicating the same page.
 	PageDemonDetails.currentDemon = undefined;
 	PageSkillDetails.currentSkill = undefined;
+	PageAppDetails.currentApp = undefined;
 
 	// If there is history after the current page, remove it.
 	if(this.mHistoryPos >= 0 && this.mHistoryPos < (this.mHistory.length - 1)) {

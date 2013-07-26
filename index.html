@@ -29,6 +29,8 @@
 	<script src="js/pages/select_affinity.js"></script>
 	<script src="js/pages/skill_list.js"></script>
 	<script src="js/pages/skill_details.js"></script>
+	<script src="js/pages/app_list.js"></script>
+	<script src="js/pages/app_details.js"></script>
 
 	<!-- Database data -->
 	<script src="database/tribes.js"></script>
@@ -396,7 +398,7 @@
 <div id="appTab">
 <p>
 	<a id="showAllAppsBtn" class="button_up"
-		onClick="showAllApps();">Show All</a>
+		onClick="Application.showPage('app_list');">Show All</a>
 	<label class="section" for="appSearch">Quick Search</label>
 	<input id="appSearch">
 </p>
