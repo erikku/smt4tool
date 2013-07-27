@@ -32,6 +32,7 @@ function ApplicationImpl() {
 		"demon": { "page": "tribe_list", "data": undefined },
 		"skill": { "page": "skill_list", "data": undefined },
 		"app": { "page": "app_list", "data": undefined },
+		"walk": { "page": "walkthrough", "data": { "source": "contents" } },
 	};
 }
 
@@ -47,7 +48,7 @@ ApplicationImpl.prototype.initialize = function() {
 	$.cookie.json = true;
 
 	// Register the tabs.
-	$.each([ "demon", "skill", "app", "walk", "comp" ], function(index, tab) {
+	$.each(["demon", "skill", "app", "walk", "comp"], function(index, tab) {
 		Application.registerTab(tab);
 	});
 
@@ -69,80 +70,11 @@ ApplicationImpl.prototype.initialize = function() {
 	$("#compSplitDialog").hide();
 	$("#compHistoryDialog").hide();
 
-	// Create the autocomplete for the demon search.
-	$("#demonSearch").autocomplete({
-		source: Database.mDemonNamesEN,
-		select: function(e, ui) {
-			var name = ui.item.value.toLowerCase();
-
-			if(PageDemonDetails.currentDemon != name &&
-				Database.demonExistsEN(name)) {
-					Application.showPage("demon_details", { "nameEN": name });
-			}
-		}
-	});
-
-	// Create the action when you type into the demon search.
-	$("#demonSearch").keyup(function(e){
-		var name = $("#demonSearch").val().toLowerCase();
-
-		if(PageDemonDetails.currentDemon != name &&
-			Database.demonExistsEN(name)) {
-				Application.showPage("demon_details", { "nameEN": name });
-		}
-	})
-
-	// Create the autocomplete for the skill search.
-	$("#skillSearch").autocomplete({
-		source: Database.mSkillNamesEN,
-		select: function(e, ui) {
-			var name = ui.item.value.toLowerCase();
-
-			if(PageSkillDetails.currentSkill != name &&
-				Database.skillExistsEN(name)) {
-					Application.showPage("skill_details", { "nameEN": name });
-			}
-		}
-	});
-
-	// Create the action when you type into the skill search.
-	$("#skillSearch").keyup(function(e){
-		var name = $("#skillSearch").val().toLowerCase();
-
-		if(PageSkillDetails.currentSkill != name &&
-			Database.skillExistsEN(name)) {
-				Application.showPage("skill_details", { "nameEN": name });
-		}
-	})
-
-	// Create the autocomplete for the app search.
-	$("#appSearch").autocomplete({
-		source: Database.mAppNamesEN,
-		select: function(e, ui) {
-			var name = ui.item.value.toLowerCase();
-
-			if(PageAppDetails.currentApp != name &&
-				Database.appExistsEN(name)) {
-					Application.showPage("app_details", { "nameEN": name });
-			}
-		}
-	});
-
-	// Create the action when you type into the app search.
-	$("#appSearch").keyup(function(e){
-		var name = $("#appSearch").val().toLowerCase();
-
-		if(PageAppDetails.currentApp != name &&
-			Database.appExistsEN(name)) {
-				Application.showPage("app_details", { "name": name });
-		}
-	});
+	this._createQuickSearches();
+	//this._validateDatabase();
 
 	$("#compLevelDialog").hide();
 	$("#compSelectDialog").hide();
-	$("#withSkillSection").hide();
-
-	showAllApps();
 
 	// Load the COMP from a cookie (expires in 5 years).
 	var compData = $.cookie("comp");
@@ -159,39 +91,6 @@ ApplicationImpl.prototype.initialize = function() {
 
 		refleshCOMP();
 	}
-
-	walkthroughPage("contents", false);
-
-	/*
-	// This test code is used to validate the demon skills.
-	$.each(demonByNameEN, function(nameEN, data) {
-		$.each(data.skills, function(skillJP, obtainLvl) {
-			if(skillByNameJP[skillJP] === undefined) {
-				alert(skillJP + " on " + data.nameEN);
-			}
-		});
-	});
-	*/
-
-	/*
-	// This test code is used to validate the level demons get skills at.
-	$.each(demonByNameEN, function(nameEN, data) {
-		$.each(data.skills, function(skillJP, obtainLvl) {
-			if(obtainLvl != 0 && obtainLvl < data.level) {
-				alert(skillJP + " on " + data.nameEN);
-			}
-		});
-	});
-	*/
-
-	/*
-	// This test code is used to validate mutation trigger levels.
-	$.each(demonByNameEN, function(nameEN, data) {
-		if(data.mutate && data.mutate.level <= data.level) {
-			alert("Mutation for: " + data.nameEN);
-		}
-	});
-	*/
 
 	// Set all the default pages for each tab.
 	$.each(this.mDefaultPages, function(tab, data) {
@@ -469,6 +368,110 @@ ApplicationImpl.prototype.forward = function() {
 
 	// Display the right tab.
 	this.showTab(tab);
+}
+
+/**
+ * Create the quicksearch boxes.
+ */
+ApplicationImpl.prototype._createQuickSearches = function() {
+	// Create the autocomplete for the demon search.
+	$("#demonSearch").autocomplete({
+		source: Database.mDemonNamesEN,
+		select: function(e, ui) {
+			var name = ui.item.value.toLowerCase();
+
+			if(PageDemonDetails.currentDemon != name &&
+				Database.demonExistsEN(name)) {
+					Application.showPage("demon_details", { "nameEN": name });
+			}
+		}
+	});
+
+	// Create the action when you type into the demon search.
+	$("#demonSearch").keyup(function(e){
+		var name = $("#demonSearch").val().toLowerCase();
+
+		if(PageDemonDetails.currentDemon != name &&
+			Database.demonExistsEN(name)) {
+				Application.showPage("demon_details", { "nameEN": name });
+		}
+	})
+
+	// Create the autocomplete for the skill search.
+	$("#skillSearch").autocomplete({
+		source: Database.mSkillNamesEN,
+		select: function(e, ui) {
+			var name = ui.item.value.toLowerCase();
+
+			if(PageSkillDetails.currentSkill != name &&
+				Database.skillExistsEN(name)) {
+					Application.showPage("skill_details", { "nameEN": name });
+			}
+		}
+	});
+
+	// Create the action when you type into the skill search.
+	$("#skillSearch").keyup(function(e){
+		var name = $("#skillSearch").val().toLowerCase();
+
+		if(PageSkillDetails.currentSkill != name &&
+			Database.skillExistsEN(name)) {
+				Application.showPage("skill_details", { "nameEN": name });
+		}
+	})
+
+	// Create the autocomplete for the app search.
+	$("#appSearch").autocomplete({
+		source: Database.mAppNamesEN,
+		select: function(e, ui) {
+			var name = ui.item.value.toLowerCase();
+
+			if(PageAppDetails.currentApp != name &&
+				Database.appExistsEN(name)) {
+					Application.showPage("app_details", { "nameEN": name });
+			}
+		}
+	});
+
+	// Create the action when you type into the app search.
+	$("#appSearch").keyup(function(e){
+		var name = $("#appSearch").val().toLowerCase();
+
+		if(PageAppDetails.currentApp != name &&
+			Database.appExistsEN(name)) {
+				Application.showPage("app_details", { "name": name });
+		}
+	});
+}
+
+/**
+ * Validate the data in the database.
+ */
+ApplicationImpl.prototype._validateDatabase = function() {
+	// This test code is used to validate the demon skills.
+	$.each(Database.mDemonByNameEN, function(nameEN, data) {
+		$.each(data.skills, function(skillJP, obtainLvl) {
+			if(Database.mSkillByNameJP[skillJP] === undefined) {
+				alert(skillJP + " on " + data.nameEN);
+			}
+		});
+	});
+
+	// This test code is used to validate the level demons get skills at.
+	$.each(Database.mDemonByNameEN, function(nameEN, data) {
+		$.each(data.skills, function(skillJP, obtainLvl) {
+			if(obtainLvl != 0 && obtainLvl < data.level) {
+				alert(skillJP + " on " + data.nameEN);
+			}
+		});
+	});
+
+	// This test code is used to validate mutation trigger levels.
+	$.each(Database.mDemonByNameEN, function(nameEN, data) {
+		if(data.mutate && data.mutate.level <= data.level) {
+			alert("Mutation for: " + data.nameEN);
+		}
+	});
 }
 
 // Singleton for the application.

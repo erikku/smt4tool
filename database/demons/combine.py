@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 import os
 
-out = open("demons.js", "wb")
+out = open("../demons.js", "wb")
 
 for root, dirs, files in os.walk("."):
 	for f in files:
