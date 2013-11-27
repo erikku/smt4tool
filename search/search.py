@@ -1,8 +1,17 @@
 import json
+import operator
 
 ELEMENTS = ['physical', 'gun', 'fire', 'ice', 'thunder', 'shock']
 DEATHS = ['banish', 'curse']
 STATUSES = ['bind', 'sleep', 'cold', 'confusion', 'poison']
+CUSTOM_WEIGHTS = [(ELEMENTS, ['reflect', 'absorb'], 2),
+                  (DEATHS, 'null', 1),
+                  (STATUSES, 'null', 0.5),
+                  (ELEMENTS, 'null', 0.5),
+                  (DEATHS, 'protect', 0.5),
+                  (STATUSES, 'protect', 0.1),
+                  (ELEMENTS, 'protect', 0.25),
+                  ]
 
 
 def get_affinities(d, types, values):
@@ -52,6 +61,9 @@ def get_affinities_weighted(d, item_weights):
     return total
 
 
+get_custom = lambda d: get_affinities_weighted(d, CUSTOM_WEIGHTS)
+
+
 def get_stat_build(d):
     stats = d['stats']
     if stats['magic'] > stats['luck'] > stats['strength']:
@@ -67,24 +79,44 @@ def get_stat_build(d):
         return 'balanced'
 
 
+def get_level(d):
+    return d['level']
+
+
+def filter_demons(demons, function, op, value):
+    if type(function) in [str, unicode]:
+        function = globals()['get_' + function]
+    if type(op) in [str, unicode]:
+        op = getattr(operator, op)
+    f = lambda d: op(function(d), value)
+    return filter(f, demons)
+
+
+def sort_demons(demons, key, reverse=False):
+    if type(key) in [str, unicode]:
+        key = globals()['get_' + key]
+    return sorted(demons, key=key, reverse=reverse)
+
+
 def demo():
     demons = json.loads(open('demons.json').read())
-    custom_weights = [(ELEMENTS, ['reflect', 'absorb'], 2),
-                      (DEATHS, 'null', 1),
-                      (STATUSES, 'null', 0.5),
-                      (ELEMENTS, 'null', 0.5),
-                      (DEATHS, 'protect', 0.5),
-                      (STATUSES, 'protect', 0.1),
-                      (ELEMENTS, 'protect', 0.25),
-                      ]
-    custom = lambda d: get_affinities_weighted(d, custom_weights)
-    demons = sorted(demons, key=custom, reverse=True)
+    demons = sorted(demons, key=get_custom, reverse=True)
     for d in demons[:10]:
         print d['nameEN']
 
 
-if __name__ == '__main__':
+def demo2():
     demons = json.loads(open('demons.json').read())
-    for d in sorted(demons, key=lambda x: x['nameEN']):
-        if get_stat_build(d) == 'speed':
-            print d['nameEN']
+    demons = filter_demons(demons, 'elem_reflect_or_absorb', 'ge', 2)
+    demons = filter_demons(demons, 'stat_build', 'eq', 'balanced')
+    demons = sort_demons(demons, key='level')
+    for d in demons:
+        print d['nameEN'], d['level'], get_custom(d)
+    print
+    demons = sort_demons(demons, key='custom', reverse=True)
+    for d in demons:
+        print d['nameEN'], d['level'], get_custom(d)
+
+
+if __name__ == '__main__':
+    demo2()
