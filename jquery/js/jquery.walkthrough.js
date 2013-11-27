@@ -90,6 +90,79 @@
 	}
 
 	/**
+	 * Create an HTML element for a demon.
+	 * @arg name English name of the demon to insert.
+	 */
+	$.demonLink = function(name) {
+		return $.create("a").addClass("demonLink"
+			).text(name).click(function() {
+				Application.showPage("demon_details", { "nameEN": name })
+		});
+	}
+
+	/**
+	 * Create an HTML element for a skill.
+	 * @arg name English name of the skill to insert.
+	 */
+	$.skillLink = function(name) {
+		return $.create("a").addClass("skillLink"
+			).text(name).click(function() {
+				Application.showPage("skill_details", { "nameEN": name })
+		});
+	}
+
+	/**
+	 * Create an HTML element for a app.
+	 * @arg name English name of the app to insert.
+	 */
+	$.appLink = function(name) {
+		return $.create("a").addClass("appLink"
+			).text(name).click(function() {
+				Application.showPage("app_details", { "nameEN": name })
+		});
+	}
+
+	/**
+	 * Join an list of elements together using the given separator.
+	 * @arg list The list of elements. Can be anything $.each can handle.
+	 * @arg separator String or DOM element to use as a separator (what
+	 * $.fn.append takes as an argument).
+	 * @arg func The function to call on each element to convert it to HTML.
+	 * Like the $.each function, break by returning false or for a valid
+	 * element, return a DOM element or string (what $.fn.append takes).
+	 * @returns The DOM elements appended together.
+	 */
+	$.fn.eachJoin = function(list, separator, func) {
+		// The DOM element to append the elements to.
+		var result = this;
+
+		// If this is the first element or not.
+		var first = true;
+
+		$.each(list, function(a, b) {
+			// Call the function for the current element.
+			var element = func(a, b);
+
+			// If the user wants to break out of the loop, break out of
+			// this loop as well.
+			if(element === false)
+				return false;
+
+			// If this is the first element, append just the element;
+			// otherwise, append a separator then the element.
+			if(first)
+				result.append(element);
+			else
+				result.append(separator).append(element);
+
+			// The first element is done now.
+			first = false;
+		});
+
+		return this;
+	}
+
+	/**
 	 * Insert a quest into the walkthrough.
 	 * @arg data Object containing the data on the quest.
 	 */

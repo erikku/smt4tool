@@ -209,6 +209,27 @@ Database.registerApp({
 });
 
 Database.registerApp({
+	"name": "Skill Smother 2",
+	"points": 20,
+	"req": ["app:Skill Smother 1"],
+	"desc": "Decreases the MP cost of demon's skills by 1."
+});
+
+Database.registerApp({
+	"name": "Skill Smother 3",
+	"points": 35,
+	"req": ["app:Skill Smother 2"],
+	"desc": "Decreases the MP cost of demon's skills by 1."
+});
+
+Database.registerApp({
+	"name": "Skill Smother 4",
+	"points": 35,
+	"req": ["app:Skill Smother 3"],
+	"desc": "Decreases the MP cost of demon's skills by 1."
+});
+
+Database.registerApp({
 	"name": "Demon Skill+1",
 	"points": 20,
 	"req": ["Unknown"],
@@ -318,6 +339,13 @@ Database.registerApp({
 	"points": 30,
 	"req": ["app:Expert Scout"],
 	"desc": "Demons befriended through the Scout skill will have increased stats."
+});
+
+Database.registerApp({
+	"name": "Skill Plugin",
+	"points": 30,
+	"req": ["app:Stats Plugin"],
+	"desc": "Demons befriended through the Scout skill will learn new skills."
 });
 
 Database.registerApp({
@@ -433,6 +461,27 @@ Database.registerApp({
 });
 
 Database.registerApp({
+	"name": "Talk EXP Boost 2",
+	"points": 15,
+	"req": ["app:Talk EXP Boost 1"],
+	"desc": "Increases the EXP gained through demon conversation by 1.4x."
+});
+
+Database.registerApp({
+	"name": "Talk EXP Boost 3",
+	"points": 20,
+	"req": ["app:Talk EXP Boost 2"],
+	"desc": "Increases the EXP gained through demon conversation by 1.6x."
+});
+
+Database.registerApp({
+	"name": "Talk EXP Boost 4",
+	"points": 40,
+	"req": ["app:Talk EXP Boost 3"],
+	"desc": "Increases the EXP gained through demon conversation by 1.8x."
+});
+
+Database.registerApp({
 	"name": "Demolingual",
 	"points": 20,
 	"req": ["Fail to talk to a demon"],
@@ -461,10 +510,73 @@ Database.registerApp({
 });
 
 Database.registerApp({
+	"name": "Fusion Booster 2",
+	"points": 40,
+	"req": ["app:Fusion Booster 1"],
+	"desc": "Increases the level ceiling for fusions by 2."
+});
+
+Database.registerApp({
+	"name": "Fusion Booster 3",
+	"points": 50,
+	"req": ["app:Fusion Booster 2"],
+	"desc": "Increases the level ceiling for fusions by 4."
+});
+
+Database.registerApp({
+	"name": "Fusion Booster 4",
+	"points": 50,
+	"req": ["app:Fusion Booster 3"],
+	"desc": "Increases the level ceiling for fusions by 6."
+});
+
+Database.registerApp({
+	"name": "Fusion Booster 5",
+	"points": 70,
+	"req": ["app:Fusion Booster 4"],
+	"desc": "Increases the level ceiling for fusions by 9."
+});
+
+Database.registerApp({
+	"name": "Fusion Booster 6",
+	"points": 70,
+	"req": ["app:Fusion Booster 5"],
+	"desc": "Increases the level ceiling for fusions by 12."
+});
+
+Database.registerApp({
+	"name": "Fusion Booster 7",
+	"points": 70,
+	"req": ["app:Fusion Booster 6"],
+	"desc": "Increases the level ceiling for fusions by 15."
+});
+
+Database.registerApp({
 	"name": "Fusion EXP Boost 1",
 	"points": 10,
 	"req": ["Unknown"],
 	"desc": "Increases EXP gained through demon fusion by 1.2x."
+});
+
+Database.registerApp({
+	"name": "Fusion EXP Boost 2",
+	"points": 15,
+	"req": ["app:Fusion EXP Boost 1"],
+	"desc": "Increases EXP gained through demon fusion by 1.5x."
+});
+
+Database.registerApp({
+	"name": "Fusion EXP Boost 3",
+	"points": 20,
+	"req": ["app:Fusion EXP Boost 2"],
+	"desc": "Increases EXP gained through demon fusion by 2x."
+});
+
+Database.registerApp({
+	"name": "Fusion EXP Boost 4",
+	"points": 20,
+	"req": ["app:Fusion EXP Boost 3"],
+	"desc": "Increases EXP gained through demon fusion by 3x."
 });
 
 Database.registerApp({

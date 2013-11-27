@@ -33,6 +33,7 @@ function ApplicationImpl() {
 		"skill": { "page": "skill_list", "data": undefined },
 		"app": { "page": "app_list", "data": undefined },
 		"walk": { "page": "walkthrough", "data": { "source": "contents" } },
+		"comp": { "page": "comp", "data": undefined }
 	};
 }
 
@@ -66,31 +67,8 @@ ApplicationImpl.prototype.initialize = function() {
 	//$('#reverseChartTest').html(renderReverseChart());
 	//generateReverseCache();
 
-	// Hide these by default.
-	$("#compSplitDialog").hide();
-	$("#compHistoryDialog").hide();
-
 	this._createQuickSearches();
 	//this._validateDatabase();
-
-	$("#compLevelDialog").hide();
-	$("#compSelectDialog").hide();
-
-	// Load the COMP from a cookie (expires in 5 years).
-	var compData = $.cookie("comp");
-
-	// Set the COMP data if it's valid.
-	if(compData && compData.length)
-		compList = compData;
-
-	// Try to load it.
-	try {
-		refleshCOMP();
-	} catch(e) {
-		compList = [ ];
-
-		refleshCOMP();
-	}
 
 	// Set all the default pages for each tab.
 	$.each(this.mDefaultPages, function(tab, data) {

@@ -6,6 +6,9 @@ function DatabaseImpl() {
 	// Private Variables
 	//
 
+	// Ordered list of tribes.
+	this.mTribes = [ ];
+
 	// Mapping of English names to tribe data.
 	this.mTribeByNameEN = { };
 
@@ -110,7 +113,11 @@ DatabaseImpl.prototype.registerTribe = function(data) {
 			return;
 	}
 
+	// Set the index for the tribe.
+	data.idx = this.mTribes.length;
+
 	// Add the tribe to all the lookup hash tables.
+	this.mTribes.push(data);
 	this.mTribeNamesEN.push(data.nameEN);
 	this.mTribeByNameJP[data.nameJP] = data;
 	this.mTribeByNameEN[data.nameEN.toLowerCase()] = data;
@@ -338,6 +345,15 @@ DatabaseImpl.prototype.translateTribeJP = function(name) {
 }
 
 /**
+ * Convert the Japanese skill name into an English skill name.
+ * @arg name Japanese skill name to search for.
+ * @returns The matching English skill name.
+ */
+DatabaseImpl.prototype.translateSkillJP = function(name) {
+	return this.mSkillByNameJP[name].nameEN;
+}
+
+/**
  * Get the demon data for the elemental result if you fuse two demons from the
  * given tribe.
  * @arg name Japanese tribe name.
@@ -458,6 +474,17 @@ DatabaseImpl.prototype.demonSkillMappingJP = function(name) {
 	return this.mDemonSkillMapping[name];
 }
 
+/**
+ * Fetch the tribe data object for the given index.
+ * @arg idx Index of the tribe to fetch.
+ * @returns The tribe for the given index or undefined if the index is invalid.
+ */
+DatabaseImpl.prototype.tribeFromIndex = function(idx) {
+	if(idx >= 0 && idx < this.mTribes.length)
+		return this.mTribes[idx];
+
+	return undefined;
+}
 
 // Singleton for the database.
 var Database = new DatabaseImpl();

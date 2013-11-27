@@ -115,5 +115,66 @@ RendererImpl.prototype.handleRequirements = function(reqList) {
 	return html;
 }
 
+/**
+ * Convert the COMP demon to HTML.
+ * @arg inded Index in the COMP list for the demon (for actions on the demon).
+ * @arg demon The COMP data for the demon to convert.
+ * @returns The equivalent HTML.
+ */
+RendererImpl.prototype.handleCOMPEntry = function(index, demon) {
+	// Fetch the demon's data from the database.
+	var baseDemon = Database.demonByNameEN(demon.nameEN);
+
+	// Create the entry div element.
+	var entry = $.create("div").addClass("compEntry");
+
+	// Add the name and level to the entry.
+	entry.append($.create("a").addClass("section").attr(
+		"id", "compLevelInfo").text(demon.level)).append("&nbsp;&nbsp;"
+		).append($.demonLink(demon.nameEN));
+
+	// Add the skills to the entry.
+	entry.append(" (").eachJoin(demon.skills, ", ",
+		function(skillIndex, skill) {
+			return $.skillLink(skill);
+	}).append(")").append($.create("br"));
+
+	// Add the dismiss and level buttons.
+	entry.append($.create("a").addClass("button_up").attr("id",
+		"compDismissBtn").text("Dismiss").click(function() {
+			COMP.dismiss(index);
+	}));
+	entry.append($.create("a").addClass("button_up").attr("id",
+		"compLevelBtn").text("Level").click(function() {
+			COMP.level(index);
+	}));
+
+	// Add the split button if the demon can be reverse fused/split.
+	if(COMP.canReverse(baseDemon)) {
+		entry.append($.create("a").addClass("button_up").attr("id",
+			"compSplitBtn").text("Split").click(function() {
+				COMP.split(index);
+		}));
+	}
+
+	// If there demon can be mutated, add the button.
+	if(baseDemon.mutate) {
+		entry.append($.create("a").addClass("button_up").attr("id",
+			"compMutateBtn").text("Evolve").click(function() {
+				COMP.mutate(index);
+		}));
+	}
+
+	// If the demon has a history, add the button.
+	if(demon.parents && demon["parents"].length) {
+		entry.append($.create("a").addClass("button_up").attr("id",
+			"compHistoryBtn").text("History").click(function() {
+				COMP.mutate(index);
+		}));
+	}
+
+	return entry;
+}
+
 // Singleton for the renderer.
 var Renderer = new RendererImpl();

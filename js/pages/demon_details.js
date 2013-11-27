@@ -38,6 +38,11 @@ PageDemonDetails.prototype.enter = function(data) {
 	// Set the current demon.
 	PageDemonDetails.currentDemon = demon.nameEN.toLowerCase();
 
+	// Link the Add to COMP button.
+	$("#addToCOMP").click(function() {
+		COMP.addDemon(demon.nameEN);
+	})
+
 	// Set the demon name, tribe, and level.
 	$("#demonData_name").text(demon.nameEN);
 	$("#demonData_tribe").text(Database.translateTribeJP(demon.tribe));
