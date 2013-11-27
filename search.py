@@ -52,6 +52,21 @@ def get_affinities_weighted(d, item_weights):
     return total
 
 
+def get_stat_build(d):
+    stats = d['stats']
+    if stats['magic'] > stats['luck'] > stats['strength']:
+        return 'magic'
+    elif stats['strength'] > stats['speed'] > stats['magic']:
+        return 'strength'
+    elif stats['speed'] > stats['strength'] > stats['magic']:
+        return 'speed'
+    else:
+        if d['level'] >= 10:
+            for stat in ['skill', 'magic', 'speed', 'luck']:
+                assert stats[stat] == stats['strength']
+        return 'balanced'
+
+
 def demo():
     demons = json.loads(open('demons.json').read())
     custom_weights = [(ELEMENTS, ['reflect', 'absorb'], 2),
@@ -69,4 +84,7 @@ def demo():
 
 
 if __name__ == '__main__':
-    demo()
+    demons = json.loads(open('demons.json').read())
+    for d in sorted(demons, key=lambda x: x['nameEN']):
+        if get_stat_build(d) == 'speed':
+            print d['nameEN']
