@@ -2,6 +2,7 @@ import json
 import operator
 from sys import argv
 
+
 ELEMENTS = ['physical', 'gun', 'fire', 'ice', 'thunder', 'shock']
 DEATHS = ['banish', 'curse']
 STATUSES = ['bind', 'sleep', 'cold', 'confusion', 'poison']
@@ -40,9 +41,11 @@ def get_elem_reflect_or_absorb(d):
 def get_elem_null(d):
     return get_affinities(d, ELEMENTS, ['null', 'reflect', 'absorb'])
 
+
 def get_elem_protect(d):
     return get_affinities(d, ELEMENTS,
                           ['null', 'reflect', 'absorb', 'protect'])
+
 
 def get_death_null(d):
     return get_affinities(d, DEATHS, ['null'])
@@ -143,6 +146,7 @@ def run_command(command, demons):
         demons = sort_demons(demons, function, reverse)
 
     return demons
+
 
 if __name__ == '__main__':
     commands = argv[1:]
