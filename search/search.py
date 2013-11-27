@@ -1,5 +1,6 @@
 import json
 import operator
+from sys import argv
 
 ELEMENTS = ['physical', 'gun', 'fire', 'ice', 'thunder', 'shock']
 DEATHS = ['banish', 'curse']
@@ -39,6 +40,9 @@ def get_elem_reflect_or_absorb(d):
 def get_elem_null(d):
     return get_affinities(d, ELEMENTS, ['null', 'reflect', 'absorb'])
 
+def get_elem_protect(d):
+    return get_affinities(d, ELEMENTS,
+                          ['null', 'reflect', 'absorb', 'protect'])
 
 def get_death_null(d):
     return get_affinities(d, DEATHS, ['null'])
@@ -118,5 +122,33 @@ def demo2():
         print d['nameEN'], d['level'], get_custom(d)
 
 
+def run_command(command, demons):
+    if command[0] == 'filter':
+        function, op, value = tuple(command[1:])
+        try:
+            value = int(value)
+        except ValueError:
+            try:
+                value = float(value)
+            except ValueError:
+                pass
+        demons = filter_demons(demons, function, op, value)
+
+    elif command[0] == 'sort':
+        function = command[1]
+        if len(command) == 3:
+            reverse = command[2].upper() == 'TRUE'
+        else:
+            reverse = False
+        demons = sort_demons(demons, function, reverse)
+
+    return demons
+
 if __name__ == '__main__':
-    demo2()
+    commands = argv[1:]
+    demons = json.loads(open('demons.json').read())
+    for command in commands:
+        command = command.split(',')
+        demons = run_command(command, demons)
+    for demon in demons:
+        print demon['nameEN'], demon['level']
